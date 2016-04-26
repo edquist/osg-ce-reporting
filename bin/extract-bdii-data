@@ -1,0 +1,83 @@
+#!/usr/bin/python
+
+import argparse
+import csv
+import glob
+import os
+import re
+import sys
+import time
+
+parser = argparse.ArgumentParser(description='Extracts CE data from BDII raw records in a directory.')
+parser.add_argument('directory', help='Directory of raw BDII records')
+parser.add_argument('output', help='Name for CSV output file (will be overwritten)')
+arguments = parser.parse_args()
+
+try:
+    csv_output_file = open(arguments.output, 'wb')
+except IOError as e:
+    print 'Could not open "%s" for output: %s' % (arguments.output, e.strerror)
+    sys.exit(1)
+csv_writer = csv.writer(csv_output_file)
+
+for filename in os.listdir(arguments.directory):
+    filepath = os.path.join(arguments.directory, filename)
+    try:
+        bdii_data = open(filepath, 'r')
+    except IOError as e:
+        print 'Could not open "%s": %s' % (filename, e.strerror)
+        sys.exit(1)
+
+    data = {}
+    for line in bdii_data:
+        line = line.strip()
+        if re.match(r'^\s*$', line):
+            continue
+        key, value = re.split(':\s*', line, 1)
+        # print key
+
+        if key == 'GlueCEInfoHostName':
+            # print 'hostname: %s' % (value)
+            if 'hostname' in data:
+                if data['hostname'] != value:
+                    print 'Found hostname %s, does not match previous value %s' % (value, data['hostname'])
+            else:
+                data['hostname'] = value
+
+        elif key == 'GlueCEImplementationName':
+            # print 'CE type:  %s' % (value)
+            data[value] = True
+
+        elif key == 'GlueLocationVersion':
+            if not re.match(r'\d{10,}(\.\d+)?', value): # must be >= 9 Sep 2001
+                continue
+            unix_time = float(value)
+            # timestamp = time.localtime(unix_time)
+            # print time.strftime('%Y-%m-%d %H:%M', timestamp)
+            if 'timestamp' in data:
+                if data['timestamp'] != unix_time:
+                    print 'Found timestamp %f, does not match previous value %f' % (unix_time, data['timestamp'])
+            else:
+                data['timestamp'] = unix_time
+    bdii_data.close()
+
+    # print filename + ': ' + str(data)
+    if 'timestamp' not in data:
+        print '%s: Could not extract a timestamp from file' % (filename)
+        continue
+    if 'hostname' not in data:
+        print '%s: Could not extract a hostname from file' % (filename)
+        continue
+    timestamp_string = time.strftime('%Y-%m-%d', time.localtime(data['timestamp']))
+    htcondor = ''
+    if 'HTCondorCE' in data:
+        htcondor = timestamp_string
+    gram = ''
+    if 'Globus' in data:
+        gram = timestamp_string
+    if (htcondor != '') or (gram != ''):
+        csv_writer.writerow((data['hostname'], htcondor, gram))
+    else:
+        print '%s: No CEs found in file' % (filename)
+
+csv_output_file.close()

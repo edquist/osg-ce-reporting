@@ -1,0 +1,260 @@
+#!/usr/bin/python
+
+import argparse
+import csv
+import datetime
+import operator
+import re
+import sys
+import time
+
+
+# List of expected column names in the original Google CSV file.  Change to
+# match actual Google spreadsheet, but also ask the GOC staff not to change the
+# columns or names if possible.
+expected_row = ('Hostname', 'Reverse Hostname', 'gWMS GRAM', 'gWMS HTC', 'BDII GRAM', 'BDII HTC', 'CE-Collector')
+
+
+def reverse_hostname(hostname):
+    parts = list(hostname.strip().split('.'))
+    parts.reverse()
+    return '.'.join(parts)
+
+
+class HostData:
+    # The "_" positional argument is to absorb the "Reverse Hostname" column
+    # when called directly Google CSV data.  Rather than trust the given
+    # reversed hostname, we always compute it.  But in order for the
+    # extra_fields positional argument to work correctly, the number of
+    # preceding fields must be correct.
+    def __init__(self, hostname, _=None, gwms_gram='', gwms_htcondor='', bdii_gram='', bdii_htcondor='', collector='',
+                 *extra_fields):
+        """Initialize from individual data values, which may be incomplete."""
+
+        self.hostname      = hostname.lower()
+        self.reverse       = reverse_hostname(self.hostname)
+        self.gwms_gram     = gwms_gram
+        self.gwms_htcondor = gwms_htcondor
+        self.bdii_gram     = bdii_gram
+        self.bdii_htcondor = bdii_htcondor
+        self.collector     = collector
+        self.extra_fields  = extra_fields
+
+    def csv_array(self):
+        """Return an array of values, suitable for passing to a CSV writer."""
+        return [self.hostname, self.reverse,
+                self.gwms_gram, self.gwms_htcondor,
+                self.bdii_gram, self.bdii_htcondor,
+                self.collector] + list(self.extra_fields)
+
+    def update(self, name, date):
+        if not hasattr(self, name):
+            raise ValueError(name + ' is not a valid attribute name')
+        old_date = getattr(self, name)
+        if (date is None) or (date == '') or date.isspace():
+            return False
+        if (old_date is None) or (old_date == '') or old_date.isspace():
+            old_date = 'N/A'
+        elif date <= old_date: # This is safe because dates are ISO format
+            return False
+        setattr(self, name, date)
+        return old_date
+
+
+# ------------------------------------------------------------------------------
+# Process command-line arguments and try to open files
+# ------------------------------------------------------------------------------
+parser = argparse.ArgumentParser(description='Merges OSG CE data from various sources into the master CSV spreadsheet.')
+parser.add_argument('google', help='Google Drive CSV to use as the base data')
+parser.add_argument('-f', '--factory', help='Factory CE data')
+parser.add_argument('-b', '--bdii', help='BDII data from extract-bdii-data')
+parser.add_argument('-c', '--collector', help='CE Collector data from GOC using ce-collector-command')
+parser.add_argument('-v', '--verbose', action='store_true', help='Turn on verbose output (e.g., all updates)')
+arguments = parser.parse_args()
+
+try:
+    google_file = open(arguments.google)
+except IOError as e:
+    print 'Could not open Google Drive CSV file "%s": %s' % (arguments.google, e.strerror)
+    sys.exit(1)
+factory_file = None
+if arguments.factory:
+    try:
+        factory_file = open(arguments.factory)
+    except IOError as e:
+        print 'Could not open Factory data file "%s": %s' % (arguments.factory, e.strerror)
+        sys.exit(1)
+bdii_file = None
+if arguments.bdii:
+    try:
+        bdii_file = open(arguments.bdii)
+    except IOError as e:
+        print 'Could not open BDII data file "%s": %s' % (arguments.bdii, e.strerror)
+        sys.exit(1)
+collector_file = None
+if arguments.collector:
+    try:
+        collector_file = open(arguments.collector)
+    except IOError as e:
+        print 'Could not open CE Collector data file "%s": %s' % (arguments.collector, e.strerror)
+        sys.exit(1)
+
+hosts_ordered = []
+hosts_by_name = {}
+
+# ------------------------------------------------------------------------------
+# Read base Google spreadsheet CSV file
+# ------------------------------------------------------------------------------
+google_reader = csv.reader(google_file)
+first_row = True
+for row in google_reader:
+    # Verify headers in header row, then skip it
+    if first_row:
+        for column in xrange(len(expected_row)):
+            if row[column] != expected_row[column]:
+                print 'Google input CSV does not match expected column names!'
+                print 'In column %d, expected "%s" but got "%s"' % (column + 1, expected_row[column], row[column])
+                print 'Update the Google spreadsheet or this script, then try again.'
+                sys.exit(1)
+        extra_column_names = tuple(row[len(expected_row):])
+        first_row = False
+        continue
+
+    # Skip footer rows, which have either a blank hostname or a numeric count
+    if re.match(r'^\d*$', row[0]):
+        continue
+
+    # Save row data
+    hostdata = HostData(*row)
+    if hostdata.hostname in hosts_by_name:
+        print 'Google file: Duplicate entry for "%s" at line number %d' % (hostdata.hostname, google_reader.line_num)
+        print 'Correct the Google document and/or exported CSV file, then try again.'
+        sys.exit(1)
+    else:
+        hosts_ordered.append(hostdata)
+        hosts_by_name[hostdata.hostname] = hostdata
+        # print hostdata.hostname, hostdata.collector
+        # print hostdata.csv_array()
+
+google_file.close()
+print 'Google CSV file: Read %d unique hostnames' % (len(hosts_by_name))
+
+# ------------------------------------------------------------------------------
+# Merge in Factory CSV data
+# ------------------------------------------------------------------------------
+if arguments.factory:
+    factory_reader = csv.reader(factory_file)
+    row_counter = 0
+    updated = 0
+    new = 0
+    for row in factory_reader:
+        row_counter += 1
+        if row_counter == 1:
+            continue
+        (hostname, gwms_gram, gwms_htcondor) = row
+        updated_this_row = False
+        if hostname in hosts_by_name:
+            old = hosts_by_name[hostname].update('gwms_gram', gwms_gram)
+            if old is not False:
+                updated_this_row = True
+                if arguments.verbose:
+                    print '%s: Updated gWMS GRAM %s => %s' % (hostname, old, gwms_gram)
+            old = hosts_by_name[hostname].update('gwms_htcondor', gwms_htcondor)
+            if old is not False:
+                updated_this_row = True
+                if arguments.verbose:
+                    print '%s: Updated gWMS HTCondor %s => %s' % (hostname, old, gwms_htcondor)
+            if updated_this_row:
+                updated += 1
+        else:
+            new_host_data = HostData(hostname, gwms_htcondor=gwms_htcondor, gwms_gram=gwms_gram)
+            hosts_ordered.append(new_host_data)
+            hosts_by_name[hostname] = new_host_data
+            new += 1
+            if arguments.verbose:
+                print '%s: Added Factory Gram "%s" HTCondor "%s"' % (hostname, gwms_htcondor, gwms_gram)
+    print 'Factory: Read %d entries, updated %d records, added %d records' % (row_counter - 1, updated, new)
+
+# ------------------------------------------------------------------------------
+# Merge in BDII CSV data
+# ------------------------------------------------------------------------------
+if arguments.bdii:
+    bdii_reader = csv.reader(bdii_file)
+    row_counter = 0
+    updated = 0
+    new = 0
+    for row in bdii_reader:
+        row_counter += 1
+        (hostname, bdii_htcondor, bdii_gram) = row
+        updated_this_row = False
+        if hostname in hosts_by_name:
+            old = hosts_by_name[hostname].update('bdii_htcondor', bdii_htcondor)
+            if old is not False:
+                updated_this_row = True
+                if arguments.verbose:
+                    print '%s: Updated BDII HTCondor %s => %s' % (hostname, old, bdii_htcondor)
+            old = hosts_by_name[hostname].update('bdii_gram', bdii_gram)
+            if old is not False:
+                updated_this_row = True
+                if arguments.verbose:
+                    print '%s: Updated BDII GRAM %s => %s' % (hostname, old, bdii_gram)
+            if updated_this_row:
+                updated += 1
+        else:
+            new_host_data = HostData(hostname, bdii_gram=bdii_gram, bdii_htcondor=bdii_htcondor)
+            hosts_ordered.append(new_host_data)
+            hosts_by_name[hostname] = new_host_data
+            new += 1
+            if arguments.verbose:
+                print '%s: Added BDII GRAM "%s" HTCondor "%s"' % (hostname, bdii_gram, bdii_htcondor)
+    print 'BDII: Read %d entries, updated %d records, added %d records' % (row_counter, updated, new)
+
+# ------------------------------------------------------------------------------
+# Merge in CE Collector CSV data
+# ------------------------------------------------------------------------------
+if arguments.collector:
+    collector_reader = csv.reader(collector_file)
+    row_counter = 0
+    updated = 0
+    new = 0
+    for row in collector_reader:
+        row_counter += 1
+        hostname = row[0].lower()
+        last_heard_from = row[1]
+        collector_date = time.strftime('%Y-%m-%d', time.localtime(float(last_heard_from)))
+        if hostname in hosts_by_name:
+            old = hosts_by_name[hostname].update('collector', collector_date)
+            if old is not False:
+                updated += 1
+                if arguments.verbose:
+                    print '%s: Updated Collector %s => %s' % (hostname, old, collector_date)
+        else:
+            new_host_data = HostData(hostname, collector=collector_date)
+            hosts_ordered.append(new_host_data)
+            hosts_by_name[hostname] = new_host_data
+            new += 1
+            if arguments.verbose:
+                print '%s: Added Collector %s' % (hostname, collector_date)
+    print 'CE Collector: Read %d entries, updated %d records, added %d records' % (row_counter, updated, new)
+
+# ------------------------------------------------------------------------------
+# Write final merged CSV for re-import into Google Drive
+# ------------------------------------------------------------------------------
+filename = 'google-drive-%s-updated.csv' % (time.strftime('%Y-%m-%d'))
+tally = 0
+with open(filename, 'wb') as csv_file:
+    csv_writer = csv.writer(csv_file)
+    csv_writer.writerow(expected_row + extra_column_names)
+    for hostdata in hosts_ordered:
+        csv_writer.writerow(hostdata.csv_array())
+        tally += 1
+    csv_writer.writerow(['', '', '', '', '', '', '', '', '', ''])
+    csv_writer.writerow(['=COUNTA(A$2:A$%d)' % (tally + 1),
+                         '=COUNTA(B$2:B$%d)' % (tally + 1),
+                         '=COUNTA(C$2:C$%d)' % (tally + 1),
+                         '=COUNTA(D$2:D$%d)' % (tally + 1),
+                         '=COUNTA(E$2:E$%d)' % (tally + 1),
+                         '=COUNTA(F$2:F$%d)' % (tally + 1),
+                         '=COUNTA(G$2:G$%d)' % (tally + 1),
+                         '', '', ''])
+print 'Output CSV file: Wrote %d records to "%s"' % (tally, filename)

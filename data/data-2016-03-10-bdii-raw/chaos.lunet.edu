@@ -1,0 +1,817 @@
+dn: GlueLocationLocalID=OSG_VERSION,GlueSubClusterUniqueID=LUHEP_1-LUHEP_OSG,GlueClusterUniqueID=chaos.lunet.edu,mds-vo-name=local,o=grid
+objectClass: GlueClusterTop
+objectClass: GlueKey
+objectClass: GlueLocation
+objectClass: GlueSchemaVersion
+GlueLocationName: OSG_VERSION
+GlueSchemaVersionMajor: 1
+GlueLocationLocalID: OSG_VERSION
+GlueSchemaVersionMinor: 3
+GlueChunkKey: GlueSubClusterUniqueID=LUHEP_1-LUHEP_OSG
+GlueLocationPath: /opt/osg-1.2.0
+GlueLocationVersion: OSG 1.2.32
+
+dn: GlueLocationLocalID=OSG 1.2.32,GlueSubClusterUniqueID=LUHEP_1-LUHEP_OSG,GlueClusterUniqueID=chaos.lunet.edu,mds-vo-name=local,o=grid
+objectClass: GlueClusterTop
+objectClass: GlueKey
+objectClass: GlueLocation
+objectClass: GlueSchemaVersion
+GlueLocationName: OSG 1.2.32
+GlueSchemaVersionMajor: 1
+GlueLocationLocalID: OSG 1.2.32
+GlueSchemaVersionMinor: 3
+GlueChunkKey: GlueSubClusterUniqueID=LUHEP_1-LUHEP_OSG
+GlueLocationPath: /opt/osg-1.2.0
+GlueLocationVersion: OSG 1.2.32
+
+dn: GlueLocationLocalID=OSG_VERSION,GlueSubClusterUniqueID=LUHEP_2-LUHEP_OSG,GlueClusterUniqueID=chaos.lunet.edu,mds-vo-name=local,o=grid
+objectClass: GlueClusterTop
+objectClass: GlueKey
+objectClass: GlueLocation
+objectClass: GlueSchemaVersion
+GlueLocationName: OSG_VERSION
+GlueSchemaVersionMajor: 1
+GlueLocationLocalID: OSG_VERSION
+GlueSchemaVersionMinor: 3
+GlueChunkKey: GlueSubClusterUniqueID=LUHEP_2-LUHEP_OSG
+GlueLocationPath: /opt/osg-1.2.0
+GlueLocationVersion: OSG 1.2.32
+
+dn: GlueLocationLocalID=OSG 1.2.32,GlueSubClusterUniqueID=LUHEP_2-LUHEP_OSG,GlueClusterUniqueID=chaos.lunet.edu,mds-vo-name=local,o=grid
+objectClass: GlueClusterTop
+objectClass: GlueKey
+objectClass: GlueLocation
+objectClass: GlueSchemaVersion
+GlueLocationName: OSG 1.2.32
+GlueSchemaVersionMajor: 1
+GlueLocationLocalID: OSG 1.2.32
+GlueSchemaVersionMinor: 3
+GlueChunkKey: GlueSubClusterUniqueID=LUHEP_2-LUHEP_OSG
+GlueLocationPath: /opt/osg-1.2.0
+GlueLocationVersion: OSG 1.2.32
+
+dn: GlueLocationLocalID=OSG_VERSION,GlueSubClusterUniqueID=LUHEP_3-LUHEP_OSG,GlueClusterUniqueID=chaos.lunet.edu,mds-vo-name=local,o=grid
+objectClass: GlueClusterTop
+objectClass: GlueKey
+objectClass: GlueLocation
+objectClass: GlueSchemaVersion
+GlueLocationName: OSG_VERSION
+GlueSchemaVersionMajor: 1
+GlueLocationLocalID: OSG_VERSION
+GlueSchemaVersionMinor: 3
+GlueChunkKey: GlueSubClusterUniqueID=LUHEP_3-LUHEP_OSG
+GlueLocationPath: /opt/osg-1.2.0
+GlueLocationVersion: OSG 1.2.32
+
+dn: GlueLocationLocalID=OSG 1.2.32,GlueSubClusterUniqueID=LUHEP_3-LUHEP_OSG,GlueClusterUniqueID=chaos.lunet.edu,mds-vo-name=local,o=grid
+objectClass: GlueClusterTop
+objectClass: GlueKey
+objectClass: GlueLocation
+objectClass: GlueSchemaVersion
+GlueLocationName: OSG 1.2.32
+GlueSchemaVersionMajor: 1
+GlueLocationLocalID: OSG 1.2.32
+GlueSchemaVersionMinor: 3
+GlueChunkKey: GlueSubClusterUniqueID=LUHEP_3-LUHEP_OSG
+GlueLocationPath: /opt/osg-1.2.0
+GlueLocationVersion: OSG 1.2.32
+
+dn: GlueLocationLocalID=OSG_VERSION,GlueSubClusterUniqueID=LUHEP_4-LUHEP_OSG,GlueClusterUniqueID=chaos.lunet.edu,mds-vo-name=local,o=grid
+objectClass: GlueClusterTop
+objectClass: GlueKey
+objectClass: GlueLocation
+objectClass: GlueSchemaVersion
+GlueLocationName: OSG_VERSION
+GlueSchemaVersionMajor: 1
+GlueLocationLocalID: OSG_VERSION
+GlueSchemaVersionMinor: 3
+GlueChunkKey: GlueSubClusterUniqueID=LUHEP_4-LUHEP_OSG
+GlueLocationPath: /opt/osg-1.2.0
+GlueLocationVersion: OSG 1.2.32
+
+dn: GlueLocationLocalID=OSG 1.2.32,GlueSubClusterUniqueID=LUHEP_4-LUHEP_OSG,GlueClusterUniqueID=chaos.lunet.edu,mds-vo-name=local,o=grid
+objectClass: GlueClusterTop
+objectClass: GlueKey
+objectClass: GlueLocation
+objectClass: GlueSchemaVersion
+GlueLocationName: OSG 1.2.32
+GlueSchemaVersionMajor: 1
+GlueLocationLocalID: OSG 1.2.32
+GlueSchemaVersionMinor: 3
+GlueChunkKey: GlueSubClusterUniqueID=LUHEP_4-LUHEP_OSG
+GlueLocationPath: /opt/osg-1.2.0
+GlueLocationVersion: OSG 1.2.32
+
+dn: GlueLocationLocalID=TIMESTAMP,GlueSubClusterUniqueID=LUHEP_1-LUHEP_OSG,GlueClusterUniqueID=chaos.lunet.edu,mds-vo-name=local,o=grid
+objectClass: GlueClusterTop
+objectClass: GlueKey
+objectClass: GlueLocation
+objectClass: GlueSchemaVersion
+GlueLocationName: TIMESTAMP
+GlueSchemaVersionMajor: 1
+GlueLocationLocalID: TIMESTAMP
+GlueSchemaVersionMinor: 3
+GlueChunkKey: GlueSubClusterUniqueID=LUHEP_1-LUHEP_OSG
+GlueLocationPath: Thu Mar 10 18:16:41 UTC 2016
+GlueLocationVersion: 1457633801.68
+
+dn: GlueLocationLocalID=TIMESTAMP,GlueSubClusterUniqueID=LUHEP_2-LUHEP_OSG,GlueClusterUniqueID=chaos.lunet.edu,mds-vo-name=local,o=grid
+objectClass: GlueClusterTop
+objectClass: GlueKey
+objectClass: GlueLocation
+objectClass: GlueSchemaVersion
+GlueLocationName: TIMESTAMP
+GlueSchemaVersionMajor: 1
+GlueLocationLocalID: TIMESTAMP
+GlueSchemaVersionMinor: 3
+GlueChunkKey: GlueSubClusterUniqueID=LUHEP_2-LUHEP_OSG
+GlueLocationPath: Thu Mar 10 18:16:41 UTC 2016
+GlueLocationVersion: 1457633801.68
+
+dn: GlueLocationLocalID=TIMESTAMP,GlueSubClusterUniqueID=LUHEP_3-LUHEP_OSG,GlueClusterUniqueID=chaos.lunet.edu,mds-vo-name=local,o=grid
+objectClass: GlueClusterTop
+objectClass: GlueKey
+objectClass: GlueLocation
+objectClass: GlueSchemaVersion
+GlueLocationName: TIMESTAMP
+GlueSchemaVersionMajor: 1
+GlueLocationLocalID: TIMESTAMP
+GlueSchemaVersionMinor: 3
+GlueChunkKey: GlueSubClusterUniqueID=LUHEP_3-LUHEP_OSG
+GlueLocationPath: Thu Mar 10 18:16:41 UTC 2016
+GlueLocationVersion: 1457633801.68
+
+dn: GlueLocationLocalID=TIMESTAMP,GlueSubClusterUniqueID=LUHEP_4-LUHEP_OSG,GlueClusterUniqueID=chaos.lunet.edu,mds-vo-name=local,o=grid
+objectClass: GlueClusterTop
+objectClass: GlueKey
+objectClass: GlueLocation
+objectClass: GlueSchemaVersion
+GlueLocationName: TIMESTAMP
+GlueSchemaVersionMajor: 1
+GlueLocationLocalID: TIMESTAMP
+GlueSchemaVersionMinor: 3
+GlueChunkKey: GlueSubClusterUniqueID=LUHEP_4-LUHEP_OSG
+GlueLocationPath: Thu Mar 10 18:16:41 UTC 2016
+GlueLocationVersion: 1457633801.68
+
+dn: GlueLocationLocalID=GIP_VERSION,GlueSubClusterUniqueID=LUHEP_1-LUHEP_OSG,GlueClusterUniqueID=chaos.lunet.edu,mds-vo-name=local,o=grid
+objectClass: GlueClusterTop
+objectClass: GlueKey
+objectClass: GlueLocation
+objectClass: GlueSchemaVersion
+GlueLocationName: GIP_VERSION
+GlueSchemaVersionMajor: 1
+GlueLocationLocalID: GIP_VERSION
+GlueSchemaVersionMinor: 3
+GlueChunkKey: GlueSubClusterUniqueID=LUHEP_1-LUHEP_OSG
+GlueLocationPath: Thu Mar 10 18:16:41 UTC 2016
+GlueLocationVersion: 1.2.0alpha0; $Revision: 4038 $
+
+dn: GlueLocationLocalID=GIP_VERSION,GlueSubClusterUniqueID=LUHEP_2-LUHEP_OSG,GlueClusterUniqueID=chaos.lunet.edu,mds-vo-name=local,o=grid
+objectClass: GlueClusterTop
+objectClass: GlueKey
+objectClass: GlueLocation
+objectClass: GlueSchemaVersion
+GlueLocationName: GIP_VERSION
+GlueSchemaVersionMajor: 1
+GlueLocationLocalID: GIP_VERSION
+GlueSchemaVersionMinor: 3
+GlueChunkKey: GlueSubClusterUniqueID=LUHEP_2-LUHEP_OSG
+GlueLocationPath: Thu Mar 10 18:16:41 UTC 2016
+GlueLocationVersion: 1.2.0alpha0; $Revision: 4038 $
+
+dn: GlueLocationLocalID=GIP_VERSION,GlueSubClusterUniqueID=LUHEP_3-LUHEP_OSG,GlueClusterUniqueID=chaos.lunet.edu,mds-vo-name=local,o=grid
+objectClass: GlueClusterTop
+objectClass: GlueKey
+objectClass: GlueLocation
+objectClass: GlueSchemaVersion
+GlueLocationName: GIP_VERSION
+GlueSchemaVersionMajor: 1
+GlueLocationLocalID: GIP_VERSION
+GlueSchemaVersionMinor: 3
+GlueChunkKey: GlueSubClusterUniqueID=LUHEP_3-LUHEP_OSG
+GlueLocationPath: Thu Mar 10 18:16:41 UTC 2016
+GlueLocationVersion: 1.2.0alpha0; $Revision: 4038 $
+
+dn: GlueLocationLocalID=GIP_VERSION,GlueSubClusterUniqueID=LUHEP_4-LUHEP_OSG,GlueClusterUniqueID=chaos.lunet.edu,mds-vo-name=local,o=grid
+objectClass: GlueClusterTop
+objectClass: GlueKey
+objectClass: GlueLocation
+objectClass: GlueSchemaVersion
+GlueLocationName: GIP_VERSION
+GlueSchemaVersionMajor: 1
+GlueLocationLocalID: GIP_VERSION
+GlueSchemaVersionMinor: 3
+GlueChunkKey: GlueSubClusterUniqueID=LUHEP_4-LUHEP_OSG
+GlueLocationPath: Thu Mar 10 18:16:41 UTC 2016
+GlueLocationVersion: 1.2.0alpha0; $Revision: 4038 $
+
+dn: GlueLocationLocalID=OSG_GRID,GlueSubClusterUniqueID=LUHEP_1-LUHEP_OSG,GlueClusterUniqueID=chaos.lunet.edu,mds-vo-name=local,o=grid
+objectClass: GlueClusterTop
+objectClass: GlueKey
+objectClass: GlueLocation
+objectClass: GlueSchemaVersion
+GlueLocationName: OSG_GRID
+GlueSchemaVersionMajor: 1
+GlueLocationLocalID: OSG_GRID
+GlueSchemaVersionMinor: 3
+GlueChunkKey: GlueSubClusterUniqueID=LUHEP_1-LUHEP_OSG
+GlueLocationPath: /export/wnclient
+GlueLocationVersion: 1.0
+
+dn: GlueLocationLocalID=OSG_GRID,GlueSubClusterUniqueID=LUHEP_2-LUHEP_OSG,GlueClusterUniqueID=chaos.lunet.edu,mds-vo-name=local,o=grid
+objectClass: GlueClusterTop
+objectClass: GlueKey
+objectClass: GlueLocation
+objectClass: GlueSchemaVersion
+GlueLocationName: OSG_GRID
+GlueSchemaVersionMajor: 1
+GlueLocationLocalID: OSG_GRID
+GlueSchemaVersionMinor: 3
+GlueChunkKey: GlueSubClusterUniqueID=LUHEP_2-LUHEP_OSG
+GlueLocationPath: /export/wnclient
+GlueLocationVersion: 1.0
+
+dn: GlueLocationLocalID=OSG_GRID,GlueSubClusterUniqueID=LUHEP_3-LUHEP_OSG,GlueClusterUniqueID=chaos.lunet.edu,mds-vo-name=local,o=grid
+objectClass: GlueClusterTop
+objectClass: GlueKey
+objectClass: GlueLocation
+objectClass: GlueSchemaVersion
+GlueLocationName: OSG_GRID
+GlueSchemaVersionMajor: 1
+GlueLocationLocalID: OSG_GRID
+GlueSchemaVersionMinor: 3
+GlueChunkKey: GlueSubClusterUniqueID=LUHEP_3-LUHEP_OSG
+GlueLocationPath: /export/wnclient
+GlueLocationVersion: 1.0
+
+dn: GlueLocationLocalID=OSG_GRID,GlueSubClusterUniqueID=LUHEP_4-LUHEP_OSG,GlueClusterUniqueID=chaos.lunet.edu,mds-vo-name=local,o=grid
+objectClass: GlueClusterTop
+objectClass: GlueKey
+objectClass: GlueLocation
+objectClass: GlueSchemaVersion
+GlueLocationName: OSG_GRID
+GlueSchemaVersionMajor: 1
+GlueLocationLocalID: OSG_GRID
+GlueSchemaVersionMinor: 3
+GlueChunkKey: GlueSubClusterUniqueID=LUHEP_4-LUHEP_OSG
+GlueLocationPath: /export/wnclient
+GlueLocationVersion: 1.0
+
+dn: GlueLocationLocalID=VDT_VERSION,GlueSubClusterUniqueID=LUHEP_1-LUHEP_OSG,GlueClusterUniqueID=chaos.lunet.edu,mds-vo-name=local,o=grid
+objectClass: GlueClusterTop
+objectClass: GlueKey
+objectClass: GlueLocation
+objectClass: GlueSchemaVersion
+GlueLocationName: VDT_VERSION
+GlueSchemaVersionMajor: 1
+GlueLocationLocalID: VDT_VERSION
+GlueSchemaVersionMinor: 3
+GlueChunkKey: GlueSubClusterUniqueID=LUHEP_1-LUHEP_OSG
+GlueLocationPath: Thu Mar 10 18:16:41 UTC 2016
+GlueLocationVersion: 2.0.0p39
+
+dn: GlueLocationLocalID=VDT_VERSION,GlueSubClusterUniqueID=LUHEP_2-LUHEP_OSG,GlueClusterUniqueID=chaos.lunet.edu,mds-vo-name=local,o=grid
+objectClass: GlueClusterTop
+objectClass: GlueKey
+objectClass: GlueLocation
+objectClass: GlueSchemaVersion
+GlueLocationName: VDT_VERSION
+GlueSchemaVersionMajor: 1
+GlueLocationLocalID: VDT_VERSION
+GlueSchemaVersionMinor: 3
+GlueChunkKey: GlueSubClusterUniqueID=LUHEP_2-LUHEP_OSG
+GlueLocationPath: Thu Mar 10 18:16:41 UTC 2016
+GlueLocationVersion: 2.0.0p39
+
+dn: GlueLocationLocalID=VDT_VERSION,GlueSubClusterUniqueID=LUHEP_3-LUHEP_OSG,GlueClusterUniqueID=chaos.lunet.edu,mds-vo-name=local,o=grid
+objectClass: GlueClusterTop
+objectClass: GlueKey
+objectClass: GlueLocation
+objectClass: GlueSchemaVersion
+GlueLocationName: VDT_VERSION
+GlueSchemaVersionMajor: 1
+GlueLocationLocalID: VDT_VERSION
+GlueSchemaVersionMinor: 3
+GlueChunkKey: GlueSubClusterUniqueID=LUHEP_3-LUHEP_OSG
+GlueLocationPath: Thu Mar 10 18:16:41 UTC 2016
+GlueLocationVersion: 2.0.0p39
+
+dn: GlueLocationLocalID=VDT_VERSION,GlueSubClusterUniqueID=LUHEP_4-LUHEP_OSG,GlueClusterUniqueID=chaos.lunet.edu,mds-vo-name=local,o=grid
+objectClass: GlueClusterTop
+objectClass: GlueKey
+objectClass: GlueLocation
+objectClass: GlueSchemaVersion
+GlueLocationName: VDT_VERSION
+GlueSchemaVersionMajor: 1
+GlueLocationLocalID: VDT_VERSION
+GlueSchemaVersionMinor: 3
+GlueChunkKey: GlueSubClusterUniqueID=LUHEP_4-LUHEP_OSG
+GlueLocationPath: Thu Mar 10 18:16:41 UTC 2016
+GlueLocationVersion: 2.0.0p39
+
+dn: GlueSEUniqueID=pilli.lunet.edu,Mds-Vo-name=local,o=grid
+objectClass: GlueInformationService
+objectClass: GlueKey
+objectClass: GlueSE
+objectClass: GlueSETop
+objectClass: GlueSchemaVersion
+GlueSEPort: 10443
+GlueSchemaVersionMajor: 1
+GlueSchemaVersionMinor: 3
+GlueSEImplementationVersion: 2.2.1.3.19
+GlueSETotalNearlineSize: 0
+GlueSEName: LUHEP_SE
+GlueSEArchitecture: disk
+GlueSESizeTotal: 0
+GlueSETotalOnlineSize: 0
+GlueSEImplementationName: bestman
+GlueSEUsedOnlineSize: 0
+GlueForeignKey: GlueSiteUniqueID=LUHEP_OSG
+GlueSEUsedNearlineSize: 0
+GlueSEStatus: Production
+GlueSEUniqueID: pilli.lunet.edu
+GlueSESizeFree: 0
+GlueInformationServiceURL: ldap://is.grid.iu.edu:2170
+
+dn: GlueSALocalID=default,GlueSEUniqueID=pilli.lunet.edu,Mds-Vo-name=local,o=grid
+objectClass: GlueKey
+objectClass: GlueSA
+objectClass: GlueSAAccessControlBase
+objectClass: GlueSAPolicy
+objectClass: GlueSAState
+objectClass: GlueSATop
+objectClass: GlueSchemaVersion
+GlueSATotalOnlineSize: 0
+GlueSAPolicyMaxNumFiles: 0
+GlueSAFreeNearlineSize: 0
+GlueSchemaVersionMajor: 1
+GlueSAUsedNearlineSize: 0
+GlueSAExpirationMode: neverExpire
+GlueSAAccessLatency: online
+GlueSchemaVersionMinor: 3
+GlueSAStateUsedSpace: 432960
+GlueSAPolicyQuota: 0
+GlueChunkKey: GlueSEUniqueID=pilli.lunet.edu
+GlueSAUsedOnlineSize: 0
+GlueSAPolicyFileLifeTime: permanent
+GlueSAAccessControlBaseRule: VO:atlas
+GlueSAAccessControlBaseRule: VO:dosar
+GlueSAAccessControlBaseRule: VO:dzero
+GlueSAAccessControlBaseRule: VO:mis
+GlueSAAccessControlBaseRule: atlas
+GlueSAAccessControlBaseRule: dosar
+GlueSAAccessControlBaseRule: dzero
+GlueSAAccessControlBaseRule: mis
+GlueSAName: Default Storage Area
+GlueSAPath: /export/
+GlueSAType: permanent
+GlueSAStateAvailableSpace: 515156
+GlueSAFreeOnlineSize: 0
+GlueSAReservedOnlineSize: 0
+GlueSARetentionPolicy: replica
+GlueSARoot: /
+GlueSAReservedNearlineSize: 0
+GlueSALocalID: default
+GlueSATotalNearlineSize: 0
+GlueSACapability: file storage
+GlueSACapability: SRMTokenReservedSpace=0
+GlueSACapability: InstalledOnlineCapacity=0
+GlueSACapability: InstalledNearlineCapacity=0
+
+dn: GlueVOInfoLocalID=dzero:default,GlueSALocalID=default,GlueSEUniqueID=pilli.lunet.edu,Mds-Vo-name=local,o=grid
+objectClass: GlueKey
+objectClass: GlueSATop
+objectClass: GlueSchemaVersion
+objectClass: GlueVOInfo
+GlueVOInfoAccessControlBaseRule: dzero
+GlueSchemaVersionMinor: 3
+GlueVOInfoName: dzero:default
+GlueSchemaVersionMajor: 1
+GlueVOInfoPath: /export/dzero
+GlueVOInfoLocalID: dzero:default
+GlueChunkKey: GlueSALocalID=default
+GlueChunkKey: GlueSEUniqueID=pilli.lunet.edu
+
+dn: GlueVOInfoLocalID=atlas:default,GlueSALocalID=default,GlueSEUniqueID=pilli.lunet.edu,Mds-Vo-name=local,o=grid
+objectClass: GlueKey
+objectClass: GlueSATop
+objectClass: GlueSchemaVersion
+objectClass: GlueVOInfo
+GlueVOInfoAccessControlBaseRule: atlas
+GlueSchemaVersionMinor: 3
+GlueVOInfoName: atlas:default
+GlueSchemaVersionMajor: 1
+GlueVOInfoPath: /export/atlas
+GlueVOInfoLocalID: atlas:default
+GlueChunkKey: GlueSALocalID=default
+GlueChunkKey: GlueSEUniqueID=pilli.lunet.edu
+
+dn: GlueVOInfoLocalID=mis:default,GlueSALocalID=default,GlueSEUniqueID=pilli.lunet.edu,Mds-Vo-name=local,o=grid
+objectClass: GlueKey
+objectClass: GlueSATop
+objectClass: GlueSchemaVersion
+objectClass: GlueVOInfo
+GlueVOInfoAccessControlBaseRule: mis
+GlueSchemaVersionMinor: 3
+GlueVOInfoName: mis:default
+GlueSchemaVersionMajor: 1
+GlueVOInfoPath: /export/mis
+GlueVOInfoLocalID: mis:default
+GlueChunkKey: GlueSALocalID=default
+GlueChunkKey: GlueSEUniqueID=pilli.lunet.edu
+
+dn: GlueVOInfoLocalID=dosar:default,GlueSALocalID=default,GlueSEUniqueID=pilli.lunet.edu,Mds-Vo-name=local,o=grid
+objectClass: GlueKey
+objectClass: GlueSATop
+objectClass: GlueSchemaVersion
+objectClass: GlueVOInfo
+GlueVOInfoAccessControlBaseRule: dosar
+GlueSchemaVersionMinor: 3
+GlueVOInfoName: dosar:default
+GlueSchemaVersionMajor: 1
+GlueVOInfoPath: /export/dosar
+GlueVOInfoLocalID: dosar:default
+GlueChunkKey: GlueSALocalID=default
+GlueChunkKey: GlueSEUniqueID=pilli.lunet.edu
+
+dn: GlueSEAccessProtocolLocalID=FILE_POSIX.example.com_1234,GlueSEUniqueID=pilli.lunet.edu,Mds-Vo-name=local,o=grid
+objectClass: GlueKey
+objectClass: GlueSEAccessProtocol
+objectClass: GlueSETop
+objectClass: GlueSchemaVersion
+GlueSchemaVersionMajor: 1
+GlueSEAccessProtocolType: file
+GlueSEAccessProtocolEndpoint: file://POSIX.example.com:1234
+GlueSchemaVersionMinor: 3
+GlueSEAccessProtocolVersion: 1.0.0
+GlueSEAccessProtocolCapability: file transfer
+GlueSEAccessProtocolLocalID: FILE_POSIX.example.com_1234
+GlueSEAccessProtocolMaxStreams: 1
+GlueChunkKey: GlueSEUniqueID=pilli.lunet.edu
+GlueSEAccessProtocolPort: 1234
+GlueSEAccessProtocolSupportedSecurity: GSI
+
+dn: GlueSEControlProtocolLocalID=pilli.lunet.edu_srmv2,GlueSEUniqueID=pilli.lunet.edu,Mds-Vo-name=local,o=grid
+objectClass: GlueKey
+objectClass: GlueSEControlProtocol
+objectClass: GlueSETop
+objectClass: GlueSchemaVersion
+GlueSchemaVersionMajor: 1
+GlueSEControlProtocolType: SRM
+GlueSEControlProtocolEndpoint: httpg://pilli.lunet.edu:10443/srm/v2/server
+GlueSchemaVersionMinor: 3
+GlueSEControlProtocolCapability: control
+GlueSEControlProtocolVersion: 2.2.0
+GlueChunkKey: GlueSEUniqueID=pilli.lunet.edu
+GlueSEControlProtocolLocalID: pilli.lunet.edu_srmv2
+
+dn: GlueServiceUniqueID=httpg://pilli.lunet.edu:10443/srm/v2/server,mds-vo-name=local,o=grid
+objectClass: GlueKey
+objectClass: GlueSchemaVersion
+objectClass: GlueService
+objectClass: GlueTop
+GlueSchemaVersionMajor: 1
+GlueSchemaVersionMinor: 3
+GlueServiceName: httpg://pilli.lunet.edu:10443/srm/v2/server
+GlueServiceAccessControlRule: dzero
+GlueServiceAccessControlRule: VO:dzero
+GlueServiceAccessControlRule: atlas
+GlueServiceAccessControlRule: VO:atlas
+GlueServiceAccessControlRule: mis
+GlueServiceAccessControlRule: VO:mis
+GlueServiceAccessControlRule: dosar
+GlueServiceAccessControlRule: VO:dosar
+GlueServiceWSDL: http://sdm.lbl.gov/srm-wg/srm.v2.2.wsdl
+GlueServiceOwner: OSG
+GlueServiceAccessPointURL: httpg://pilli.lunet.edu:10443/srm/v2/server
+GlueServiceSemantics: http://sdm.lbl.gov/srm-wg/doc/SRM.v2.2.pdf
+GlueServiceType: SRM
+GlueForeignKey: GlueSiteUniqueID=LUHEP_OSG
+GlueServiceUniqueID: httpg://pilli.lunet.edu:10443/srm/v2/server
+GlueServiceVersion: 2.2.0
+GlueServiceURI: httpg://pilli.lunet.edu:10443/srm/v2/server
+GlueServiceStatusInfo: OK
+GlueServiceStartTime: 1970-01-01T00:00:00Z
+GlueServiceStatus: OK
+GlueServiceEndpoint: httpg://pilli.lunet.edu:10443/srm/v2/server
+
+dn: GlueSEUniqueID=LUHEP_OSG_classicSE,Mds-Vo-name=local,o=grid
+objectClass: GlueInformationService
+objectClass: GlueKey
+objectClass: GlueSE
+objectClass: GlueSETop
+objectClass: GlueSchemaVersion
+GlueSEPort: 2811
+GlueSchemaVersionMajor: 1
+GlueSchemaVersionMinor: 3
+GlueSEImplementationVersion: UNKNOWN
+GlueSETotalNearlineSize: 0
+GlueSEName: LUHEP_OSG_classicSE
+GlueSEArchitecture: other
+GlueSESizeTotal: 245
+GlueSETotalOnlineSize: 0
+GlueSEImplementationName: classicSE
+GlueSEUsedOnlineSize: 233
+GlueForeignKey: GlueSiteUniqueID=LUHEP_OSG
+GlueSEUsedNearlineSize: 0
+GlueSEStatus: Production
+GlueSEUniqueID: LUHEP_OSG_classicSE
+GlueSESizeFree: 12
+GlueInformationServiceURL: ldap://is.grid.iu.edu:2170
+
+dn: GlueSALocalID=LUHEP_OSG_classicSE,GlueSEUniqueID=LUHEP_OSG_classicSE,Mds-Vo-name=local,o=grid
+objectClass: GlueKey
+objectClass: GlueSA
+objectClass: GlueSAAccessControlBase
+objectClass: GlueSAPolicy
+objectClass: GlueSAState
+objectClass: GlueSATop
+objectClass: GlueSchemaVersion
+GlueSATotalOnlineSize: 245
+GlueSAPolicyMaxNumFiles: 0
+GlueSAFreeNearlineSize: 0
+GlueSchemaVersionMajor: 1
+GlueSAUsedNearlineSize: 0
+GlueSAExpirationMode: neverExpire
+GlueSAAccessLatency: online
+GlueSchemaVersionMinor: 3
+GlueSAStateUsedSpace: 233558036
+GlueSAPolicyQuota: 0
+GlueChunkKey: GlueSEUniqueID=LUHEP_OSG_classicSE
+GlueSAUsedOnlineSize: 233
+GlueSAPolicyFileLifeTime: permanent
+GlueSAAccessControlBaseRule: VO:dzero
+GlueSAAccessControlBaseRule: VO:atlas
+GlueSAAccessControlBaseRule: VO:mis
+GlueSAAccessControlBaseRule: VO:dosar
+GlueSAName: LUHEP_OSG_classicSE
+GlueSAPath: /export/data
+GlueSAType: permanent
+GlueSAStateAvailableSpace: 12439105
+GlueSAFreeOnlineSize: 12
+GlueSAReservedOnlineSize: 0
+GlueSARetentionPolicy: replica
+GlueSARoot: /
+GlueSAReservedNearlineSize: 0
+GlueSALocalID: LUHEP_OSG_classicSE
+GlueSATotalNearlineSize: 0
+GlueSACapability: file storage
+GlueSACapability: SRMTokenReservedSpace=0
+GlueSACapability: InstalledOnlineCapacity=0
+GlueSACapability: InstalledNearlineCapacity=0
+
+dn: GlueSEAccessProtocolLocalID=GFTP_chaos.lunet.edu_2811,GlueSEUniqueID=LUHEP_OSG_classicSE,Mds-Vo-name=local,o=grid
+objectClass: GlueKey
+objectClass: GlueSEAccessProtocol
+objectClass: GlueSETop
+objectClass: GlueSchemaVersion
+GlueSchemaVersionMajor: 1
+GlueSEAccessProtocolType: gsiftp
+GlueSEAccessProtocolEndpoint: gsiftp://chaos.lunet.edu:2811
+GlueSchemaVersionMinor: 3
+GlueSEAccessProtocolVersion: 1.0.0
+GlueSEAccessProtocolCapability: file transfer
+GlueSEAccessProtocolLocalID: GFTP_chaos.lunet.edu_2811
+GlueSEAccessProtocolMaxStreams: 10
+GlueChunkKey: GlueSEUniqueID=LUHEP_OSG_classicSE
+GlueSEAccessProtocolPort: 2811
+GlueSEAccessProtocolSupportedSecurity: gsiftp
+
+dn: GlueCESEBindSEUniqueID=pilli.lunet.edu,GlueCESEBindGroupCEUniqueID=chaos.lunet.edu:2119/jobmanager-condor-default,mds-vo-name=local,o=grid
+objectClass: GlueCESEBind
+objectClass: GlueGeneralTop
+objectClass: GlueSchemaVersion
+GlueSchemaVersionMajor: 1
+GlueCESEBindCEUniqueID: chaos.lunet.edu:2119/jobmanager-condor-default
+GlueSchemaVersionMinor: 3
+GlueCESEBindSEUniqueID: pilli.lunet.edu
+GlueCESEBindCEAccesspoint: /
+GlueCESEBindWeight: 0
+
+dn: GlueCESEBindSEUniqueID=LUHEP_OSG_classicSE,GlueCESEBindGroupCEUniqueID=chaos.lunet.edu:2119/jobmanager-condor-default,mds-vo-name=local,o=grid
+objectClass: GlueCESEBind
+objectClass: GlueGeneralTop
+objectClass: GlueSchemaVersion
+GlueSchemaVersionMajor: 1
+GlueCESEBindCEUniqueID: chaos.lunet.edu:2119/jobmanager-condor-default
+GlueSchemaVersionMinor: 3
+GlueCESEBindSEUniqueID: LUHEP_OSG_classicSE
+GlueCESEBindCEAccesspoint: /export/data
+GlueCESEBindWeight: 0
+
+dn: GlueCESEBindGroupCEUniqueID=chaos.lunet.edu:2119/jobmanager-condor-default,mds-vo-name=local,o=grid
+objectClass: GlueCESEBindGroup
+objectClass: GlueGeneralTop
+objectClass: GlueSchemaVersion
+GlueSchemaVersionMinor: 3
+GlueCESEBindGroupCEUniqueID: chaos.lunet.edu:2119/jobmanager-condor-default
+GlueSchemaVersionMajor: 1
+GlueCESEBindGroupSEUniqueID: LUHEP_OSG_classicSE
+GlueCESEBindGroupSEUniqueID: pilli.lunet.edu
+
+dn: GlueSiteUniqueID=LUHEP_OSG,mds-vo-name=local,o=grid
+objectClass: GlueKey
+objectClass: GlueSchemaVersion
+objectClass: GlueSite
+objectClass: GlueTop
+GlueSchemaVersionMajor: 1
+GlueSiteWeb: UNAVAILABLE
+GlueForeignKey: GlueSiteUniqueID=LUHEP_OSG
+GlueSiteName: LUHEP_OSG
+GlueSiteLongitude: -97.2600
+GlueSiteDescription: OSG Site
+GlueSiteLocation: Langston, OK, USA
+GlueSiteSponsor: dosar:34
+GlueSiteSponsor: atlas:33
+GlueSiteSponsor: dzero:33
+GlueSiteEmailContact: mailto: snow@physics.lunet.edu
+GlueSiteSysAdminContact: mailto: snow@physics.lunet.edu
+GlueSiteSecurityContact: mailto: snow@physics.lunet.edu
+GlueSiteUniqueID: LUHEP_OSG
+GlueSchemaVersionMinor: 3
+GlueSiteUserSupportContact: mailto: snow@physics.lunet.edu
+GlueSiteLatitude: 35.9456
+
+dn: GlueClusterUniqueID=chaos.lunet.edu,mds-vo-name=local,o=grid
+objectClass: GlueCluster
+objectClass: GlueClusterTop
+objectClass: GlueInformationService
+objectClass: GlueKey
+objectClass: GlueSchemaVersion
+GlueSchemaVersionMajor: 1
+GlueClusterUniqueID: chaos.lunet.edu
+GlueClusterName: chaos.lunet.edu
+GlueForeignKey: GlueSiteUniqueID=LUHEP_OSG
+GlueForeignKey: GlueCEUniqueID=chaos.lunet.edu:2119/jobmanager-condor-default
+GlueClusterTmpDir: /export/data
+GlueSchemaVersionMinor: 3
+GlueClusterWNTmpDir: /scratch
+GlueInformationServiceURL: ldap://is.grid.iu.edu:2170
+
+dn: GlueSubClusterUniqueID=LUHEP_1-LUHEP_OSG,GlueClusterUniqueID=chaos.lunet.edu,mds-vo-name=local,o=grid
+objectClass: GlueClusterTop
+objectClass: GlueHostApplicationSoftware
+objectClass: GlueHostArchitecture
+objectClass: GlueHostBenchmark
+objectClass: GlueHostMainMemory
+objectClass: GlueHostNetworkAdapter
+objectClass: GlueHostOperatingSystem
+objectClass: GlueHostProcessor
+objectClass: GlueInformationService
+objectClass: GlueKey
+objectClass: GlueSchemaVersion
+objectClass: GlueSubCluster
+GlueSubClusterPhysicalCPUs: 1
+GlueSchemaVersionMajor: 1
+GlueSubClusterWNTmpDir: /scratch
+GlueHostNetworkAdapterOutboundIP: TRUE
+GlueSchemaVersionMinor: 3
+GlueHostMainMemoryRAMSize: 9018
+GlueHostOperatingSystemRelease: 8.3
+GlueHostProcessorModel: Intel(R) Xeon(R) CPU           E5405  @ 2.00GHz
+GlueChunkKey: GlueClusterUniqueID=chaos.lunet.edu
+GlueSubClusterLogicalCPUs: 4
+GlueHostNetworkAdapterInboundIP: FALSE
+GlueHostOperatingSystemName: Debian
+GlueSubClusterTmpDir: /export/data
+GlueHostBenchmarkSI00: 2000
+GlueHostProcessorVendor: INTEL
+GlueSubClusterUniqueID: LUHEP_1-LUHEP_OSG
+GlueHostArchitecturePlatformType: x86_64
+GlueHostMainMemoryVirtualSize: 24275
+GlueHostApplicationSoftwareRunTimeEnvironment: OSG_VERSION
+GlueHostApplicationSoftwareRunTimeEnvironment: OSG 1.2.32
+GlueHostProcessorOtherDescription: Cores=4
+GlueHostBenchmarkSF00: 2000
+GlueHostOperatingSystemVersion: jessie
+GlueSubClusterName: LUHEP_1
+GlueHostArchitectureSMPSize: 1
+GlueHostProcessorClockSpeed: 2000
+GlueInformationServiceURL: ldap://is.grid.iu.edu:2170
+
+dn: GlueSubClusterUniqueID=LUHEP_2-LUHEP_OSG,GlueClusterUniqueID=chaos.lunet.edu,mds-vo-name=local,o=grid
+objectClass: GlueClusterTop
+objectClass: GlueHostApplicationSoftware
+objectClass: GlueHostArchitecture
+objectClass: GlueHostBenchmark
+objectClass: GlueHostMainMemory
+objectClass: GlueHostNetworkAdapter
+objectClass: GlueHostOperatingSystem
+objectClass: GlueHostProcessor
+objectClass: GlueInformationService
+objectClass: GlueKey
+objectClass: GlueSchemaVersion
+objectClass: GlueSubCluster
+GlueSubClusterPhysicalCPUs: 2
+GlueSchemaVersionMajor: 1
+GlueSubClusterWNTmpDir: /scratch
+GlueHostNetworkAdapterOutboundIP: TRUE
+GlueSchemaVersionMinor: 3
+GlueHostMainMemoryRAMSize: 20126
+GlueHostOperatingSystemRelease: 8.3
+GlueHostProcessorModel: Intel(R) Xeon(R) CPU           E5420  @ 2.50GHz
+GlueChunkKey: GlueClusterUniqueID=chaos.lunet.edu
+GlueSubClusterLogicalCPUs: 8
+GlueHostNetworkAdapterInboundIP: FALSE
+GlueHostOperatingSystemName: Debian
+GlueSubClusterTmpDir: /export/data
+GlueHostBenchmarkSI00: 2000
+GlueHostProcessorVendor: INTEL
+GlueSubClusterUniqueID: LUHEP_2-LUHEP_OSG
+GlueHostArchitecturePlatformType: x86_64
+GlueHostMainMemoryVirtualSize: 39203
+GlueHostApplicationSoftwareRunTimeEnvironment: OSG_VERSION
+GlueHostApplicationSoftwareRunTimeEnvironment: OSG 1.2.32
+GlueHostProcessorOtherDescription: Cores=8
+GlueHostBenchmarkSF00: 2000
+GlueHostOperatingSystemVersion: jessie
+GlueSubClusterName: LUHEP_2
+GlueHostArchitectureSMPSize: 2
+GlueHostProcessorClockSpeed: 2500
+GlueInformationServiceURL: ldap://is.grid.iu.edu:2170
+
+dn: GlueSubClusterUniqueID=LUHEP_3-LUHEP_OSG,GlueClusterUniqueID=chaos.lunet.edu,mds-vo-name=local,o=grid
+objectClass: GlueClusterTop
+objectClass: GlueHostApplicationSoftware
+objectClass: GlueHostArchitecture
+objectClass: GlueHostBenchmark
+objectClass: GlueHostMainMemory
+objectClass: GlueHostNetworkAdapter
+objectClass: GlueHostOperatingSystem
+objectClass: GlueHostProcessor
+objectClass: GlueInformationService
+objectClass: GlueKey
+objectClass: GlueSchemaVersion
+objectClass: GlueSubCluster
+GlueSubClusterPhysicalCPUs: 4
+GlueSchemaVersionMajor: 1
+GlueSubClusterWNTmpDir: /scratch
+GlueHostNetworkAdapterOutboundIP: TRUE
+GlueSchemaVersionMinor: 3
+GlueHostMainMemoryRAMSize: 96869
+GlueHostOperatingSystemRelease: 8.3
+GlueHostProcessorModel: AMD Opteron(tm) Processor 6128
+GlueChunkKey: GlueClusterUniqueID=chaos.lunet.edu
+GlueSubClusterLogicalCPUs: 32
+GlueHostNetworkAdapterInboundIP: FALSE
+GlueHostOperatingSystemName: Debian
+GlueSubClusterTmpDir: /export/data
+GlueHostBenchmarkSI00: 2000
+GlueHostProcessorVendor: AMD
+GlueSubClusterUniqueID: LUHEP_3-LUHEP_OSG
+GlueHostArchitecturePlatformType: x86_64
+GlueHostMainMemoryVirtualSize: 142620
+GlueHostApplicationSoftwareRunTimeEnvironment: OSG_VERSION
+GlueHostApplicationSoftwareRunTimeEnvironment: OSG 1.2.32
+GlueHostProcessorOtherDescription: Cores=32
+GlueHostBenchmarkSF00: 2000
+GlueHostOperatingSystemVersion: jessie
+GlueSubClusterName: LUHEP_3
+GlueHostArchitectureSMPSize: 2
+GlueHostProcessorClockSpeed: 2000
+GlueInformationServiceURL: ldap://is.grid.iu.edu:2170
+
+dn: GlueSubClusterUniqueID=LUHEP_4-LUHEP_OSG,GlueClusterUniqueID=chaos.lunet.edu,mds-vo-name=local,o=grid
+objectClass: GlueClusterTop
+objectClass: GlueHostApplicationSoftware
+objectClass: GlueHostArchitecture
+objectClass: GlueHostBenchmark
+objectClass: GlueHostMainMemory
+objectClass: GlueHostNetworkAdapter
+objectClass: GlueHostOperatingSystem
+objectClass: GlueHostProcessor
+objectClass: GlueInformationService
+objectClass: GlueKey
+objectClass: GlueSchemaVersion
+objectClass: GlueSubCluster
+GlueSubClusterPhysicalCPUs: 1
+GlueSchemaVersionMajor: 1
+GlueSubClusterWNTmpDir: /scratch
+GlueHostNetworkAdapterOutboundIP: TRUE
+GlueSchemaVersionMinor: 3
+GlueHostMainMemoryRAMSize: 5964
+GlueHostOperatingSystemRelease: 8.3
+GlueHostProcessorModel: Intel(R) Xeon(R) CPU           E5607  @ 2.27GHz
+GlueChunkKey: GlueClusterUniqueID=chaos.lunet.edu
+GlueSubClusterLogicalCPUs: 4
+GlueHostNetworkAdapterInboundIP: TRUE
+GlueHostOperatingSystemName: Debian
+GlueSubClusterTmpDir: /export/data
+GlueHostBenchmarkSI00: 2000
+GlueHostProcessorVendor: Intel
+GlueSubClusterUniqueID: LUHEP_4-LUHEP_OSG
+GlueHostArchitecturePlatformType: x86_64
+GlueHostMainMemoryVirtualSize: 23551
+GlueHostApplicationSoftwareRunTimeEnvironment: OSG_VERSION
+GlueHostApplicationSoftwareRunTimeEnvironment: OSG 1.2.32
+GlueHostProcessorOtherDescription: Cores=4
+GlueHostBenchmarkSF00: 2000
+GlueHostOperatingSystemVersion: jessie
+GlueSubClusterName: LUHEP_4
+GlueHostArchitectureSMPSize: 1
+GlueHostProcessorClockSpeed: 2261
+GlueInformationServiceURL: ldap://is.grid.iu.edu:2170
+
+
+

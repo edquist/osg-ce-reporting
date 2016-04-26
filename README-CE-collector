@@ -1,0 +1,9 @@
+#!/bin/sh
+
+# This command seems to work, at least from itb-ce1.chtc.wisc.edu.  It is not
+# ideal, though, because I had to use the specific collector2 hostname to get
+# around some DNS alias configuration issues.
+
+# Output is CSV: hostname,last_heard_from (in unix time)
+
+condor_status -pool collector2.opensciencegrid.org:9619 -schedd -f '%s,' name -f '%d\n' lastheardfrom

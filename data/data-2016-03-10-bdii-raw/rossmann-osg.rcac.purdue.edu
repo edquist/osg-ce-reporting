@@ -1,0 +1,212 @@
+dn: GlueSiteUniqueID=Purdue-Rossmann,mds-vo-name=local,o=grid
+objectClass: GlueKey
+objectClass: GlueSchemaVersion
+objectClass: GlueSite
+objectClass: GlueTop
+GlueSchemaVersionMajor: 1
+GlueSiteWeb: http://www.physics.purdue.edu/Tier2/content/site-policy
+GlueForeignKey: GlueSiteUniqueID=Purdue-Rossmann
+GlueSiteName: Purdue-Rossmann
+GlueSiteLongitude: -86.911
+GlueSiteDescription: OSG Site
+GlueSiteLocation: West Lafayette, IN, USA
+GlueSiteSponsor: cms:100
+GlueSiteEmailContact: mailto: marabgol@purdue.edu
+GlueSiteSysAdminContact: mailto: marabgol@purdue.edu
+GlueSiteSecurityContact: mailto: marabgol@purdue.edu
+GlueSiteUniqueID: Purdue-Rossmann
+GlueSchemaVersionMinor: 3
+GlueSiteUserSupportContact: mailto: marabgol@purdue.edu
+GlueSiteLatitude: 40.444
+
+dn: GlueClusterUniqueID=rossmann-osg.rcac.purdue.edu,mds-vo-name=local,o=grid
+objectClass: GlueCluster
+objectClass: GlueClusterTop
+objectClass: GlueInformationService
+objectClass: GlueKey
+objectClass: GlueSchemaVersion
+GlueSchemaVersionMajor: 1
+GlueClusterUniqueID: rossmann-osg.rcac.purdue.edu
+GlueClusterName: rossmann-osg.rcac.purdue.edu
+GlueForeignKey: GlueSiteUniqueID=Purdue-Rossmann
+GlueClusterTmpDir: /scratch/osg
+GlueSchemaVersionMinor: 3
+GlueClusterWNTmpDir: /tmp
+GlueInformationServiceURL: ldap://is.grid.iu.edu:2170
+
+dn: GlueSubClusterUniqueID=rossmann-osg.rcac.purdue.edu-Opteron-Purdue-Rossmann,GlueClusterUniqueID=rossmann-osg.rcac.purdue.edu,mds-vo-name=local,o=grid
+objectClass: GlueClusterTop
+objectClass: GlueHostApplicationSoftware
+objectClass: GlueHostArchitecture
+objectClass: GlueHostBenchmark
+objectClass: GlueHostMainMemory
+objectClass: GlueHostNetworkAdapter
+objectClass: GlueHostOperatingSystem
+objectClass: GlueHostProcessor
+objectClass: GlueInformationService
+objectClass: GlueKey
+objectClass: GlueSchemaVersion
+objectClass: GlueSubCluster
+GlueSubClusterPhysicalCPUs: 368
+GlueSchemaVersionMajor: 1
+GlueSubClusterWNTmpDir: /tmp
+GlueHostNetworkAdapterOutboundIP: TRUE
+GlueSchemaVersionMinor: 3
+GlueHostMainMemoryRAMSize: 48296
+GlueHostOperatingSystemRelease: 6.6
+GlueHostProcessorModel: AMD Opteron(tm) Processor 6172
+GlueChunkKey: GlueClusterUniqueID=rossmann-osg.rcac.purdue.edu
+GlueSubClusterLogicalCPUs: 4416
+GlueHostNetworkAdapterInboundIP: FALSE
+GlueHostOperatingSystemName: RedHatEnterpriseServer
+GlueSubClusterTmpDir: /scratch/osg
+GlueHostBenchmarkSI00: 2000
+GlueHostProcessorVendor: AMD
+GlueSubClusterUniqueID: rossmann-osg.rcac.purdue.edu-Opteron-Purdue-Rossmann
+GlueHostArchitecturePlatformType: x86_64
+GlueHostMainMemoryVirtualSize: 48296
+GlueHostApplicationSoftwareRunTimeEnvironment: OSG 3.2.17
+GlueHostApplicationSoftwareRunTimeEnvironment: VO-cms-slc5_ia32_gcc434
+GlueHostApplicationSoftwareRunTimeEnvironment: VO-cms-slc6_amd64_gcc490
+GlueHostApplicationSoftwareRunTimeEnvironment: OSG_VERSION
+GlueHostApplicationSoftwareRunTimeEnvironment: VO-cms-slc6_amd64_gcc472
+GlueHostApplicationSoftwareRunTimeEnvironment: VO-cms-slc6_amd64_gcc481
+GlueHostApplicationSoftwareRunTimeEnvironment: VO-cms-slc6_amd64_gcc480
+GlueHostApplicationSoftwareRunTimeEnvironment: VO-cms-slc6_mic_gcc481
+GlueHostApplicationSoftwareRunTimeEnvironment: VO-cms-slc5_amd64_gcc434
+GlueHostApplicationSoftwareRunTimeEnvironment: VO-cms-slc5_amd64_gcc481
+GlueHostApplicationSoftwareRunTimeEnvironment: VO-cms-slc5_amd64_gcc461
+GlueHostApplicationSoftwareRunTimeEnvironment: VO-cms-slc5_amd64_gcc472
+GlueHostApplicationSoftwareRunTimeEnvironment: VO-cms-slc5_amd64_gcc462
+GlueHostApplicationSoftwareRunTimeEnvironment: VO-cms-slc5_amd64_gcc470
+GlueHostProcessorOtherDescription: Cores=4416, Benchmark=8-HEP-SPEC06
+GlueHostBenchmarkSF00: 2000
+GlueHostOperatingSystemVersion: Santiago
+GlueSubClusterName: rossmann-osg.rcac.purdue.edu-Opteron
+GlueHostArchitectureSMPSize: 2
+GlueHostProcessorClockSpeed: 999999999
+GlueInformationServiceURL: ldap://is.grid.iu.edu:2170
+
+dn: GlueLocationLocalID=TIMESTAMP,GlueSubClusterUniqueID=rossmann-osg.rcac.purdue.edu-Opteron-Purdue-Rossmann,GlueClusterUniqueID=rossmann-osg.rcac.purdue.edu,mds-vo-name=local,o=grid
+objectClass: GlueClusterTop
+objectClass: GlueKey
+objectClass: GlueLocation
+objectClass: GlueSchemaVersion
+GlueLocationName: TIMESTAMP
+GlueSchemaVersionMajor: 1
+GlueLocationLocalID: TIMESTAMP
+GlueSchemaVersionMinor: 3
+GlueChunkKey: GlueSubClusterUniqueID=rossmann-osg.rcac.purdue.edu-Opteron-Purdue-Rossmann
+GlueLocationPath: Thu Mar 10 18:11:15 UTC 2016
+GlueLocationVersion: 1457633475.02
+
+dn: GlueSEUniqueID=Purdue-Rossmann_classicSE,Mds-Vo-name=local,o=grid
+objectClass: GlueInformationService
+objectClass: GlueKey
+objectClass: GlueSE
+objectClass: GlueSETop
+objectClass: GlueSchemaVersion
+GlueSEPort: 2811
+GlueSchemaVersionMajor: 1
+GlueSchemaVersionMinor: 3
+GlueSEImplementationVersion: UNKNOWN
+GlueSETotalNearlineSize: 0
+GlueSEName: Purdue-Rossmann_classicSE
+GlueSEArchitecture: other
+GlueSESizeTotal: 0
+GlueSETotalOnlineSize: 0
+GlueSEImplementationName: classicSE
+GlueSEUsedOnlineSize: 0
+GlueForeignKey: GlueSiteUniqueID=Purdue-Rossmann
+GlueSEUsedNearlineSize: 0
+GlueSEStatus: Production
+GlueSEUniqueID: Purdue-Rossmann_classicSE
+GlueSESizeFree: 0
+GlueInformationServiceURL: ldap://is.grid.iu.edu:2170
+
+dn: GlueSALocalID=Purdue-Rossmann_classicSE,GlueSEUniqueID=Purdue-Rossmann_classicSE,Mds-Vo-name=local,o=grid
+objectClass: GlueKey
+objectClass: GlueSA
+objectClass: GlueSAAccessControlBase
+objectClass: GlueSAPolicy
+objectClass: GlueSAState
+objectClass: GlueSATop
+objectClass: GlueSchemaVersion
+GlueSATotalOnlineSize: 0
+GlueSAPolicyMaxNumFiles: 0
+GlueSAFreeNearlineSize: 0
+GlueSchemaVersionMajor: 1
+GlueSAUsedNearlineSize: 0
+GlueSAExpirationMode: neverExpire
+GlueSAAccessLatency: online
+GlueSchemaVersionMinor: 3
+GlueSAStateUsedSpace: 0
+GlueSAPolicyQuota: 0
+GlueChunkKey: GlueSEUniqueID=Purdue-Rossmann_classicSE
+GlueSAUsedOnlineSize: 0
+GlueSAPolicyFileLifeTime: permanent
+GlueSAAccessControlBaseRule: VO:cms
+GlueSAAccessControlBaseRule: VO:nwicg
+GlueSAAccessControlBaseRule: VO:sbgrid
+GlueSAAccessControlBaseRule: VO:ligo
+GlueSAAccessControlBaseRule: VO:gluex
+GlueSAAccessControlBaseRule: VO:dayabay
+GlueSAAccessControlBaseRule: VO:atlas
+GlueSAAccessControlBaseRule: VO:osg
+GlueSAAccessControlBaseRule: VO:gridunesp
+GlueSAAccessControlBaseRule: VO:lsst
+GlueSAAccessControlBaseRule: VO:nebiogrid
+GlueSAAccessControlBaseRule: VO:nanohub
+GlueSAAccessControlBaseRule: VO:engage
+GlueSAAccessControlBaseRule: VO:ops
+GlueSAAccessControlBaseRule: VO:mis
+GlueSAAccessControlBaseRule: VO:hcc
+GlueSAAccessControlBaseRule: VO:GLOW
+GlueSAAccessControlBaseRule: VO:nees
+GlueSAName: Purdue-Rossmann_classicSE
+GlueSAPath: /scratch/osg
+GlueSAType: permanent
+GlueSAStateAvailableSpace: 0
+GlueSAFreeOnlineSize: 0
+GlueSAReservedOnlineSize: 0
+GlueSARetentionPolicy: replica
+GlueSARoot: /
+GlueSAReservedNearlineSize: 0
+GlueSALocalID: Purdue-Rossmann_classicSE
+GlueSATotalNearlineSize: 0
+GlueSACapability: file storage
+GlueSACapability: SRMTokenReservedSpace=0
+GlueSACapability: InstalledOnlineCapacity=0
+GlueSACapability: InstalledNearlineCapacity=0
+
+dn: GlueSEAccessProtocolLocalID=GFTP_DEFAULT_2811,GlueSEUniqueID=Purdue-Rossmann_classicSE,Mds-Vo-name=local,o=grid
+objectClass: GlueKey
+objectClass: GlueSEAccessProtocol
+objectClass: GlueSETop
+objectClass: GlueSchemaVersion
+GlueSchemaVersionMajor: 1
+GlueSEAccessProtocolType: gsiftp
+GlueSEAccessProtocolEndpoint: gsiftp://DEFAULT:2811
+GlueSchemaVersionMinor: 3
+GlueSEAccessProtocolVersion: 1.0.0
+GlueSEAccessProtocolCapability: file transfer
+GlueSEAccessProtocolLocalID: GFTP_DEFAULT_2811
+GlueSEAccessProtocolMaxStreams: 10
+GlueChunkKey: GlueSEUniqueID=Purdue-Rossmann_classicSE
+GlueSEAccessProtocolPort: 2811
+GlueSEAccessProtocolSupportedSecurity: gsiftp
+
+dn: GlueLocationLocalID=OSG_GRID,GlueSubClusterUniqueID=rossmann-osg.rcac.purdue.edu-Opteron-Purdue-Rossmann,GlueClusterUniqueID=rossmann-osg.rcac.purdue.edu,mds-vo-name=local,o=grid
+objectClass: GlueClusterTop
+objectClass: GlueKey
+objectClass: GlueLocation
+objectClass: GlueSchemaVersion
+GlueLocationName: OSG_GRID
+GlueSchemaVersionMajor: 1
+GlueLocationLocalID: OSG_GRID
+GlueSchemaVersionMinor: 3
+GlueChunkKey: GlueSubClusterUniqueID=rossmann-osg.rcac.purdue.edu-Opteron-Purdue-Rossmann
+GlueLocationPath: /etc/osg/wn-client/
+GlueLocationVersion: 1.0
+
+

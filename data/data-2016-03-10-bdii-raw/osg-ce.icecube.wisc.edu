@@ -1,0 +1,180 @@
+dn: GlueSiteUniqueID=NPX,mds-vo-name=local,o=grid
+objectClass: GlueKey
+objectClass: GlueSchemaVersion
+objectClass: GlueSite
+objectClass: GlueTop
+GlueSchemaVersionMajor: 1
+GlueSiteWeb: http://icecube.wisc.edu/collaboration/aup.php
+GlueForeignKey: GlueSiteUniqueID=NPX
+GlueSiteName: NPX
+GlueSiteLongitude: -89.388464
+GlueSiteDescription: OSG Site
+GlueSiteLocation: Madison, USA
+GlueSiteSponsor: icecube:100
+GlueSiteEmailContact: mailto: vladimir.brik@icecube.wisc.edu
+GlueSiteSysAdminContact: mailto: vladimir.brik@icecube.wisc.edu
+GlueSiteSecurityContact: mailto: vladimir.brik@icecube.wisc.edu
+GlueSiteUniqueID: NPX
+GlueSchemaVersionMinor: 3
+GlueSiteUserSupportContact: mailto: vladimir.brik@icecube.wisc.edu
+GlueSiteLatitude: 43.070725
+
+dn: GlueClusterUniqueID=osg-ce.icecube.wisc.edu,mds-vo-name=local,o=grid
+objectClass: GlueCluster
+objectClass: GlueClusterTop
+objectClass: GlueInformationService
+objectClass: GlueKey
+objectClass: GlueSchemaVersion
+GlueSchemaVersionMajor: 1
+GlueClusterUniqueID: osg-ce.icecube.wisc.edu
+GlueClusterName: osg-ce.icecube.wisc.edu
+GlueForeignKey: GlueSiteUniqueID=NPX
+GlueForeignKey: GlueCEUniqueID=osg-ce.icecube.wisc.edu:9619/htcondorce-condor-default
+GlueClusterTmpDir: UNAVAILABLE
+GlueSchemaVersionMinor: 3
+GlueClusterWNTmpDir: /tmp
+GlueInformationServiceURL: ldap://is.grid.iu.edu:2170
+
+dn: GlueSubClusterUniqueID=npx-NPX,GlueClusterUniqueID=osg-ce.icecube.wisc.edu,mds-vo-name=local,o=grid
+objectClass: GlueClusterTop
+objectClass: GlueHostApplicationSoftware
+objectClass: GlueHostArchitecture
+objectClass: GlueHostBenchmark
+objectClass: GlueHostMainMemory
+objectClass: GlueHostNetworkAdapter
+objectClass: GlueHostOperatingSystem
+objectClass: GlueHostProcessor
+objectClass: GlueInformationService
+objectClass: GlueKey
+objectClass: GlueSchemaVersion
+objectClass: GlueSubCluster
+GlueSubClusterPhysicalCPUs: 3200
+GlueSchemaVersionMajor: 1
+GlueSubClusterWNTmpDir: /tmp
+GlueHostNetworkAdapterOutboundIP: TRUE
+GlueSchemaVersionMinor: 3
+GlueHostMainMemoryRAMSize: 60000
+GlueHostOperatingSystemRelease: 6.4
+GlueHostProcessorModel: Intel(R) Xeon(R) CPU X5670  @ 2.93GHz
+GlueChunkKey: GlueClusterUniqueID=osg-ce.icecube.wisc.edu
+GlueSubClusterLogicalCPUs: 6000
+GlueHostNetworkAdapterInboundIP: FALSE
+GlueHostOperatingSystemName: Scientific
+GlueSubClusterTmpDir: UNAVAILABLE
+GlueHostBenchmarkSI00: 2000
+GlueHostProcessorVendor: Intel
+GlueSubClusterUniqueID: npx-NPX
+GlueHostArchitecturePlatformType: x86_64
+GlueHostMainMemoryVirtualSize: 60000
+GlueHostApplicationSoftwareRunTimeEnvironment: OSG 3.2.36
+GlueHostApplicationSoftwareRunTimeEnvironment: OSG_VERSION
+GlueHostProcessorOtherDescription: Cores=6000
+GlueHostBenchmarkSF00: 2000
+GlueHostOperatingSystemVersion: Carbon
+GlueSubClusterName: npx
+GlueHostArchitectureSMPSize: 16
+GlueHostProcessorClockSpeed: 3000
+GlueInformationServiceURL: ldap://is.grid.iu.edu:2170
+
+dn: GlueLocationLocalID=TIMESTAMP,GlueSubClusterUniqueID=npx-NPX,GlueClusterUniqueID=osg-ce.icecube.wisc.edu,mds-vo-name=local,o=grid
+objectClass: GlueClusterTop
+objectClass: GlueKey
+objectClass: GlueLocation
+objectClass: GlueSchemaVersion
+GlueLocationName: TIMESTAMP
+GlueSchemaVersionMajor: 1
+GlueLocationLocalID: TIMESTAMP
+GlueSchemaVersionMinor: 3
+GlueChunkKey: GlueSubClusterUniqueID=npx-NPX
+GlueLocationPath: Thu Mar 10 18:12:24 UTC 2016
+GlueLocationVersion: 1457633544.03
+
+dn: GlueCEUniqueID=osg-ce.icecube.wisc.edu:9619/htcondorce-condor-default,mds-vo-name=local,o=grid
+objectClass: GlueCE
+objectClass: GlueCEAccessControlBase
+objectClass: GlueCEInfo
+objectClass: GlueCEPolicy
+objectClass: GlueCEState
+objectClass: GlueCETop
+objectClass: GlueInformationService
+objectClass: GlueKey
+objectClass: GlueSchemaVersion
+GlueCEInfoDataDir: UNAVAILABLE
+GlueCEPolicyMaxObtainableCPUTime: 1440
+GlueCEStateRunningJobs: 0
+GlueSchemaVersionMajor: 1
+GlueCEInfoTotalCPUs: 6054
+GlueCEStateFreeJobSlots: 189
+GlueCEPolicyMaxWaitingJobs: 99999
+GlueCEStateWorstResponseTime: 86400
+GlueCEPolicyMaxTotalJobs: 99999
+GlueCEPolicyMaxObtainableWallClockTime: 1440
+GlueCEStateTotalJobs: 0
+GlueCEStateStatus: Production
+GlueForeignKey: GlueClusterUniqueID=osg-ce.icecube.wisc.edu
+GlueCECapability: CPUScalingReferenceSI00=2000
+GlueCEAccessControlBaseRule: VO:icecube
+GlueCEInfoLRMSType: condor
+GlueCEPolicyMaxRunningJobs: 6054
+GlueCEPolicyAssignedJobSlots: 6054
+GlueCEInfoApplicationDir: UNSET
+GlueCEPolicyPreemption: 0
+GlueCEStateFreeCPUs: 189
+GlueCEImplementationName: HTCondorCE
+GlueSchemaVersionMinor: 3
+GlueCEStateEstimatedResponseTime: 60
+GlueCEHostingCluster: osg-ce.icecube.wisc.edu
+GlueCEInfoHostName: osg-ce.icecube.wisc.edu
+GlueCEInfoDefaultSE: UNAVAILABLE
+GlueCEImplementationVersion: 2.0.0
+GlueCEInfoLRMSVersion: 8.3.8 Aug 27 2015 BuildID: 338845 $
+GlueCEPolicyMaxCPUTime: 1440
+GlueCEStateWaitingJobs: 0
+GlueCEPolicyPriority: 999999
+GlueCEUniqueID: osg-ce.icecube.wisc.edu:9619/htcondorce-condor-default
+GlueCEName: default
+GlueCEInfoGatekeeperPort: 9619
+GlueCEInfoJobManager: condor
+GlueCEPolicyMaxSlotsPerJob: 1
+GlueCEInfoContactString: osg-ce/jobmanager-condor-default
+GlueCEPolicyMaxWallClockTime: 1440
+GlueInformationServiceURL: ldap://is.grid.iu.edu:2170
+
+dn: GlueVOViewLocalID=icecube,GlueCEUniqueID=osg-ce.icecube.wisc.edu:9619/htcondorce-condor-default,mds-vo-name=local,o=grid
+objectClass: GlueCEAccessControlBase
+objectClass: GlueCEInfo
+objectClass: GlueCEPolicy
+objectClass: GlueCEState
+objectClass: GlueCETop
+objectClass: GlueKey
+objectClass: GlueSchemaVersion
+objectClass: GlueVOView
+GlueCEInfoDataDir: UNAVAILABLE
+GlueCEStateRunningJobs: 0
+GlueCEStateTotalJobs: 0
+GlueSchemaVersionMajor: 1
+GlueCEStateWaitingJobs: 0
+GlueSchemaVersionMinor: 3
+GlueVOViewLocalID: icecube
+GlueCEStateFreeJobSlots: 189
+GlueCEAccessControlBaseRule: VO:icecube
+GlueCEStateEstimatedResponseTime: 60
+GlueChunkKey: GlueCEUniqueID=osg-ce.icecube.wisc.edu:9619/htcondorce-condor-default
+GlueCEInfoDefaultSE: UNAVAILABLE
+GlueCEStateWorstResponseTime: 86400
+GlueCEInfoApplicationDir: UNSET
+
+dn: GlueLocationLocalID=OSG_GRID,GlueSubClusterUniqueID=npx-NPX,GlueClusterUniqueID=osg-ce.icecube.wisc.edu,mds-vo-name=local,o=grid
+objectClass: GlueClusterTop
+objectClass: GlueKey
+objectClass: GlueLocation
+objectClass: GlueSchemaVersion
+GlueLocationName: OSG_GRID
+GlueSchemaVersionMajor: 1
+GlueLocationLocalID: OSG_GRID
+GlueSchemaVersionMinor: 3
+GlueChunkKey: GlueSubClusterUniqueID=npx-NPX
+GlueLocationPath: /etc/osg/wn-client/
+GlueLocationVersion: 1.0
+
+

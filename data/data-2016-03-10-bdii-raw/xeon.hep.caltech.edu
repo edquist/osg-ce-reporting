@@ -1,0 +1,382 @@
+dn: GlueSiteUniqueID=CIT_CMS_T2,mds-vo-name=local,o=grid
+objectClass: GlueKey
+objectClass: GlueSchemaVersion
+objectClass: GlueSite
+objectClass: GlueTop
+GlueSchemaVersionMajor: 1
+GlueSiteWeb: UNAVAILABLE
+GlueForeignKey: GlueSiteUniqueID=CIT_CMS_T2
+GlueSiteName: CIT_CMS_T2
+GlueSiteLongitude: -118.124
+GlueSiteDescription: OSG Site
+GlueSiteLocation: Pasadena, CA, USA
+GlueSiteSponsor: cms:100
+GlueSiteEmailContact: mailto: samir@hep.caltech.edu
+GlueSiteSysAdminContact: mailto: samir@hep.caltech.edu
+GlueSiteSecurityContact: mailto: samir@hep.caltech.edu
+GlueSiteUniqueID: CIT_CMS_T2
+GlueSchemaVersionMinor: 3
+GlueSiteUserSupportContact: mailto: samir@hep.caltech.edu
+GlueSiteLatitude: 34.1379
+
+dn: GlueClusterUniqueID=caltech-cms-t2,mds-vo-name=local,o=grid
+objectClass: GlueCluster
+objectClass: GlueClusterTop
+objectClass: GlueInformationService
+objectClass: GlueKey
+objectClass: GlueSchemaVersion
+GlueSchemaVersionMajor: 1
+GlueClusterUniqueID: caltech-cms-t2
+GlueClusterName: caltech-cms-t2
+GlueForeignKey: GlueSiteUniqueID=CIT_CMS_T2
+GlueForeignKey: GlueCEUniqueID=xeon.hep.caltech.edu:9619/htcondorce-condor-group_cms
+GlueForeignKey: GlueCEUniqueID=cit-gatekeeper.ultralight.org:9619/htcondorce-condor-group_cms
+GlueForeignKey: GlueCEUniqueID=cit-gatekeeper2.ultralight.org:9619/htcondorce-condor-group_cms
+GlueForeignKey: GlueCEUniqueID=xeon.hep.caltech.edu:9619/htcondorce-condor-group_osg
+GlueForeignKey: GlueCEUniqueID=cit-gatekeeper.ultralight.org:9619/htcondorce-condor-group_osg
+GlueForeignKey: GlueCEUniqueID=cit-gatekeeper2.ultralight.org:9619/htcondorce-condor-group_osg
+GlueClusterTmpDir: /nfs/system/common/osg-data/
+GlueSchemaVersionMinor: 3
+GlueClusterWNTmpDir: /tmp
+GlueInformationServiceURL: ldap://is.grid.iu.edu:2170
+
+dn: GlueSubClusterUniqueID=Blades CIT-CIT_CMS_T2,GlueClusterUniqueID=caltech-cms-t2,mds-vo-name=local,o=grid
+objectClass: GlueClusterTop
+objectClass: GlueHostApplicationSoftware
+objectClass: GlueHostArchitecture
+objectClass: GlueHostBenchmark
+objectClass: GlueHostMainMemory
+objectClass: GlueHostNetworkAdapter
+objectClass: GlueHostOperatingSystem
+objectClass: GlueHostProcessor
+objectClass: GlueInformationService
+objectClass: GlueKey
+objectClass: GlueSchemaVersion
+objectClass: GlueSubCluster
+GlueSubClusterPhysicalCPUs: 80
+GlueSchemaVersionMajor: 1
+GlueSubClusterWNTmpDir: /tmp
+GlueHostNetworkAdapterOutboundIP: TRUE
+GlueSchemaVersionMinor: 3
+GlueHostMainMemoryRAMSize: 4110
+GlueHostOperatingSystemRelease: 6.7
+GlueHostProcessorModel: Dual-Core AMD Opteron(tm) Processor 2216
+GlueChunkKey: GlueClusterUniqueID=caltech-cms-t2
+GlueSubClusterLogicalCPUs: 160
+GlueHostNetworkAdapterInboundIP: FALSE
+GlueHostOperatingSystemName: Scientific
+GlueSubClusterTmpDir: /nfs/system/common/osg-data/
+GlueHostBenchmarkSI00: 2000
+GlueHostProcessorVendor: AMD
+GlueSubClusterUniqueID: Blades CIT-CIT_CMS_T2
+GlueHostArchitecturePlatformType: x86_64
+GlueHostMainMemoryVirtualSize: 8110
+GlueHostApplicationSoftwareRunTimeEnvironment: OSG 3.2.35
+GlueHostApplicationSoftwareRunTimeEnvironment: OSG_VERSION
+GlueHostProcessorOtherDescription: Cores=160
+GlueHostBenchmarkSF00: 2000
+GlueHostOperatingSystemVersion: Carbon
+GlueSubClusterName: Blades CIT
+GlueHostArchitectureSMPSize: 2
+GlueHostProcessorClockSpeed: 2400
+GlueInformationServiceURL: ldap://is.grid.iu.edu:2170
+
+dn: GlueLocationLocalID=TIMESTAMP,GlueSubClusterUniqueID=Blades CIT-CIT_CMS_T2,GlueClusterUniqueID=caltech-cms-t2,mds-vo-name=local,o=grid
+objectClass: GlueClusterTop
+objectClass: GlueKey
+objectClass: GlueLocation
+objectClass: GlueSchemaVersion
+GlueLocationName: TIMESTAMP
+GlueSchemaVersionMajor: 1
+GlueLocationLocalID: TIMESTAMP
+GlueSchemaVersionMinor: 3
+GlueChunkKey: GlueSubClusterUniqueID=Blades CIT-CIT_CMS_T2
+GlueLocationPath: Thu Mar 10 18:20:26 UTC 2016
+GlueLocationVersion: 1457634026.11
+
+dn: GlueCEUniqueID=xeon.hep.caltech.edu:9619/htcondorce-condor-group_cms,mds-vo-name=local,o=grid
+objectClass: GlueCE
+objectClass: GlueCEAccessControlBase
+objectClass: GlueCEInfo
+objectClass: GlueCEPolicy
+objectClass: GlueCEState
+objectClass: GlueCETop
+objectClass: GlueInformationService
+objectClass: GlueKey
+objectClass: GlueSchemaVersion
+GlueCEInfoDataDir: /nfs/system/common/osg-data/
+GlueCEPolicyMaxObtainableCPUTime: 1440
+GlueCEStateRunningJobs: 0
+GlueSchemaVersionMajor: 1
+GlueCEInfoTotalCPUs: 10
+GlueCEStateFreeJobSlots: 10
+GlueCEPolicyMaxWaitingJobs: 99999
+GlueCEStateWorstResponseTime: 86400
+GlueCEPolicyMaxTotalJobs: 99999
+GlueCEPolicyMaxObtainableWallClockTime: 1440
+GlueCEStateTotalJobs: 0
+GlueCEStateStatus: Production
+GlueForeignKey: GlueClusterUniqueID=caltech-cms-t2
+GlueCECapability: CPUScalingReferenceSI00=2000
+GlueCECapability: glexec
+GlueCEAccessControlBaseRule: VO:cms
+GlueCEInfoLRMSType: condor
+GlueCEPolicyMaxRunningJobs: 10
+GlueCEPolicyAssignedJobSlots: 10
+GlueCEInfoApplicationDir: /cvmfs/oasis.opensciencegrid.org
+GlueCEPolicyPreemption: 0
+GlueCEStateFreeCPUs: 10
+GlueCEImplementationName: HTCondorCE
+GlueSchemaVersionMinor: 3
+GlueCEStateEstimatedResponseTime: 60
+GlueCEHostingCluster: xeon.hep.caltech.edu
+GlueCEInfoHostName: xeon.hep.caltech.edu
+GlueCEInfoDefaultSE: CIT_CMS_T2_classicSE
+GlueCEImplementationVersion: 1.8
+GlueCEInfoLRMSVersion: 8.3.0 Aug 12 2014 BuildID: 266566 $
+GlueCEPolicyMaxCPUTime: 1440
+GlueCEStateWaitingJobs: 0
+GlueCEPolicyPriority: 100
+GlueCEUniqueID: xeon.hep.caltech.edu:9619/htcondorce-condor-group_cms
+GlueCEName: group_cms
+GlueCEInfoGatekeeperPort: 9619
+GlueCEInfoJobManager: condor
+GlueCEPolicyMaxSlotsPerJob: 1
+GlueCEInfoContactString: xeon.hep.caltech.edu/jobmanager-condor-group_cms
+GlueCEPolicyMaxWallClockTime: 1440
+GlueInformationServiceURL: ldap://is.grid.iu.edu:2170
+
+dn: GlueCEUniqueID=xeon.hep.caltech.edu:9619/htcondorce-condor-group_osg,mds-vo-name=local,o=grid
+objectClass: GlueCE
+objectClass: GlueCEAccessControlBase
+objectClass: GlueCEInfo
+objectClass: GlueCEPolicy
+objectClass: GlueCEState
+objectClass: GlueCETop
+objectClass: GlueInformationService
+objectClass: GlueKey
+objectClass: GlueSchemaVersion
+GlueCEInfoDataDir: /nfs/system/common/osg-data/
+GlueCEPolicyMaxObtainableCPUTime: 1440
+GlueCEStateRunningJobs: 0
+GlueSchemaVersionMajor: 1
+GlueCEInfoTotalCPUs: 1
+GlueCEStateFreeJobSlots: 1
+GlueCEPolicyMaxWaitingJobs: 99999
+GlueCEStateWorstResponseTime: 86400
+GlueCEPolicyMaxTotalJobs: 99999
+GlueCEPolicyMaxObtainableWallClockTime: 1440
+GlueCEStateTotalJobs: 0
+GlueCEStateStatus: Production
+GlueForeignKey: GlueClusterUniqueID=caltech-cms-t2
+GlueCECapability: CPUScalingReferenceSI00=2000
+GlueCECapability: glexec
+GlueCEAccessControlBaseRule: VO:ops
+GlueCEInfoLRMSType: condor
+GlueCEPolicyMaxRunningJobs: 1
+GlueCEPolicyAssignedJobSlots: 1
+GlueCEInfoApplicationDir: /cvmfs/oasis.opensciencegrid.org
+GlueCEPolicyPreemption: 0
+GlueCEStateFreeCPUs: 1
+GlueCEImplementationName: HTCondorCE
+GlueSchemaVersionMinor: 3
+GlueCEStateEstimatedResponseTime: 60
+GlueCEHostingCluster: xeon.hep.caltech.edu
+GlueCEInfoHostName: xeon.hep.caltech.edu
+GlueCEInfoDefaultSE: CIT_CMS_T2_classicSE
+GlueCEImplementationVersion: 1.8
+GlueCEInfoLRMSVersion: 8.3.0 Aug 12 2014 BuildID: 266566 $
+GlueCEPolicyMaxCPUTime: 1440
+GlueCEStateWaitingJobs: 0
+GlueCEPolicyPriority: 10000
+GlueCEUniqueID: xeon.hep.caltech.edu:9619/htcondorce-condor-group_osg
+GlueCEName: group_osg
+GlueCEInfoGatekeeperPort: 9619
+GlueCEInfoJobManager: condor
+GlueCEPolicyMaxSlotsPerJob: 1
+GlueCEInfoContactString: xeon.hep.caltech.edu/jobmanager-condor-group_osg
+GlueCEPolicyMaxWallClockTime: 1440
+GlueInformationServiceURL: ldap://is.grid.iu.edu:2170
+
+dn: GlueVOViewLocalID=cms,GlueCEUniqueID=xeon.hep.caltech.edu:9619/htcondorce-condor-group_cms,mds-vo-name=local,o=grid
+objectClass: GlueCEAccessControlBase
+objectClass: GlueCEInfo
+objectClass: GlueCEPolicy
+objectClass: GlueCEState
+objectClass: GlueCETop
+objectClass: GlueKey
+objectClass: GlueSchemaVersion
+objectClass: GlueVOView
+GlueCEInfoDataDir: /nfs/system/common/osg-data/
+GlueCEStateRunningJobs: 0
+GlueCEStateTotalJobs: 0
+GlueSchemaVersionMajor: 1
+GlueCEStateWaitingJobs: 0
+GlueSchemaVersionMinor: 3
+GlueVOViewLocalID: cms
+GlueCEStateFreeJobSlots: 10
+GlueCEAccessControlBaseRule: VO:cms
+GlueCEStateEstimatedResponseTime: 60
+GlueChunkKey: GlueCEUniqueID=xeon.hep.caltech.edu:9619/htcondorce-condor-group_cms
+GlueCEInfoDefaultSE: CIT_CMS_T2_classicSE
+GlueCEStateWorstResponseTime: 86400
+GlueCEInfoApplicationDir: /cvmfs/oasis.opensciencegrid.org
+
+dn: GlueVOViewLocalID=ops,GlueCEUniqueID=xeon.hep.caltech.edu:9619/htcondorce-condor-group_osg,mds-vo-name=local,o=grid
+objectClass: GlueCEAccessControlBase
+objectClass: GlueCEInfo
+objectClass: GlueCEPolicy
+objectClass: GlueCEState
+objectClass: GlueCETop
+objectClass: GlueKey
+objectClass: GlueSchemaVersion
+objectClass: GlueVOView
+GlueCEInfoDataDir: /nfs/system/common/osg-data/
+GlueCEStateRunningJobs: 0
+GlueCEStateTotalJobs: 0
+GlueSchemaVersionMajor: 1
+GlueCEStateWaitingJobs: 0
+GlueSchemaVersionMinor: 3
+GlueVOViewLocalID: ops
+GlueCEStateFreeJobSlots: 1
+GlueCEAccessControlBaseRule: VO:ops
+GlueCEStateEstimatedResponseTime: 60
+GlueChunkKey: GlueCEUniqueID=xeon.hep.caltech.edu:9619/htcondorce-condor-group_osg
+GlueCEInfoDefaultSE: CIT_CMS_T2_classicSE
+GlueCEStateWorstResponseTime: 86400
+GlueCEInfoApplicationDir: /cvmfs/oasis.opensciencegrid.org
+
+dn: GlueCESEBindSEUniqueID=CIT_CMS_T2_classicSE,GlueCESEBindGroupCEUniqueID=xeon.hep.caltech.edu:9619/htcondorce-condor-group_cms,mds-vo-name=local,o=grid
+objectClass: GlueCESEBind
+objectClass: GlueGeneralTop
+objectClass: GlueSchemaVersion
+GlueSchemaVersionMajor: 1
+GlueCESEBindCEUniqueID: xeon.hep.caltech.edu:9619/htcondorce-condor-group_cms
+GlueSchemaVersionMinor: 3
+GlueCESEBindSEUniqueID: CIT_CMS_T2_classicSE
+GlueCESEBindCEAccesspoint: /nfs/system/common/osg-data/
+GlueCESEBindWeight: 0
+
+dn: GlueCESEBindSEUniqueID=CIT_CMS_T2_classicSE,GlueCESEBindGroupCEUniqueID=xeon.hep.caltech.edu:9619/htcondorce-condor-group_osg,mds-vo-name=local,o=grid
+objectClass: GlueCESEBind
+objectClass: GlueGeneralTop
+objectClass: GlueSchemaVersion
+GlueSchemaVersionMajor: 1
+GlueCESEBindCEUniqueID: xeon.hep.caltech.edu:9619/htcondorce-condor-group_osg
+GlueSchemaVersionMinor: 3
+GlueCESEBindSEUniqueID: CIT_CMS_T2_classicSE
+GlueCESEBindCEAccesspoint: /nfs/system/common/osg-data/
+GlueCESEBindWeight: 0
+
+dn: GlueCESEBindGroupCEUniqueID=xeon.hep.caltech.edu:9619/htcondorce-condor-group_osg,mds-vo-name=local,o=grid
+objectClass: GlueCESEBindGroup
+objectClass: GlueGeneralTop
+objectClass: GlueSchemaVersion
+GlueSchemaVersionMinor: 3
+GlueCESEBindGroupCEUniqueID: xeon.hep.caltech.edu:9619/htcondorce-condor-group_osg
+GlueSchemaVersionMajor: 1
+GlueCESEBindGroupSEUniqueID: CIT_CMS_T2_classicSE
+
+dn: GlueCESEBindGroupCEUniqueID=xeon.hep.caltech.edu:9619/htcondorce-condor-group_cms,mds-vo-name=local,o=grid
+objectClass: GlueCESEBindGroup
+objectClass: GlueGeneralTop
+objectClass: GlueSchemaVersion
+GlueSchemaVersionMinor: 3
+GlueCESEBindGroupCEUniqueID: xeon.hep.caltech.edu:9619/htcondorce-condor-group_cms
+GlueSchemaVersionMajor: 1
+GlueCESEBindGroupSEUniqueID: CIT_CMS_T2_classicSE
+
+dn: GlueSEUniqueID=CIT_CMS_T2_classicSE,Mds-Vo-name=local,o=grid
+objectClass: GlueInformationService
+objectClass: GlueKey
+objectClass: GlueSE
+objectClass: GlueSETop
+objectClass: GlueSchemaVersion
+GlueSEPort: 2811
+GlueSchemaVersionMajor: 1
+GlueSchemaVersionMinor: 3
+GlueSEImplementationVersion: UNKNOWN
+GlueSETotalNearlineSize: 0
+GlueSEName: CIT_CMS_T2_classicSE
+GlueSEArchitecture: other
+GlueSESizeTotal: 738
+GlueSETotalOnlineSize: 0
+GlueSEImplementationName: classicSE
+GlueSEUsedOnlineSize: 309
+GlueForeignKey: GlueSiteUniqueID=CIT_CMS_T2
+GlueSEUsedNearlineSize: 0
+GlueSEStatus: Production
+GlueSEUniqueID: CIT_CMS_T2_classicSE
+GlueSESizeFree: 428
+GlueInformationServiceURL: ldap://is.grid.iu.edu:2170
+
+dn: GlueSALocalID=CIT_CMS_T2_classicSE,GlueSEUniqueID=CIT_CMS_T2_classicSE,Mds-Vo-name=local,o=grid
+objectClass: GlueKey
+objectClass: GlueSA
+objectClass: GlueSAAccessControlBase
+objectClass: GlueSAPolicy
+objectClass: GlueSAState
+objectClass: GlueSATop
+objectClass: GlueSchemaVersion
+GlueSATotalOnlineSize: 738
+GlueSAPolicyMaxNumFiles: 0
+GlueSAFreeNearlineSize: 0
+GlueSchemaVersionMajor: 1
+GlueSAUsedNearlineSize: 0
+GlueSAExpirationMode: neverExpire
+GlueSAAccessLatency: online
+GlueSchemaVersionMinor: 3
+GlueSAStateUsedSpace: 309236858
+GlueSAPolicyQuota: 0
+GlueChunkKey: GlueSEUniqueID=CIT_CMS_T2_classicSE
+GlueSAUsedOnlineSize: 309
+GlueSAPolicyFileLifeTime: permanent
+GlueSAAccessControlBaseRule: VO:cms
+GlueSAAccessControlBaseRule: VO:ops
+GlueSAName: CIT_CMS_T2_classicSE
+GlueSAPath: /nfs/system/common/osg-data/
+GlueSAType: permanent
+GlueSAStateAvailableSpace: 428848840
+GlueSAFreeOnlineSize: 428
+GlueSAReservedOnlineSize: 0
+GlueSARetentionPolicy: replica
+GlueSARoot: /
+GlueSAReservedNearlineSize: 0
+GlueSALocalID: CIT_CMS_T2_classicSE
+GlueSATotalNearlineSize: 0
+GlueSACapability: file storage
+GlueSACapability: SRMTokenReservedSpace=0
+GlueSACapability: InstalledOnlineCapacity=0
+GlueSACapability: InstalledNearlineCapacity=0
+
+dn: GlueSEAccessProtocolLocalID=GFTP_xeon.hep.caltech.edu_2811,GlueSEUniqueID=CIT_CMS_T2_classicSE,Mds-Vo-name=local,o=grid
+objectClass: GlueKey
+objectClass: GlueSEAccessProtocol
+objectClass: GlueSETop
+objectClass: GlueSchemaVersion
+GlueSchemaVersionMajor: 1
+GlueSEAccessProtocolType: gsiftp
+GlueSEAccessProtocolEndpoint: gsiftp://xeon.hep.caltech.edu:2811
+GlueSchemaVersionMinor: 3
+GlueSEAccessProtocolVersion: 1.0.0
+GlueSEAccessProtocolCapability: file transfer
+GlueSEAccessProtocolLocalID: GFTP_xeon.hep.caltech.edu_2811
+GlueSEAccessProtocolMaxStreams: 10
+GlueChunkKey: GlueSEUniqueID=CIT_CMS_T2_classicSE
+GlueSEAccessProtocolPort: 2811
+GlueSEAccessProtocolSupportedSecurity: gsiftp
+
+dn: GlueLocationLocalID=OSG_GRID,GlueSubClusterUniqueID=Blades CIT-CIT_CMS_T2,GlueClusterUniqueID=caltech-cms-t2,mds-vo-name=local,o=grid
+objectClass: GlueClusterTop
+objectClass: GlueKey
+objectClass: GlueLocation
+objectClass: GlueSchemaVersion
+GlueLocationName: OSG_GRID
+GlueSchemaVersionMajor: 1
+GlueLocationLocalID: OSG_GRID
+GlueSchemaVersionMinor: 3
+GlueChunkKey: GlueSubClusterUniqueID=Blades CIT-CIT_CMS_T2
+GlueLocationPath: /etc/osg/wn-client
+GlueLocationVersion: 1.0
+
+

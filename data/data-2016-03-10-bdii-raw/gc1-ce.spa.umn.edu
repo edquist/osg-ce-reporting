@@ -1,0 +1,281 @@
+dn: GlueSiteUniqueID=UMN-CMS,mds-vo-name=local,o=grid
+objectClass: GlueKey
+objectClass: GlueSchemaVersion
+objectClass: GlueSite
+objectClass: GlueTop
+GlueSchemaVersionMajor: 1
+GlueSiteWeb: http://zzz.physics.umn.edu/groups/osg/cms/home
+GlueForeignKey: GlueSiteUniqueID=UMN-CMS
+GlueSiteName: UMN-CMS
+GlueSiteLongitude: -93.23
+GlueSiteDescription: OSG Site
+GlueSiteLocation: Minneapolis, MN, United States
+GlueSiteSponsor: cms:100
+GlueSiteEmailContact: mailto: net@physics.umn.edu
+GlueSiteSysAdminContact: mailto: net@physics.umn.edu
+GlueSiteSecurityContact: mailto: net@physics.umn.edu
+GlueSiteUniqueID: UMN-CMS
+GlueSchemaVersionMinor: 3
+GlueSiteUserSupportContact: mailto: net@physics.umn.edu
+GlueSiteLatitude: 44.97
+
+dn: GlueClusterUniqueID=gc1-ce.spa.umn.edu,mds-vo-name=local,o=grid
+objectClass: GlueCluster
+objectClass: GlueClusterTop
+objectClass: GlueInformationService
+objectClass: GlueKey
+objectClass: GlueSchemaVersion
+GlueSchemaVersionMajor: 1
+GlueClusterUniqueID: gc1-ce.spa.umn.edu
+GlueClusterName: gc1-ce.spa.umn.edu
+GlueForeignKey: GlueSiteUniqueID=UMN-CMS
+GlueForeignKey: GlueCEUniqueID=gc1-ce.spa.umn.edu:2119/jobmanager-condor-default
+GlueClusterTmpDir: UNAVAILABLE
+GlueSchemaVersionMinor: 3
+GlueClusterWNTmpDir: /export/scratch/tmp
+GlueInformationServiceURL: ldap://is.grid.iu.edu:2170
+
+dn: GlueSubClusterUniqueID=UMN CMS Nodes-UMN-CMS,GlueClusterUniqueID=gc1-ce.spa.umn.edu,mds-vo-name=local,o=grid
+objectClass: GlueClusterTop
+objectClass: GlueHostApplicationSoftware
+objectClass: GlueHostArchitecture
+objectClass: GlueHostBenchmark
+objectClass: GlueHostMainMemory
+objectClass: GlueHostNetworkAdapter
+objectClass: GlueHostOperatingSystem
+objectClass: GlueHostProcessor
+objectClass: GlueInformationService
+objectClass: GlueKey
+objectClass: GlueSchemaVersion
+objectClass: GlueSubCluster
+GlueSubClusterPhysicalCPUs: 48
+GlueSchemaVersionMajor: 1
+GlueSubClusterWNTmpDir: /export/scratch/tmp
+GlueHostNetworkAdapterOutboundIP: TRUE
+GlueSchemaVersionMinor: 3
+GlueHostMainMemoryRAMSize: 24000
+GlueHostOperatingSystemRelease: 5.8
+GlueHostProcessorModel: Intel(R) Xeon(R) CPU E5520
+GlueChunkKey: GlueClusterUniqueID=gc1-ce.spa.umn.edu
+GlueSubClusterLogicalCPUs: 384
+GlueHostNetworkAdapterInboundIP: FALSE
+GlueHostOperatingSystemName: Scientific
+GlueSubClusterTmpDir: UNAVAILABLE
+GlueHostBenchmarkSI00: 2000
+GlueHostProcessorVendor: Intel
+GlueSubClusterUniqueID: UMN CMS Nodes-UMN-CMS
+GlueHostArchitecturePlatformType: x86_64
+GlueHostMainMemoryVirtualSize: 49000
+GlueHostApplicationSoftwareRunTimeEnvironment: VO-cms-slc6_amd64_gcc490
+GlueHostApplicationSoftwareRunTimeEnvironment: VO-cms-slc6_amd64_gcc491
+GlueHostApplicationSoftwareRunTimeEnvironment: VO-cms-slc6_amd64_gcc493
+GlueHostApplicationSoftwareRunTimeEnvironment: VO-cms-slc5_amd64_gcc480
+GlueHostApplicationSoftwareRunTimeEnvironment: VO-cms-slc5_amd64_gcc481
+GlueHostApplicationSoftwareRunTimeEnvironment: VO-cms-slc6_amd64_gcc530
+GlueHostApplicationSoftwareRunTimeEnvironment: VO-cms-slc6_amd64_gcc472
+GlueHostApplicationSoftwareRunTimeEnvironment: VO-cms-slc6_mic_gcc481
+GlueHostApplicationSoftwareRunTimeEnvironment: VO-cms-slc7_aarch64_gcc530
+GlueHostApplicationSoftwareRunTimeEnvironment: VO-cms-slc5_amd64_gcc461
+GlueHostApplicationSoftwareRunTimeEnvironment: VO-cms-slc5_amd64_gcc462
+GlueHostApplicationSoftwareRunTimeEnvironment: VO-cms-slc7_amd64_gcc493
+GlueHostApplicationSoftwareRunTimeEnvironment: VO-cms-slc6_amd64_gcc481
+GlueHostApplicationSoftwareRunTimeEnvironment: VO-cms-slc6_amd64_gcc480
+GlueHostApplicationSoftwareRunTimeEnvironment: OSG_VERSION
+GlueHostApplicationSoftwareRunTimeEnvironment: OSG 3.2.36
+GlueHostApplicationSoftwareRunTimeEnvironment: VO-cms-slc5_amd64_gcc470
+GlueHostApplicationSoftwareRunTimeEnvironment: VO-cms-slc6_amd64_gcc462
+GlueHostApplicationSoftwareRunTimeEnvironment: VO-cms-slc7_amd64_gcc530
+GlueHostApplicationSoftwareRunTimeEnvironment: VO-cms-slc5_amd64_gcc434
+GlueHostApplicationSoftwareRunTimeEnvironment: VO-cms-slc*
+GlueHostApplicationSoftwareRunTimeEnvironment: VO-cms-slc5_amd64_gcc472
+GlueHostApplicationSoftwareRunTimeEnvironment: VO-cms-slc5_ia32_gcc434
+GlueHostProcessorOtherDescription: Cores=384
+GlueHostBenchmarkSF00: 2000
+GlueHostOperatingSystemVersion: Boron
+GlueSubClusterName: UMN CMS Nodes
+GlueHostArchitectureSMPSize: 2
+GlueHostProcessorClockSpeed: 2270
+GlueInformationServiceURL: ldap://is.grid.iu.edu:2170
+
+dn: GlueLocationLocalID=TIMESTAMP,GlueSubClusterUniqueID=UMN CMS Nodes-UMN-CMS,GlueClusterUniqueID=gc1-ce.spa.umn.edu,mds-vo-name=local,o=grid
+objectClass: GlueClusterTop
+objectClass: GlueKey
+objectClass: GlueLocation
+objectClass: GlueSchemaVersion
+GlueLocationName: TIMESTAMP
+GlueSchemaVersionMajor: 1
+GlueLocationLocalID: TIMESTAMP
+GlueSchemaVersionMinor: 3
+GlueChunkKey: GlueSubClusterUniqueID=UMN CMS Nodes-UMN-CMS
+GlueLocationPath: Thu Mar 10 18:14:59 UTC 2016
+GlueLocationVersion: 1457633699.98
+
+dn: GlueCEUniqueID=gc1-ce.spa.umn.edu:2119/jobmanager-condor-default,mds-vo-name=local,o=grid
+objectClass: GlueCE
+objectClass: GlueCEAccessControlBase
+objectClass: GlueCEInfo
+objectClass: GlueCEPolicy
+objectClass: GlueCEState
+objectClass: GlueCETop
+objectClass: GlueInformationService
+objectClass: GlueKey
+objectClass: GlueSchemaVersion
+GlueCEInfoDataDir: UNAVAILABLE
+GlueCEPolicyMaxObtainableCPUTime: 1440
+GlueCEStateRunningJobs: 0
+GlueSchemaVersionMajor: 1
+GlueCEInfoTotalCPUs: 633
+GlueCEStateFreeJobSlots: 16
+GlueCEPolicyMaxWaitingJobs: 99999
+GlueCEStateWorstResponseTime: 86400
+GlueCEPolicyMaxTotalJobs: 99999
+GlueCEPolicyMaxObtainableWallClockTime: 1440
+GlueCEStateTotalJobs: 0
+GlueCEStateStatus: Production
+GlueForeignKey: GlueClusterUniqueID=gc1-ce.spa.umn.edu
+GlueCECapability: CPUScalingReferenceSI00=2000
+GlueCEAccessControlBaseRule: VO:cms
+GlueCEAccessControlBaseRule: VO:nova
+GlueCEInfoLRMSType: condor
+GlueCEPolicyMaxRunningJobs: 633
+GlueCEPolicyAssignedJobSlots: 633
+GlueCEInfoApplicationDir: /local/grid
+GlueCEPolicyPreemption: 0
+GlueCEStateFreeCPUs: 16
+GlueCEInfoGRAMVersion: 5.0
+GlueCEImplementationName: Globus
+GlueSchemaVersionMinor: 3
+GlueCEStateEstimatedResponseTime: 60
+GlueCEHostingCluster: gc1-ce.spa.umn.edu
+GlueCEInfoHostName: gc1-ce.spa.umn.edu
+GlueCEInfoDefaultSE: gc1-se.spa.umn.edu
+GlueCEImplementationVersion: 4.0.6
+GlueCEInfoLRMSVersion: 8.2.10 Oct 27 2015 $
+GlueCEPolicyMaxCPUTime: 1440
+GlueCEStateWaitingJobs: 0
+GlueCEPolicyPriority: 999999
+GlueCEUniqueID: gc1-ce.spa.umn.edu:2119/jobmanager-condor-default
+GlueCEName: default
+GlueCEInfoGatekeeperPort: 2119
+GlueCEInfoJobManager: condor
+GlueCEPolicyMaxSlotsPerJob: 1
+GlueCEInfoContactString: gc1-ce.spa.umn.edu/jobmanager-condor-default
+GlueCEPolicyMaxWallClockTime: 1440
+GlueInformationServiceURL: ldap://is.grid.iu.edu:2170
+
+dn: GlueVOViewLocalID=cms,GlueCEUniqueID=gc1-ce.spa.umn.edu:2119/jobmanager-condor-default,mds-vo-name=local,o=grid
+objectClass: GlueCEAccessControlBase
+objectClass: GlueCEInfo
+objectClass: GlueCEPolicy
+objectClass: GlueCEState
+objectClass: GlueCETop
+objectClass: GlueKey
+objectClass: GlueSchemaVersion
+objectClass: GlueVOView
+GlueCEInfoDataDir: UNAVAILABLE
+GlueCEStateRunningJobs: 0
+GlueCEStateTotalJobs: 0
+GlueSchemaVersionMajor: 1
+GlueCEStateWaitingJobs: 0
+GlueSchemaVersionMinor: 3
+GlueVOViewLocalID: cms
+GlueCEStateFreeJobSlots: 16
+GlueCEAccessControlBaseRule: VO:cms
+GlueCEStateEstimatedResponseTime: 60
+GlueChunkKey: GlueCEUniqueID=gc1-ce.spa.umn.edu:2119/jobmanager-condor-default
+GlueCEInfoDefaultSE: gc1-se.spa.umn.edu
+GlueCEStateWorstResponseTime: 86400
+GlueCEInfoApplicationDir: /local/grid
+
+dn: GlueVOViewLocalID=nova,GlueCEUniqueID=gc1-ce.spa.umn.edu:2119/jobmanager-condor-default,mds-vo-name=local,o=grid
+objectClass: GlueCEAccessControlBase
+objectClass: GlueCEInfo
+objectClass: GlueCEPolicy
+objectClass: GlueCEState
+objectClass: GlueCETop
+objectClass: GlueKey
+objectClass: GlueSchemaVersion
+objectClass: GlueVOView
+GlueCEInfoDataDir: UNAVAILABLE
+GlueCEStateRunningJobs: 0
+GlueCEStateTotalJobs: 0
+GlueSchemaVersionMajor: 1
+GlueCEStateWaitingJobs: 0
+GlueSchemaVersionMinor: 3
+GlueVOViewLocalID: nova
+GlueCEStateFreeJobSlots: 16
+GlueCEAccessControlBaseRule: VO:nova
+GlueCEStateEstimatedResponseTime: 60
+GlueChunkKey: GlueCEUniqueID=gc1-ce.spa.umn.edu:2119/jobmanager-condor-default
+GlueCEInfoDefaultSE: gc1-se.spa.umn.edu
+GlueCEStateWorstResponseTime: 86400
+GlueCEInfoApplicationDir: /local/grid
+
+dn: GlueCESEBindSEUniqueID=gc1-se.spa.umn.edu,GlueCESEBindGroupCEUniqueID=gc1-ce.spa.umn.edu:2119/jobmanager-condor-default,mds-vo-name=local,o=grid
+objectClass: GlueCESEBind
+objectClass: GlueGeneralTop
+objectClass: GlueSchemaVersion
+GlueSchemaVersionMajor: 1
+GlueCESEBindCEUniqueID: gc1-ce.spa.umn.edu:2119/jobmanager-condor-default
+GlueSchemaVersionMinor: 3
+GlueCESEBindSEUniqueID: gc1-se.spa.umn.edu
+GlueCESEBindCEAccesspoint: /
+GlueCESEBindWeight: 0
+
+dn: GlueCESEBindSEUniqueID=UMN-CMS_classicSE,GlueCESEBindGroupCEUniqueID=gc1-ce.spa.umn.edu:2119/jobmanager-condor-default,mds-vo-name=local,o=grid
+objectClass: GlueCESEBind
+objectClass: GlueGeneralTop
+objectClass: GlueSchemaVersion
+GlueSchemaVersionMajor: 1
+GlueCESEBindCEUniqueID: gc1-ce.spa.umn.edu:2119/jobmanager-condor-default
+GlueSchemaVersionMinor: 3
+GlueCESEBindSEUniqueID: UMN-CMS_classicSE
+GlueCESEBindCEAccesspoint: UNAVAILABLE
+GlueCESEBindWeight: 0
+
+dn: GlueCESEBindGroupCEUniqueID=gc1-ce.spa.umn.edu:2119/jobmanager-condor-default,mds-vo-name=local,o=grid
+objectClass: GlueCESEBindGroup
+objectClass: GlueGeneralTop
+objectClass: GlueSchemaVersion
+GlueSchemaVersionMinor: 3
+GlueCESEBindGroupCEUniqueID: gc1-ce.spa.umn.edu:2119/jobmanager-condor-default
+GlueSchemaVersionMajor: 1
+GlueCESEBindGroupSEUniqueID: gc1-se.spa.umn.edu
+GlueCESEBindGroupSEUniqueID: UMN-CMS_classicSE
+
+dn: GlueServiceUniqueID=gc1-ce.spa.umn.edu:gridmap-file,mds-vo-name=local,o=grid
+objectClass: GlueKey
+objectClass: GlueSchemaVersion
+objectClass: GlueService
+objectClass: GlueTop
+GlueSchemaVersionMajor: 1
+GlueSchemaVersionMinor: 3
+GlueServiceName: Authorization
+GlueServiceWSDL: Not Applicable
+GlueServiceOwner: OSG
+GlueServiceAccessPointURL: localhost://etc/grid-security/gridmap-file
+GlueServiceSemantics: UNDEFINED
+GlueServiceType: gridmap-file
+GlueForeignKey: GlueSiteUniqueID=UMN-CMS
+GlueServiceUniqueID: gc1-ce.spa.umn.edu:gridmap-file
+GlueServiceVersion: UNDEFINED
+GlueServiceURI: localhost://etc/grid-security/gridmap-file
+GlueServiceStatusInfo: Node is configured to use gridmap-file. Did not check if gridmap-file is properly configured.
+GlueServiceStartTime: Not Applicable
+GlueServiceStatus: OK
+GlueServiceEndpoint: Not Applicable
+
+dn: GlueLocationLocalID=OSG_GRID,GlueSubClusterUniqueID=UMN CMS Nodes-UMN-CMS,GlueClusterUniqueID=gc1-ce.spa.umn.edu,mds-vo-name=local,o=grid
+objectClass: GlueClusterTop
+objectClass: GlueKey
+objectClass: GlueLocation
+objectClass: GlueSchemaVersion
+GlueLocationName: OSG_GRID
+GlueSchemaVersionMajor: 1
+GlueLocationLocalID: OSG_GRID
+GlueSchemaVersionMinor: 3
+GlueChunkKey: GlueSubClusterUniqueID=UMN CMS Nodes-UMN-CMS
+GlueLocationPath: /etc/osg/wn-client/
+GlueLocationVersion: 1.0
+
+

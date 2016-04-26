@@ -1,0 +1,307 @@
+dn: GlueSiteUniqueID=VDT-ITB,mds-vo-name=local,o=grid
+objectClass: GlueKey
+objectClass: GlueSchemaVersion
+objectClass: GlueSite
+objectClass: GlueTop
+GlueSchemaVersionMajor: 1
+GlueSiteWeb: UNAVAILABLE
+GlueForeignKey: GlueSiteUniqueID=VDT-ITB
+GlueSiteName: VDT-ITB
+GlueSiteLongitude: 43
+GlueSiteDescription: OSG Site
+GlueSiteLocation: Madison, USA
+GlueSiteSponsor: osg:100
+GlueSiteEmailContact: mailto: edquist@cs.wisc.edu
+GlueSiteSysAdminContact: mailto: edquist@cs.wisc.edu
+GlueSiteSecurityContact: mailto: edquist@cs.wisc.edu
+GlueSiteUniqueID: VDT-ITB
+GlueSchemaVersionMinor: 3
+GlueSiteUserSupportContact: mailto: edquist@cs.wisc.edu
+GlueSiteLatitude: 89
+
+dn: GlueClusterUniqueID=itb-ce1.chtc.wisc.edu,mds-vo-name=local,o=grid
+objectClass: GlueCluster
+objectClass: GlueClusterTop
+objectClass: GlueInformationService
+objectClass: GlueKey
+objectClass: GlueSchemaVersion
+GlueSchemaVersionMajor: 1
+GlueClusterUniqueID: itb-ce1.chtc.wisc.edu
+GlueClusterName: itb-ce1.chtc.wisc.edu
+GlueForeignKey: GlueSiteUniqueID=VDT-ITB
+GlueForeignKey: GlueCEUniqueID=itb-ce1.chtc.wisc.edu:9619/htcondorce-condor-default
+GlueClusterTmpDir: UNAVAILABLE
+GlueSchemaVersionMinor: 3
+GlueClusterWNTmpDir: /var/lib/condor/execute/osg_wn_tmp
+GlueInformationServiceURL: ldap://is.grid.iu.edu:2170
+
+dn: GlueSubClusterUniqueID=Madison ITB-VDT-ITB,GlueClusterUniqueID=itb-ce1.chtc.wisc.edu,mds-vo-name=local,o=grid
+objectClass: GlueClusterTop
+objectClass: GlueHostApplicationSoftware
+objectClass: GlueHostArchitecture
+objectClass: GlueHostBenchmark
+objectClass: GlueHostMainMemory
+objectClass: GlueHostNetworkAdapter
+objectClass: GlueHostOperatingSystem
+objectClass: GlueHostProcessor
+objectClass: GlueInformationService
+objectClass: GlueKey
+objectClass: GlueSchemaVersion
+objectClass: GlueSubCluster
+GlueSubClusterPhysicalCPUs: 2
+GlueSchemaVersionMajor: 1
+GlueSubClusterWNTmpDir: /var/lib/condor/execute/osg_wn_tmp
+GlueHostNetworkAdapterOutboundIP: TRUE
+GlueSchemaVersionMinor: 3
+GlueHostMainMemoryRAMSize: 64375
+GlueHostOperatingSystemRelease: 6.3
+GlueHostProcessorModel: Intel(R) Xeon(R) CPU E5-2450 0 @ 2.10GHz
+GlueChunkKey: GlueClusterUniqueID=itb-ce1.chtc.wisc.edu
+GlueSubClusterLogicalCPUs: 32
+GlueHostNetworkAdapterInboundIP: FALSE
+GlueHostOperatingSystemName: Scientific
+GlueSubClusterTmpDir: UNAVAILABLE
+GlueHostBenchmarkSI00: 2000
+GlueHostProcessorVendor: Intel
+GlueSubClusterUniqueID: Madison ITB-VDT-ITB
+GlueHostArchitecturePlatformType: x86_64
+GlueHostMainMemoryVirtualSize: 88374
+GlueHostApplicationSoftwareRunTimeEnvironment: OSG 3.2.36
+GlueHostApplicationSoftwareRunTimeEnvironment: OSG_VERSION
+GlueHostApplicationSoftwareRunTimeEnvironment: SAMPLE_SCRATCH
+GlueHostApplicationSoftwareRunTimeEnvironment: SAMPLE_LOCATION
+GlueHostProcessorOtherDescription: Cores=32
+GlueHostBenchmarkSF00: 2000
+GlueHostOperatingSystemVersion: Carbon
+GlueSubClusterName: Madison ITB
+GlueHostArchitectureSMPSize: 2
+GlueHostProcessorClockSpeed: 2100
+GlueInformationServiceURL: ldap://is.grid.iu.edu:2170
+
+dn: GlueLocationLocalID=TIMESTAMP,GlueSubClusterUniqueID=Madison ITB-VDT-ITB,GlueClusterUniqueID=itb-ce1.chtc.wisc.edu,mds-vo-name=local,o=grid
+objectClass: GlueClusterTop
+objectClass: GlueKey
+objectClass: GlueLocation
+objectClass: GlueSchemaVersion
+GlueLocationName: TIMESTAMP
+GlueSchemaVersionMajor: 1
+GlueLocationLocalID: TIMESTAMP
+GlueSchemaVersionMinor: 3
+GlueChunkKey: GlueSubClusterUniqueID=Madison ITB-VDT-ITB
+GlueLocationPath: Thu Mar 10 23:21:34 UTC 2016
+GlueLocationVersion: 1457652094.6
+
+dn: GlueCEUniqueID=itb-ce1.chtc.wisc.edu:9619/htcondorce-condor-default,mds-vo-name=local,o=grid
+objectClass: GlueCE
+objectClass: GlueCEAccessControlBase
+objectClass: GlueCEInfo
+objectClass: GlueCEPolicy
+objectClass: GlueCEState
+objectClass: GlueCETop
+objectClass: GlueInformationService
+objectClass: GlueKey
+objectClass: GlueSchemaVersion
+GlueCEInfoDataDir: UNAVAILABLE
+GlueCEPolicyMaxObtainableCPUTime: 1440
+GlueCEStateRunningJobs: 0
+GlueSchemaVersionMajor: 1
+GlueCEInfoTotalCPUs: 80
+GlueCEStateFreeJobSlots: 80
+GlueCEPolicyMaxWaitingJobs: 99999
+GlueCEStateWorstResponseTime: 86400
+GlueCEPolicyMaxTotalJobs: 99999
+GlueCEPolicyMaxObtainableWallClockTime: 1440
+GlueCEStateTotalJobs: 0
+GlueCEStateStatus: Production
+GlueForeignKey: GlueClusterUniqueID=itb-ce1.chtc.wisc.edu
+GlueCECapability: CPUScalingReferenceSI00=2000
+GlueCEAccessControlBaseRule: VO:osg
+GlueCEAccessControlBaseRule: VO:glow
+GlueCEInfoLRMSType: condor
+GlueCEPolicyMaxRunningJobs: 80
+GlueCEPolicyAssignedJobSlots: 80
+GlueCEInfoApplicationDir: /var/lib/app_dir
+GlueCEPolicyPreemption: 0
+GlueCEStateFreeCPUs: 80
+GlueCEImplementationName: HTCondorCE
+GlueSchemaVersionMinor: 3
+GlueCEStateEstimatedResponseTime: 60
+GlueCEHostingCluster: itb-ce1.chtc.wisc.edu
+GlueCEInfoHostName: itb-ce1.chtc.wisc.edu
+GlueCEInfoDefaultSE: VDT-ITB_classicSE
+GlueCEImplementationVersion: 2.0.0
+GlueCEInfoLRMSVersion: 8.2.10 Oct 27 2015 $
+GlueCEPolicyMaxCPUTime: 1440
+GlueCEStateWaitingJobs: 0
+GlueCEPolicyPriority: 999999
+GlueCEUniqueID: itb-ce1.chtc.wisc.edu:9619/htcondorce-condor-default
+GlueCEName: default
+GlueCEInfoGatekeeperPort: 9619
+GlueCEInfoJobManager: condor
+GlueCEPolicyMaxSlotsPerJob: 1
+GlueCEInfoContactString: host.name/jobmanager-condor-default
+GlueCEPolicyMaxWallClockTime: 1440
+GlueInformationServiceURL: ldap://is.grid.iu.edu:2170
+
+dn: GlueVOViewLocalID=osg,GlueCEUniqueID=itb-ce1.chtc.wisc.edu:9619/htcondorce-condor-default,mds-vo-name=local,o=grid
+objectClass: GlueCEAccessControlBase
+objectClass: GlueCEInfo
+objectClass: GlueCEPolicy
+objectClass: GlueCEState
+objectClass: GlueCETop
+objectClass: GlueKey
+objectClass: GlueSchemaVersion
+objectClass: GlueVOView
+GlueCEInfoDataDir: UNAVAILABLE
+GlueCEStateRunningJobs: 0
+GlueCEStateTotalJobs: 0
+GlueSchemaVersionMajor: 1
+GlueCEStateWaitingJobs: 0
+GlueSchemaVersionMinor: 3
+GlueVOViewLocalID: osg
+GlueCEStateFreeJobSlots: 80
+GlueCEAccessControlBaseRule: VO:osg
+GlueCEStateEstimatedResponseTime: 60
+GlueChunkKey: GlueCEUniqueID=itb-ce1.chtc.wisc.edu:9619/htcondorce-condor-default
+GlueCEInfoDefaultSE: VDT-ITB_classicSE
+GlueCEStateWorstResponseTime: 86400
+GlueCEInfoApplicationDir: /var/lib/app_dir
+
+dn: GlueVOViewLocalID=glow,GlueCEUniqueID=itb-ce1.chtc.wisc.edu:9619/htcondorce-condor-default,mds-vo-name=local,o=grid
+objectClass: GlueCEAccessControlBase
+objectClass: GlueCEInfo
+objectClass: GlueCEPolicy
+objectClass: GlueCEState
+objectClass: GlueCETop
+objectClass: GlueKey
+objectClass: GlueSchemaVersion
+objectClass: GlueVOView
+GlueCEInfoDataDir: UNAVAILABLE
+GlueCEStateRunningJobs: 0
+GlueCEStateTotalJobs: 0
+GlueSchemaVersionMajor: 1
+GlueCEStateWaitingJobs: 0
+GlueSchemaVersionMinor: 3
+GlueVOViewLocalID: glow
+GlueCEStateFreeJobSlots: 80
+GlueCEAccessControlBaseRule: VO:glow
+GlueCEStateEstimatedResponseTime: 60
+GlueChunkKey: GlueCEUniqueID=itb-ce1.chtc.wisc.edu:9619/htcondorce-condor-default
+GlueCEInfoDefaultSE: VDT-ITB_classicSE
+GlueCEStateWorstResponseTime: 86400
+GlueCEInfoApplicationDir: /var/lib/app_dir
+
+dn: GlueLocationLocalID=OSG_GRID,GlueSubClusterUniqueID=Madison ITB-VDT-ITB,GlueClusterUniqueID=itb-ce1.chtc.wisc.edu,mds-vo-name=local,o=grid
+objectClass: GlueClusterTop
+objectClass: GlueKey
+objectClass: GlueLocation
+objectClass: GlueSchemaVersion
+GlueLocationName: OSG_GRID
+GlueSchemaVersionMajor: 1
+GlueLocationLocalID: OSG_GRID
+GlueSchemaVersionMinor: 3
+GlueChunkKey: GlueSubClusterUniqueID=Madison ITB-VDT-ITB
+GlueLocationPath: /etc/osg/wn-client/
+GlueLocationVersion: 1.0
+
+dn: GlueCESEBindSEUniqueID=VDT-ITB_classicSE,GlueCESEBindGroupCEUniqueID=itb-ce1.chtc.wisc.edu:9619/htcondorce-condor-default,mds-vo-name=local,o=grid
+objectClass: GlueCESEBind
+objectClass: GlueGeneralTop
+objectClass: GlueSchemaVersion
+GlueSchemaVersionMajor: 1
+GlueCESEBindCEUniqueID: itb-ce1.chtc.wisc.edu:9619/htcondorce-condor-default
+GlueSchemaVersionMinor: 3
+GlueCESEBindSEUniqueID: VDT-ITB_classicSE
+GlueCESEBindCEAccesspoint: UNAVAILABLE
+GlueCESEBindWeight: 0
+
+dn: GlueCESEBindGroupCEUniqueID=itb-ce1.chtc.wisc.edu:9619/htcondorce-condor-default,mds-vo-name=local,o=grid
+objectClass: GlueCESEBindGroup
+objectClass: GlueGeneralTop
+objectClass: GlueSchemaVersion
+GlueSchemaVersionMinor: 3
+GlueCESEBindGroupCEUniqueID: itb-ce1.chtc.wisc.edu:9619/htcondorce-condor-default
+GlueSchemaVersionMajor: 1
+GlueCESEBindGroupSEUniqueID: VDT-ITB_classicSE
+
+dn: GlueSEUniqueID=VDT-ITB_classicSE,Mds-Vo-name=local,o=grid
+objectClass: GlueInformationService
+objectClass: GlueKey
+objectClass: GlueSE
+objectClass: GlueSETop
+objectClass: GlueSchemaVersion
+GlueSEPort: 2811
+GlueSchemaVersionMajor: 1
+GlueSchemaVersionMinor: 3
+GlueSEImplementationVersion: UNKNOWN
+GlueSETotalNearlineSize: 0
+GlueSEName: VDT-ITB_classicSE
+GlueSEArchitecture: other
+GlueSESizeTotal: 0
+GlueSETotalOnlineSize: 0
+GlueSEImplementationName: classicSE
+GlueSEUsedOnlineSize: 0
+GlueForeignKey: GlueSiteUniqueID=VDT-ITB
+GlueSEUsedNearlineSize: 0
+GlueSEStatus: Production
+GlueSEUniqueID: VDT-ITB_classicSE
+GlueSESizeFree: 0
+GlueInformationServiceURL: ldap://is.grid.iu.edu:2170
+
+dn: GlueSALocalID=VDT-ITB_classicSE,GlueSEUniqueID=VDT-ITB_classicSE,Mds-Vo-name=local,o=grid
+objectClass: GlueKey
+objectClass: GlueSA
+objectClass: GlueSAAccessControlBase
+objectClass: GlueSAPolicy
+objectClass: GlueSAState
+objectClass: GlueSATop
+objectClass: GlueSchemaVersion
+GlueSATotalOnlineSize: 0
+GlueSAPolicyMaxNumFiles: 0
+GlueSAFreeNearlineSize: 0
+GlueSchemaVersionMajor: 1
+GlueSAUsedNearlineSize: 0
+GlueSAExpirationMode: neverExpire
+GlueSAAccessLatency: online
+GlueSchemaVersionMinor: 3
+GlueSAStateUsedSpace: 0
+GlueSAPolicyQuota: 0
+GlueChunkKey: GlueSEUniqueID=VDT-ITB_classicSE
+GlueSAUsedOnlineSize: 0
+GlueSAPolicyFileLifeTime: permanent
+GlueSAAccessControlBaseRule: VO:osg
+GlueSAAccessControlBaseRule: VO:glow
+GlueSAName: VDT-ITB_classicSE
+GlueSAPath: UNAVAILABLE
+GlueSAType: permanent
+GlueSAStateAvailableSpace: 0
+GlueSAFreeOnlineSize: 0
+GlueSAReservedOnlineSize: 0
+GlueSARetentionPolicy: replica
+GlueSARoot: /
+GlueSAReservedNearlineSize: 0
+GlueSALocalID: VDT-ITB_classicSE
+GlueSATotalNearlineSize: 0
+GlueSACapability: file storage
+GlueSACapability: SRMTokenReservedSpace=0
+GlueSACapability: InstalledOnlineCapacity=0
+GlueSACapability: InstalledNearlineCapacity=0
+
+dn: GlueSEAccessProtocolLocalID=GFTP_DEFAULT_2811,GlueSEUniqueID=VDT-ITB_classicSE,Mds-Vo-name=local,o=grid
+objectClass: GlueKey
+objectClass: GlueSEAccessProtocol
+objectClass: GlueSETop
+objectClass: GlueSchemaVersion
+GlueSchemaVersionMajor: 1
+GlueSEAccessProtocolType: gsiftp
+GlueSEAccessProtocolEndpoint: gsiftp://DEFAULT:2811
+GlueSchemaVersionMinor: 3
+GlueSEAccessProtocolVersion: 1.0.0
+GlueSEAccessProtocolCapability: file transfer
+GlueSEAccessProtocolLocalID: GFTP_DEFAULT_2811
+GlueSEAccessProtocolMaxStreams: 10
+GlueChunkKey: GlueSEUniqueID=VDT-ITB_classicSE
+GlueSEAccessProtocolPort: 2811
+GlueSEAccessProtocolSupportedSecurity: gsiftp
+
+

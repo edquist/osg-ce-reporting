@@ -1,0 +1,750 @@
+dn: GlueSEUniqueID=atlfs02.phy.duke.edu,Mds-Vo-name=local,o=grid
+objectClass: GlueInformationService
+objectClass: GlueKey
+objectClass: GlueSE
+objectClass: GlueSETop
+objectClass: GlueSchemaVersion
+GlueSEPort: 8443
+GlueSchemaVersionMajor: 1
+GlueSchemaVersionMinor: 3
+GlueSEImplementationVersion: 2.2.1.3
+GlueSETotalNearlineSize: 0
+GlueSEName: DUKE_HEP_SE
+GlueSEArchitecture: disk
+GlueSESizeTotal: 0
+GlueSETotalOnlineSize: 0
+GlueSEImplementationName: bestman
+GlueSEUsedOnlineSize: 0
+GlueForeignKey: GlueSiteUniqueID=DukeT3
+GlueSEUsedNearlineSize: 0
+GlueSEStatus: Production
+GlueSEUniqueID: atlfs02.phy.duke.edu
+GlueSESizeFree: 0
+GlueInformationServiceURL: ldap://is.grid.iu.edu:2170
+
+dn: GlueSALocalID=default,GlueSEUniqueID=atlfs02.phy.duke.edu,Mds-Vo-name=local,o=grid
+objectClass: GlueKey
+objectClass: GlueSA
+objectClass: GlueSAAccessControlBase
+objectClass: GlueSAPolicy
+objectClass: GlueSAState
+objectClass: GlueSATop
+objectClass: GlueSchemaVersion
+GlueSATotalOnlineSize: 0
+GlueSAPolicyMaxNumFiles: 0
+GlueSAFreeNearlineSize: 0
+GlueSchemaVersionMajor: 1
+GlueSAUsedNearlineSize: 0
+GlueSAExpirationMode: neverExpire
+GlueSAAccessLatency: online
+GlueSchemaVersionMinor: 3
+GlueSAStateUsedSpace: 0
+GlueSAPolicyQuota: 0
+GlueChunkKey: GlueSEUniqueID=atlfs02.phy.duke.edu
+GlueSAUsedOnlineSize: 0
+GlueSAPolicyFileLifeTime: permanent
+GlueSAAccessControlBaseRule: VO: atlas
+GlueSAAccessControlBaseRule: atlas
+GlueSAName: Default Storage Area
+GlueSAPath: /srv/data/srm
+GlueSAType: permanent
+GlueSAStateAvailableSpace: 0
+GlueSAFreeOnlineSize: 0
+GlueSAReservedOnlineSize: 0
+GlueSARetentionPolicy: replica
+GlueSARoot: /
+GlueSAReservedNearlineSize: 0
+GlueSALocalID: default
+GlueSATotalNearlineSize: 0
+GlueSACapability: file storage
+GlueSACapability: SRMTokenReservedSpace=0
+GlueSACapability: InstalledOnlineCapacity=0
+GlueSACapability: InstalledNearlineCapacity=0
+
+dn: GlueVOInfoLocalID=atlas:default,GlueSALocalID=default,GlueSEUniqueID=atlfs02.phy.duke.edu,Mds-Vo-name=local,o=grid
+objectClass: GlueKey
+objectClass: GlueSATop
+objectClass: GlueSchemaVersion
+objectClass: GlueVOInfo
+GlueVOInfoAccessControlBaseRule: atlas
+GlueVOInfoName: atlas:default
+GlueSchemaVersionMajor: 1
+GlueVOInfoPath: /srv/data/srm
+GlueVOInfoLocalID: atlas:default
+GlueSchemaVersionMinor: 3
+GlueVOInfoTag: Not A Space Reservation
+GlueChunkKey: GlueSALocalID=default
+GlueChunkKey: GlueSEUniqueID=atlfs02.phy.duke.edu
+
+dn: GlueSEAccessProtocolLocalID=FILE_POSIX.example.com_1234,GlueSEUniqueID=atlfs02.phy.duke.edu,Mds-Vo-name=local,o=grid
+objectClass: GlueKey
+objectClass: GlueSEAccessProtocol
+objectClass: GlueSETop
+objectClass: GlueSchemaVersion
+GlueSchemaVersionMajor: 1
+GlueSEAccessProtocolType: file
+GlueSEAccessProtocolEndpoint: file://POSIX.example.com:1234
+GlueSchemaVersionMinor: 3
+GlueSEAccessProtocolVersion: 1.0.0
+GlueSEAccessProtocolCapability: file transfer
+GlueSEAccessProtocolLocalID: FILE_POSIX.example.com_1234
+GlueSEAccessProtocolMaxStreams: 1
+GlueChunkKey: GlueSEUniqueID=atlfs02.phy.duke.edu
+GlueSEAccessProtocolPort: 1234
+GlueSEAccessProtocolSupportedSecurity: GSI
+
+dn: GlueSiteUniqueID=DukeT3,mds-vo-name=local,o=grid
+objectClass: GlueKey
+objectClass: GlueSchemaVersion
+objectClass: GlueSite
+objectClass: GlueTop
+GlueSchemaVersionMajor: 1
+GlueSiteWeb: http://www.uscms.org/SoftwareComputing/Grid/Policy/OSG_VO.html
+GlueForeignKey: GlueSiteUniqueID=DukeT3
+GlueSiteName: DukeT3
+GlueSiteLongitude: -78.9411
+GlueSiteDescription: OSG Site
+GlueSiteLocation: Durham, NC, USA
+GlueSiteSponsor: atlas:100
+GlueSiteEmailContact: mailto: benjamin@phy.duke.edu
+GlueSiteSysAdminContact: mailto: benjamin@phy.duke.edu
+GlueSiteSecurityContact: mailto: benjamin@phy.duke.edu
+GlueSiteUniqueID: DukeT3
+GlueSchemaVersionMinor: 3
+GlueSiteUserSupportContact: mailto: benjamin@phy.duke.edu
+GlueSiteLatitude: 36.00
+
+dn: GlueSEControlProtocolLocalID=atlfs02.phy.duke.edu_srmv2,GlueSEUniqueID=atlfs02.phy.duke.edu,Mds-Vo-name=local,o=grid
+objectClass: GlueKey
+objectClass: GlueSEControlProtocol
+objectClass: GlueSETop
+objectClass: GlueSchemaVersion
+GlueSchemaVersionMajor: 1
+GlueSEControlProtocolType: SRM
+GlueSEControlProtocolEndpoint: httpg://atlfs02.phy.duke.edu:8443/srm/v2/server
+GlueSchemaVersionMinor: 3
+GlueSEControlProtocolCapability: control
+GlueSEControlProtocolVersion: 2.2.0
+GlueChunkKey: GlueSEUniqueID=atlfs02.phy.duke.edu
+GlueSEControlProtocolLocalID: atlfs02.phy.duke.edu_srmv2
+
+dn: GlueServiceUniqueID=httpg://atlfs02.phy.duke.edu:8443/srm/v2/server,mds-vo-name=local,o=grid
+objectClass: GlueKey
+objectClass: GlueSchemaVersion
+objectClass: GlueService
+objectClass: GlueTop
+GlueSchemaVersionMajor: 1
+GlueSchemaVersionMinor: 3
+GlueServiceName: httpg://atlfs02.phy.duke.edu:8443/srm/v2/server
+GlueServiceAccessControlRule: atlas
+GlueServiceAccessControlRule: VO:atlas
+GlueServiceWSDL: http://sdm.lbl.gov/srm-wg/srm.v2.2.wsdl
+GlueServiceOwner: OSG
+GlueServiceAccessPointURL: httpg://atlfs02.phy.duke.edu:8443/srm/v2/server
+GlueServiceSemantics: UNDEFINED
+GlueServiceType: SRM
+GlueForeignKey: GlueSiteUniqueID=DukeT3
+GlueServiceUniqueID: httpg://atlfs02.phy.duke.edu:8443/srm/v2/server
+GlueServiceVersion: 2.2.0
+GlueServiceURI: httpg://atlfs02.phy.duke.edu:8443/srm/v2/server
+GlueServiceStatusInfo: OK
+GlueServiceStartTime: 1970-01-01T00:00:00Z
+GlueServiceStatus: OK
+GlueServiceEndpoint: httpg://atlfs02.phy.duke.edu:8443/srm/v2/server
+
+
+dn: GlueSEUniqueID=smuosgse.physics.smu.edu,Mds-Vo-name=local,o=grid
+objectClass: GlueInformationService
+objectClass: GlueKey
+objectClass: GlueSE
+objectClass: GlueSETop
+objectClass: GlueSchemaVersion
+GlueSEPort: 8443
+GlueSchemaVersionMajor: 1
+GlueSchemaVersionMinor: 3
+GlueSEImplementationVersion: 2.2.1.3
+GlueSETotalNearlineSize: 0
+GlueSEName: DUKE_HEP_SE
+GlueSEArchitecture: disk
+GlueSESizeTotal: 0
+GlueSETotalOnlineSize: 0
+GlueSEImplementationName: bestman
+GlueSEUsedOnlineSize: 0
+GlueForeignKey: GlueSiteUniqueID=SMU_HPC
+GlueSEUsedNearlineSize: 0
+GlueSEStatus: Production
+GlueSEUniqueID: smuosgse.physics.smu.edu
+GlueSESizeFree: 0
+GlueInformationServiceURL: ldap://is.grid.iu.edu:2170
+
+dn: GlueSALocalID=default,GlueSEUniqueID=smuosgse.physics.smu.edu,Mds-Vo-name=local,o=grid
+objectClass: GlueKey
+objectClass: GlueSA
+objectClass: GlueSAAccessControlBase
+objectClass: GlueSAPolicy
+objectClass: GlueSAState
+objectClass: GlueSATop
+objectClass: GlueSchemaVersion
+GlueSATotalOnlineSize: 0
+GlueSAPolicyMaxNumFiles: 0
+GlueSAFreeNearlineSize: 0
+GlueSchemaVersionMajor: 1
+GlueSAUsedNearlineSize: 0
+GlueSAExpirationMode: neverExpire
+GlueSAAccessLatency: online
+GlueSchemaVersionMinor: 3
+GlueSAStateUsedSpace: 0
+GlueSAPolicyQuota: 0
+GlueChunkKey: GlueSEUniqueID=smuosgse.physics.smu.edu
+GlueSAUsedOnlineSize: 0
+GlueSAPolicyFileLifeTime: permanent
+GlueSAAccessControlBaseRule: VO: atlas
+GlueSAAccessControlBaseRule: atlas
+GlueSAName: Default Storage Area
+GlueSAPath: /data/srm
+GlueSAType: permanent
+GlueSAStateAvailableSpace: 0
+GlueSAFreeOnlineSize: 0
+GlueSAReservedOnlineSize: 0
+GlueSARetentionPolicy: replica
+GlueSARoot: /
+GlueSAReservedNearlineSize: 0
+GlueSALocalID: default
+GlueSATotalNearlineSize: 0
+GlueSACapability: file storage
+GlueSACapability: SRMTokenReservedSpace=0
+GlueSACapability: InstalledOnlineCapacity=0
+GlueSACapability: InstalledNearlineCapacity=0
+
+dn: GlueVOInfoLocalID=atlas:default,GlueSALocalID=default,GlueSEUniqueID=smuosgse.physics.smu.edu,Mds-Vo-name=local,o=grid
+objectClass: GlueKey
+objectClass: GlueSATop
+objectClass: GlueSchemaVersion
+objectClass: GlueVOInfo
+GlueVOInfoAccessControlBaseRule: atlas
+GlueVOInfoName: atlas:default
+GlueSchemaVersionMajor: 1
+GlueVOInfoPath: /data/srm
+GlueVOInfoLocalID: atlas:default
+GlueSchemaVersionMinor: 3
+GlueVOInfoTag: Not A Space Reservation
+GlueChunkKey: GlueSALocalID=default
+GlueChunkKey: GlueSEUniqueID=smuosgse.physics.smu.edu
+
+dn: GlueSEAccessProtocolLocalID=FILE_POSIX.example.com_1234,GlueSEUniqueID=smuosgse.physics.smu.edu,Mds-Vo-name=local,o=grid
+objectClass: GlueKey
+objectClass: GlueSEAccessProtocol
+objectClass: GlueSETop
+objectClass: GlueSchemaVersion
+GlueSchemaVersionMajor: 1
+GlueSEAccessProtocolType: file
+GlueSEAccessProtocolEndpoint: file://POSIX.example.com:1234
+GlueSchemaVersionMinor: 3
+GlueSEAccessProtocolVersion: 1.0.0
+GlueSEAccessProtocolCapability: file transfer
+GlueSEAccessProtocolLocalID: FILE_POSIX.example.com_1234
+GlueSEAccessProtocolMaxStreams: 1
+GlueChunkKey: GlueSEUniqueID=smuosgse.physics.smu.edu
+GlueSEAccessProtocolPort: 1234
+GlueSEAccessProtocolSupportedSecurity: GSI
+
+dn: GlueSiteUniqueID=SMU_HPC,mds-vo-name=local,o=grid
+objectClass: GlueKey
+objectClass: GlueSchemaVersion
+objectClass: GlueSite
+objectClass: GlueTop
+GlueSchemaVersionMajor: 1
+GlueSiteWeb: http://www.uscms.org/SoftwareComputing/Grid/Policy/OSG_VO.html
+GlueForeignKey: GlueSiteUniqueID=SMU_HPC
+GlueSiteName: SMU_HPC
+GlueSiteLongitude: -96.782734
+GlueSiteDescription: OSG Site
+GlueSiteLocation: Dallas, TX, USA
+GlueSiteSponsor: atlas:100
+GlueSiteEmailContact: mailto: ross@smu.edu
+GlueSiteSysAdminContact: mailto: ross@smu.edu
+GlueSiteSecurityContact: mailto: ross@smu.edu
+GlueSiteUniqueID: SMU_HPC
+GlueSchemaVersionMinor: 3
+GlueSiteUserSupportContact: mailto: ross@smu.edu
+GlueSiteLatitude: 32.841242
+
+dn: GlueSEControlProtocolLocalID=smuosgse.physics.smu.edu_srmv2,GlueSEUniqueID=smuosgse.physics.smu.edu,Mds-Vo-name=local,o=grid
+objectClass: GlueKey
+objectClass: GlueSEControlProtocol
+objectClass: GlueSETop
+objectClass: GlueSchemaVersion
+GlueSchemaVersionMajor: 1
+GlueSEControlProtocolType: SRM
+GlueSEControlProtocolEndpoint: httpg://smuosgse.physics.smu.edu:8443/srm/v2/server
+GlueSchemaVersionMinor: 3
+GlueSEControlProtocolCapability: control
+GlueSEControlProtocolVersion: 2.2.0
+GlueChunkKey: GlueSEUniqueID=smuosgse.physics.smu.edu
+GlueSEControlProtocolLocalID: smuosgse.physics.smu.edu_srmv2
+
+dn: GlueServiceUniqueID=httpg://smuosgse.physics.smu.edu:8443/srm/v2/server,mds-vo-name=local,o=grid
+objectClass: GlueKey
+objectClass: GlueSchemaVersion
+objectClass: GlueService
+objectClass: GlueTop
+GlueSchemaVersionMajor: 1
+GlueSchemaVersionMinor: 3
+GlueServiceName: httpg://smuosgse.physics.smu.edu:8443/srm/v2/server
+GlueServiceAccessControlRule: atlas
+GlueServiceAccessControlRule: VO:atlas
+GlueServiceWSDL: http://sdm.lbl.gov/srm-wg/srm.v2.2.wsdl
+GlueServiceOwner: OSG
+GlueServiceAccessPointURL: httpg://smuosgse.physics.smu.edu:8443/srm/v2/server
+GlueServiceSemantics: UNDEFINED
+GlueServiceType: SRM
+GlueForeignKey: GlueSiteUniqueID=SMU_HPC
+GlueServiceUniqueID: httpg://smuosgse.physics.smu.edu:8443/srm/v2/server
+GlueServiceVersion: 2.2.0
+GlueServiceURI: httpg://smuosgse.physics.smu.edu:8443/srm/v2/server
+GlueServiceStatusInfo: OK
+GlueServiceStartTime: 1970-01-01T00:00:00Z
+GlueServiceStatus: OK
+GlueServiceEndpoint: httpg://smuosgse.physics.smu.edu:8443/srm/v2/server
+
+dn: GlueSEUniqueID=srm.hep.upenn.edu,Mds-Vo-name=local,o=grid
+objectClass: GlueInformationService
+objectClass: GlueKey
+objectClass: GlueSE
+objectClass: GlueSETop
+objectClass: GlueSchemaVersion
+GlueSEPort: 8443
+GlueSchemaVersionMajor: 1
+GlueSchemaVersionMinor: 3
+GlueSEImplementationVersion: 2.2.1.3
+GlueSETotalNearlineSize: 0
+GlueSEName: UPENN_SE
+GlueSEArchitecture: disk
+GlueSESizeTotal: 0
+GlueSETotalOnlineSize: 0
+GlueSEImplementationName: bestman
+GlueSEUsedOnlineSize: 0
+GlueForeignKey: GlueSiteUniqueID=UPENN
+GlueSEUsedNearlineSize: 0
+GlueSEStatus: Production
+GlueSEUniqueID: srm.hep.upenn.edu
+GlueSESizeFree: 0
+GlueInformationServiceURL: ldap://is.grid.iu.edu:2170
+
+dn: GlueSALocalID=default,GlueSEUniqueID=srm.hep.upenn.edu,Mds-Vo-name=local,o=grid
+objectClass: GlueKey
+objectClass: GlueSA
+objectClass: GlueSAAccessControlBase
+objectClass: GlueSAPolicy
+objectClass: GlueSAState
+objectClass: GlueSATop
+objectClass: GlueSchemaVersion
+GlueSATotalOnlineSize: 0
+GlueSAPolicyMaxNumFiles: 0
+GlueSAFreeNearlineSize: 0
+GlueSchemaVersionMajor: 1
+GlueSAUsedNearlineSize: 0
+GlueSAExpirationMode: neverExpire
+GlueSAAccessLatency: online
+GlueSchemaVersionMinor: 3
+GlueSAStateUsedSpace: 0
+GlueSAPolicyQuota: 0
+GlueChunkKey: GlueSEUniqueID=srm.hep.upenn.edu
+GlueSAUsedOnlineSize: 0
+GlueSAPolicyFileLifeTime: permanent
+GlueSAAccessControlBaseRule: VO: atlas
+GlueSAAccessControlBaseRule: atlas
+GlueSAName: Default Storage Area
+GlueSAPath: /srv/data/srm
+GlueSAType: permanent
+GlueSAStateAvailableSpace: 0
+GlueSAFreeOnlineSize: 0
+GlueSAReservedOnlineSize: 0
+GlueSARetentionPolicy: replica
+GlueSARoot: /
+GlueSAReservedNearlineSize: 0
+GlueSALocalID: default
+GlueSATotalNearlineSize: 0
+GlueSACapability: file storage
+GlueSACapability: SRMTokenReservedSpace=0
+GlueSACapability: InstalledOnlineCapacity=0
+GlueSACapability: InstalledNearlineCapacity=0
+
+dn: GlueVOInfoLocalID=atlas:default,GlueSALocalID=default,GlueSEUniqueID=srm.hep.upenn.edu,Mds-Vo-name=local,o=grid
+objectClass: GlueKey
+objectClass: GlueSATop
+objectClass: GlueSchemaVersion
+objectClass: GlueVOInfo
+GlueVOInfoAccessControlBaseRule: atlas
+GlueVOInfoName: atlas:default
+GlueSchemaVersionMajor: 1
+GlueVOInfoPath: /srv/data/srm
+GlueVOInfoLocalID: atlas:default
+GlueSchemaVersionMinor: 3
+GlueVOInfoTag: Not A Space Reservation
+GlueChunkKey: GlueSALocalID=default
+GlueChunkKey: GlueSEUniqueID=srm.hep.upenn.edu
+
+dn: GlueSEAccessProtocolLocalID=FILE_POSIX.example.com_1234,GlueSEUniqueID=srm.hep.upenn.edu,Mds-Vo-name=local,o=grid
+objectClass: GlueKey
+objectClass: GlueSEAccessProtocol
+objectClass: GlueSETop
+objectClass: GlueSchemaVersion
+GlueSchemaVersionMajor: 1
+GlueSEAccessProtocolType: file
+GlueSEAccessProtocolEndpoint: file://POSIX.example.com:1234
+GlueSchemaVersionMinor: 3
+GlueSEAccessProtocolVersion: 1.0.0
+GlueSEAccessProtocolCapability: file transfer
+GlueSEAccessProtocolLocalID: FILE_POSIX.example.com_1234
+GlueSEAccessProtocolMaxStreams: 1
+GlueChunkKey: GlueSEUniqueID=srm.hep.upenn.edu
+GlueSEAccessProtocolPort: 1234
+GlueSEAccessProtocolSupportedSecurity: GSI
+
+dn: GlueSiteUniqueID=UPENN,mds-vo-name=local,o=grid
+objectClass: GlueKey
+objectClass: GlueSchemaVersion
+objectClass: GlueSite
+objectClass: GlueTop
+GlueSchemaVersionMajor: 1
+GlueSiteWeb: http://www.uscms.org/SoftwareComputing/Grid/Policy/OSG_VO.html
+GlueForeignKey: GlueSiteUniqueID=UPENN
+GlueSiteName: UPENN
+GlueSiteLongitude: -75.195762
+GlueSiteDescription: OSG Site
+GlueSiteLocation: Philadelphia, PA, USA
+GlueSiteSponsor: atlas:100
+GlueSiteEmailContact: mailto: keener@hep.upenn
+GlueSiteSysAdminContact: mailto: keener@hep.upenn
+GlueSiteSecurityContact: mailto: keener@hep.upenn
+GlueSiteUniqueID: UPENN
+GlueSchemaVersionMinor: 3
+GlueSiteUserSupportContact: mailto: keener@hep.upenn
+GlueSiteLatitude: 39.953514
+
+dn: GlueSEControlProtocolLocalID=srm.hep.upenn.edu_srmv2,GlueSEUniqueID=srm.hep.upenn.edu,Mds-Vo-name=local,o=grid
+objectClass: GlueKey
+objectClass: GlueSEControlProtocol
+objectClass: GlueSETop
+objectClass: GlueSchemaVersion
+GlueSchemaVersionMajor: 1
+GlueSEControlProtocolType: SRM
+GlueSEControlProtocolEndpoint: httpg://srm.hep.upenn.edu:8443/srm/v2/server
+GlueSchemaVersionMinor: 3
+GlueSEControlProtocolCapability: control
+GlueSEControlProtocolVersion: 2.2.0
+GlueChunkKey: GlueSEUniqueID=srm.hep.upenn.edu
+GlueSEControlProtocolLocalID: srm.hep.upenn.edu_srmv2
+
+dn: GlueServiceUniqueID=httpg://srm.hep.upenn.edu:8443/srm/v2/server,mds-vo-name=local,o=grid
+objectClass: GlueKey
+objectClass: GlueSchemaVersion
+objectClass: GlueService
+objectClass: GlueTop
+GlueSchemaVersionMajor: 1
+GlueSchemaVersionMinor: 3
+GlueServiceName: httpg://srm.hep.upenn.edu:8443/srm/v2/server
+GlueServiceAccessControlRule: atlas
+GlueServiceAccessControlRule: VO:atlas
+GlueServiceWSDL: http://sdm.lbl.gov/srm-wg/srm.v2.2.wsdl
+GlueServiceOwner: OSG
+GlueServiceAccessPointURL: httpg://srm.hep.upenn.edu:8443/srm/v2/server
+GlueServiceSemantics: UNDEFINED
+GlueServiceType: SRM
+GlueForeignKey: GlueSiteUniqueID=UPENN
+GlueServiceUniqueID: httpg://srm.hep.upenn.edu:8443/srm/v2/server
+GlueServiceVersion: 2.2.0
+GlueServiceURI: httpg://srm.hep.upenn.edu:8443/srm/v2/server
+GlueServiceStatusInfo: OK
+GlueServiceStartTime: 1970-01-01T00:00:00Z
+GlueServiceStatus: OK
+GlueServiceEndpoint: httpg://srm.hep.upenn.edu:8443/srm/v2/server
+
+dn: GlueServiceUniqueID=gsiftp://atlgridftp01.phy.duke.edu:2811,mds-vo-name=local,o=grid
+objectClass: GlueTop
+objectClass: GlueService
+objectClass: GlueKey
+objectClass: GlueSchemaVersion
+GlueSchemaVersionMajor: 1
+GlueSchemaVersionMinor: 3
+GlueServiceStatus: OK
+GlueServiceStatusInfo: static info 
+GlueServiceEndpoint: gsiftp://atlgridftp01.phy.duke.edu:2811
+GlueServiceUniqueID: gsiftp://atlgridftp01.phy.duke.edu:2811
+GlueServiceURI: gsiftp://atlgridftp01.phy.duke.edu:2811
+GlueServiceVersion: 2.2.0
+GlueServiceType: gsiftp
+GlueServiceAccessControlBaseRule: atlas
+GlueForeignKey: GlueSiteUniqueID=DukeT3
+
+
+dn: GlueSiteUniqueID=NYU-ATLAS,mds-vo-name=local,o=grid
+objectClass: GlueKey
+objectClass: GlueSchemaVersion
+objectClass: GlueSite
+objectClass: GlueTop
+GlueSchemaVersionMajor: 1
+GlueSiteWeb: http://www.uscms.org/SoftwareComputing/Grid/Policy/OSG_VO.html
+GlueForeignKey: GlueSiteUniqueID=NYU-ATLAS
+GlueSiteName: NYU-ATLAS
+GlueSiteLongitude: -73.99405
+GlueSiteDescription: OSG Site
+GlueSiteLocation: New York, NY, USA
+GlueSiteSponsor: atlas:100
+GlueSiteEmailContact: mailto: Attila.Krasznahorkay@cern.ch
+GlueSiteSysAdminContact: mailto: Attila.Krasznahorkay@cern.ch
+GlueSiteSecurityContact: mailto: Attila.Krasznahorkay@cern.ch
+GlueSiteUniqueID: NYU-ATLAS
+GlueSchemaVersionMinor: 3
+GlueSiteUserSupportContact: mailto: Attila.Krasznahorkay@cern.ch
+GlueSiteLatitude: 40.72909
+
+
+dn: GlueServiceUniqueID=gsiftp://t3nfs.physics.nyu.edu:2811,mds-vo-name=local,o=grid
+objectClass: GlueTop
+objectClass: GlueService
+objectClass: GlueKey
+objectClass: GlueSchemaVersion
+GlueSchemaVersionMajor: 1
+GlueSchemaVersionMinor: 3
+GlueServiceStatus: OK
+GlueServiceStatusInfo: static info 
+GlueServiceEndpoint: gsiftp://t3nfs.physics.nyu.edu:2811
+GlueServiceUniqueID: gsiftp://t3nfs.physics.nyu.edu:2811
+GlueServiceURI: gsiftp://t3nfs.physics.nyu.edu:2811
+GlueServiceVersion: 2.2.0
+GlueServiceType: gsiftp
+GlueServiceAccessControlBaseRule: atlas
+GlueForeignKey: GlueSiteUniqueID=NYU-ATLAS
+
+dn: GlueSiteUniqueID=SBU_Tier3,mds-vo-name=local,o=grid
+objectClass: GlueKey
+objectClass: GlueSchemaVersion
+objectClass: GlueSite
+objectClass: GlueTop
+GlueSchemaVersionMajor: 1
+GlueSiteWeb: http://www.uscms.org/SoftwareComputing/Grid/Policy/OSG_VO.html
+GlueForeignKey: GlueSiteUniqueID=SBU_Tier3
+GlueSiteName: SBU_Tier3
+GlueSiteLongitude: -73.126238
+GlueSiteDescription: OSG Site
+GlueSiteLocation: Stony Brook, NY, USA
+GlueSiteSponsor: atlas:100
+GlueSiteEmailContact: mailto: Dean.Schamberger@StonyBrook.edu
+GlueSiteSysAdminContact: mailto: Dean.Schamberger@StonyBrook.edu
+GlueSiteSecurityContact: mailto: Dean.Schamberger@StonyBrook.edu
+GlueSiteUniqueID: SBU_Tier3
+GlueSchemaVersionMinor: 3
+GlueSiteUserSupportContact: mailto: Dean.Schamberger@StonyBrook.edu
+GlueSiteLatitude: 40.916309
+
+dn: GlueServiceUniqueID=gsiftp://sbahead.physics.sunysb.edu:2811,mds-vo-name=local,o=grid
+objectClass: GlueTop
+objectClass: GlueService
+objectClass: GlueKey
+objectClass: GlueSchemaVersion
+GlueSchemaVersionMajor: 1
+GlueSchemaVersionMinor: 3
+GlueServiceStatus: OK
+GlueServiceStatusInfo: static info 
+GlueServiceEndpoint: gsiftp://sbahead.physics.sunysb.edu:2811
+GlueServiceUniqueID: gsiftp://sbahead.physics.sunysb.edu:2811
+GlueServiceURI: gsiftp://t3nfs.physics.nyu.edu:2811
+GlueServiceVersion: 2.2.0
+GlueServiceType: gsiftp
+GlueServiceAccessControlBaseRule: atlas
+GlueForeignKey: GlueSiteUniqueID=SBU_Tier3
+
+dn: GlueSiteUniqueID=Nevis,mds-vo-name=local,o=grid
+objectClass: GlueKey
+objectClass: GlueSchemaVersion
+objectClass: GlueSite
+objectClass: GlueTop
+GlueSchemaVersionMajor: 1
+GlueSiteWeb: http://www.uscms.org/SoftwareComputing/Grid/Policy/OSG_VO.html
+GlueForeignKey: GlueSiteUniqueID=Nevis
+GlueSiteName: Nevis
+GlueSiteLongitude: -73.87249
+GlueSiteDescription: OSG Site
+GlueSiteLocation: Irvington, NY, USA
+GlueSiteSponsor: atlas:100
+GlueSiteEmailContact: mailto: Timothy.Robert.Andeen@cern.ch
+GlueSiteSysAdminContact: mailto: Timothy.Robert.Andeen@cern.ch
+GlueSiteSecurityContact: mailto: Timothy.Robert.Andeen@cern.ch
+GlueSiteUniqueID: Nevis
+GlueSiteUserSupportContact: mailto: Timothy.Robert.Andeen@cern.ch
+GlueSiteLatitude: 41.02710
+
+dn: GlueServiceUniqueID=gsiftp://xenia.nevis.columbia.edu:2811,mds-vo-name=local,o=grid
+objectClass: GlueTop
+objectClass: GlueService
+objectClass: GlueKey
+objectClass: GlueSchemaVersion
+GlueSchemaVersionMajor: 1
+GlueSchemaVersionMinor: 3
+GlueServiceStatus: OK
+GlueServiceStatusInfo: static info 
+GlueServiceEndpoint: gsiftp://xenia.nevis.columbia.edu:2811
+GlueServiceUniqueID: gsiftp://xenia.nevis.columbia.edu:2811
+GlueServiceURI: gsiftp://xenia.nevis.columbia.edu:2811
+GlueServiceVersion: 2.2.0
+GlueServiceType: gsiftp
+GlueServiceAccessControlBaseRule: atlas
+GlueForeignKey: GlueSiteUniqueID=Nevis
+
+
+dn: GlueSEUniqueID=mfosgse.ehpc.smu.edu,Mds-Vo-name=local,o=grid
+objectClass: GlueInformationService
+objectClass: GlueKey
+objectClass: GlueSE
+objectClass: GlueSETop
+objectClass: GlueSchemaVersion
+GlueSEPort: 8443
+GlueSchemaVersionMajor: 1
+GlueSchemaVersionMinor: 3
+GlueSEImplementationVersion: 2.2.1.3
+GlueSETotalNearlineSize: 0
+GlueSEName: SMU_ManeFrame_SE
+GlueSEArchitecture: disk
+GlueSESizeTotal: 0
+GlueSETotalOnlineSize: 0
+GlueSEImplementationName: bestman
+GlueSEUsedOnlineSize: 0
+GlueForeignKey: GlueSiteUniqueID=SMU_HPC_ITB
+GlueSEUsedNearlineSize: 0
+GlueSEStatus: Production
+GlueSEUniqueID: mfosgse.ehpc.smu.edu
+GlueSESizeFree: 0
+GlueInformationServiceURL: ldap://is.grid.iu.edu:2170
+
+dn: GlueSALocalID=default,GlueSEUniqueID=mfosgse.ehpc.smu.edu,Mds-Vo-name=local,o=grid
+objectClass: GlueKey
+objectClass: GlueSA
+objectClass: GlueSAAccessControlBase
+objectClass: GlueSAPolicy
+objectClass: GlueSAState
+objectClass: GlueSATop
+objectClass: GlueSchemaVersion
+GlueSATotalOnlineSize: 0
+GlueSAPolicyMaxNumFiles: 0
+GlueSAFreeNearlineSize: 0
+GlueSchemaVersionMajor: 1
+GlueSAUsedNearlineSize: 0
+GlueSAExpirationMode: neverExpire
+GlueSAAccessLatency: online
+GlueSchemaVersionMinor: 3
+GlueSAStateUsedSpace: 0
+GlueSAPolicyQuota: 0
+GlueChunkKey: GlueSEUniqueID=mfosgse.ehpc.smu.edu
+GlueSAUsedOnlineSize: 0
+GlueSAPolicyFileLifeTime: permanent
+GlueSAAccessControlBaseRule: VO: atlas
+GlueSAAccessControlBaseRule: atlas
+GlueSAName: Default Storage Area
+GlueSAPath: /data/srm
+GlueSAType: permanent
+GlueSAStateAvailableSpace: 0
+GlueSAFreeOnlineSize: 0
+GlueSAReservedOnlineSize: 0
+GlueSARetentionPolicy: replica
+GlueSARoot: /
+GlueSAReservedNearlineSize: 0
+GlueSALocalID: default
+GlueSATotalNearlineSize: 0
+GlueSACapability: file storage
+GlueSACapability: SRMTokenReservedSpace=0
+GlueSACapability: InstalledOnlineCapacity=0
+GlueSACapability: InstalledNearlineCapacity=0
+
+dn: GlueVOInfoLocalID=atlas:default,GlueSALocalID=default,GlueSEUniqueID=mfosgse.ehpc.smu.edu,Mds-Vo-name=local,o=grid
+objectClass: GlueKey
+objectClass: GlueSATop
+objectClass: GlueSchemaVersion
+objectClass: GlueVOInfo
+GlueVOInfoAccessControlBaseRule: atlas
+GlueVOInfoName: atlas:default
+GlueSchemaVersionMajor: 1
+GlueVOInfoPath: /data/srm
+GlueVOInfoLocalID: atlas:default
+GlueSchemaVersionMinor: 3
+GlueVOInfoTag: Not A Space Reservation
+GlueChunkKey: GlueSALocalID=default
+GlueChunkKey: GlueSEUniqueID=mfosgse.ehpc.smu.edu
+
+dn: GlueSEAccessProtocolLocalID=FILE_POSIX.example.com_1234,GlueSEUniqueID=mfosgse.ehpc.smu.edu,Mds-Vo-name=local,o=grid
+objectClass: GlueKey
+objectClass: GlueSEAccessProtocol
+objectClass: GlueSETop
+objectClass: GlueSchemaVersion
+GlueSchemaVersionMajor: 1
+GlueSEAccessProtocolType: file
+GlueSEAccessProtocolEndpoint: file://POSIX.example.com:1234
+GlueSchemaVersionMinor: 3
+GlueSEAccessProtocolVersion: 1.0.0
+GlueSEAccessProtocolCapability: file transfer
+GlueSEAccessProtocolLocalID: FILE_POSIX.example.com_1234
+GlueSEAccessProtocolMaxStreams: 1
+GlueChunkKey: GlueSEUniqueID=mfosgse.ehpc.smu.edu
+GlueSEAccessProtocolPort: 1234
+GlueSEAccessProtocolSupportedSecurity: GSI
+
+dn: GlueSiteUniqueID=SMU_HPC_ITB,mds-vo-name=local,o=grid
+objectClass: GlueKey
+objectClass: GlueSchemaVersion
+objectClass: GlueSite
+objectClass: GlueTop
+GlueSchemaVersionMajor: 1
+GlueSiteWeb: http://www.uscms.org/SoftwareComputing/Grid/Policy/OSG_VO.html
+GlueForeignKey: GlueSiteUniqueID=SMU_HPC_ITB
+GlueSiteName: SMU_HPC
+GlueSiteLongitude: -96.782734
+GlueSiteDescription: OSG Site
+GlueSiteLocation: Dallas, TX, USA
+GlueSiteSponsor: atlas:100
+GlueSiteEmailContact: mailto: ahkumar@mail.smu.edu
+GlueSiteSysAdminContact: mailto: ahkumar@mail.smu.edu
+GlueSiteSecurityContact: mailto: ahkumar@mail.smu.edu
+GlueSiteUniqueID: SMU_HPC_ITB
+GlueSchemaVersionMinor: 3
+GlueSiteUserSupportContact: mailto: ahkumar@mail.smu.edu
+GlueSiteLatitude: 32.841242
+
+dn: GlueSEControlProtocolLocalID=mfosgse.ehpc.smu.edu_srmv2,GlueSEUniqueID=mfosgse.ehpc.smu.edu,Mds-Vo-name=local,o=grid
+objectClass: GlueKey
+objectClass: GlueSEControlProtocol
+objectClass: GlueSETop
+objectClass: GlueSchemaVersion
+GlueSchemaVersionMajor: 1
+GlueSEControlProtocolType: SRM
+GlueSEControlProtocolEndpoint: httpg://mfosgse.ehpc.smu.edu:8443/srm/v2/server
+GlueSchemaVersionMinor: 3
+GlueSEControlProtocolCapability: control
+GlueSEControlProtocolVersion: 2.2.0
+GlueChunkKey: GlueSEUniqueID=mfosgse.ehpc.smu.edu:8443
+GlueSEControlProtocolLocalID: mfosgse.ehpc.smu.edu_srmv2
+
+dn: GlueServiceUniqueID=httpg://mfosgse.ehpc.smu.edu:8443/srm/v2/server,mds-vo-name=local,o=grid
+objectClass: GlueKey
+objectClass: GlueSchemaVersion
+objectClass: GlueService
+objectClass: GlueTop
+GlueSchemaVersionMajor: 1
+GlueSchemaVersionMinor: 3
+GlueServiceName: httpg://mfosgse.ehpc.smu.edu:8443/srm/v2/server
+GlueServiceAccessControlRule: atlas
+GlueServiceAccessControlRule: VO:atlas
+GlueServiceWSDL: http://sdm.lbl.gov/srm-wg/srm.v2.2.wsdl
+GlueServiceOwner: OSG
+GlueServiceAccessPointURL: httpg://mfosgse.ehpc.smu.edu:8443/srm/v2/server
+GlueServiceSemantics: UNDEFINED
+GlueServiceType: SRM
+GlueForeignKey: GlueSiteUniqueID=SMU_HPC_ITB
+GlueServiceUniqueID: httpg://mfosgse.ehpc.smu.edu:8443/srm/v2/server
+GlueServiceVersion: 2.2.0
+GlueServiceURI: httpg://mfosgse.ehpc.smu.edu:8443/srm/v2/server
+GlueServiceStatusInfo: OK
+GlueServiceStartTime: 1970-01-01T00:00:00Z
+GlueServiceStatus: OK
+GlueServiceEndpoint: httpg://mfosgse.ehpc.smu.edu:8443/srm/v2/server
+

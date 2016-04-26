@@ -1,0 +1,335 @@
+dn: GlueSiteUniqueID=rutgers-cms,mds-vo-name=local,o=grid
+objectClass: GlueKey
+objectClass: GlueSchemaVersion
+objectClass: GlueSite
+objectClass: GlueTop
+GlueSchemaVersionMajor: 1
+GlueSiteWeb: UNAVAILABLE
+GlueForeignKey: GlueSiteUniqueID=rutgers-cms
+GlueSiteName: rutgers-cms
+GlueSiteLongitude: -74.39
+GlueSiteDescription: OSG Site
+GlueSiteLocation: Piscataway, USA
+GlueSiteSponsor: cms:100
+GlueSiteEmailContact: mailto: jacques@physics.rutgers.edu
+GlueSiteSysAdminContact: mailto: jacques@physics.rutgers.edu
+GlueSiteSecurityContact: mailto: jacques@physics.rutgers.edu
+GlueSiteUniqueID: rutgers-cms
+GlueSchemaVersionMinor: 3
+GlueSiteUserSupportContact: mailto: jacques@physics.rutgers.edu
+GlueSiteLatitude: 40.60
+
+dn: GlueClusterUniqueID=ruhex-osgce.rutgers.edu,mds-vo-name=local,o=grid
+objectClass: GlueCluster
+objectClass: GlueClusterTop
+objectClass: GlueInformationService
+objectClass: GlueKey
+objectClass: GlueSchemaVersion
+GlueSchemaVersionMajor: 1
+GlueClusterUniqueID: ruhex-osgce.rutgers.edu
+GlueClusterName: ruhex-osgce.rutgers.edu
+GlueForeignKey: GlueSiteUniqueID=rutgers-cms
+GlueForeignKey: GlueCEUniqueID=ruhex-osgce.rutgers.edu:2119/jobmanager-condor-default
+GlueClusterTmpDir: /osg/osg3.2/data_dir/
+GlueSchemaVersionMinor: 3
+GlueClusterWNTmpDir: /tmp
+GlueInformationServiceURL: ldap://is.grid.iu.edu:2170
+
+dn: GlueSubClusterUniqueID=ruhex osg nodes-rutgers-cms,GlueClusterUniqueID=ruhex-osgce.rutgers.edu,mds-vo-name=local,o=grid
+objectClass: GlueClusterTop
+objectClass: GlueHostApplicationSoftware
+objectClass: GlueHostArchitecture
+objectClass: GlueHostBenchmark
+objectClass: GlueHostMainMemory
+objectClass: GlueHostNetworkAdapter
+objectClass: GlueHostOperatingSystem
+objectClass: GlueHostProcessor
+objectClass: GlueInformationService
+objectClass: GlueKey
+objectClass: GlueSchemaVersion
+objectClass: GlueSubCluster
+GlueSubClusterPhysicalCPUs: 0
+GlueSchemaVersionMajor: 1
+GlueSubClusterWNTmpDir: /tmp
+GlueHostNetworkAdapterOutboundIP: TRUE
+GlueSchemaVersionMinor: 3
+GlueHostMainMemoryRAMSize: 4110
+GlueHostOperatingSystemRelease: 6.7
+GlueHostProcessorModel: Intel
+GlueChunkKey: GlueClusterUniqueID=ruhex-osgce.rutgers.edu
+GlueSubClusterLogicalCPUs: 5
+GlueHostNetworkAdapterInboundIP: FALSE
+GlueHostOperatingSystemName: ScientificCERNSLC
+GlueSubClusterTmpDir: /osg/osg3.2/data_dir/
+GlueHostBenchmarkSI00: 2000
+GlueHostProcessorVendor: Intel
+GlueSubClusterUniqueID: ruhex osg nodes-rutgers-cms
+GlueHostArchitecturePlatformType: Intel(R) Xeon(R) CPU           E5430  @ 2.66GHz
+GlueHostMainMemoryVirtualSize: 8110
+GlueHostApplicationSoftwareRunTimeEnvironment: OSG_VERSION
+GlueHostApplicationSoftwareRunTimeEnvironment: OSG 3.2.35
+GlueHostApplicationSoftwareRunTimeEnvironment: SAMPLE_SCRATCH
+GlueHostApplicationSoftwareRunTimeEnvironment: SAMPLE_LOCATION
+GlueHostProcessorOtherDescription: Cores=5
+GlueHostBenchmarkSF00: 2000
+GlueHostOperatingSystemVersion: Carbon
+GlueSubClusterName: ruhex osg nodes
+GlueHostArchitectureSMPSize: 2
+GlueHostProcessorClockSpeed: 2400
+GlueInformationServiceURL: ldap://is.grid.iu.edu:2170
+
+dn: GlueLocationLocalID=TIMESTAMP,GlueSubClusterUniqueID=ruhex osg nodes-rutgers-cms,GlueClusterUniqueID=ruhex-osgce.rutgers.edu,mds-vo-name=local,o=grid
+objectClass: GlueClusterTop
+objectClass: GlueKey
+objectClass: GlueLocation
+objectClass: GlueSchemaVersion
+GlueLocationName: TIMESTAMP
+GlueSchemaVersionMajor: 1
+GlueLocationLocalID: TIMESTAMP
+GlueSchemaVersionMinor: 3
+GlueChunkKey: GlueSubClusterUniqueID=ruhex osg nodes-rutgers-cms
+GlueLocationPath: Thu Mar 10 18:10:25 UTC 2016
+GlueLocationVersion: 1457633425.4
+
+dn: GlueCEUniqueID=ruhex-osgce.rutgers.edu:2119/jobmanager-condor-default,mds-vo-name=local,o=grid
+objectClass: GlueCE
+objectClass: GlueCEAccessControlBase
+objectClass: GlueCEInfo
+objectClass: GlueCEPolicy
+objectClass: GlueCEState
+objectClass: GlueCETop
+objectClass: GlueInformationService
+objectClass: GlueKey
+objectClass: GlueSchemaVersion
+GlueCEInfoDataDir: /osg/osg3.2/data_dir/
+GlueCEPolicyMaxObtainableCPUTime: 1440
+GlueCEStateRunningJobs: 29
+GlueSchemaVersionMajor: 1
+GlueCEInfoTotalCPUs: 34
+GlueCEStateFreeJobSlots: 5
+GlueCEPolicyMaxWaitingJobs: 99999
+GlueCEStateWorstResponseTime: 120
+GlueCEPolicyMaxTotalJobs: 99999
+GlueCEPolicyMaxObtainableWallClockTime: 1440
+GlueCEStateTotalJobs: 29
+GlueCEStateStatus: Production
+GlueForeignKey: GlueClusterUniqueID=ruhex-osgce.rutgers.edu
+GlueCECapability: CPUScalingReferenceSI00=2000
+GlueCECapability: glexec
+GlueCEAccessControlBaseRule: VO:mis
+GlueCEAccessControlBaseRule: VO:cms
+GlueCEAccessControlBaseRule: VO:ops
+GlueCEInfoLRMSType: condor
+GlueCEPolicyMaxRunningJobs: 34
+GlueCEPolicyAssignedJobSlots: 34
+GlueCEInfoApplicationDir: /osg/osg3.2/app_dir
+GlueCEPolicyPreemption: 0
+GlueCEStateFreeCPUs: 5
+GlueCEInfoGRAMVersion: 5.0
+GlueCEImplementationName: Globus
+GlueSchemaVersionMinor: 3
+GlueCEStateEstimatedResponseTime: 60
+GlueCEHostingCluster: ruhex-osgce.rutgers.edu
+GlueCEInfoHostName: ruhex-osgce.rutgers.edu
+GlueCEInfoDefaultSE: ruhex-osgce
+GlueCEImplementationVersion: 4.0.6
+GlueCEInfoLRMSVersion: 8.0.7 May 29 2014 BuildID: 250355 $
+GlueCEPolicyMaxCPUTime: 1440
+GlueCEStateWaitingJobs: 0
+GlueCEPolicyPriority: 999999
+GlueCEUniqueID: ruhex-osgce.rutgers.edu:2119/jobmanager-condor-default
+GlueCEName: default
+GlueCEInfoGatekeeperPort: 2119
+GlueCEInfoJobManager: condor
+GlueCEPolicyMaxSlotsPerJob: 1
+GlueCEInfoContactString: ruhex-osgce.rutgers.edu/jobmanager-condor-default
+GlueCEPolicyMaxWallClockTime: 1440
+GlueInformationServiceURL: ldap://is.grid.iu.edu:2170
+
+dn: GlueVOViewLocalID=mis,GlueCEUniqueID=ruhex-osgce.rutgers.edu:2119/jobmanager-condor-default,mds-vo-name=local,o=grid
+objectClass: GlueCEAccessControlBase
+objectClass: GlueCEInfo
+objectClass: GlueCEPolicy
+objectClass: GlueCEState
+objectClass: GlueCETop
+objectClass: GlueKey
+objectClass: GlueSchemaVersion
+objectClass: GlueVOView
+GlueCEInfoDataDir: /osg/osg3.2/data_dir/
+GlueCEStateRunningJobs: 0
+GlueCEStateTotalJobs: 0
+GlueSchemaVersionMajor: 1
+GlueCEStateWaitingJobs: 0
+GlueSchemaVersionMinor: 3
+GlueVOViewLocalID: mis
+GlueCEStateFreeJobSlots: 5
+GlueCEAccessControlBaseRule: VO:mis
+GlueCEStateEstimatedResponseTime: 60
+GlueChunkKey: GlueCEUniqueID=ruhex-osgce.rutgers.edu:2119/jobmanager-condor-default
+GlueCEInfoDefaultSE: ruhex-osgce
+GlueCEStateWorstResponseTime: 86400
+GlueCEInfoApplicationDir: /osg/osg3.2/app_dir
+
+dn: GlueVOViewLocalID=cms,GlueCEUniqueID=ruhex-osgce.rutgers.edu:2119/jobmanager-condor-default,mds-vo-name=local,o=grid
+objectClass: GlueCEAccessControlBase
+objectClass: GlueCEInfo
+objectClass: GlueCEPolicy
+objectClass: GlueCEState
+objectClass: GlueCETop
+objectClass: GlueKey
+objectClass: GlueSchemaVersion
+objectClass: GlueVOView
+GlueCEInfoDataDir: /osg/osg3.2/data_dir/
+GlueCEStateRunningJobs: 29
+GlueCEStateTotalJobs: 29
+GlueSchemaVersionMajor: 1
+GlueCEStateWaitingJobs: 0
+GlueSchemaVersionMinor: 3
+GlueVOViewLocalID: cms
+GlueCEStateFreeJobSlots: 5
+GlueCEAccessControlBaseRule: VO:cms
+GlueCEStateEstimatedResponseTime: 60
+GlueChunkKey: GlueCEUniqueID=ruhex-osgce.rutgers.edu:2119/jobmanager-condor-default
+GlueCEInfoDefaultSE: ruhex-osgce
+GlueCEStateWorstResponseTime: 120
+GlueCEInfoApplicationDir: /osg/osg3.2/app_dir
+
+dn: GlueVOViewLocalID=ops,GlueCEUniqueID=ruhex-osgce.rutgers.edu:2119/jobmanager-condor-default,mds-vo-name=local,o=grid
+objectClass: GlueCEAccessControlBase
+objectClass: GlueCEInfo
+objectClass: GlueCEPolicy
+objectClass: GlueCEState
+objectClass: GlueCETop
+objectClass: GlueKey
+objectClass: GlueSchemaVersion
+objectClass: GlueVOView
+GlueCEInfoDataDir: /osg/osg3.2/data_dir/
+GlueCEStateRunningJobs: 0
+GlueCEStateTotalJobs: 0
+GlueSchemaVersionMajor: 1
+GlueCEStateWaitingJobs: 0
+GlueSchemaVersionMinor: 3
+GlueVOViewLocalID: ops
+GlueCEStateFreeJobSlots: 5
+GlueCEAccessControlBaseRule: VO:ops
+GlueCEStateEstimatedResponseTime: 60
+GlueChunkKey: GlueCEUniqueID=ruhex-osgce.rutgers.edu:2119/jobmanager-condor-default
+GlueCEInfoDefaultSE: ruhex-osgce
+GlueCEStateWorstResponseTime: 86400
+GlueCEInfoApplicationDir: /osg/osg3.2/app_dir
+
+dn: GlueCESEBindSEUniqueID=rutgers-cms_classicSE,GlueCESEBindGroupCEUniqueID=ruhex-osgce.rutgers.edu:2119/jobmanager-condor-default,mds-vo-name=local,o=grid
+objectClass: GlueCESEBind
+objectClass: GlueGeneralTop
+objectClass: GlueSchemaVersion
+GlueSchemaVersionMajor: 1
+GlueCESEBindCEUniqueID: ruhex-osgce.rutgers.edu:2119/jobmanager-condor-default
+GlueSchemaVersionMinor: 3
+GlueCESEBindSEUniqueID: rutgers-cms_classicSE
+GlueCESEBindCEAccesspoint: /osg/osg3.2/data_dir/
+GlueCESEBindWeight: 0
+
+dn: GlueCESEBindGroupCEUniqueID=ruhex-osgce.rutgers.edu:2119/jobmanager-condor-default,mds-vo-name=local,o=grid
+objectClass: GlueCESEBindGroup
+objectClass: GlueGeneralTop
+objectClass: GlueSchemaVersion
+GlueSchemaVersionMinor: 3
+GlueCESEBindGroupCEUniqueID: ruhex-osgce.rutgers.edu:2119/jobmanager-condor-default
+GlueSchemaVersionMajor: 1
+GlueCESEBindGroupSEUniqueID: rutgers-cms_classicSE
+
+dn: GlueSEUniqueID=rutgers-cms_classicSE,Mds-Vo-name=local,o=grid
+objectClass: GlueInformationService
+objectClass: GlueKey
+objectClass: GlueSE
+objectClass: GlueSETop
+objectClass: GlueSchemaVersion
+GlueSEPort: 2811
+GlueSchemaVersionMajor: 1
+GlueSchemaVersionMinor: 3
+GlueSEImplementationVersion: UNKNOWN
+GlueSETotalNearlineSize: 0
+GlueSEName: rutgers-cms_classicSE
+GlueSEArchitecture: other
+GlueSESizeTotal: 10
+GlueSETotalOnlineSize: 0
+GlueSEImplementationName: classicSE
+GlueSEUsedOnlineSize: 0
+GlueForeignKey: GlueSiteUniqueID=rutgers-cms
+GlueSEUsedNearlineSize: 0
+GlueSEStatus: Production
+GlueSEUniqueID: rutgers-cms_classicSE
+GlueSESizeFree: 9
+GlueInformationServiceURL: ldap://is.grid.iu.edu:2170
+
+dn: GlueSALocalID=rutgers-cms_classicSE,GlueSEUniqueID=rutgers-cms_classicSE,Mds-Vo-name=local,o=grid
+objectClass: GlueKey
+objectClass: GlueSA
+objectClass: GlueSAAccessControlBase
+objectClass: GlueSAPolicy
+objectClass: GlueSAState
+objectClass: GlueSATop
+objectClass: GlueSchemaVersion
+GlueSATotalOnlineSize: 10
+GlueSAPolicyMaxNumFiles: 0
+GlueSAFreeNearlineSize: 0
+GlueSchemaVersionMajor: 1
+GlueSAUsedNearlineSize: 0
+GlueSAExpirationMode: neverExpire
+GlueSAAccessLatency: online
+GlueSchemaVersionMinor: 3
+GlueSAStateUsedSpace: 695078
+GlueSAPolicyQuota: 0
+GlueChunkKey: GlueSEUniqueID=rutgers-cms_classicSE
+GlueSAUsedOnlineSize: 0
+GlueSAPolicyFileLifeTime: permanent
+GlueSAAccessControlBaseRule: VO:mis
+GlueSAAccessControlBaseRule: VO:cms
+GlueSAAccessControlBaseRule: VO:ops
+GlueSAName: rutgers-cms_classicSE
+GlueSAPath: /osg/osg3.2/data_dir/
+GlueSAType: permanent
+GlueSAStateAvailableSpace: 9878487
+GlueSAFreeOnlineSize: 9
+GlueSAReservedOnlineSize: 0
+GlueSARetentionPolicy: replica
+GlueSARoot: /
+GlueSAReservedNearlineSize: 0
+GlueSALocalID: rutgers-cms_classicSE
+GlueSATotalNearlineSize: 0
+GlueSACapability: file storage
+GlueSACapability: SRMTokenReservedSpace=0
+GlueSACapability: InstalledOnlineCapacity=0
+GlueSACapability: InstalledNearlineCapacity=0
+
+dn: GlueSEAccessProtocolLocalID=GFTP_DEFAULT_2811,GlueSEUniqueID=rutgers-cms_classicSE,Mds-Vo-name=local,o=grid
+objectClass: GlueKey
+objectClass: GlueSEAccessProtocol
+objectClass: GlueSETop
+objectClass: GlueSchemaVersion
+GlueSchemaVersionMajor: 1
+GlueSEAccessProtocolType: gsiftp
+GlueSEAccessProtocolEndpoint: gsiftp://DEFAULT:2811
+GlueSchemaVersionMinor: 3
+GlueSEAccessProtocolVersion: 1.0.0
+GlueSEAccessProtocolCapability: file transfer
+GlueSEAccessProtocolLocalID: GFTP_DEFAULT_2811
+GlueSEAccessProtocolMaxStreams: 10
+GlueChunkKey: GlueSEUniqueID=rutgers-cms_classicSE
+GlueSEAccessProtocolPort: 2811
+GlueSEAccessProtocolSupportedSecurity: gsiftp
+
+dn: GlueLocationLocalID=OSG_GRID,GlueSubClusterUniqueID=ruhex osg nodes-rutgers-cms,GlueClusterUniqueID=ruhex-osgce.rutgers.edu,mds-vo-name=local,o=grid
+objectClass: GlueClusterTop
+objectClass: GlueKey
+objectClass: GlueLocation
+objectClass: GlueSchemaVersion
+GlueLocationName: OSG_GRID
+GlueSchemaVersionMajor: 1
+GlueLocationLocalID: OSG_GRID
+GlueSchemaVersionMinor: 3
+GlueChunkKey: GlueSubClusterUniqueID=ruhex osg nodes-rutgers-cms
+GlueLocationPath: /osg/osg3.2/osg-wn-client/
+GlueLocationVersion: 1.0
+
+

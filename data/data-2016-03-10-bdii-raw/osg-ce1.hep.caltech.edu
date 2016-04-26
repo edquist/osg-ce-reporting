@@ -1,0 +1,389 @@
+dn: GlueSiteUniqueID=CIT_HEP,mds-vo-name=local,o=grid
+objectClass: GlueKey
+objectClass: GlueSchemaVersion
+objectClass: GlueSite
+objectClass: GlueTop
+GlueSchemaVersionMajor: 1
+GlueSiteWeb: UNAVAILABLE
+GlueForeignKey: GlueSiteUniqueID=CIT_HEP
+GlueSiteName: CIT_HEP
+GlueSiteLongitude: -118.1244
+GlueSiteDescription: OSG Site
+GlueSiteLocation: Pasadena, USA
+GlueSiteSponsor: cms:100
+GlueSiteEmailContact: mailto: tier2admin@hep.caltech.edu
+GlueSiteSysAdminContact: mailto: tier2admin@hep.caltech.edu
+GlueSiteSecurityContact: mailto: tier2admin@hep.caltech.edu
+GlueSiteUniqueID: CIT_HEP
+GlueSchemaVersionMinor: 3
+GlueSiteUserSupportContact: mailto: tier2admin@hep.caltech.edu
+GlueSiteLatitude: 34.1361
+
+dn: GlueClusterUniqueID=osg-ce1.hep.caltech.edu,mds-vo-name=local,o=grid
+objectClass: GlueCluster
+objectClass: GlueClusterTop
+objectClass: GlueInformationService
+objectClass: GlueKey
+objectClass: GlueSchemaVersion
+GlueSchemaVersionMajor: 1
+GlueClusterUniqueID: osg-ce1.hep.caltech.edu
+GlueClusterName: osg-ce1.hep.caltech.edu
+GlueForeignKey: GlueSiteUniqueID=CIT_HEP
+GlueClusterTmpDir: /nfs/raid4/osg-data
+GlueSchemaVersionMinor: 3
+GlueClusterWNTmpDir: /mnt/work
+GlueInformationServiceURL: ldap://is.grid.iu.edu:2170
+
+dn: GlueSubClusterUniqueID=CIT_HEP_CE_3-CIT_HEP,GlueClusterUniqueID=osg-ce1.hep.caltech.edu,mds-vo-name=local,o=grid
+objectClass: GlueClusterTop
+objectClass: GlueHostApplicationSoftware
+objectClass: GlueHostArchitecture
+objectClass: GlueHostBenchmark
+objectClass: GlueHostMainMemory
+objectClass: GlueHostNetworkAdapter
+objectClass: GlueHostOperatingSystem
+objectClass: GlueHostProcessor
+objectClass: GlueInformationService
+objectClass: GlueKey
+objectClass: GlueSchemaVersion
+objectClass: GlueSubCluster
+GlueSubClusterPhysicalCPUs: 56
+GlueSchemaVersionMajor: 1
+GlueSubClusterWNTmpDir: /mnt/work
+GlueHostNetworkAdapterOutboundIP: TRUE
+GlueSchemaVersionMinor: 3
+GlueHostMainMemoryRAMSize: 8192
+GlueHostOperatingSystemRelease: 5.6
+GlueHostProcessorModel: Intel(R) Xeon(R) CPU           E5440  @ 2.83GHz
+GlueChunkKey: GlueClusterUniqueID=osg-ce1.hep.caltech.edu
+GlueSubClusterLogicalCPUs: 224
+GlueHostNetworkAdapterInboundIP: FALSE
+GlueHostOperatingSystemName: RedHatEnterpriseServer
+GlueSubClusterTmpDir: /nfs/raid4/osg-data
+GlueHostBenchmarkSI00: 2000
+GlueHostProcessorVendor: Intel
+GlueSubClusterUniqueID: CIT_HEP_CE_3-CIT_HEP
+GlueHostArchitecturePlatformType: x86_64
+GlueHostMainMemoryVirtualSize: 8192
+GlueHostApplicationSoftwareRunTimeEnvironment: OSG 3.1.9
+GlueHostApplicationSoftwareRunTimeEnvironment: OSG_VERSION
+GlueHostProcessorOtherDescription: Cores=224
+GlueHostBenchmarkSF00: 2000
+GlueHostOperatingSystemVersion: Tikanga
+GlueSubClusterName: CIT_HEP_CE_3
+GlueHostArchitectureSMPSize: 2
+GlueHostProcessorClockSpeed: 2833
+GlueInformationServiceURL: ldap://is.grid.iu.edu:2170
+
+dn: GlueSubClusterUniqueID=CIT_HEP_CE_2-CIT_HEP,GlueClusterUniqueID=osg-ce1.hep.caltech.edu,mds-vo-name=local,o=grid
+objectClass: GlueClusterTop
+objectClass: GlueHostApplicationSoftware
+objectClass: GlueHostArchitecture
+objectClass: GlueHostBenchmark
+objectClass: GlueHostMainMemory
+objectClass: GlueHostNetworkAdapter
+objectClass: GlueHostOperatingSystem
+objectClass: GlueHostProcessor
+objectClass: GlueInformationService
+objectClass: GlueKey
+objectClass: GlueSchemaVersion
+objectClass: GlueSubCluster
+GlueSubClusterPhysicalCPUs: 46
+GlueSchemaVersionMajor: 1
+GlueSubClusterWNTmpDir: /mnt/work
+GlueHostNetworkAdapterOutboundIP: TRUE
+GlueSchemaVersionMinor: 3
+GlueHostMainMemoryRAMSize: 4096
+GlueHostOperatingSystemRelease: 5.6
+GlueHostProcessorModel: Intel(R) Xeon(TM) CPU 3.00GHz
+GlueChunkKey: GlueClusterUniqueID=osg-ce1.hep.caltech.edu
+GlueSubClusterLogicalCPUs: 92
+GlueHostNetworkAdapterInboundIP: FALSE
+GlueHostOperatingSystemName: RedHatEnterpriseServer
+GlueSubClusterTmpDir: /nfs/raid4/osg-data
+GlueHostBenchmarkSI00: 2000
+GlueHostProcessorVendor: Intel
+GlueSubClusterUniqueID: CIT_HEP_CE_2-CIT_HEP
+GlueHostArchitecturePlatformType: x86_64
+GlueHostMainMemoryVirtualSize: 4096
+GlueHostApplicationSoftwareRunTimeEnvironment: OSG 3.1.9
+GlueHostApplicationSoftwareRunTimeEnvironment: OSG_VERSION
+GlueHostProcessorOtherDescription: Cores=92
+GlueHostBenchmarkSF00: 2000
+GlueHostOperatingSystemVersion: Tikanga
+GlueSubClusterName: CIT_HEP_CE_2
+GlueHostArchitectureSMPSize: 2
+GlueHostProcessorClockSpeed: 3000
+GlueInformationServiceURL: ldap://is.grid.iu.edu:2170
+
+dn: GlueSubClusterUniqueID=CIT_HEP_CE-CIT_HEP,GlueClusterUniqueID=osg-ce1.hep.caltech.edu,mds-vo-name=local,o=grid
+objectClass: GlueClusterTop
+objectClass: GlueHostApplicationSoftware
+objectClass: GlueHostArchitecture
+objectClass: GlueHostBenchmark
+objectClass: GlueHostMainMemory
+objectClass: GlueHostNetworkAdapter
+objectClass: GlueHostOperatingSystem
+objectClass: GlueHostProcessor
+objectClass: GlueInformationService
+objectClass: GlueKey
+objectClass: GlueSchemaVersion
+objectClass: GlueSubCluster
+GlueSubClusterPhysicalCPUs: 86
+GlueSchemaVersionMajor: 1
+GlueSubClusterWNTmpDir: /mnt/work
+GlueHostNetworkAdapterOutboundIP: TRUE
+GlueSchemaVersionMinor: 3
+GlueHostMainMemoryRAMSize: 4096
+GlueHostOperatingSystemRelease: 5.6
+GlueHostProcessorModel: Intel(R) Xeon(TM) CPU 2.80GHz
+GlueChunkKey: GlueClusterUniqueID=osg-ce1.hep.caltech.edu
+GlueSubClusterLogicalCPUs: 172
+GlueHostNetworkAdapterInboundIP: FALSE
+GlueHostOperatingSystemName: RedHatEnterpriseServer
+GlueSubClusterTmpDir: /nfs/raid4/osg-data
+GlueHostBenchmarkSI00: 2000
+GlueHostProcessorVendor: Intel
+GlueSubClusterUniqueID: CIT_HEP_CE-CIT_HEP
+GlueHostArchitecturePlatformType: x86_64
+GlueHostMainMemoryVirtualSize: 4096
+GlueHostApplicationSoftwareRunTimeEnvironment: OSG 3.1.9
+GlueHostApplicationSoftwareRunTimeEnvironment: OSG_VERSION
+GlueHostProcessorOtherDescription: Cores=172
+GlueHostBenchmarkSF00: 2000
+GlueHostOperatingSystemVersion: Tikanga
+GlueSubClusterName: CIT_HEP_CE
+GlueHostArchitectureSMPSize: 2
+GlueHostProcessorClockSpeed: 2800
+GlueInformationServiceURL: ldap://is.grid.iu.edu:2170
+
+dn: GlueLocationLocalID=TIMESTAMP,GlueSubClusterUniqueID=CIT_HEP_CE_3-CIT_HEP,GlueClusterUniqueID=osg-ce1.hep.caltech.edu,mds-vo-name=local,o=grid
+objectClass: GlueClusterTop
+objectClass: GlueKey
+objectClass: GlueLocation
+objectClass: GlueSchemaVersion
+GlueLocationName: TIMESTAMP
+GlueSchemaVersionMajor: 1
+GlueLocationLocalID: TIMESTAMP
+GlueSchemaVersionMinor: 3
+GlueChunkKey: GlueSubClusterUniqueID=CIT_HEP_CE_3-CIT_HEP
+GlueLocationPath: Thu Mar 10 18:15:41 UTC 2016
+GlueLocationVersion: 1457633741.04
+
+dn: GlueLocationLocalID=TIMESTAMP,GlueSubClusterUniqueID=CIT_HEP_CE_2-CIT_HEP,GlueClusterUniqueID=osg-ce1.hep.caltech.edu,mds-vo-name=local,o=grid
+objectClass: GlueClusterTop
+objectClass: GlueKey
+objectClass: GlueLocation
+objectClass: GlueSchemaVersion
+GlueLocationName: TIMESTAMP
+GlueSchemaVersionMajor: 1
+GlueLocationLocalID: TIMESTAMP
+GlueSchemaVersionMinor: 3
+GlueChunkKey: GlueSubClusterUniqueID=CIT_HEP_CE_2-CIT_HEP
+GlueLocationPath: Thu Mar 10 18:15:41 UTC 2016
+GlueLocationVersion: 1457633741.04
+
+dn: GlueLocationLocalID=TIMESTAMP,GlueSubClusterUniqueID=CIT_HEP_CE-CIT_HEP,GlueClusterUniqueID=osg-ce1.hep.caltech.edu,mds-vo-name=local,o=grid
+objectClass: GlueClusterTop
+objectClass: GlueKey
+objectClass: GlueLocation
+objectClass: GlueSchemaVersion
+GlueLocationName: TIMESTAMP
+GlueSchemaVersionMajor: 1
+GlueLocationLocalID: TIMESTAMP
+GlueSchemaVersionMinor: 3
+GlueChunkKey: GlueSubClusterUniqueID=CIT_HEP_CE-CIT_HEP
+GlueLocationPath: Thu Mar 10 18:15:41 UTC 2016
+GlueLocationVersion: 1457633741.04
+
+dn: GlueLocationLocalID=OSG_GRID,GlueSubClusterUniqueID=CIT_HEP_CE_3-CIT_HEP,GlueClusterUniqueID=osg-ce1.hep.caltech.edu,mds-vo-name=local,o=grid
+objectClass: GlueClusterTop
+objectClass: GlueKey
+objectClass: GlueLocation
+objectClass: GlueSchemaVersion
+GlueLocationName: OSG_GRID
+GlueSchemaVersionMajor: 1
+GlueLocationLocalID: OSG_GRID
+GlueSchemaVersionMinor: 3
+GlueChunkKey: GlueSubClusterUniqueID=CIT_HEP_CE_3-CIT_HEP
+GlueLocationPath: /etc/osg/wn-client/
+GlueLocationVersion: 1.0
+
+dn: GlueLocationLocalID=OSG_GRID,GlueSubClusterUniqueID=CIT_HEP_CE_2-CIT_HEP,GlueClusterUniqueID=osg-ce1.hep.caltech.edu,mds-vo-name=local,o=grid
+objectClass: GlueClusterTop
+objectClass: GlueKey
+objectClass: GlueLocation
+objectClass: GlueSchemaVersion
+GlueLocationName: OSG_GRID
+GlueSchemaVersionMajor: 1
+GlueLocationLocalID: OSG_GRID
+GlueSchemaVersionMinor: 3
+GlueChunkKey: GlueSubClusterUniqueID=CIT_HEP_CE_2-CIT_HEP
+GlueLocationPath: /etc/osg/wn-client/
+GlueLocationVersion: 1.0
+
+dn: GlueLocationLocalID=OSG_GRID,GlueSubClusterUniqueID=CIT_HEP_CE-CIT_HEP,GlueClusterUniqueID=osg-ce1.hep.caltech.edu,mds-vo-name=local,o=grid
+objectClass: GlueClusterTop
+objectClass: GlueKey
+objectClass: GlueLocation
+objectClass: GlueSchemaVersion
+GlueLocationName: OSG_GRID
+GlueSchemaVersionMajor: 1
+GlueLocationLocalID: OSG_GRID
+GlueSchemaVersionMinor: 3
+GlueChunkKey: GlueSubClusterUniqueID=CIT_HEP_CE-CIT_HEP
+GlueLocationPath: /etc/osg/wn-client/
+GlueLocationVersion: 1.0
+
+dn: GlueSEUniqueID=osg-se.hep.caltech.edu,Mds-Vo-name=local,o=grid
+objectClass: GlueInformationService
+objectClass: GlueKey
+objectClass: GlueSE
+objectClass: GlueSETop
+objectClass: GlueSchemaVersion
+GlueSEPort: 8443
+GlueSchemaVersionMajor: 1
+GlueSchemaVersionMinor: 3
+GlueSEImplementationVersion: 2.0.2-1.el5
+GlueSETotalNearlineSize: 0
+GlueSEName: CIT_HEP_SE
+GlueSEArchitecture: disk
+GlueSESizeTotal: 0
+GlueSETotalOnlineSize: 0
+GlueSEImplementationName: bestman
+GlueSEUsedOnlineSize: 0
+GlueForeignKey: GlueSiteUniqueID=CIT_HEP
+GlueSEUsedNearlineSize: 0
+GlueSEStatus: Production
+GlueSEUniqueID: osg-se.hep.caltech.edu
+GlueSESizeFree: 0
+GlueInformationServiceURL: ldap://is.grid.iu.edu:2170
+
+dn: GlueSALocalID=default,GlueSEUniqueID=osg-se.hep.caltech.edu,Mds-Vo-name=local,o=grid
+objectClass: GlueKey
+objectClass: GlueSA
+objectClass: GlueSAAccessControlBase
+objectClass: GlueSAPolicy
+objectClass: GlueSAState
+objectClass: GlueSATop
+objectClass: GlueSchemaVersion
+GlueSATotalOnlineSize: 0
+GlueSAPolicyMaxNumFiles: 0
+GlueSAFreeNearlineSize: 0
+GlueSchemaVersionMajor: 1
+GlueSAUsedNearlineSize: 0
+GlueSAExpirationMode: neverExpire
+GlueSAAccessLatency: online
+GlueSchemaVersionMinor: 3
+GlueSAStateUsedSpace: 0
+GlueSAPolicyQuota: 0
+GlueChunkKey: GlueSEUniqueID=osg-se.hep.caltech.edu
+GlueSAUsedOnlineSize: 0
+GlueSAPolicyFileLifeTime: permanent
+GlueSAAccessControlBaseRule: VO:cms
+GlueSAAccessControlBaseRule: VO:osg
+GlueSAAccessControlBaseRule: cms
+GlueSAAccessControlBaseRule: osg
+GlueSAName: Default Storage Area
+GlueSAPath: /nfs/raid4/osg-data
+GlueSAType: permanent
+GlueSAStateAvailableSpace: 0
+GlueSAFreeOnlineSize: 0
+GlueSAReservedOnlineSize: 0
+GlueSARetentionPolicy: replica
+GlueSARoot: /
+GlueSAReservedNearlineSize: 0
+GlueSALocalID: default
+GlueSATotalNearlineSize: 0
+GlueSACapability: file storage
+GlueSACapability: SRMTokenReservedSpace=0
+GlueSACapability: InstalledOnlineCapacity=0
+GlueSACapability: InstalledNearlineCapacity=0
+
+dn: GlueVOInfoLocalID=cms:default,GlueSALocalID=default,GlueSEUniqueID=osg-se.hep.caltech.edu,Mds-Vo-name=local,o=grid
+objectClass: GlueKey
+objectClass: GlueSATop
+objectClass: GlueSchemaVersion
+objectClass: GlueVOInfo
+GlueVOInfoAccessControlBaseRule: cms
+GlueSchemaVersionMinor: 3
+GlueVOInfoName: cms:default
+GlueSchemaVersionMajor: 1
+GlueVOInfoPath: /nfs/raid4/osg-data
+GlueVOInfoLocalID: cms:default
+GlueChunkKey: GlueSALocalID=default
+GlueChunkKey: GlueSEUniqueID=osg-se.hep.caltech.edu
+
+dn: GlueVOInfoLocalID=osg:default,GlueSALocalID=default,GlueSEUniqueID=osg-se.hep.caltech.edu,Mds-Vo-name=local,o=grid
+objectClass: GlueKey
+objectClass: GlueSATop
+objectClass: GlueSchemaVersion
+objectClass: GlueVOInfo
+GlueVOInfoAccessControlBaseRule: osg
+GlueSchemaVersionMinor: 3
+GlueVOInfoName: osg:default
+GlueSchemaVersionMajor: 1
+GlueVOInfoPath: /nfs/raid4/osg-data
+GlueVOInfoLocalID: osg:default
+GlueChunkKey: GlueSALocalID=default
+GlueChunkKey: GlueSEUniqueID=osg-se.hep.caltech.edu
+
+dn: GlueSEAccessProtocolLocalID=FILE_POSIX.example.com_1234,GlueSEUniqueID=osg-se.hep.caltech.edu,Mds-Vo-name=local,o=grid
+objectClass: GlueKey
+objectClass: GlueSEAccessProtocol
+objectClass: GlueSETop
+objectClass: GlueSchemaVersion
+GlueSchemaVersionMajor: 1
+GlueSEAccessProtocolType: file
+GlueSEAccessProtocolEndpoint: file://POSIX.example.com:1234
+GlueSchemaVersionMinor: 3
+GlueSEAccessProtocolVersion: 1.0.0
+GlueSEAccessProtocolCapability: file transfer
+GlueSEAccessProtocolLocalID: FILE_POSIX.example.com_1234
+GlueSEAccessProtocolMaxStreams: 1
+GlueChunkKey: GlueSEUniqueID=osg-se.hep.caltech.edu
+GlueSEAccessProtocolPort: 1234
+GlueSEAccessProtocolSupportedSecurity: GSI
+
+dn: GlueSEControlProtocolLocalID=osg-se.hep.caltech.edu_srmv2,GlueSEUniqueID=osg-se.hep.caltech.edu,Mds-Vo-name=local,o=grid
+objectClass: GlueKey
+objectClass: GlueSEControlProtocol
+objectClass: GlueSETop
+objectClass: GlueSchemaVersion
+GlueSchemaVersionMajor: 1
+GlueSEControlProtocolType: SRM
+GlueSEControlProtocolEndpoint: httpg://osg-se.hep.caltech.edu:8443/srm/v2/server
+GlueSchemaVersionMinor: 3
+GlueSEControlProtocolCapability: control
+GlueSEControlProtocolVersion: 2.2.0
+GlueChunkKey: GlueSEUniqueID=osg-se.hep.caltech.edu
+GlueSEControlProtocolLocalID: osg-se.hep.caltech.edu_srmv2
+
+dn: GlueServiceUniqueID=httpg://osg-se.hep.caltech.edu:8443/srm/v2/server,mds-vo-name=local,o=grid
+objectClass: GlueKey
+objectClass: GlueSchemaVersion
+objectClass: GlueService
+objectClass: GlueTop
+GlueSchemaVersionMajor: 1
+GlueSchemaVersionMinor: 3
+GlueServiceName: httpg://osg-se.hep.caltech.edu:8443/srm/v2/server
+GlueServiceAccessControlRule: cms
+GlueServiceAccessControlRule: VO:cms
+GlueServiceAccessControlRule: osg
+GlueServiceAccessControlRule: VO:osg
+GlueServiceWSDL: http://sdm.lbl.gov/srm-wg/srm.v2.2.wsdl
+GlueServiceOwner: OSG
+GlueServiceAccessPointURL: httpg://osg-se.hep.caltech.edu:8443/srm/v2/server
+GlueServiceSemantics: http://sdm.lbl.gov/srm-wg/doc/SRM.v2.2.pdf
+GlueServiceType: SRM
+GlueForeignKey: GlueSiteUniqueID=CIT_HEP
+GlueServiceUniqueID: httpg://osg-se.hep.caltech.edu:8443/srm/v2/server
+GlueServiceVersion: 2.2.0
+GlueServiceURI: httpg://osg-se.hep.caltech.edu:8443/srm/v2/server
+GlueServiceStatusInfo: OK
+GlueServiceStartTime: 1970-01-01T00:00:00Z
+GlueServiceStatus: OK
+GlueServiceEndpoint: httpg://osg-se.hep.caltech.edu:8443/srm/v2/server
+
+
+

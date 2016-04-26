@@ -1,0 +1,105 @@
+dn: GlueSiteUniqueID=IU_OSG,mds-vo-name=local,o=grid
+objectClass: GlueKey
+objectClass: GlueSchemaVersion
+objectClass: GlueSite
+objectClass: GlueTop
+GlueSchemaVersionMajor: 1
+GlueSiteWeb: UNAVAILABLE
+GlueForeignKey: GlueSiteUniqueID=IU_OSG
+GlueSiteName: IU_OSG
+GlueSiteLongitude: -86.529167
+GlueSiteDescription: OSG Site
+GlueSiteLocation: Bloomington, United States
+GlueSiteSponsor: osg:100
+GlueSiteEmailContact: mailto: hps-admin@iu.edu
+GlueSiteSysAdminContact: mailto: hps-admin@iu.edu
+GlueSiteSecurityContact: mailto: hps-admin@iu.edu
+GlueSiteUniqueID: IU_OSG
+GlueSchemaVersionMinor: 3
+GlueSiteUserSupportContact: mailto: hps-admin@iu.edu
+GlueSiteLatitude: 39.162222
+
+dn: GlueClusterUniqueID=m3.quarry.teragrid.iu.edu,mds-vo-name=local,o=grid
+objectClass: GlueCluster
+objectClass: GlueClusterTop
+objectClass: GlueInformationService
+objectClass: GlueKey
+objectClass: GlueSchemaVersion
+GlueSchemaVersionMajor: 1
+GlueClusterUniqueID: m3.quarry.teragrid.iu.edu
+GlueClusterName: m3.quarry.teragrid.iu.edu
+GlueForeignKey: GlueSiteUniqueID=IU_OSG
+GlueClusterTmpDir: /N/u/csiu0/Quarry
+GlueSchemaVersionMinor: 3
+GlueClusterWNTmpDir: /tmp
+GlueInformationServiceURL: ldap://is.grid.iu.edu:2170
+
+dn: GlueSubClusterUniqueID=Quarry-IU_OSG,GlueClusterUniqueID=m3.quarry.teragrid.iu.edu,mds-vo-name=local,o=grid
+objectClass: GlueClusterTop
+objectClass: GlueHostApplicationSoftware
+objectClass: GlueHostArchitecture
+objectClass: GlueHostBenchmark
+objectClass: GlueHostMainMemory
+objectClass: GlueHostNetworkAdapter
+objectClass: GlueHostOperatingSystem
+objectClass: GlueHostProcessor
+objectClass: GlueInformationService
+objectClass: GlueKey
+objectClass: GlueSchemaVersion
+objectClass: GlueSubCluster
+GlueSubClusterPhysicalCPUs: 440
+GlueSchemaVersionMajor: 1
+GlueSubClusterWNTmpDir: /tmp
+GlueHostNetworkAdapterOutboundIP: TRUE
+GlueSchemaVersionMinor: 3
+GlueHostMainMemoryRAMSize: 16000
+GlueHostOperatingSystemRelease: 6.6
+GlueHostProcessorModel: Intel(R) Xeon(R) CPU ES5410
+GlueChunkKey: GlueClusterUniqueID=m3.quarry.teragrid.iu.edu
+GlueSubClusterLogicalCPUs: 1760
+GlueHostNetworkAdapterInboundIP: FALSE
+GlueHostOperatingSystemName: RedHatEnterpriseServer
+GlueSubClusterTmpDir: /N/u/csiu0/Quarry
+GlueHostBenchmarkSI00: 2000
+GlueHostProcessorVendor: Intel
+GlueSubClusterUniqueID: Quarry-IU_OSG
+GlueHostArchitecturePlatformType: x86_64
+GlueHostMainMemoryVirtualSize: 16000
+GlueHostApplicationSoftwareRunTimeEnvironment: OSG_VERSION
+GlueHostApplicationSoftwareRunTimeEnvironment: OSG 3.1.40
+GlueHostProcessorOtherDescription: Cores=1760
+GlueHostBenchmarkSF00: 2000
+GlueHostOperatingSystemVersion: Santiago
+GlueSubClusterName: Quarry
+GlueHostArchitectureSMPSize: 2
+GlueHostProcessorClockSpeed: 2333
+GlueInformationServiceURL: ldap://is.grid.iu.edu:2170
+
+dn: GlueLocationLocalID=TIMESTAMP,GlueSubClusterUniqueID=Quarry-IU_OSG,GlueClusterUniqueID=m3.quarry.teragrid.iu.edu,mds-vo-name=local,o=grid
+objectClass: GlueClusterTop
+objectClass: GlueKey
+objectClass: GlueLocation
+objectClass: GlueSchemaVersion
+GlueLocationName: TIMESTAMP
+GlueSchemaVersionMajor: 1
+GlueLocationLocalID: TIMESTAMP
+GlueSchemaVersionMinor: 3
+GlueChunkKey: GlueSubClusterUniqueID=Quarry-IU_OSG
+GlueLocationPath: Thu Mar 10 18:17:09 UTC 2016
+GlueLocationVersion: 1457633829.53
+
+dn: GlueLocationLocalID=OSG_GRID,GlueSubClusterUniqueID=Quarry-IU_OSG,GlueClusterUniqueID=m3.quarry.teragrid.iu.edu,mds-vo-name=local,o=grid
+objectClass: GlueClusterTop
+objectClass: GlueKey
+objectClass: GlueLocation
+objectClass: GlueSchemaVersion
+GlueLocationName: OSG_GRID
+GlueSchemaVersionMajor: 1
+GlueLocationLocalID: OSG_GRID
+GlueSchemaVersionMinor: 3
+GlueChunkKey: GlueSubClusterUniqueID=Quarry-IU_OSG
+GlueLocationPath: /etc/osg/wn-client/
+GlueLocationVersion: 1.0
+
+
+

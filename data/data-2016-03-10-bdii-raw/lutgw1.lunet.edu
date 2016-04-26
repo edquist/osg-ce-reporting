@@ -1,0 +1,914 @@
+dn: GlueSiteUniqueID=LUCILLE,mds-vo-name=local,o=grid
+objectClass: GlueKey
+objectClass: GlueSchemaVersion
+objectClass: GlueSite
+objectClass: GlueTop
+GlueSchemaVersionMajor: 1
+GlueSiteWeb: UNAVAILABLE
+GlueForeignKey: GlueSiteUniqueID=LUCILLE
+GlueSiteName: LUCILLE
+GlueSiteLongitude: -97.259847
+GlueSiteDescription: OSG Site
+GlueSiteLocation: Langston, USA
+GlueSiteSponsor: dosar:100
+GlueSiteEmailContact: mailto: snow@physics.lunet.edu
+GlueSiteSysAdminContact: mailto: snow@physics.lunet.edu
+GlueSiteSecurityContact: mailto: snow@physics.lunet.edu
+GlueSiteUniqueID: LUCILLE
+GlueSchemaVersionMinor: 3
+GlueSiteUserSupportContact: mailto: snow@physics.lunet.edu
+GlueSiteLatitude: 35.945191
+
+dn: GlueClusterUniqueID=lutgw1.lunet.edu,mds-vo-name=local,o=grid
+objectClass: GlueCluster
+objectClass: GlueClusterTop
+objectClass: GlueInformationService
+objectClass: GlueKey
+objectClass: GlueSchemaVersion
+GlueSchemaVersionMajor: 1
+GlueClusterUniqueID: lutgw1.lunet.edu
+GlueClusterName: lutgw1.lunet.edu
+GlueForeignKey: GlueSiteUniqueID=LUCILLE
+GlueForeignKey: GlueCEUniqueID=lutgw1.lunet.edu:9619/htcondorce-condor-default
+GlueClusterTmpDir: /data/osg/data
+GlueSchemaVersionMinor: 3
+GlueClusterWNTmpDir: /export/scratch
+GlueInformationServiceURL: ldap://is.grid.iu.edu:2170
+
+dn: GlueSubClusterUniqueID=Lucille Compute Langston-LUCILLE,GlueClusterUniqueID=lutgw1.lunet.edu,mds-vo-name=local,o=grid
+objectClass: GlueClusterTop
+objectClass: GlueHostApplicationSoftware
+objectClass: GlueHostArchitecture
+objectClass: GlueHostBenchmark
+objectClass: GlueHostMainMemory
+objectClass: GlueHostNetworkAdapter
+objectClass: GlueHostOperatingSystem
+objectClass: GlueHostProcessor
+objectClass: GlueInformationService
+objectClass: GlueKey
+objectClass: GlueSchemaVersion
+objectClass: GlueSubCluster
+GlueSubClusterPhysicalCPUs: 54
+GlueSchemaVersionMajor: 1
+GlueSubClusterWNTmpDir: /export/scratch
+GlueHostNetworkAdapterOutboundIP: TRUE
+GlueSchemaVersionMinor: 3
+GlueHostMainMemoryRAMSize: 128000
+GlueHostOperatingSystemRelease: 6.7
+GlueHostProcessorModel: Intel(R) Xeon(R) CPU E5-2650 0 @ 2.00GHz
+GlueChunkKey: GlueClusterUniqueID=lutgw1.lunet.edu
+GlueSubClusterLogicalCPUs: 864
+GlueHostNetworkAdapterInboundIP: FALSE
+GlueHostOperatingSystemName: CentOS
+GlueSubClusterTmpDir: /data/osg/data
+GlueHostBenchmarkSI00: 2000
+GlueHostProcessorVendor: Intel
+GlueSubClusterUniqueID: Lucille Compute Langston-LUCILLE
+GlueHostArchitecturePlatformType: x86_64
+GlueHostMainMemoryVirtualSize: 160767
+GlueHostApplicationSoftwareRunTimeEnvironment: OSG 3.3.9
+GlueHostApplicationSoftwareRunTimeEnvironment: OSG_VERSION
+GlueHostApplicationSoftwareRunTimeEnvironment: SAMPLE_SCRATCH
+GlueHostApplicationSoftwareRunTimeEnvironment: SAMPLE_LOCATION
+GlueHostProcessorOtherDescription: Cores=864
+GlueHostBenchmarkSF00: 2000
+GlueHostOperatingSystemVersion: Final
+GlueSubClusterName: Lucille Compute Langston
+GlueHostArchitectureSMPSize: 2
+GlueHostProcessorClockSpeed: 2000
+GlueInformationServiceURL: ldap://is.grid.iu.edu:2170
+
+dn: GlueSubClusterUniqueID=Lucille GPU Compute Langston-LUCILLE,GlueClusterUniqueID=lutgw1.lunet.edu,mds-vo-name=local,o=grid
+objectClass: GlueClusterTop
+objectClass: GlueHostApplicationSoftware
+objectClass: GlueHostArchitecture
+objectClass: GlueHostBenchmark
+objectClass: GlueHostMainMemory
+objectClass: GlueHostNetworkAdapter
+objectClass: GlueHostOperatingSystem
+objectClass: GlueHostProcessor
+objectClass: GlueInformationService
+objectClass: GlueKey
+objectClass: GlueSchemaVersion
+objectClass: GlueSubCluster
+GlueSubClusterPhysicalCPUs: 8
+GlueSchemaVersionMajor: 1
+GlueSubClusterWNTmpDir: /export/scratch
+GlueHostNetworkAdapterOutboundIP: TRUE
+GlueSchemaVersionMinor: 3
+GlueHostMainMemoryRAMSize: 128000
+GlueHostOperatingSystemRelease: 6.7
+GlueHostProcessorModel: Intel(R) Xeon(R) CPU E5-2660 0 @ 2.20GHz
+GlueChunkKey: GlueClusterUniqueID=lutgw1.lunet.edu
+GlueSubClusterLogicalCPUs: 128
+GlueHostNetworkAdapterInboundIP: FALSE
+GlueHostOperatingSystemName: CentOS
+GlueSubClusterTmpDir: /data/osg/data
+GlueHostBenchmarkSI00: 2000
+GlueHostProcessorVendor: Intel
+GlueSubClusterUniqueID: Lucille GPU Compute Langston-LUCILLE
+GlueHostArchitecturePlatformType: x86_64
+GlueHostMainMemoryVirtualSize: 193535
+GlueHostApplicationSoftwareRunTimeEnvironment: OSG 3.3.9
+GlueHostApplicationSoftwareRunTimeEnvironment: OSG_VERSION
+GlueHostApplicationSoftwareRunTimeEnvironment: SAMPLE_SCRATCH
+GlueHostApplicationSoftwareRunTimeEnvironment: SAMPLE_LOCATION
+GlueHostProcessorOtherDescription: Cores=128
+GlueHostBenchmarkSF00: 2000
+GlueHostOperatingSystemVersion: Final
+GlueSubClusterName: Lucille GPU Compute Langston
+GlueHostArchitectureSMPSize: 2
+GlueHostProcessorClockSpeed: 2200
+GlueInformationServiceURL: ldap://is.grid.iu.edu:2170
+
+dn: GlueSubClusterUniqueID=Lucille Head Langston-LUCILLE,GlueClusterUniqueID=lutgw1.lunet.edu,mds-vo-name=local,o=grid
+objectClass: GlueClusterTop
+objectClass: GlueHostApplicationSoftware
+objectClass: GlueHostArchitecture
+objectClass: GlueHostBenchmark
+objectClass: GlueHostMainMemory
+objectClass: GlueHostNetworkAdapter
+objectClass: GlueHostOperatingSystem
+objectClass: GlueHostProcessor
+objectClass: GlueInformationService
+objectClass: GlueKey
+objectClass: GlueSchemaVersion
+objectClass: GlueSubCluster
+GlueSubClusterPhysicalCPUs: 4
+GlueSchemaVersionMajor: 1
+GlueSubClusterWNTmpDir: /export/scratch
+GlueHostNetworkAdapterOutboundIP: TRUE
+GlueSchemaVersionMinor: 3
+GlueHostMainMemoryRAMSize: 128000
+GlueHostOperatingSystemRelease: 6.7
+GlueHostProcessorModel: Intel(R) Xeon(R) CPU E5-2660 0 @ 2.20GHz
+GlueChunkKey: GlueClusterUniqueID=lutgw1.lunet.edu
+GlueSubClusterLogicalCPUs: 64
+GlueHostNetworkAdapterInboundIP: TRUE
+GlueHostOperatingSystemName: CentOS
+GlueSubClusterTmpDir: /data/osg/data
+GlueHostBenchmarkSI00: 2000
+GlueHostProcessorVendor: Intel
+GlueSubClusterUniqueID: Lucille Head Langston-LUCILLE
+GlueHostArchitecturePlatformType: x86_64
+GlueHostMainMemoryVirtualSize: 132095
+GlueHostApplicationSoftwareRunTimeEnvironment: OSG 3.3.9
+GlueHostApplicationSoftwareRunTimeEnvironment: OSG_VERSION
+GlueHostApplicationSoftwareRunTimeEnvironment: SAMPLE_SCRATCH
+GlueHostApplicationSoftwareRunTimeEnvironment: SAMPLE_LOCATION
+GlueHostProcessorOtherDescription: Cores=64
+GlueHostBenchmarkSF00: 2000
+GlueHostOperatingSystemVersion: Final
+GlueSubClusterName: Lucille Head Langston
+GlueHostArchitectureSMPSize: 2
+GlueHostProcessorClockSpeed: 2200
+GlueInformationServiceURL: ldap://is.grid.iu.edu:2170
+
+dn: GlueSubClusterUniqueID=Lucille Storage Langston-LUCILLE,GlueClusterUniqueID=lutgw1.lunet.edu,mds-vo-name=local,o=grid
+objectClass: GlueClusterTop
+objectClass: GlueHostApplicationSoftware
+objectClass: GlueHostArchitecture
+objectClass: GlueHostBenchmark
+objectClass: GlueHostMainMemory
+objectClass: GlueHostNetworkAdapter
+objectClass: GlueHostOperatingSystem
+objectClass: GlueHostProcessor
+objectClass: GlueInformationService
+objectClass: GlueKey
+objectClass: GlueSchemaVersion
+objectClass: GlueSubCluster
+GlueSubClusterPhysicalCPUs: 4
+GlueSchemaVersionMajor: 1
+GlueSubClusterWNTmpDir: /export/scratch
+GlueHostNetworkAdapterOutboundIP: TRUE
+GlueSchemaVersionMinor: 3
+GlueHostMainMemoryRAMSize: 128000
+GlueHostOperatingSystemRelease: 6.7
+GlueHostProcessorModel: Intel(R) Xeon(R) CPU E5-2680 0 @ 2.70GHz
+GlueChunkKey: GlueClusterUniqueID=lutgw1.lunet.edu
+GlueSubClusterLogicalCPUs: 64
+GlueHostNetworkAdapterInboundIP: FALSE
+GlueHostOperatingSystemName: CentOS
+GlueSubClusterTmpDir: /data/osg/data
+GlueHostBenchmarkSI00: 2000
+GlueHostProcessorVendor: Intel
+GlueSubClusterUniqueID: Lucille Storage Langston-LUCILLE
+GlueHostArchitecturePlatformType: x86_64
+GlueHostMainMemoryVirtualSize: 256000
+GlueHostApplicationSoftwareRunTimeEnvironment: OSG 3.3.9
+GlueHostApplicationSoftwareRunTimeEnvironment: OSG_VERSION
+GlueHostApplicationSoftwareRunTimeEnvironment: SAMPLE_SCRATCH
+GlueHostApplicationSoftwareRunTimeEnvironment: SAMPLE_LOCATION
+GlueHostProcessorOtherDescription: Cores=64
+GlueHostBenchmarkSF00: 2000
+GlueHostOperatingSystemVersion: Final
+GlueSubClusterName: Lucille Storage Langston
+GlueHostArchitectureSMPSize: 2
+GlueHostProcessorClockSpeed: 2700
+GlueInformationServiceURL: ldap://is.grid.iu.edu:2170
+
+dn: GlueLocationLocalID=TIMESTAMP,GlueSubClusterUniqueID=Lucille Compute Langston-LUCILLE,GlueClusterUniqueID=lutgw1.lunet.edu,mds-vo-name=local,o=grid
+objectClass: GlueClusterTop
+objectClass: GlueKey
+objectClass: GlueLocation
+objectClass: GlueSchemaVersion
+GlueLocationName: TIMESTAMP
+GlueSchemaVersionMajor: 1
+GlueLocationLocalID: TIMESTAMP
+GlueSchemaVersionMinor: 3
+GlueChunkKey: GlueSubClusterUniqueID=Lucille Compute Langston-LUCILLE
+GlueLocationPath: Thu Mar 10 18:11:27 UTC 2016
+GlueLocationVersion: 1457633487.36
+
+dn: GlueLocationLocalID=TIMESTAMP,GlueSubClusterUniqueID=Lucille GPU Compute Langston-LUCILLE,GlueClusterUniqueID=lutgw1.lunet.edu,mds-vo-name=local,o=grid
+objectClass: GlueClusterTop
+objectClass: GlueKey
+objectClass: GlueLocation
+objectClass: GlueSchemaVersion
+GlueLocationName: TIMESTAMP
+GlueSchemaVersionMajor: 1
+GlueLocationLocalID: TIMESTAMP
+GlueSchemaVersionMinor: 3
+GlueChunkKey: GlueSubClusterUniqueID=Lucille GPU Compute Langston-LUCILLE
+GlueLocationPath: Thu Mar 10 18:11:27 UTC 2016
+GlueLocationVersion: 1457633487.36
+
+dn: GlueLocationLocalID=TIMESTAMP,GlueSubClusterUniqueID=Lucille Head Langston-LUCILLE,GlueClusterUniqueID=lutgw1.lunet.edu,mds-vo-name=local,o=grid
+objectClass: GlueClusterTop
+objectClass: GlueKey
+objectClass: GlueLocation
+objectClass: GlueSchemaVersion
+GlueLocationName: TIMESTAMP
+GlueSchemaVersionMajor: 1
+GlueLocationLocalID: TIMESTAMP
+GlueSchemaVersionMinor: 3
+GlueChunkKey: GlueSubClusterUniqueID=Lucille Head Langston-LUCILLE
+GlueLocationPath: Thu Mar 10 18:11:27 UTC 2016
+GlueLocationVersion: 1457633487.36
+
+dn: GlueLocationLocalID=TIMESTAMP,GlueSubClusterUniqueID=Lucille Storage Langston-LUCILLE,GlueClusterUniqueID=lutgw1.lunet.edu,mds-vo-name=local,o=grid
+objectClass: GlueClusterTop
+objectClass: GlueKey
+objectClass: GlueLocation
+objectClass: GlueSchemaVersion
+GlueLocationName: TIMESTAMP
+GlueSchemaVersionMajor: 1
+GlueLocationLocalID: TIMESTAMP
+GlueSchemaVersionMinor: 3
+GlueChunkKey: GlueSubClusterUniqueID=Lucille Storage Langston-LUCILLE
+GlueLocationPath: Thu Mar 10 18:11:27 UTC 2016
+GlueLocationVersion: 1457633487.36
+
+dn: GlueCEUniqueID=lutgw1.lunet.edu:9619/htcondorce-condor-default,mds-vo-name=local,o=grid
+objectClass: GlueCE
+objectClass: GlueCEAccessControlBase
+objectClass: GlueCEInfo
+objectClass: GlueCEPolicy
+objectClass: GlueCEState
+objectClass: GlueCETop
+objectClass: GlueInformationService
+objectClass: GlueKey
+objectClass: GlueSchemaVersion
+GlueCEInfoDataDir: /data/osg/data
+GlueCEPolicyMaxObtainableCPUTime: 1440
+GlueCEStateRunningJobs: 70
+GlueSchemaVersionMajor: 1
+GlueCEInfoTotalCPUs: 94
+GlueCEStateFreeJobSlots: 24
+GlueCEPolicyMaxWaitingJobs: 99999
+GlueCEStateWorstResponseTime: 4867
+GlueCEPolicyMaxTotalJobs: 99999
+GlueCEPolicyMaxObtainableWallClockTime: 1440
+GlueCEStateTotalJobs: 74
+GlueCEStateStatus: Production
+GlueForeignKey: GlueClusterUniqueID=lutgw1.lunet.edu
+GlueCECapability: CPUScalingReferenceSI00=2000
+GlueCEAccessControlBaseRule: VO:mis
+GlueCEAccessControlBaseRule: VO:atlas
+GlueCEAccessControlBaseRule: VO:dosar
+GlueCEAccessControlBaseRule: VO:suragrid
+GlueCEAccessControlBaseRule: VO:rsv
+GlueCEAccessControlBaseRule: VO:osg
+GlueCEAccessControlBaseRule: VO:dzero
+GlueCEInfoLRMSType: condor
+GlueCEPolicyMaxRunningJobs: 94
+GlueCEPolicyAssignedJobSlots: 94
+GlueCEInfoApplicationDir: /data/osg/app
+GlueCEPolicyPreemption: 0
+GlueCEStateFreeCPUs: 24
+GlueCEImplementationName: HTCondorCE
+GlueSchemaVersionMinor: 3
+GlueCEStateEstimatedResponseTime: 720
+GlueCEHostingCluster: lutgw1.lunet.edu
+GlueCEInfoHostName: lutgw1.lunet.edu
+GlueCEInfoDefaultSE: lutse1.lunet.edu
+GlueCEImplementationVersion: 2.0.0
+GlueCEInfoLRMSVersion: 8.4.3 Dec 15 2015 $
+GlueCEPolicyMaxCPUTime: 1440
+GlueCEStateWaitingJobs: 4
+GlueCEPolicyPriority: 999999
+GlueCEUniqueID: lutgw1.lunet.edu:9619/htcondorce-condor-default
+GlueCEName: default
+GlueCEInfoGatekeeperPort: 9619
+GlueCEInfoJobManager: condor
+GlueCEPolicyMaxSlotsPerJob: 1
+GlueCEInfoContactString: lutgw1.lunet.edu/jobmanager-condor-default
+GlueCEPolicyMaxWallClockTime: 1440
+GlueInformationServiceURL: ldap://is.grid.iu.edu:2170
+
+dn: GlueVOViewLocalID=dosar,GlueCEUniqueID=lutgw1.lunet.edu:9619/htcondorce-condor-default,mds-vo-name=local,o=grid
+objectClass: GlueCEAccessControlBase
+objectClass: GlueCEInfo
+objectClass: GlueCEPolicy
+objectClass: GlueCEState
+objectClass: GlueCETop
+objectClass: GlueKey
+objectClass: GlueSchemaVersion
+objectClass: GlueVOView
+GlueCEInfoDataDir: /data/osg/data
+GlueCEStateRunningJobs: 0
+GlueCEStateTotalJobs: 0
+GlueSchemaVersionMajor: 1
+GlueCEStateWaitingJobs: 0
+GlueSchemaVersionMinor: 3
+GlueVOViewLocalID: dosar
+GlueCEStateFreeJobSlots: 24
+GlueCEAccessControlBaseRule: VO:dosar
+GlueCEStateEstimatedResponseTime: 60
+GlueChunkKey: GlueCEUniqueID=lutgw1.lunet.edu:9619/htcondorce-condor-default
+GlueCEInfoDefaultSE: lutse1.lunet.edu
+GlueCEStateWorstResponseTime: 86400
+GlueCEInfoApplicationDir: /data/osg/app
+
+dn: GlueVOViewLocalID=suragrid,GlueCEUniqueID=lutgw1.lunet.edu:9619/htcondorce-condor-default,mds-vo-name=local,o=grid
+objectClass: GlueCEAccessControlBase
+objectClass: GlueCEInfo
+objectClass: GlueCEPolicy
+objectClass: GlueCEState
+objectClass: GlueCETop
+objectClass: GlueKey
+objectClass: GlueSchemaVersion
+objectClass: GlueVOView
+GlueCEInfoDataDir: /data/osg/data
+GlueCEStateRunningJobs: 0
+GlueCEStateTotalJobs: 0
+GlueSchemaVersionMajor: 1
+GlueCEStateWaitingJobs: 0
+GlueSchemaVersionMinor: 3
+GlueVOViewLocalID: suragrid
+GlueCEStateFreeJobSlots: 24
+GlueCEAccessControlBaseRule: VO:suragrid
+GlueCEStateEstimatedResponseTime: 60
+GlueChunkKey: GlueCEUniqueID=lutgw1.lunet.edu:9619/htcondorce-condor-default
+GlueCEInfoDefaultSE: lutse1.lunet.edu
+GlueCEStateWorstResponseTime: 86400
+GlueCEInfoApplicationDir: /data/osg/app
+
+dn: GlueVOViewLocalID=atlas,GlueCEUniqueID=lutgw1.lunet.edu:9619/htcondorce-condor-default,mds-vo-name=local,o=grid
+objectClass: GlueCEAccessControlBase
+objectClass: GlueCEInfo
+objectClass: GlueCEPolicy
+objectClass: GlueCEState
+objectClass: GlueCETop
+objectClass: GlueKey
+objectClass: GlueSchemaVersion
+objectClass: GlueVOView
+GlueCEInfoDataDir: /data/osg/data
+GlueCEStateRunningJobs: 70
+GlueCEStateTotalJobs: 74
+GlueSchemaVersionMajor: 1
+GlueCEStateWaitingJobs: 4
+GlueSchemaVersionMinor: 3
+GlueVOViewLocalID: atlas
+GlueCEStateFreeJobSlots: 24
+GlueCEAccessControlBaseRule: VO:atlas
+GlueCEStateEstimatedResponseTime: 720
+GlueChunkKey: GlueCEUniqueID=lutgw1.lunet.edu:9619/htcondorce-condor-default
+GlueCEInfoDefaultSE: lutse1.lunet.edu
+GlueCEStateWorstResponseTime: 4867
+GlueCEInfoApplicationDir: /data/osg/app
+
+dn: GlueVOViewLocalID=mis,GlueCEUniqueID=lutgw1.lunet.edu:9619/htcondorce-condor-default,mds-vo-name=local,o=grid
+objectClass: GlueCEAccessControlBase
+objectClass: GlueCEInfo
+objectClass: GlueCEPolicy
+objectClass: GlueCEState
+objectClass: GlueCETop
+objectClass: GlueKey
+objectClass: GlueSchemaVersion
+objectClass: GlueVOView
+GlueCEInfoDataDir: /data/osg/data
+GlueCEStateRunningJobs: 0
+GlueCEStateTotalJobs: 0
+GlueSchemaVersionMajor: 1
+GlueCEStateWaitingJobs: 0
+GlueSchemaVersionMinor: 3
+GlueVOViewLocalID: mis
+GlueCEStateFreeJobSlots: 24
+GlueCEAccessControlBaseRule: VO:mis
+GlueCEStateEstimatedResponseTime: 60
+GlueChunkKey: GlueCEUniqueID=lutgw1.lunet.edu:9619/htcondorce-condor-default
+GlueCEInfoDefaultSE: lutse1.lunet.edu
+GlueCEStateWorstResponseTime: 86400
+GlueCEInfoApplicationDir: /data/osg/app
+
+dn: GlueVOViewLocalID=rsv,GlueCEUniqueID=lutgw1.lunet.edu:9619/htcondorce-condor-default,mds-vo-name=local,o=grid
+objectClass: GlueCEAccessControlBase
+objectClass: GlueCEInfo
+objectClass: GlueCEPolicy
+objectClass: GlueCEState
+objectClass: GlueCETop
+objectClass: GlueKey
+objectClass: GlueSchemaVersion
+objectClass: GlueVOView
+GlueCEInfoDataDir: /data/osg/data
+GlueCEStateRunningJobs: 0
+GlueCEStateTotalJobs: 0
+GlueSchemaVersionMajor: 1
+GlueCEStateWaitingJobs: 0
+GlueSchemaVersionMinor: 3
+GlueVOViewLocalID: rsv
+GlueCEStateFreeJobSlots: 24
+GlueCEAccessControlBaseRule: VO:rsv
+GlueCEStateEstimatedResponseTime: 60
+GlueChunkKey: GlueCEUniqueID=lutgw1.lunet.edu:9619/htcondorce-condor-default
+GlueCEInfoDefaultSE: lutse1.lunet.edu
+GlueCEStateWorstResponseTime: 86400
+GlueCEInfoApplicationDir: /data/osg/app
+
+dn: GlueVOViewLocalID=osg,GlueCEUniqueID=lutgw1.lunet.edu:9619/htcondorce-condor-default,mds-vo-name=local,o=grid
+objectClass: GlueCEAccessControlBase
+objectClass: GlueCEInfo
+objectClass: GlueCEPolicy
+objectClass: GlueCEState
+objectClass: GlueCETop
+objectClass: GlueKey
+objectClass: GlueSchemaVersion
+objectClass: GlueVOView
+GlueCEInfoDataDir: /data/osg/data
+GlueCEStateRunningJobs: 0
+GlueCEStateTotalJobs: 0
+GlueSchemaVersionMajor: 1
+GlueCEStateWaitingJobs: 0
+GlueSchemaVersionMinor: 3
+GlueVOViewLocalID: osg
+GlueCEStateFreeJobSlots: 24
+GlueCEAccessControlBaseRule: VO:osg
+GlueCEStateEstimatedResponseTime: 60
+GlueChunkKey: GlueCEUniqueID=lutgw1.lunet.edu:9619/htcondorce-condor-default
+GlueCEInfoDefaultSE: lutse1.lunet.edu
+GlueCEStateWorstResponseTime: 86400
+GlueCEInfoApplicationDir: /data/osg/app
+
+dn: GlueVOViewLocalID=dzero,GlueCEUniqueID=lutgw1.lunet.edu:9619/htcondorce-condor-default,mds-vo-name=local,o=grid
+objectClass: GlueCEAccessControlBase
+objectClass: GlueCEInfo
+objectClass: GlueCEPolicy
+objectClass: GlueCEState
+objectClass: GlueCETop
+objectClass: GlueKey
+objectClass: GlueSchemaVersion
+objectClass: GlueVOView
+GlueCEInfoDataDir: /data/osg/data
+GlueCEStateRunningJobs: 0
+GlueCEStateTotalJobs: 0
+GlueSchemaVersionMajor: 1
+GlueCEStateWaitingJobs: 0
+GlueSchemaVersionMinor: 3
+GlueVOViewLocalID: dzero
+GlueCEStateFreeJobSlots: 24
+GlueCEAccessControlBaseRule: VO:dzero
+GlueCEStateEstimatedResponseTime: 60
+GlueChunkKey: GlueCEUniqueID=lutgw1.lunet.edu:9619/htcondorce-condor-default
+GlueCEInfoDefaultSE: lutse1.lunet.edu
+GlueCEStateWorstResponseTime: 86400
+GlueCEInfoApplicationDir: /data/osg/app
+
+dn: GlueCESEBindSEUniqueID=lutse1.lunet.edu,GlueCESEBindGroupCEUniqueID=lutgw1.lunet.edu:9619/htcondorce-condor-default,mds-vo-name=local,o=grid
+objectClass: GlueCESEBind
+objectClass: GlueGeneralTop
+objectClass: GlueSchemaVersion
+GlueCESEBindMountInfo: /data,/mnt/xfs1
+GlueSchemaVersionMajor: 1
+GlueCESEBindCEUniqueID: lutgw1.lunet.edu:9619/htcondorce-condor-default
+GlueSchemaVersionMinor: 3
+GlueCESEBindSEUniqueID: lutse1.lunet.edu
+GlueCESEBindCEAccesspoint: /
+GlueCESEBindWeight: 0
+
+dn: GlueCESEBindSEUniqueID=LUCILLE_classicSE,GlueCESEBindGroupCEUniqueID=lutgw1.lunet.edu:9619/htcondorce-condor-default,mds-vo-name=local,o=grid
+objectClass: GlueCESEBind
+objectClass: GlueGeneralTop
+objectClass: GlueSchemaVersion
+GlueSchemaVersionMajor: 1
+GlueCESEBindCEUniqueID: lutgw1.lunet.edu:9619/htcondorce-condor-default
+GlueSchemaVersionMinor: 3
+GlueCESEBindSEUniqueID: LUCILLE_classicSE
+GlueCESEBindCEAccesspoint: /data/osg/data
+GlueCESEBindWeight: 0
+
+dn: GlueCESEBindGroupCEUniqueID=lutgw1.lunet.edu:9619/htcondorce-condor-default,mds-vo-name=local,o=grid
+objectClass: GlueCESEBindGroup
+objectClass: GlueGeneralTop
+objectClass: GlueSchemaVersion
+GlueSchemaVersionMinor: 3
+GlueCESEBindGroupCEUniqueID: lutgw1.lunet.edu:9619/htcondorce-condor-default
+GlueSchemaVersionMajor: 1
+GlueCESEBindGroupSEUniqueID: lutse1.lunet.edu
+GlueCESEBindGroupSEUniqueID: LUCILLE_classicSE
+
+dn: GlueSEUniqueID=lutse1.lunet.edu,Mds-Vo-name=local,o=grid
+objectClass: GlueInformationService
+objectClass: GlueKey
+objectClass: GlueSE
+objectClass: GlueSETop
+objectClass: GlueSchemaVersion
+GlueSEPort: 8443
+GlueSchemaVersionMajor: 1
+GlueSchemaVersionMinor: 3
+GlueSEImplementationVersion: 2.2.2.3.0
+GlueSETotalNearlineSize: 0
+GlueSEName: Lucille_SE
+GlueSEArchitecture: disk
+GlueSESizeTotal: 117188
+GlueSETotalOnlineSize: 117188
+GlueSEImplementationName: bestman
+GlueSEUsedOnlineSize: 68562
+GlueForeignKey: GlueSiteUniqueID=LUCILLE
+GlueSEUsedNearlineSize: 0
+GlueSEStatus: Production
+GlueSEUniqueID: lutse1.lunet.edu
+GlueSESizeFree: 48625
+GlueInformationServiceURL: ldap://is.grid.iu.edu:2170
+
+dn: GlueSALocalID=default,GlueSEUniqueID=lutse1.lunet.edu,Mds-Vo-name=local,o=grid
+objectClass: GlueKey
+objectClass: GlueSA
+objectClass: GlueSAAccessControlBase
+objectClass: GlueSAPolicy
+objectClass: GlueSAState
+objectClass: GlueSATop
+objectClass: GlueSchemaVersion
+GlueSATotalOnlineSize: 117188
+GlueSAPolicyMaxNumFiles: 0
+GlueSAFreeNearlineSize: 0
+GlueSchemaVersionMajor: 1
+GlueSAUsedNearlineSize: 0
+GlueSAExpirationMode: neverExpire
+GlueSAAccessLatency: online
+GlueSchemaVersionMinor: 3
+GlueSAStateUsedSpace: 68562696256
+GlueSAPolicyQuota: 0
+GlueChunkKey: GlueSEUniqueID=lutse1.lunet.edu
+GlueSAUsedOnlineSize: 68562
+GlueSAPolicyFileLifeTime: permanent
+GlueSAAccessControlBaseRule: VO:atlas
+GlueSAAccessControlBaseRule: VO:dosar
+GlueSAAccessControlBaseRule: VO:dzero
+GlueSAAccessControlBaseRule: VO:mis
+GlueSAAccessControlBaseRule: VO:osg
+GlueSAAccessControlBaseRule: VO:rsv
+GlueSAAccessControlBaseRule: VO:suragrid
+GlueSAAccessControlBaseRule: atlas
+GlueSAAccessControlBaseRule: dosar
+GlueSAAccessControlBaseRule: dzero
+GlueSAAccessControlBaseRule: mis
+GlueSAAccessControlBaseRule: osg
+GlueSAAccessControlBaseRule: rsv
+GlueSAAccessControlBaseRule: suragrid
+GlueSAName: Default Storage Area
+GlueSAPath: /data/osg/cache/
+GlueSAType: permanent
+GlueSAStateAvailableSpace: 48625338304
+GlueSAFreeOnlineSize: 48625
+GlueSAReservedOnlineSize: 0
+GlueSARetentionPolicy: replica
+GlueSARoot: /
+GlueSAReservedNearlineSize: 0
+GlueSALocalID: default
+GlueSATotalNearlineSize: 0
+GlueSACapability: file storage
+GlueSACapability: SRMTokenReservedSpace=0
+GlueSACapability: InstalledOnlineCapacity=117188
+GlueSACapability: InstalledNearlineCapacity=0
+
+dn: GlueVOInfoLocalID=dzero:default,GlueSALocalID=default,GlueSEUniqueID=lutse1.lunet.edu,Mds-Vo-name=local,o=grid
+objectClass: GlueKey
+objectClass: GlueSATop
+objectClass: GlueSchemaVersion
+objectClass: GlueVOInfo
+GlueVOInfoAccessControlBaseRule: dzero
+GlueSchemaVersionMinor: 3
+GlueVOInfoName: dzero:default
+GlueSchemaVersionMajor: 1
+GlueVOInfoPath: /data/osg/cache/dzero
+GlueVOInfoLocalID: dzero:default
+GlueChunkKey: GlueSALocalID=default
+GlueChunkKey: GlueSEUniqueID=lutse1.lunet.edu
+
+dn: GlueVOInfoLocalID=atlas:default,GlueSALocalID=default,GlueSEUniqueID=lutse1.lunet.edu,Mds-Vo-name=local,o=grid
+objectClass: GlueKey
+objectClass: GlueSATop
+objectClass: GlueSchemaVersion
+objectClass: GlueVOInfo
+GlueVOInfoAccessControlBaseRule: atlas
+GlueSchemaVersionMinor: 3
+GlueVOInfoName: atlas:default
+GlueSchemaVersionMajor: 1
+GlueVOInfoPath: /data/osg/cache/atlas
+GlueVOInfoLocalID: atlas:default
+GlueChunkKey: GlueSALocalID=default
+GlueChunkKey: GlueSEUniqueID=lutse1.lunet.edu
+
+dn: GlueVOInfoLocalID=rsv:default,GlueSALocalID=default,GlueSEUniqueID=lutse1.lunet.edu,Mds-Vo-name=local,o=grid
+objectClass: GlueKey
+objectClass: GlueSATop
+objectClass: GlueSchemaVersion
+objectClass: GlueVOInfo
+GlueVOInfoAccessControlBaseRule: rsv
+GlueSchemaVersionMinor: 3
+GlueVOInfoName: rsv:default
+GlueSchemaVersionMajor: 1
+GlueVOInfoPath: /data/osg/cache/rsv
+GlueVOInfoLocalID: rsv:default
+GlueChunkKey: GlueSALocalID=default
+GlueChunkKey: GlueSEUniqueID=lutse1.lunet.edu
+
+dn: GlueVOInfoLocalID=suragrid:default,GlueSALocalID=default,GlueSEUniqueID=lutse1.lunet.edu,Mds-Vo-name=local,o=grid
+objectClass: GlueKey
+objectClass: GlueSATop
+objectClass: GlueSchemaVersion
+objectClass: GlueVOInfo
+GlueVOInfoAccessControlBaseRule: suragrid
+GlueSchemaVersionMinor: 3
+GlueVOInfoName: suragrid:default
+GlueSchemaVersionMajor: 1
+GlueVOInfoPath: /data/osg/cache/suragrid
+GlueVOInfoLocalID: suragrid:default
+GlueChunkKey: GlueSALocalID=default
+GlueChunkKey: GlueSEUniqueID=lutse1.lunet.edu
+
+dn: GlueVOInfoLocalID=dosar:default,GlueSALocalID=default,GlueSEUniqueID=lutse1.lunet.edu,Mds-Vo-name=local,o=grid
+objectClass: GlueKey
+objectClass: GlueSATop
+objectClass: GlueSchemaVersion
+objectClass: GlueVOInfo
+GlueVOInfoAccessControlBaseRule: dosar
+GlueSchemaVersionMinor: 3
+GlueVOInfoName: dosar:default
+GlueSchemaVersionMajor: 1
+GlueVOInfoPath: /data/osg/cache/dosar
+GlueVOInfoLocalID: dosar:default
+GlueChunkKey: GlueSALocalID=default
+GlueChunkKey: GlueSEUniqueID=lutse1.lunet.edu
+
+dn: GlueVOInfoLocalID=mis:default,GlueSALocalID=default,GlueSEUniqueID=lutse1.lunet.edu,Mds-Vo-name=local,o=grid
+objectClass: GlueKey
+objectClass: GlueSATop
+objectClass: GlueSchemaVersion
+objectClass: GlueVOInfo
+GlueVOInfoAccessControlBaseRule: mis
+GlueSchemaVersionMinor: 3
+GlueVOInfoName: mis:default
+GlueSchemaVersionMajor: 1
+GlueVOInfoPath: /data/osg/cache/mis
+GlueVOInfoLocalID: mis:default
+GlueChunkKey: GlueSALocalID=default
+GlueChunkKey: GlueSEUniqueID=lutse1.lunet.edu
+
+dn: GlueVOInfoLocalID=osg:default,GlueSALocalID=default,GlueSEUniqueID=lutse1.lunet.edu,Mds-Vo-name=local,o=grid
+objectClass: GlueKey
+objectClass: GlueSATop
+objectClass: GlueSchemaVersion
+objectClass: GlueVOInfo
+GlueVOInfoAccessControlBaseRule: osg
+GlueSchemaVersionMinor: 3
+GlueVOInfoName: osg:default
+GlueSchemaVersionMajor: 1
+GlueVOInfoPath: /data/osg/cache/osg
+GlueVOInfoLocalID: osg:default
+GlueChunkKey: GlueSALocalID=default
+GlueChunkKey: GlueSEUniqueID=lutse1.lunet.edu
+
+dn: GlueSEAccessProtocolLocalID=FILE_POSIX.example.com_1234,GlueSEUniqueID=lutse1.lunet.edu,Mds-Vo-name=local,o=grid
+objectClass: GlueKey
+objectClass: GlueSEAccessProtocol
+objectClass: GlueSETop
+objectClass: GlueSchemaVersion
+GlueSchemaVersionMajor: 1
+GlueSEAccessProtocolType: file
+GlueSEAccessProtocolEndpoint: file://POSIX.example.com:1234
+GlueSchemaVersionMinor: 3
+GlueSEAccessProtocolVersion: 1.0.0
+GlueSEAccessProtocolCapability: file transfer
+GlueSEAccessProtocolLocalID: FILE_POSIX.example.com_1234
+GlueSEAccessProtocolMaxStreams: 1
+GlueChunkKey: GlueSEUniqueID=lutse1.lunet.edu
+GlueSEAccessProtocolPort: 1234
+GlueSEAccessProtocolSupportedSecurity: GSI
+
+dn: GlueSEAccessProtocolLocalID=GSIFTP_lutse1.lunet.edu_2811,GlueSEUniqueID=lutse1.lunet.edu,Mds-Vo-name=local,o=grid
+objectClass: GlueKey
+objectClass: GlueSEAccessProtocol
+objectClass: GlueSETop
+objectClass: GlueSchemaVersion
+GlueSchemaVersionMajor: 1
+GlueSEAccessProtocolType: gsiftp
+GlueSEAccessProtocolEndpoint: gsiftp://lutse1.lunet.edu:2811
+GlueSchemaVersionMinor: 3
+GlueSEAccessProtocolVersion: 1.0.0
+GlueSEAccessProtocolCapability: file transfer
+GlueSEAccessProtocolLocalID: GSIFTP_lutse1.lunet.edu_2811
+GlueSEAccessProtocolMaxStreams: 1
+GlueChunkKey: GlueSEUniqueID=lutse1.lunet.edu
+GlueSEAccessProtocolPort: 2811
+GlueSEAccessProtocolSupportedSecurity: GSI
+
+dn: GlueSEControlProtocolLocalID=lutse1.lunet.edu_srmv2,GlueSEUniqueID=lutse1.lunet.edu,Mds-Vo-name=local,o=grid
+objectClass: GlueKey
+objectClass: GlueSEControlProtocol
+objectClass: GlueSETop
+objectClass: GlueSchemaVersion
+GlueSchemaVersionMajor: 1
+GlueSEControlProtocolType: SRM
+GlueSEControlProtocolEndpoint: httpg://lutse1.lunet.edu:8443/srm/v2/server
+GlueSchemaVersionMinor: 3
+GlueSEControlProtocolCapability: control
+GlueSEControlProtocolVersion: 2.2.0
+GlueChunkKey: GlueSEUniqueID=lutse1.lunet.edu
+GlueSEControlProtocolLocalID: lutse1.lunet.edu_srmv2
+
+dn: GlueServiceUniqueID=httpg://lutse1.lunet.edu:8443/srm/v2/server,mds-vo-name=local,o=grid
+objectClass: GlueKey
+objectClass: GlueSchemaVersion
+objectClass: GlueService
+objectClass: GlueTop
+GlueSchemaVersionMajor: 1
+GlueSchemaVersionMinor: 3
+GlueServiceName: httpg://lutse1.lunet.edu:8443/srm/v2/server
+GlueServiceAccessControlRule: dzero
+GlueServiceAccessControlRule: VO:dzero
+GlueServiceAccessControlRule: atlas
+GlueServiceAccessControlRule: VO:atlas
+GlueServiceAccessControlRule: rsv
+GlueServiceAccessControlRule: VO:rsv
+GlueServiceAccessControlRule: suragrid
+GlueServiceAccessControlRule: VO:suragrid
+GlueServiceAccessControlRule: dosar
+GlueServiceAccessControlRule: VO:dosar
+GlueServiceAccessControlRule: mis
+GlueServiceAccessControlRule: VO:mis
+GlueServiceAccessControlRule: osg
+GlueServiceAccessControlRule: VO:osg
+GlueServiceWSDL: http://sdm.lbl.gov/srm-wg/srm.v2.2.wsdl
+GlueServiceOwner: OSG
+GlueServiceAccessPointURL: httpg://lutse1.lunet.edu:8443/srm/v2/server
+GlueServiceSemantics: http://sdm.lbl.gov/srm-wg/doc/SRM.v2.2.pdf
+GlueServiceType: SRM
+GlueForeignKey: GlueSiteUniqueID=LUCILLE
+GlueServiceUniqueID: httpg://lutse1.lunet.edu:8443/srm/v2/server
+GlueServiceVersion: 2.2.0
+GlueServiceURI: httpg://lutse1.lunet.edu:8443/srm/v2/server
+GlueServiceStatusInfo: OK
+GlueServiceStartTime: 1970-01-01T00:00:00Z
+GlueServiceStatus: OK
+GlueServiceEndpoint: httpg://lutse1.lunet.edu:8443/srm/v2/server
+
+dn: GlueSEUniqueID=LUCILLE_classicSE,Mds-Vo-name=local,o=grid
+objectClass: GlueInformationService
+objectClass: GlueKey
+objectClass: GlueSE
+objectClass: GlueSETop
+objectClass: GlueSchemaVersion
+GlueSEPort: 2811
+GlueSchemaVersionMajor: 1
+GlueSchemaVersionMinor: 3
+GlueSEImplementationVersion: UNKNOWN
+GlueSETotalNearlineSize: 0
+GlueSEName: LUCILLE_classicSE
+GlueSEArchitecture: other
+GlueSESizeTotal: 120000
+GlueSETotalOnlineSize: 0
+GlueSEImplementationName: classicSE
+GlueSEUsedOnlineSize: 70208
+GlueForeignKey: GlueSiteUniqueID=LUCILLE
+GlueSEUsedNearlineSize: 0
+GlueSEStatus: Production
+GlueSEUniqueID: LUCILLE_classicSE
+GlueSESizeFree: 49792
+GlueInformationServiceURL: ldap://is.grid.iu.edu:2170
+
+dn: GlueSALocalID=LUCILLE_classicSE,GlueSEUniqueID=LUCILLE_classicSE,Mds-Vo-name=local,o=grid
+objectClass: GlueKey
+objectClass: GlueSA
+objectClass: GlueSAAccessControlBase
+objectClass: GlueSAPolicy
+objectClass: GlueSAState
+objectClass: GlueSATop
+objectClass: GlueSchemaVersion
+GlueSATotalOnlineSize: 120000
+GlueSAPolicyMaxNumFiles: 0
+GlueSAFreeNearlineSize: 0
+GlueSchemaVersionMajor: 1
+GlueSAUsedNearlineSize: 0
+GlueSAExpirationMode: neverExpire
+GlueSAAccessLatency: online
+GlueSchemaVersionMinor: 3
+GlueSAStateUsedSpace: 70208200966
+GlueSAPolicyQuota: 0
+GlueChunkKey: GlueSEUniqueID=LUCILLE_classicSE
+GlueSAUsedOnlineSize: 70208
+GlueSAPolicyFileLifeTime: permanent
+GlueSAAccessControlBaseRule: VO:dzero
+GlueSAAccessControlBaseRule: VO:atlas
+GlueSAAccessControlBaseRule: VO:rsv
+GlueSAAccessControlBaseRule: VO:suragrid
+GlueSAAccessControlBaseRule: VO:dosar
+GlueSAAccessControlBaseRule: VO:mis
+GlueSAAccessControlBaseRule: VO:osg
+GlueSAName: LUCILLE_classicSE
+GlueSAPath: /data/osg/data
+GlueSAType: permanent
+GlueSAStateAvailableSpace: 49792346423
+GlueSAFreeOnlineSize: 49792
+GlueSAReservedOnlineSize: 0
+GlueSARetentionPolicy: replica
+GlueSARoot: /
+GlueSAReservedNearlineSize: 0
+GlueSALocalID: LUCILLE_classicSE
+GlueSATotalNearlineSize: 0
+GlueSACapability: file storage
+GlueSACapability: SRMTokenReservedSpace=0
+GlueSACapability: InstalledOnlineCapacity=0
+GlueSACapability: InstalledNearlineCapacity=0
+
+dn: GlueSEAccessProtocolLocalID=GFTP_lutgw1.lunet.edu_2811,GlueSEUniqueID=LUCILLE_classicSE,Mds-Vo-name=local,o=grid
+objectClass: GlueKey
+objectClass: GlueSEAccessProtocol
+objectClass: GlueSETop
+objectClass: GlueSchemaVersion
+GlueSchemaVersionMajor: 1
+GlueSEAccessProtocolType: gsiftp
+GlueSEAccessProtocolEndpoint: gsiftp://lutgw1.lunet.edu:2811
+GlueSchemaVersionMinor: 3
+GlueSEAccessProtocolVersion: 1.0.0
+GlueSEAccessProtocolCapability: file transfer
+GlueSEAccessProtocolLocalID: GFTP_lutgw1.lunet.edu_2811
+GlueSEAccessProtocolMaxStreams: 10
+GlueChunkKey: GlueSEUniqueID=LUCILLE_classicSE
+GlueSEAccessProtocolPort: 2811
+GlueSEAccessProtocolSupportedSecurity: gsiftp
+
+dn: GlueLocationLocalID=OSG_GRID,GlueSubClusterUniqueID=Lucille Compute Langston-LUCILLE,GlueClusterUniqueID=lutgw1.lunet.edu,mds-vo-name=local,o=grid
+objectClass: GlueClusterTop
+objectClass: GlueKey
+objectClass: GlueLocation
+objectClass: GlueSchemaVersion
+GlueLocationName: OSG_GRID
+GlueSchemaVersionMajor: 1
+GlueLocationLocalID: OSG_GRID
+GlueSchemaVersionMinor: 3
+GlueChunkKey: GlueSubClusterUniqueID=Lucille Compute Langston-LUCILLE
+GlueLocationPath: /export/grid/osg-wn-client
+GlueLocationVersion: 1.0
+
+dn: GlueLocationLocalID=OSG_GRID,GlueSubClusterUniqueID=Lucille GPU Compute Langston-LUCILLE,GlueClusterUniqueID=lutgw1.lunet.edu,mds-vo-name=local,o=grid
+objectClass: GlueClusterTop
+objectClass: GlueKey
+objectClass: GlueLocation
+objectClass: GlueSchemaVersion
+GlueLocationName: OSG_GRID
+GlueSchemaVersionMajor: 1
+GlueLocationLocalID: OSG_GRID
+GlueSchemaVersionMinor: 3
+GlueChunkKey: GlueSubClusterUniqueID=Lucille GPU Compute Langston-LUCILLE
+GlueLocationPath: /export/grid/osg-wn-client
+GlueLocationVersion: 1.0
+
+dn: GlueLocationLocalID=OSG_GRID,GlueSubClusterUniqueID=Lucille Head Langston-LUCILLE,GlueClusterUniqueID=lutgw1.lunet.edu,mds-vo-name=local,o=grid
+objectClass: GlueClusterTop
+objectClass: GlueKey
+objectClass: GlueLocation
+objectClass: GlueSchemaVersion
+GlueLocationName: OSG_GRID
+GlueSchemaVersionMajor: 1
+GlueLocationLocalID: OSG_GRID
+GlueSchemaVersionMinor: 3
+GlueChunkKey: GlueSubClusterUniqueID=Lucille Head Langston-LUCILLE
+GlueLocationPath: /export/grid/osg-wn-client
+GlueLocationVersion: 1.0
+
+dn: GlueLocationLocalID=OSG_GRID,GlueSubClusterUniqueID=Lucille Storage Langston-LUCILLE,GlueClusterUniqueID=lutgw1.lunet.edu,mds-vo-name=local,o=grid
+objectClass: GlueClusterTop
+objectClass: GlueKey
+objectClass: GlueLocation
+objectClass: GlueSchemaVersion
+GlueLocationName: OSG_GRID
+GlueSchemaVersionMajor: 1
+GlueLocationLocalID: OSG_GRID
+GlueSchemaVersionMinor: 3
+GlueChunkKey: GlueSubClusterUniqueID=Lucille Storage Langston-LUCILLE
+GlueLocationPath: /export/grid/osg-wn-client
+GlueLocationVersion: 1.0
+
+

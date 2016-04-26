@@ -1,0 +1,1213 @@
+dn: GlueSiteUniqueID=GLOW,mds-vo-name=local,o=grid
+objectClass: GlueKey
+objectClass: GlueSchemaVersion
+objectClass: GlueSite
+objectClass: GlueTop
+GlueSchemaVersionMajor: 1
+GlueSiteWeb: http://www.hep.wisc.edu/cms/comp/osg/site_policy.html
+GlueForeignKey: GlueSiteUniqueID=GLOW
+GlueSiteName: GLOW
+GlueSiteLongitude: -89.4011
+GlueSiteDescription: OSG Site
+GlueSiteLocation: Madison, WI, USA
+GlueSiteSponsor: cms:100
+GlueSiteEmailContact: mailto: cmsops@hep.wisc.edu
+GlueSiteSysAdminContact: mailto: cmsops@hep.wisc.edu
+GlueSiteSecurityContact: mailto: cmsops@hep.wisc.edu
+GlueSiteUniqueID: GLOW
+GlueSchemaVersionMinor: 3
+GlueSiteUserSupportContact: mailto: cmsops@hep.wisc.edu
+GlueSiteLatitude: 43.0731
+
+dn: GlueClusterUniqueID=GLOW,mds-vo-name=local,o=grid
+objectClass: GlueCluster
+objectClass: GlueClusterTop
+objectClass: GlueInformationService
+objectClass: GlueKey
+objectClass: GlueSchemaVersion
+GlueSchemaVersionMajor: 1
+GlueClusterUniqueID: GLOW
+GlueClusterName: GLOW
+GlueForeignKey: GlueSiteUniqueID=GLOW
+GlueForeignKey: GlueCEUniqueID=cmsgrid03.hep.wisc.edu:9619/htcondorce-condor-default
+GlueForeignKey: GlueCEUniqueID=$(localhost_other_ces):9619/htcondorce-condor-default
+GlueClusterTmpDir: /afs/hep.wisc.edu/osg/data
+GlueSchemaVersionMinor: 3
+GlueClusterWNTmpDir: /tmp
+GlueInformationServiceURL: ldap://is.grid.iu.edu:2170
+
+dn: GlueSubClusterUniqueID=GLOW CE-GLOW,GlueClusterUniqueID=GLOW,mds-vo-name=local,o=grid
+objectClass: GlueClusterTop
+objectClass: GlueHostApplicationSoftware
+objectClass: GlueHostArchitecture
+objectClass: GlueHostBenchmark
+objectClass: GlueHostMainMemory
+objectClass: GlueHostNetworkAdapter
+objectClass: GlueHostOperatingSystem
+objectClass: GlueHostProcessor
+objectClass: GlueInformationService
+objectClass: GlueKey
+objectClass: GlueSchemaVersion
+objectClass: GlueSubCluster
+GlueSubClusterPhysicalCPUs: 2
+GlueSchemaVersionMajor: 1
+GlueSubClusterWNTmpDir: /tmp
+GlueHostNetworkAdapterOutboundIP: TRUE
+GlueSchemaVersionMinor: 3
+GlueHostMainMemoryRAMSize: 16030
+GlueHostOperatingSystemRelease: 6.7
+GlueHostProcessorModel: Intel(R) Xeon(TM) CPU E5310 @ 1.60GHz
+GlueChunkKey: GlueClusterUniqueID=GLOW
+GlueSubClusterLogicalCPUs: 8
+GlueHostNetworkAdapterInboundIP: TRUE
+GlueHostOperatingSystemName: Scientific
+GlueSubClusterTmpDir: /afs/hep.wisc.edu/osg/data
+GlueHostBenchmarkSI00: 2000
+GlueHostProcessorVendor: Intel
+GlueSubClusterUniqueID: GLOW CE-GLOW
+GlueHostArchitecturePlatformType: x86_64
+GlueHostMainMemoryVirtualSize: 16030
+GlueHostApplicationSoftwareRunTimeEnvironment: OSG_VERSION
+GlueHostApplicationSoftwareRunTimeEnvironment: OSG 3.3.7
+GlueHostProcessorOtherDescription: Cores=8
+GlueHostBenchmarkSF00: 2000
+GlueHostOperatingSystemVersion: Carbon
+GlueSubClusterName: GLOW CE
+GlueHostArchitectureSMPSize: 2
+GlueHostProcessorClockSpeed: 1600
+GlueInformationServiceURL: ldap://is.grid.iu.edu:2170
+
+dn: GlueSubClusterUniqueID=GLOW g7-GLOW,GlueClusterUniqueID=GLOW,mds-vo-name=local,o=grid
+objectClass: GlueClusterTop
+objectClass: GlueHostApplicationSoftware
+objectClass: GlueHostArchitecture
+objectClass: GlueHostBenchmark
+objectClass: GlueHostMainMemory
+objectClass: GlueHostNetworkAdapter
+objectClass: GlueHostOperatingSystem
+objectClass: GlueHostProcessor
+objectClass: GlueInformationService
+objectClass: GlueKey
+objectClass: GlueSchemaVersion
+objectClass: GlueSubCluster
+GlueSubClusterPhysicalCPUs: 17
+GlueSchemaVersionMajor: 1
+GlueSubClusterWNTmpDir: /tmp
+GlueHostNetworkAdapterOutboundIP: TRUE
+GlueSchemaVersionMinor: 3
+GlueHostMainMemoryRAMSize: 2048
+GlueHostOperatingSystemRelease: 6.7
+GlueHostProcessorModel: Intel(R) Xeon(TM) CPU 2.80GHz
+GlueChunkKey: GlueClusterUniqueID=GLOW
+GlueSubClusterLogicalCPUs: 17
+GlueHostNetworkAdapterInboundIP: TRUE
+GlueHostOperatingSystemName: Scientific
+GlueSubClusterTmpDir: /afs/hep.wisc.edu/osg/data
+GlueHostBenchmarkSI00: 2000
+GlueHostProcessorVendor: Intel
+GlueSubClusterUniqueID: GLOW g7-GLOW
+GlueHostArchitecturePlatformType: x86_64
+GlueHostMainMemoryVirtualSize: 2048
+GlueHostApplicationSoftwareRunTimeEnvironment: OSG_VERSION
+GlueHostApplicationSoftwareRunTimeEnvironment: OSG 3.3.7
+GlueHostProcessorOtherDescription: Cores=17
+GlueHostBenchmarkSF00: 2000
+GlueHostOperatingSystemVersion: Carbon
+GlueSubClusterName: GLOW g7
+GlueHostArchitectureSMPSize: 1
+GlueHostProcessorClockSpeed: 2800
+GlueInformationServiceURL: ldap://is.grid.iu.edu:2170
+
+dn: GlueSubClusterUniqueID=GLOW g8-GLOW,GlueClusterUniqueID=GLOW,mds-vo-name=local,o=grid
+objectClass: GlueClusterTop
+objectClass: GlueHostApplicationSoftware
+objectClass: GlueHostArchitecture
+objectClass: GlueHostBenchmark
+objectClass: GlueHostMainMemory
+objectClass: GlueHostNetworkAdapter
+objectClass: GlueHostOperatingSystem
+objectClass: GlueHostProcessor
+objectClass: GlueInformationService
+objectClass: GlueKey
+objectClass: GlueSchemaVersion
+objectClass: GlueSubCluster
+GlueSubClusterPhysicalCPUs: 4
+GlueSchemaVersionMajor: 1
+GlueSubClusterWNTmpDir: /tmp
+GlueHostNetworkAdapterOutboundIP: TRUE
+GlueSchemaVersionMinor: 3
+GlueHostMainMemoryRAMSize: 2048
+GlueHostOperatingSystemRelease: 6.7
+GlueHostProcessorModel: Intel(R) Xeon(TM) CPU 3.00GHz
+GlueChunkKey: GlueClusterUniqueID=GLOW
+GlueSubClusterLogicalCPUs: 4
+GlueHostNetworkAdapterInboundIP: TRUE
+GlueHostOperatingSystemName: Scientific
+GlueSubClusterTmpDir: /afs/hep.wisc.edu/osg/data
+GlueHostBenchmarkSI00: 2000
+GlueHostProcessorVendor: Intel
+GlueSubClusterUniqueID: GLOW g8-GLOW
+GlueHostArchitecturePlatformType: x86_64
+GlueHostMainMemoryVirtualSize: 2048
+GlueHostApplicationSoftwareRunTimeEnvironment: OSG_VERSION
+GlueHostApplicationSoftwareRunTimeEnvironment: OSG 3.3.7
+GlueHostProcessorOtherDescription: Cores=4
+GlueHostBenchmarkSF00: 2000
+GlueHostOperatingSystemVersion: Carbon
+GlueSubClusterName: GLOW g8
+GlueHostArchitectureSMPSize: 1
+GlueHostProcessorClockSpeed: 3000
+GlueInformationServiceURL: ldap://is.grid.iu.edu:2170
+
+dn: GlueSubClusterUniqueID=GLOW g9-GLOW,GlueClusterUniqueID=GLOW,mds-vo-name=local,o=grid
+objectClass: GlueClusterTop
+objectClass: GlueHostApplicationSoftware
+objectClass: GlueHostArchitecture
+objectClass: GlueHostBenchmark
+objectClass: GlueHostMainMemory
+objectClass: GlueHostNetworkAdapter
+objectClass: GlueHostOperatingSystem
+objectClass: GlueHostProcessor
+objectClass: GlueInformationService
+objectClass: GlueKey
+objectClass: GlueSchemaVersion
+objectClass: GlueSubCluster
+GlueSubClusterPhysicalCPUs: 58
+GlueSchemaVersionMajor: 1
+GlueSubClusterWNTmpDir: /tmp
+GlueHostNetworkAdapterOutboundIP: TRUE
+GlueSchemaVersionMinor: 3
+GlueHostMainMemoryRAMSize: 4096
+GlueHostOperatingSystemRelease: 6.7
+GlueHostProcessorModel: AMD Opteron(tm) 265 @ 1.80GHz
+GlueChunkKey: GlueClusterUniqueID=GLOW
+GlueSubClusterLogicalCPUs: 58
+GlueHostNetworkAdapterInboundIP: TRUE
+GlueHostOperatingSystemName: Scientific
+GlueSubClusterTmpDir: /afs/hep.wisc.edu/osg/data
+GlueHostBenchmarkSI00: 2000
+GlueHostProcessorVendor: AMD
+GlueSubClusterUniqueID: GLOW g9-GLOW
+GlueHostArchitecturePlatformType: x86_64
+GlueHostMainMemoryVirtualSize: 4096
+GlueHostApplicationSoftwareRunTimeEnvironment: OSG_VERSION
+GlueHostApplicationSoftwareRunTimeEnvironment: OSG 3.3.7
+GlueHostProcessorOtherDescription: Cores=58
+GlueHostBenchmarkSF00: 2000
+GlueHostOperatingSystemVersion: Carbon
+GlueSubClusterName: GLOW g9
+GlueHostArchitectureSMPSize: 2
+GlueHostProcessorClockSpeed: 1800
+GlueInformationServiceURL: ldap://is.grid.iu.edu:2170
+
+dn: GlueSubClusterUniqueID=GLOW g10-GLOW,GlueClusterUniqueID=GLOW,mds-vo-name=local,o=grid
+objectClass: GlueClusterTop
+objectClass: GlueHostApplicationSoftware
+objectClass: GlueHostArchitecture
+objectClass: GlueHostBenchmark
+objectClass: GlueHostMainMemory
+objectClass: GlueHostNetworkAdapter
+objectClass: GlueHostOperatingSystem
+objectClass: GlueHostProcessor
+objectClass: GlueInformationService
+objectClass: GlueKey
+objectClass: GlueSchemaVersion
+objectClass: GlueSubCluster
+GlueSubClusterPhysicalCPUs: 24
+GlueSchemaVersionMajor: 1
+GlueSubClusterWNTmpDir: /tmp
+GlueHostNetworkAdapterOutboundIP: TRUE
+GlueSchemaVersionMinor: 3
+GlueHostMainMemoryRAMSize: 4096
+GlueHostOperatingSystemRelease: 6.7
+GlueHostProcessorModel: AMD Opteron(tm) 265 @ 1.80GHz
+GlueChunkKey: GlueClusterUniqueID=GLOW
+GlueSubClusterLogicalCPUs: 48
+GlueHostNetworkAdapterInboundIP: TRUE
+GlueHostOperatingSystemName: Scientific
+GlueSubClusterTmpDir: /afs/hep.wisc.edu/osg/data
+GlueHostBenchmarkSI00: 2000
+GlueHostProcessorVendor: AMD
+GlueSubClusterUniqueID: GLOW g10-GLOW
+GlueHostArchitecturePlatformType: x86_64
+GlueHostMainMemoryVirtualSize: 4096
+GlueHostApplicationSoftwareRunTimeEnvironment: OSG_VERSION
+GlueHostApplicationSoftwareRunTimeEnvironment: OSG 3.3.7
+GlueHostProcessorOtherDescription: Cores=48
+GlueHostBenchmarkSF00: 2000
+GlueHostOperatingSystemVersion: Carbon
+GlueSubClusterName: GLOW g10
+GlueHostArchitectureSMPSize: 2
+GlueHostProcessorClockSpeed: 1800
+GlueInformationServiceURL: ldap://is.grid.iu.edu:2170
+
+dn: GlueSubClusterUniqueID=GLOW g12-GLOW,GlueClusterUniqueID=GLOW,mds-vo-name=local,o=grid
+objectClass: GlueClusterTop
+objectClass: GlueHostApplicationSoftware
+objectClass: GlueHostArchitecture
+objectClass: GlueHostBenchmark
+objectClass: GlueHostMainMemory
+objectClass: GlueHostNetworkAdapter
+objectClass: GlueHostOperatingSystem
+objectClass: GlueHostProcessor
+objectClass: GlueInformationService
+objectClass: GlueKey
+objectClass: GlueSchemaVersion
+objectClass: GlueSubCluster
+GlueSubClusterPhysicalCPUs: 56
+GlueSchemaVersionMajor: 1
+GlueSubClusterWNTmpDir: /tmp
+GlueHostNetworkAdapterOutboundIP: TRUE
+GlueSchemaVersionMinor: 3
+GlueHostMainMemoryRAMSize: 16384
+GlueHostOperatingSystemRelease: 6.7
+GlueHostProcessorModel: Intel(R) Xeon(R) CPU X5355 @ 2.66 GHz
+GlueChunkKey: GlueClusterUniqueID=GLOW
+GlueSubClusterLogicalCPUs: 224
+GlueHostNetworkAdapterInboundIP: TRUE
+GlueHostOperatingSystemName: Scientific
+GlueSubClusterTmpDir: /afs/hep.wisc.edu/osg/data
+GlueHostBenchmarkSI00: 2000
+GlueHostProcessorVendor: Intel
+GlueSubClusterUniqueID: GLOW g12-GLOW
+GlueHostArchitecturePlatformType: x86_64
+GlueHostMainMemoryVirtualSize: 16384
+GlueHostApplicationSoftwareRunTimeEnvironment: OSG_VERSION
+GlueHostApplicationSoftwareRunTimeEnvironment: OSG 3.3.7
+GlueHostProcessorOtherDescription: Cores=224
+GlueHostBenchmarkSF00: 2000
+GlueHostOperatingSystemVersion: Carbon
+GlueSubClusterName: GLOW g12
+GlueHostArchitectureSMPSize: 2
+GlueHostProcessorClockSpeed: 2660
+GlueInformationServiceURL: ldap://is.grid.iu.edu:2170
+
+dn: GlueSubClusterUniqueID=GLOW g14-GLOW,GlueClusterUniqueID=GLOW,mds-vo-name=local,o=grid
+objectClass: GlueClusterTop
+objectClass: GlueHostApplicationSoftware
+objectClass: GlueHostArchitecture
+objectClass: GlueHostBenchmark
+objectClass: GlueHostMainMemory
+objectClass: GlueHostNetworkAdapter
+objectClass: GlueHostOperatingSystem
+objectClass: GlueHostProcessor
+objectClass: GlueInformationService
+objectClass: GlueKey
+objectClass: GlueSchemaVersion
+objectClass: GlueSubCluster
+GlueSubClusterPhysicalCPUs: 54
+GlueSchemaVersionMajor: 1
+GlueSubClusterWNTmpDir: /tmp
+GlueHostNetworkAdapterOutboundIP: TRUE
+GlueSchemaVersionMinor: 3
+GlueHostMainMemoryRAMSize: 16384
+GlueHostOperatingSystemRelease: 6.7
+GlueHostProcessorModel: Intel(R) Xeon(R) CPU E5450  @ 3.00GHz
+GlueChunkKey: GlueClusterUniqueID=GLOW
+GlueSubClusterLogicalCPUs: 216
+GlueHostNetworkAdapterInboundIP: TRUE
+GlueHostOperatingSystemName: Scientific
+GlueSubClusterTmpDir: /afs/hep.wisc.edu/osg/data
+GlueHostBenchmarkSI00: 2000
+GlueHostProcessorVendor: Intel
+GlueSubClusterUniqueID: GLOW g14-GLOW
+GlueHostArchitecturePlatformType: x86_64
+GlueHostMainMemoryVirtualSize: 16384
+GlueHostApplicationSoftwareRunTimeEnvironment: OSG_VERSION
+GlueHostApplicationSoftwareRunTimeEnvironment: OSG 3.3.7
+GlueHostProcessorOtherDescription: Cores=216
+GlueHostBenchmarkSF00: 2000
+GlueHostOperatingSystemVersion: Carbon
+GlueSubClusterName: GLOW g14
+GlueHostArchitectureSMPSize: 2
+GlueHostProcessorClockSpeed: 3000
+GlueInformationServiceURL: ldap://is.grid.iu.edu:2170
+
+dn: GlueSubClusterUniqueID=GLOW g18-GLOW,GlueClusterUniqueID=GLOW,mds-vo-name=local,o=grid
+objectClass: GlueClusterTop
+objectClass: GlueHostApplicationSoftware
+objectClass: GlueHostArchitecture
+objectClass: GlueHostBenchmark
+objectClass: GlueHostMainMemory
+objectClass: GlueHostNetworkAdapter
+objectClass: GlueHostOperatingSystem
+objectClass: GlueHostProcessor
+objectClass: GlueInformationService
+objectClass: GlueKey
+objectClass: GlueSchemaVersion
+objectClass: GlueSubCluster
+GlueSubClusterPhysicalCPUs: 56
+GlueSchemaVersionMajor: 1
+GlueSubClusterWNTmpDir: /tmp
+GlueHostNetworkAdapterOutboundIP: TRUE
+GlueSchemaVersionMinor: 3
+GlueHostMainMemoryRAMSize: 48305
+GlueHostOperatingSystemRelease: 6.7
+GlueHostProcessorModel: AMD Opteron(tm) Processor 6136
+GlueChunkKey: GlueClusterUniqueID=GLOW
+GlueSubClusterLogicalCPUs: 448
+GlueHostNetworkAdapterInboundIP: TRUE
+GlueHostOperatingSystemName: Scientific
+GlueSubClusterTmpDir: /afs/hep.wisc.edu/osg/data
+GlueHostBenchmarkSI00: 2000
+GlueHostProcessorVendor: AMD
+GlueSubClusterUniqueID: GLOW g18-GLOW
+GlueHostArchitecturePlatformType: x86_64
+GlueHostMainMemoryVirtualSize: 48305
+GlueHostApplicationSoftwareRunTimeEnvironment: OSG_VERSION
+GlueHostApplicationSoftwareRunTimeEnvironment: OSG 3.3.7
+GlueHostProcessorOtherDescription: Cores=448
+GlueHostBenchmarkSF00: 2000
+GlueHostOperatingSystemVersion: Carbon
+GlueSubClusterName: GLOW g18
+GlueHostArchitectureSMPSize: 2
+GlueHostProcessorClockSpeed: 2400
+GlueInformationServiceURL: ldap://is.grid.iu.edu:2170
+
+dn: GlueSubClusterUniqueID=GLOW g19-GLOW,GlueClusterUniqueID=GLOW,mds-vo-name=local,o=grid
+objectClass: GlueClusterTop
+objectClass: GlueHostApplicationSoftware
+objectClass: GlueHostArchitecture
+objectClass: GlueHostBenchmark
+objectClass: GlueHostMainMemory
+objectClass: GlueHostNetworkAdapter
+objectClass: GlueHostOperatingSystem
+objectClass: GlueHostProcessor
+objectClass: GlueInformationService
+objectClass: GlueKey
+objectClass: GlueSchemaVersion
+objectClass: GlueSubCluster
+GlueSubClusterPhysicalCPUs: 58
+GlueSchemaVersionMajor: 1
+GlueSubClusterWNTmpDir: /tmp
+GlueHostNetworkAdapterOutboundIP: TRUE
+GlueSchemaVersionMinor: 3
+GlueHostMainMemoryRAMSize: 48305
+GlueHostOperatingSystemRelease: 6.7
+GlueHostProcessorModel: AMD Opteron(tm) Processor 6174
+GlueChunkKey: GlueClusterUniqueID=GLOW
+GlueSubClusterLogicalCPUs: 696
+GlueHostNetworkAdapterInboundIP: TRUE
+GlueHostOperatingSystemName: Scientific
+GlueSubClusterTmpDir: /afs/hep.wisc.edu/osg/data
+GlueHostBenchmarkSI00: 2000
+GlueHostProcessorVendor: AMD
+GlueSubClusterUniqueID: GLOW g19-GLOW
+GlueHostArchitecturePlatformType: x86_64
+GlueHostMainMemoryVirtualSize: 48305
+GlueHostApplicationSoftwareRunTimeEnvironment: OSG_VERSION
+GlueHostApplicationSoftwareRunTimeEnvironment: OSG 3.3.7
+GlueHostProcessorOtherDescription: Cores=696
+GlueHostBenchmarkSF00: 2000
+GlueHostOperatingSystemVersion: Carbon
+GlueSubClusterName: GLOW g19
+GlueHostArchitectureSMPSize: 2
+GlueHostProcessorClockSpeed: 2200
+GlueInformationServiceURL: ldap://is.grid.iu.edu:2170
+
+dn: GlueSubClusterUniqueID=GLOW g20-GLOW,GlueClusterUniqueID=GLOW,mds-vo-name=local,o=grid
+objectClass: GlueClusterTop
+objectClass: GlueHostApplicationSoftware
+objectClass: GlueHostArchitecture
+objectClass: GlueHostBenchmark
+objectClass: GlueHostMainMemory
+objectClass: GlueHostNetworkAdapter
+objectClass: GlueHostOperatingSystem
+objectClass: GlueHostProcessor
+objectClass: GlueInformationService
+objectClass: GlueKey
+objectClass: GlueSchemaVersion
+objectClass: GlueSubCluster
+GlueSubClusterPhysicalCPUs: 32
+GlueSchemaVersionMajor: 1
+GlueSubClusterWNTmpDir: /tmp
+GlueHostNetworkAdapterOutboundIP: TRUE
+GlueSchemaVersionMinor: 3
+GlueHostMainMemoryRAMSize: 32049
+GlueHostOperatingSystemRelease: 6.7
+GlueHostProcessorModel: Intel(R) Xeon(R) CPU E5640 @ 2.67GHz
+GlueChunkKey: GlueClusterUniqueID=GLOW
+GlueSubClusterLogicalCPUs: 128
+GlueHostNetworkAdapterInboundIP: TRUE
+GlueHostOperatingSystemName: Scientific
+GlueSubClusterTmpDir: /afs/hep.wisc.edu/osg/data
+GlueHostBenchmarkSI00: 2000
+GlueHostProcessorVendor: INTEL
+GlueSubClusterUniqueID: GLOW g20-GLOW
+GlueHostArchitecturePlatformType: x86_64
+GlueHostMainMemoryVirtualSize: 32049
+GlueHostApplicationSoftwareRunTimeEnvironment: OSG_VERSION
+GlueHostApplicationSoftwareRunTimeEnvironment: OSG 3.3.7
+GlueHostProcessorOtherDescription: Cores=128
+GlueHostBenchmarkSF00: 2000
+GlueHostOperatingSystemVersion: Carbon
+GlueSubClusterName: GLOW g20
+GlueHostArchitectureSMPSize: 4
+GlueHostProcessorClockSpeed: 2670
+GlueInformationServiceURL: ldap://is.grid.iu.edu:2170
+
+dn: GlueSubClusterUniqueID=GLOW g22-GLOW,GlueClusterUniqueID=GLOW,mds-vo-name=local,o=grid
+objectClass: GlueClusterTop
+objectClass: GlueHostApplicationSoftware
+objectClass: GlueHostArchitecture
+objectClass: GlueHostBenchmark
+objectClass: GlueHostMainMemory
+objectClass: GlueHostNetworkAdapter
+objectClass: GlueHostOperatingSystem
+objectClass: GlueHostProcessor
+objectClass: GlueInformationService
+objectClass: GlueKey
+objectClass: GlueSchemaVersion
+objectClass: GlueSubCluster
+GlueSubClusterPhysicalCPUs: 34
+GlueSchemaVersionMajor: 1
+GlueSubClusterWNTmpDir: /tmp
+GlueHostNetworkAdapterOutboundIP: TRUE
+GlueSchemaVersionMinor: 3
+GlueHostMainMemoryRAMSize: 64335
+GlueHostOperatingSystemRelease: 6.7
+GlueHostProcessorModel: AMD Opteron(tm) Processor 6176
+GlueChunkKey: GlueClusterUniqueID=GLOW
+GlueSubClusterLogicalCPUs: 408
+GlueHostNetworkAdapterInboundIP: TRUE
+GlueHostOperatingSystemName: Scientific
+GlueSubClusterTmpDir: /afs/hep.wisc.edu/osg/data
+GlueHostBenchmarkSI00: 2000
+GlueHostProcessorVendor: AMD
+GlueSubClusterUniqueID: GLOW g22-GLOW
+GlueHostArchitecturePlatformType: x86_64
+GlueHostMainMemoryVirtualSize: 64335
+GlueHostApplicationSoftwareRunTimeEnvironment: OSG_VERSION
+GlueHostApplicationSoftwareRunTimeEnvironment: OSG 3.3.7
+GlueHostProcessorOtherDescription: Cores=408
+GlueHostBenchmarkSF00: 2000
+GlueHostOperatingSystemVersion: Carbon
+GlueSubClusterName: GLOW g22
+GlueHostArchitectureSMPSize: 2
+GlueHostProcessorClockSpeed: 2300
+GlueInformationServiceURL: ldap://is.grid.iu.edu:2170
+
+dn: GlueSubClusterUniqueID=GLOW g23-GLOW,GlueClusterUniqueID=GLOW,mds-vo-name=local,o=grid
+objectClass: GlueClusterTop
+objectClass: GlueHostApplicationSoftware
+objectClass: GlueHostArchitecture
+objectClass: GlueHostBenchmark
+objectClass: GlueHostMainMemory
+objectClass: GlueHostNetworkAdapter
+objectClass: GlueHostOperatingSystem
+objectClass: GlueHostProcessor
+objectClass: GlueInformationService
+objectClass: GlueKey
+objectClass: GlueSchemaVersion
+objectClass: GlueSubCluster
+GlueSubClusterPhysicalCPUs: 30
+GlueSchemaVersionMajor: 1
+GlueSubClusterWNTmpDir: /tmp
+GlueHostNetworkAdapterOutboundIP: TRUE
+GlueSchemaVersionMinor: 3
+GlueHostMainMemoryRAMSize: 64335
+GlueHostOperatingSystemRelease: 6.7
+GlueHostProcessorModel: AMD Opteron(tm) Processor 6176
+GlueChunkKey: GlueClusterUniqueID=GLOW
+GlueSubClusterLogicalCPUs: 360
+GlueHostNetworkAdapterInboundIP: TRUE
+GlueHostOperatingSystemName: Scientific
+GlueSubClusterTmpDir: /afs/hep.wisc.edu/osg/data
+GlueHostBenchmarkSI00: 2000
+GlueHostProcessorVendor: AMD
+GlueSubClusterUniqueID: GLOW g23-GLOW
+GlueHostArchitecturePlatformType: x86_64
+GlueHostMainMemoryVirtualSize: 64335
+GlueHostApplicationSoftwareRunTimeEnvironment: OSG_VERSION
+GlueHostApplicationSoftwareRunTimeEnvironment: OSG 3.3.7
+GlueHostProcessorOtherDescription: Cores=360
+GlueHostBenchmarkSF00: 2000
+GlueHostOperatingSystemVersion: Carbon
+GlueSubClusterName: GLOW g23
+GlueHostArchitectureSMPSize: 2
+GlueHostProcessorClockSpeed: 2300
+GlueInformationServiceURL: ldap://is.grid.iu.edu:2170
+
+dn: GlueSubClusterUniqueID=GLOW g24-GLOW,GlueClusterUniqueID=GLOW,mds-vo-name=local,o=grid
+objectClass: GlueClusterTop
+objectClass: GlueHostApplicationSoftware
+objectClass: GlueHostArchitecture
+objectClass: GlueHostBenchmark
+objectClass: GlueHostMainMemory
+objectClass: GlueHostNetworkAdapter
+objectClass: GlueHostOperatingSystem
+objectClass: GlueHostProcessor
+objectClass: GlueInformationService
+objectClass: GlueKey
+objectClass: GlueSchemaVersion
+objectClass: GlueSubCluster
+GlueSubClusterPhysicalCPUs: 20
+GlueSchemaVersionMajor: 1
+GlueSubClusterWNTmpDir: /tmp
+GlueHostNetworkAdapterOutboundIP: TRUE
+GlueSchemaVersionMinor: 3
+GlueHostMainMemoryRAMSize: 64335
+GlueHostOperatingSystemRelease: 6.7
+GlueHostProcessorModel: AMD Opteron(tm) Processor 6176
+GlueChunkKey: GlueClusterUniqueID=GLOW
+GlueSubClusterLogicalCPUs: 240
+GlueHostNetworkAdapterInboundIP: TRUE
+GlueHostOperatingSystemName: Scientific
+GlueSubClusterTmpDir: /afs/hep.wisc.edu/osg/data
+GlueHostBenchmarkSI00: 2000
+GlueHostProcessorVendor: AMD
+GlueSubClusterUniqueID: GLOW g24-GLOW
+GlueHostArchitecturePlatformType: x86_64
+GlueHostMainMemoryVirtualSize: 64335
+GlueHostApplicationSoftwareRunTimeEnvironment: OSG_VERSION
+GlueHostApplicationSoftwareRunTimeEnvironment: OSG 3.3.7
+GlueHostProcessorOtherDescription: Cores=240
+GlueHostBenchmarkSF00: 2000
+GlueHostOperatingSystemVersion: Carbon
+GlueSubClusterName: GLOW g24
+GlueHostArchitectureSMPSize: 2
+GlueHostProcessorClockSpeed: 2600
+GlueInformationServiceURL: ldap://is.grid.iu.edu:2170
+
+dn: GlueLocationLocalID=TIMESTAMP,GlueSubClusterUniqueID=GLOW CE-GLOW,GlueClusterUniqueID=GLOW,mds-vo-name=local,o=grid
+objectClass: GlueClusterTop
+objectClass: GlueKey
+objectClass: GlueLocation
+objectClass: GlueSchemaVersion
+GlueLocationName: TIMESTAMP
+GlueSchemaVersionMajor: 1
+GlueLocationLocalID: TIMESTAMP
+GlueSchemaVersionMinor: 3
+GlueChunkKey: GlueSubClusterUniqueID=GLOW CE-GLOW
+GlueLocationPath: Thu Mar 10 18:11:55 UTC 2016
+GlueLocationVersion: 1457633515.65
+
+dn: GlueLocationLocalID=TIMESTAMP,GlueSubClusterUniqueID=GLOW g7-GLOW,GlueClusterUniqueID=GLOW,mds-vo-name=local,o=grid
+objectClass: GlueClusterTop
+objectClass: GlueKey
+objectClass: GlueLocation
+objectClass: GlueSchemaVersion
+GlueLocationName: TIMESTAMP
+GlueSchemaVersionMajor: 1
+GlueLocationLocalID: TIMESTAMP
+GlueSchemaVersionMinor: 3
+GlueChunkKey: GlueSubClusterUniqueID=GLOW g7-GLOW
+GlueLocationPath: Thu Mar 10 18:11:55 UTC 2016
+GlueLocationVersion: 1457633515.65
+
+dn: GlueLocationLocalID=TIMESTAMP,GlueSubClusterUniqueID=GLOW g8-GLOW,GlueClusterUniqueID=GLOW,mds-vo-name=local,o=grid
+objectClass: GlueClusterTop
+objectClass: GlueKey
+objectClass: GlueLocation
+objectClass: GlueSchemaVersion
+GlueLocationName: TIMESTAMP
+GlueSchemaVersionMajor: 1
+GlueLocationLocalID: TIMESTAMP
+GlueSchemaVersionMinor: 3
+GlueChunkKey: GlueSubClusterUniqueID=GLOW g8-GLOW
+GlueLocationPath: Thu Mar 10 18:11:55 UTC 2016
+GlueLocationVersion: 1457633515.65
+
+dn: GlueLocationLocalID=TIMESTAMP,GlueSubClusterUniqueID=GLOW g9-GLOW,GlueClusterUniqueID=GLOW,mds-vo-name=local,o=grid
+objectClass: GlueClusterTop
+objectClass: GlueKey
+objectClass: GlueLocation
+objectClass: GlueSchemaVersion
+GlueLocationName: TIMESTAMP
+GlueSchemaVersionMajor: 1
+GlueLocationLocalID: TIMESTAMP
+GlueSchemaVersionMinor: 3
+GlueChunkKey: GlueSubClusterUniqueID=GLOW g9-GLOW
+GlueLocationPath: Thu Mar 10 18:11:55 UTC 2016
+GlueLocationVersion: 1457633515.65
+
+dn: GlueLocationLocalID=TIMESTAMP,GlueSubClusterUniqueID=GLOW g10-GLOW,GlueClusterUniqueID=GLOW,mds-vo-name=local,o=grid
+objectClass: GlueClusterTop
+objectClass: GlueKey
+objectClass: GlueLocation
+objectClass: GlueSchemaVersion
+GlueLocationName: TIMESTAMP
+GlueSchemaVersionMajor: 1
+GlueLocationLocalID: TIMESTAMP
+GlueSchemaVersionMinor: 3
+GlueChunkKey: GlueSubClusterUniqueID=GLOW g10-GLOW
+GlueLocationPath: Thu Mar 10 18:11:55 UTC 2016
+GlueLocationVersion: 1457633515.65
+
+dn: GlueLocationLocalID=TIMESTAMP,GlueSubClusterUniqueID=GLOW g12-GLOW,GlueClusterUniqueID=GLOW,mds-vo-name=local,o=grid
+objectClass: GlueClusterTop
+objectClass: GlueKey
+objectClass: GlueLocation
+objectClass: GlueSchemaVersion
+GlueLocationName: TIMESTAMP
+GlueSchemaVersionMajor: 1
+GlueLocationLocalID: TIMESTAMP
+GlueSchemaVersionMinor: 3
+GlueChunkKey: GlueSubClusterUniqueID=GLOW g12-GLOW
+GlueLocationPath: Thu Mar 10 18:11:55 UTC 2016
+GlueLocationVersion: 1457633515.65
+
+dn: GlueLocationLocalID=TIMESTAMP,GlueSubClusterUniqueID=GLOW g14-GLOW,GlueClusterUniqueID=GLOW,mds-vo-name=local,o=grid
+objectClass: GlueClusterTop
+objectClass: GlueKey
+objectClass: GlueLocation
+objectClass: GlueSchemaVersion
+GlueLocationName: TIMESTAMP
+GlueSchemaVersionMajor: 1
+GlueLocationLocalID: TIMESTAMP
+GlueSchemaVersionMinor: 3
+GlueChunkKey: GlueSubClusterUniqueID=GLOW g14-GLOW
+GlueLocationPath: Thu Mar 10 18:11:55 UTC 2016
+GlueLocationVersion: 1457633515.65
+
+dn: GlueLocationLocalID=TIMESTAMP,GlueSubClusterUniqueID=GLOW g18-GLOW,GlueClusterUniqueID=GLOW,mds-vo-name=local,o=grid
+objectClass: GlueClusterTop
+objectClass: GlueKey
+objectClass: GlueLocation
+objectClass: GlueSchemaVersion
+GlueLocationName: TIMESTAMP
+GlueSchemaVersionMajor: 1
+GlueLocationLocalID: TIMESTAMP
+GlueSchemaVersionMinor: 3
+GlueChunkKey: GlueSubClusterUniqueID=GLOW g18-GLOW
+GlueLocationPath: Thu Mar 10 18:11:55 UTC 2016
+GlueLocationVersion: 1457633515.65
+
+dn: GlueLocationLocalID=TIMESTAMP,GlueSubClusterUniqueID=GLOW g19-GLOW,GlueClusterUniqueID=GLOW,mds-vo-name=local,o=grid
+objectClass: GlueClusterTop
+objectClass: GlueKey
+objectClass: GlueLocation
+objectClass: GlueSchemaVersion
+GlueLocationName: TIMESTAMP
+GlueSchemaVersionMajor: 1
+GlueLocationLocalID: TIMESTAMP
+GlueSchemaVersionMinor: 3
+GlueChunkKey: GlueSubClusterUniqueID=GLOW g19-GLOW
+GlueLocationPath: Thu Mar 10 18:11:55 UTC 2016
+GlueLocationVersion: 1457633515.65
+
+dn: GlueLocationLocalID=TIMESTAMP,GlueSubClusterUniqueID=GLOW g20-GLOW,GlueClusterUniqueID=GLOW,mds-vo-name=local,o=grid
+objectClass: GlueClusterTop
+objectClass: GlueKey
+objectClass: GlueLocation
+objectClass: GlueSchemaVersion
+GlueLocationName: TIMESTAMP
+GlueSchemaVersionMajor: 1
+GlueLocationLocalID: TIMESTAMP
+GlueSchemaVersionMinor: 3
+GlueChunkKey: GlueSubClusterUniqueID=GLOW g20-GLOW
+GlueLocationPath: Thu Mar 10 18:11:55 UTC 2016
+GlueLocationVersion: 1457633515.65
+
+dn: GlueLocationLocalID=TIMESTAMP,GlueSubClusterUniqueID=GLOW g22-GLOW,GlueClusterUniqueID=GLOW,mds-vo-name=local,o=grid
+objectClass: GlueClusterTop
+objectClass: GlueKey
+objectClass: GlueLocation
+objectClass: GlueSchemaVersion
+GlueLocationName: TIMESTAMP
+GlueSchemaVersionMajor: 1
+GlueLocationLocalID: TIMESTAMP
+GlueSchemaVersionMinor: 3
+GlueChunkKey: GlueSubClusterUniqueID=GLOW g22-GLOW
+GlueLocationPath: Thu Mar 10 18:11:55 UTC 2016
+GlueLocationVersion: 1457633515.65
+
+dn: GlueLocationLocalID=TIMESTAMP,GlueSubClusterUniqueID=GLOW g23-GLOW,GlueClusterUniqueID=GLOW,mds-vo-name=local,o=grid
+objectClass: GlueClusterTop
+objectClass: GlueKey
+objectClass: GlueLocation
+objectClass: GlueSchemaVersion
+GlueLocationName: TIMESTAMP
+GlueSchemaVersionMajor: 1
+GlueLocationLocalID: TIMESTAMP
+GlueSchemaVersionMinor: 3
+GlueChunkKey: GlueSubClusterUniqueID=GLOW g23-GLOW
+GlueLocationPath: Thu Mar 10 18:11:55 UTC 2016
+GlueLocationVersion: 1457633515.65
+
+dn: GlueLocationLocalID=TIMESTAMP,GlueSubClusterUniqueID=GLOW g24-GLOW,GlueClusterUniqueID=GLOW,mds-vo-name=local,o=grid
+objectClass: GlueClusterTop
+objectClass: GlueKey
+objectClass: GlueLocation
+objectClass: GlueSchemaVersion
+GlueLocationName: TIMESTAMP
+GlueSchemaVersionMajor: 1
+GlueLocationLocalID: TIMESTAMP
+GlueSchemaVersionMinor: 3
+GlueChunkKey: GlueSubClusterUniqueID=GLOW g24-GLOW
+GlueLocationPath: Thu Mar 10 18:11:55 UTC 2016
+GlueLocationVersion: 1457633515.65
+
+dn: GlueCESEBindSEUniqueID=cmssrm.hep.wisc.edu,GlueCESEBindGroupCEUniqueID=cmsgrid03.hep.wisc.edu:9619/htcondorce-condor-default,mds-vo-name=local,o=grid
+objectClass: GlueCESEBind
+objectClass: GlueGeneralTop
+objectClass: GlueSchemaVersion
+GlueSchemaVersionMajor: 1
+GlueCESEBindCEUniqueID: cmsgrid03.hep.wisc.edu:9619/htcondorce-condor-default
+GlueSchemaVersionMinor: 3
+GlueCESEBindSEUniqueID: cmssrm.hep.wisc.edu
+GlueCESEBindCEAccesspoint: /
+GlueCESEBindWeight: 0
+
+dn: GlueCESEBindSEUniqueID=GLOW_classicSE,GlueCESEBindGroupCEUniqueID=cmsgrid03.hep.wisc.edu:9619/htcondorce-condor-default,mds-vo-name=local,o=grid
+objectClass: GlueCESEBind
+objectClass: GlueGeneralTop
+objectClass: GlueSchemaVersion
+GlueSchemaVersionMajor: 1
+GlueCESEBindCEUniqueID: cmsgrid03.hep.wisc.edu:9619/htcondorce-condor-default
+GlueSchemaVersionMinor: 3
+GlueCESEBindSEUniqueID: GLOW_classicSE
+GlueCESEBindCEAccesspoint: /afs/hep.wisc.edu/osg/data
+GlueCESEBindWeight: 0
+
+dn: GlueCESEBindGroupCEUniqueID=cmsgrid03.hep.wisc.edu:9619/htcondorce-condor-default,mds-vo-name=local,o=grid
+objectClass: GlueCESEBindGroup
+objectClass: GlueGeneralTop
+objectClass: GlueSchemaVersion
+GlueSchemaVersionMinor: 3
+GlueCESEBindGroupCEUniqueID: cmsgrid03.hep.wisc.edu:9619/htcondorce-condor-default
+GlueSchemaVersionMajor: 1
+GlueCESEBindGroupSEUniqueID: cmssrm.hep.wisc.edu
+GlueCESEBindGroupSEUniqueID: GLOW_classicSE
+
+dn: GlueServiceUniqueID=cmsgrid03.hep.wisc.edu:gridmap-file,mds-vo-name=local,o=grid
+objectClass: GlueKey
+objectClass: GlueSchemaVersion
+objectClass: GlueService
+objectClass: GlueTop
+GlueSchemaVersionMajor: 1
+GlueSchemaVersionMinor: 3
+GlueServiceName: Authorization
+GlueServiceWSDL: Not Applicable
+GlueServiceOwner: OSG
+GlueServiceAccessPointURL: localhost://etc/grid-security/gridmap-file
+GlueServiceSemantics: UNDEFINED
+GlueServiceType: gridmap-file
+GlueForeignKey: GlueSiteUniqueID=GLOW
+GlueServiceUniqueID: cmsgrid03.hep.wisc.edu:gridmap-file
+GlueServiceVersion: UNDEFINED
+GlueServiceURI: localhost://etc/grid-security/gridmap-file
+GlueServiceStatusInfo: Node is configured to use gridmap-file. Did not check if gridmap-file is properly configured.
+GlueServiceStartTime: Not Applicable
+GlueServiceStatus: OK
+GlueServiceEndpoint: Not Applicable
+
+dn: GlueSEUniqueID=cmssrm.hep.wisc.edu,Mds-Vo-name=local,o=grid
+objectClass: GlueInformationService
+objectClass: GlueKey
+objectClass: GlueSE
+objectClass: GlueSETop
+objectClass: GlueSchemaVersion
+GlueSEPort: 8443
+GlueSchemaVersionMajor: 1
+GlueSchemaVersionMinor: 3
+GlueSEImplementationVersion: 2.2.2.3.0
+GlueSETotalNearlineSize: 0
+GlueSEName: GLOW-CMS-SE
+GlueSEArchitecture: disk
+GlueSESizeTotal: 0
+GlueSETotalOnlineSize: 0
+GlueSEImplementationName: bestman
+GlueSEUsedOnlineSize: 0
+GlueForeignKey: GlueSiteUniqueID=GLOW
+GlueSEUsedNearlineSize: 0
+GlueSEStatus: Production
+GlueSEUniqueID: cmssrm.hep.wisc.edu
+GlueSESizeFree: 2199
+GlueInformationServiceURL: ldap://is.grid.iu.edu:2170
+
+dn: GlueSALocalID=default,GlueSEUniqueID=cmssrm.hep.wisc.edu,Mds-Vo-name=local,o=grid
+objectClass: GlueKey
+objectClass: GlueSA
+objectClass: GlueSAAccessControlBase
+objectClass: GlueSAPolicy
+objectClass: GlueSAState
+objectClass: GlueSATop
+objectClass: GlueSchemaVersion
+GlueSATotalOnlineSize: 0
+GlueSAPolicyMaxNumFiles: 0
+GlueSAFreeNearlineSize: 0
+GlueSchemaVersionMajor: 1
+GlueSAUsedNearlineSize: 0
+GlueSAExpirationMode: neverExpire
+GlueSAAccessLatency: online
+GlueSchemaVersionMinor: 3
+GlueSAStateUsedSpace: 0
+GlueSAPolicyQuota: 0
+GlueChunkKey: GlueSEUniqueID=cmssrm.hep.wisc.edu
+GlueSAUsedOnlineSize: 0
+GlueSAPolicyFileLifeTime: permanent
+GlueSAAccessControlBaseRule: VO:cms
+GlueSAAccessControlBaseRule: VO:glow
+GlueSAAccessControlBaseRule: VO:mis
+GlueSAAccessControlBaseRule: cms
+GlueSAAccessControlBaseRule: glow
+GlueSAAccessControlBaseRule: mis
+GlueSAName: Default Storage Area
+GlueSAPath: /hdfs/osg/vo/
+GlueSAType: permanent
+GlueSAStateAvailableSpace: 2199023254
+GlueSAFreeOnlineSize: 2199
+GlueSAReservedOnlineSize: 0
+GlueSARetentionPolicy: replica
+GlueSARoot: /
+GlueSAReservedNearlineSize: 0
+GlueSALocalID: default
+GlueSATotalNearlineSize: 0
+GlueSACapability: file storage
+GlueSACapability: SRMTokenReservedSpace=0
+GlueSACapability: InstalledOnlineCapacity=0
+GlueSACapability: InstalledNearlineCapacity=0
+
+dn: GlueVOInfoLocalID=cms:default,GlueSALocalID=default,GlueSEUniqueID=cmssrm.hep.wisc.edu,Mds-Vo-name=local,o=grid
+objectClass: GlueKey
+objectClass: GlueSATop
+objectClass: GlueSchemaVersion
+objectClass: GlueVOInfo
+GlueVOInfoAccessControlBaseRule: cms
+GlueSchemaVersionMinor: 3
+GlueVOInfoName: cms:default
+GlueSchemaVersionMajor: 1
+GlueVOInfoPath: /hdfs/osg/vo/cms
+GlueVOInfoLocalID: cms:default
+GlueChunkKey: GlueSALocalID=default
+GlueChunkKey: GlueSEUniqueID=cmssrm.hep.wisc.edu
+
+dn: GlueVOInfoLocalID=glow:default,GlueSALocalID=default,GlueSEUniqueID=cmssrm.hep.wisc.edu,Mds-Vo-name=local,o=grid
+objectClass: GlueKey
+objectClass: GlueSATop
+objectClass: GlueSchemaVersion
+objectClass: GlueVOInfo
+GlueVOInfoAccessControlBaseRule: glow
+GlueSchemaVersionMinor: 3
+GlueVOInfoName: glow:default
+GlueSchemaVersionMajor: 1
+GlueVOInfoPath: /hdfs/osg/vo/glow
+GlueVOInfoLocalID: glow:default
+GlueChunkKey: GlueSALocalID=default
+GlueChunkKey: GlueSEUniqueID=cmssrm.hep.wisc.edu
+
+dn: GlueVOInfoLocalID=mis:default,GlueSALocalID=default,GlueSEUniqueID=cmssrm.hep.wisc.edu,Mds-Vo-name=local,o=grid
+objectClass: GlueKey
+objectClass: GlueSATop
+objectClass: GlueSchemaVersion
+objectClass: GlueVOInfo
+GlueVOInfoAccessControlBaseRule: mis
+GlueSchemaVersionMinor: 3
+GlueVOInfoName: mis:default
+GlueSchemaVersionMajor: 1
+GlueVOInfoPath: /hdfs/osg/vo/mis
+GlueVOInfoLocalID: mis:default
+GlueChunkKey: GlueSALocalID=default
+GlueChunkKey: GlueSEUniqueID=cmssrm.hep.wisc.edu
+
+dn: GlueSEAccessProtocolLocalID=FILE_POSIX.example.com_1234,GlueSEUniqueID=cmssrm.hep.wisc.edu,Mds-Vo-name=local,o=grid
+objectClass: GlueKey
+objectClass: GlueSEAccessProtocol
+objectClass: GlueSETop
+objectClass: GlueSchemaVersion
+GlueSchemaVersionMajor: 1
+GlueSEAccessProtocolType: file
+GlueSEAccessProtocolEndpoint: file://POSIX.example.com:1234
+GlueSchemaVersionMinor: 3
+GlueSEAccessProtocolVersion: 1.0.0
+GlueSEAccessProtocolCapability: file transfer
+GlueSEAccessProtocolLocalID: FILE_POSIX.example.com_1234
+GlueSEAccessProtocolMaxStreams: 1
+GlueChunkKey: GlueSEUniqueID=cmssrm.hep.wisc.edu
+GlueSEAccessProtocolPort: 1234
+GlueSEAccessProtocolSupportedSecurity: GSI
+
+dn: GlueSEControlProtocolLocalID=cmssrm.hep.wisc.edu_srmv2,GlueSEUniqueID=cmssrm.hep.wisc.edu,Mds-Vo-name=local,o=grid
+objectClass: GlueKey
+objectClass: GlueSEControlProtocol
+objectClass: GlueSETop
+objectClass: GlueSchemaVersion
+GlueSchemaVersionMajor: 1
+GlueSEControlProtocolType: SRM
+GlueSEControlProtocolEndpoint: httpg://cmssrm.hep.wisc.edu:8443/srm/v2/server
+GlueSchemaVersionMinor: 3
+GlueSEControlProtocolCapability: control
+GlueSEControlProtocolVersion: 2.2.0
+GlueChunkKey: GlueSEUniqueID=cmssrm.hep.wisc.edu
+GlueSEControlProtocolLocalID: cmssrm.hep.wisc.edu_srmv2
+
+dn: GlueServiceUniqueID=httpg://cmssrm.hep.wisc.edu:8443/srm/v2/server,mds-vo-name=local,o=grid
+objectClass: GlueKey
+objectClass: GlueSchemaVersion
+objectClass: GlueService
+objectClass: GlueTop
+GlueSchemaVersionMajor: 1
+GlueSchemaVersionMinor: 3
+GlueServiceName: httpg://cmssrm.hep.wisc.edu:8443/srm/v2/server
+GlueServiceAccessControlRule: cms
+GlueServiceAccessControlRule: VO:cms
+GlueServiceAccessControlRule: glow
+GlueServiceAccessControlRule: VO:glow
+GlueServiceAccessControlRule: mis
+GlueServiceAccessControlRule: VO:mis
+GlueServiceWSDL: http://sdm.lbl.gov/srm-wg/srm.v2.2.wsdl
+GlueServiceOwner: OSG
+GlueServiceAccessPointURL: httpg://cmssrm.hep.wisc.edu:8443/srm/v2/server
+GlueServiceSemantics: http://sdm.lbl.gov/srm-wg/doc/SRM.v2.2.pdf
+GlueServiceType: SRM
+GlueForeignKey: GlueSiteUniqueID=GLOW
+GlueServiceUniqueID: httpg://cmssrm.hep.wisc.edu:8443/srm/v2/server
+GlueServiceVersion: 2.2.0
+GlueServiceURI: httpg://cmssrm.hep.wisc.edu:8443/srm/v2/server
+GlueServiceStatusInfo: OK
+GlueServiceStartTime: 1970-01-01T00:00:00Z
+GlueServiceStatus: OK
+GlueServiceEndpoint: httpg://cmssrm.hep.wisc.edu:8443/srm/v2/server
+
+dn: GlueSEUniqueID=GLOW_classicSE,Mds-Vo-name=local,o=grid
+objectClass: GlueInformationService
+objectClass: GlueKey
+objectClass: GlueSE
+objectClass: GlueSETop
+objectClass: GlueSchemaVersion
+GlueSEPort: 2811
+GlueSchemaVersionMajor: 1
+GlueSchemaVersionMinor: 3
+GlueSEImplementationVersion: UNKNOWN
+GlueSETotalNearlineSize: 0
+GlueSEName: GLOW_classicSE
+GlueSEArchitecture: other
+GlueSESizeTotal: 2199
+GlueSETotalOnlineSize: 0
+GlueSEImplementationName: classicSE
+GlueSEUsedOnlineSize: 0
+GlueForeignKey: GlueSiteUniqueID=GLOW
+GlueSEUsedNearlineSize: 0
+GlueSEStatus: Production
+GlueSEUniqueID: GLOW_classicSE
+GlueSESizeFree: 2199
+GlueInformationServiceURL: ldap://is.grid.iu.edu:2170
+
+dn: GlueSALocalID=GLOW_classicSE,GlueSEUniqueID=GLOW_classicSE,Mds-Vo-name=local,o=grid
+objectClass: GlueKey
+objectClass: GlueSA
+objectClass: GlueSAAccessControlBase
+objectClass: GlueSAPolicy
+objectClass: GlueSAState
+objectClass: GlueSATop
+objectClass: GlueSchemaVersion
+GlueSATotalOnlineSize: 2199
+GlueSAPolicyMaxNumFiles: 0
+GlueSAFreeNearlineSize: 0
+GlueSchemaVersionMajor: 1
+GlueSAUsedNearlineSize: 0
+GlueSAExpirationMode: neverExpire
+GlueSAAccessLatency: online
+GlueSchemaVersionMinor: 3
+GlueSAStateUsedSpace: 0
+GlueSAPolicyQuota: 0
+GlueChunkKey: GlueSEUniqueID=GLOW_classicSE
+GlueSAUsedOnlineSize: 0
+GlueSAPolicyFileLifeTime: permanent
+GlueSAAccessControlBaseRule: VO:cms
+GlueSAAccessControlBaseRule: VO:glow
+GlueSAAccessControlBaseRule: VO:mis
+GlueSAName: GLOW_classicSE
+GlueSAPath: /afs/hep.wisc.edu/osg/data
+GlueSAType: permanent
+GlueSAStateAvailableSpace: 2199023254
+GlueSAFreeOnlineSize: 2199
+GlueSAReservedOnlineSize: 0
+GlueSARetentionPolicy: replica
+GlueSARoot: /
+GlueSAReservedNearlineSize: 0
+GlueSALocalID: GLOW_classicSE
+GlueSATotalNearlineSize: 0
+GlueSACapability: file storage
+GlueSACapability: SRMTokenReservedSpace=0
+GlueSACapability: InstalledOnlineCapacity=0
+GlueSACapability: InstalledNearlineCapacity=0
+
+dn: GlueSEAccessProtocolLocalID=GFTP_cmsgrid03.hep.wisc.edu_2811,GlueSEUniqueID=GLOW_classicSE,Mds-Vo-name=local,o=grid
+objectClass: GlueKey
+objectClass: GlueSEAccessProtocol
+objectClass: GlueSETop
+objectClass: GlueSchemaVersion
+GlueSchemaVersionMajor: 1
+GlueSEAccessProtocolType: gsiftp
+GlueSEAccessProtocolEndpoint: gsiftp://cmsgrid03.hep.wisc.edu:2811
+GlueSchemaVersionMinor: 3
+GlueSEAccessProtocolVersion: 1.0.0
+GlueSEAccessProtocolCapability: file transfer
+GlueSEAccessProtocolLocalID: GFTP_cmsgrid03.hep.wisc.edu_2811
+GlueSEAccessProtocolMaxStreams: 10
+GlueChunkKey: GlueSEUniqueID=GLOW_classicSE
+GlueSEAccessProtocolPort: 2811
+GlueSEAccessProtocolSupportedSecurity: gsiftp
+
+dn: GlueLocationLocalID=OSG_GRID,GlueSubClusterUniqueID=GLOW CE-GLOW,GlueClusterUniqueID=GLOW,mds-vo-name=local,o=grid
+objectClass: GlueClusterTop
+objectClass: GlueKey
+objectClass: GlueLocation
+objectClass: GlueSchemaVersion
+GlueLocationName: OSG_GRID
+GlueSchemaVersionMajor: 1
+GlueLocationLocalID: OSG_GRID
+GlueSchemaVersionMinor: 3
+GlueChunkKey: GlueSubClusterUniqueID=GLOW CE-GLOW
+GlueLocationPath: /etc/osg/wn-client/
+GlueLocationVersion: 1.0
+
+dn: GlueLocationLocalID=OSG_GRID,GlueSubClusterUniqueID=GLOW g7-GLOW,GlueClusterUniqueID=GLOW,mds-vo-name=local,o=grid
+objectClass: GlueClusterTop
+objectClass: GlueKey
+objectClass: GlueLocation
+objectClass: GlueSchemaVersion
+GlueLocationName: OSG_GRID
+GlueSchemaVersionMajor: 1
+GlueLocationLocalID: OSG_GRID
+GlueSchemaVersionMinor: 3
+GlueChunkKey: GlueSubClusterUniqueID=GLOW g7-GLOW
+GlueLocationPath: /etc/osg/wn-client/
+GlueLocationVersion: 1.0
+
+dn: GlueLocationLocalID=OSG_GRID,GlueSubClusterUniqueID=GLOW g8-GLOW,GlueClusterUniqueID=GLOW,mds-vo-name=local,o=grid
+objectClass: GlueClusterTop
+objectClass: GlueKey
+objectClass: GlueLocation
+objectClass: GlueSchemaVersion
+GlueLocationName: OSG_GRID
+GlueSchemaVersionMajor: 1
+GlueLocationLocalID: OSG_GRID
+GlueSchemaVersionMinor: 3
+GlueChunkKey: GlueSubClusterUniqueID=GLOW g8-GLOW
+GlueLocationPath: /etc/osg/wn-client/
+GlueLocationVersion: 1.0
+
+dn: GlueLocationLocalID=OSG_GRID,GlueSubClusterUniqueID=GLOW g9-GLOW,GlueClusterUniqueID=GLOW,mds-vo-name=local,o=grid
+objectClass: GlueClusterTop
+objectClass: GlueKey
+objectClass: GlueLocation
+objectClass: GlueSchemaVersion
+GlueLocationName: OSG_GRID
+GlueSchemaVersionMajor: 1
+GlueLocationLocalID: OSG_GRID
+GlueSchemaVersionMinor: 3
+GlueChunkKey: GlueSubClusterUniqueID=GLOW g9-GLOW
+GlueLocationPath: /etc/osg/wn-client/
+GlueLocationVersion: 1.0
+
+dn: GlueLocationLocalID=OSG_GRID,GlueSubClusterUniqueID=GLOW g10-GLOW,GlueClusterUniqueID=GLOW,mds-vo-name=local,o=grid
+objectClass: GlueClusterTop
+objectClass: GlueKey
+objectClass: GlueLocation
+objectClass: GlueSchemaVersion
+GlueLocationName: OSG_GRID
+GlueSchemaVersionMajor: 1
+GlueLocationLocalID: OSG_GRID
+GlueSchemaVersionMinor: 3
+GlueChunkKey: GlueSubClusterUniqueID=GLOW g10-GLOW
+GlueLocationPath: /etc/osg/wn-client/
+GlueLocationVersion: 1.0
+
+dn: GlueLocationLocalID=OSG_GRID,GlueSubClusterUniqueID=GLOW g12-GLOW,GlueClusterUniqueID=GLOW,mds-vo-name=local,o=grid
+objectClass: GlueClusterTop
+objectClass: GlueKey
+objectClass: GlueLocation
+objectClass: GlueSchemaVersion
+GlueLocationName: OSG_GRID
+GlueSchemaVersionMajor: 1
+GlueLocationLocalID: OSG_GRID
+GlueSchemaVersionMinor: 3
+GlueChunkKey: GlueSubClusterUniqueID=GLOW g12-GLOW
+GlueLocationPath: /etc/osg/wn-client/
+GlueLocationVersion: 1.0
+
+dn: GlueLocationLocalID=OSG_GRID,GlueSubClusterUniqueID=GLOW g14-GLOW,GlueClusterUniqueID=GLOW,mds-vo-name=local,o=grid
+objectClass: GlueClusterTop
+objectClass: GlueKey
+objectClass: GlueLocation
+objectClass: GlueSchemaVersion
+GlueLocationName: OSG_GRID
+GlueSchemaVersionMajor: 1
+GlueLocationLocalID: OSG_GRID
+GlueSchemaVersionMinor: 3
+GlueChunkKey: GlueSubClusterUniqueID=GLOW g14-GLOW
+GlueLocationPath: /etc/osg/wn-client/
+GlueLocationVersion: 1.0
+
+dn: GlueLocationLocalID=OSG_GRID,GlueSubClusterUniqueID=GLOW g18-GLOW,GlueClusterUniqueID=GLOW,mds-vo-name=local,o=grid
+objectClass: GlueClusterTop
+objectClass: GlueKey
+objectClass: GlueLocation
+objectClass: GlueSchemaVersion
+GlueLocationName: OSG_GRID
+GlueSchemaVersionMajor: 1
+GlueLocationLocalID: OSG_GRID
+GlueSchemaVersionMinor: 3
+GlueChunkKey: GlueSubClusterUniqueID=GLOW g18-GLOW
+GlueLocationPath: /etc/osg/wn-client/
+GlueLocationVersion: 1.0
+
+dn: GlueLocationLocalID=OSG_GRID,GlueSubClusterUniqueID=GLOW g19-GLOW,GlueClusterUniqueID=GLOW,mds-vo-name=local,o=grid
+objectClass: GlueClusterTop
+objectClass: GlueKey
+objectClass: GlueLocation
+objectClass: GlueSchemaVersion
+GlueLocationName: OSG_GRID
+GlueSchemaVersionMajor: 1
+GlueLocationLocalID: OSG_GRID
+GlueSchemaVersionMinor: 3
+GlueChunkKey: GlueSubClusterUniqueID=GLOW g19-GLOW
+GlueLocationPath: /etc/osg/wn-client/
+GlueLocationVersion: 1.0
+
+dn: GlueLocationLocalID=OSG_GRID,GlueSubClusterUniqueID=GLOW g20-GLOW,GlueClusterUniqueID=GLOW,mds-vo-name=local,o=grid
+objectClass: GlueClusterTop
+objectClass: GlueKey
+objectClass: GlueLocation
+objectClass: GlueSchemaVersion
+GlueLocationName: OSG_GRID
+GlueSchemaVersionMajor: 1
+GlueLocationLocalID: OSG_GRID
+GlueSchemaVersionMinor: 3
+GlueChunkKey: GlueSubClusterUniqueID=GLOW g20-GLOW
+GlueLocationPath: /etc/osg/wn-client/
+GlueLocationVersion: 1.0
+
+dn: GlueLocationLocalID=OSG_GRID,GlueSubClusterUniqueID=GLOW g22-GLOW,GlueClusterUniqueID=GLOW,mds-vo-name=local,o=grid
+objectClass: GlueClusterTop
+objectClass: GlueKey
+objectClass: GlueLocation
+objectClass: GlueSchemaVersion
+GlueLocationName: OSG_GRID
+GlueSchemaVersionMajor: 1
+GlueLocationLocalID: OSG_GRID
+GlueSchemaVersionMinor: 3
+GlueChunkKey: GlueSubClusterUniqueID=GLOW g22-GLOW
+GlueLocationPath: /etc/osg/wn-client/
+GlueLocationVersion: 1.0
+
+dn: GlueLocationLocalID=OSG_GRID,GlueSubClusterUniqueID=GLOW g23-GLOW,GlueClusterUniqueID=GLOW,mds-vo-name=local,o=grid
+objectClass: GlueClusterTop
+objectClass: GlueKey
+objectClass: GlueLocation
+objectClass: GlueSchemaVersion
+GlueLocationName: OSG_GRID
+GlueSchemaVersionMajor: 1
+GlueLocationLocalID: OSG_GRID
+GlueSchemaVersionMinor: 3
+GlueChunkKey: GlueSubClusterUniqueID=GLOW g23-GLOW
+GlueLocationPath: /etc/osg/wn-client/
+GlueLocationVersion: 1.0
+
+dn: GlueLocationLocalID=OSG_GRID,GlueSubClusterUniqueID=GLOW g24-GLOW,GlueClusterUniqueID=GLOW,mds-vo-name=local,o=grid
+objectClass: GlueClusterTop
+objectClass: GlueKey
+objectClass: GlueLocation
+objectClass: GlueSchemaVersion
+GlueLocationName: OSG_GRID
+GlueSchemaVersionMajor: 1
+GlueLocationLocalID: OSG_GRID
+GlueSchemaVersionMinor: 3
+GlueChunkKey: GlueSubClusterUniqueID=GLOW g24-GLOW
+GlueLocationPath: /etc/osg/wn-client/
+GlueLocationVersion: 1.0
+
+

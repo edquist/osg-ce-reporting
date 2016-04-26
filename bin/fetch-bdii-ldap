@@ -1,0 +1,44 @@
+#!/usr/bin/python
+
+import re
+import subprocess
+import sys
+
+# ldapsearch -xLLL -h is.grid.iu.edu:2170 -b o=grid '(GlueCEInfoHostName=*)' GlueCEInfoHostName GlueCEImplementationName
+# ldapsearch -xLLL -h is.grid.iu.edu:2170 -b o=grid '(GlueLocationLocalId=TIMESTAMP)' GlueLocationVersion
+
+BASE_COMMAND = ('ldapsearch', '-x', '-LLL', '-h', 'is.grid.iu.edu:2170', '-b', 'o=grid')
+HOST_COMMAND = BASE_COMMAND + ('(GlueCEInfoHostName=*)', 'GlueCEInfoHostName', 'GlueCEImplementationName')
+TIME_COMMAND = BASE_COMMAND + ('(GlueLocationLocalId=TIMESTAMP)', 'GlueLocationVersion')
+
+def fetch_ldap_records(command):
+    s = subprocess.Popen(command, stdout=subprocess.PIPE, stderr=subprocess.PIPE)
+    stdout, stderr = s.communicate()
+    if (len(stdout) == 0) or (len(stderr) > 0) or (s.returncode != 0):
+        print 'something went wrong'
+        sys.exit(1)
+    output = stdout.replace('\n ', '')
+    return output.strip().split('\n\n')
+
+hosts_by_name = {}
+
+host_records = fetch_ldap_records(HOST_COMMAND)
+for host_record in host_records:
+    _, implementation_line, hostname_line = host_record.split('\n')
+    hostname = hostname_line.split(' ')[1]
+    implementation = implementation_line.split(' ')[1]
+    if hostname not in hosts_by_name:
+        hosts_by_name[hostname] = {}
+    hosts_by_name[hostname][implementation] = True
+
+time_records = fetch_ldap_records(TIME_COMMAND)
+for time_record in time_records:
+    print time_record
+    _, timestamp_line = time_record.split('\n')
+    timestamp = timestamp_line.split(' ')[1]
+    # if hostname not in hosts_by_name:
+    #     hosts_by_name[hostname] = {}
+    # hosts_by_name[hostname][implementation] = True
+
+for h in sorted(hosts_by_name.keys()):
+    print h, hosts_by_name[h]

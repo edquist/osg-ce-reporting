@@ -1,0 +1,211 @@
+Hostname,Reverse Hostname,gWMS GRAM,gWMS HTC,BDII GRAM,BDII HTC,CE-Collector,Gratia,Assigned to Contact,Notes from Contact
+smuosg1.hpc.smu.edu,edu.smu.hpc.smuosg1,2015-12-08,,2015-12-08,,,,Chris,Plans to decomm in the next 3 months
+osgce.hepgrid.uerj.br,br.uerj.hepgrid.osgce,2015-12-08,,2015-12-03,,,,Chris,Emailed
+novastore.farm.particle.cz,cz.particle.farm.novastore,2015-12-08,,,2015-12-08,,,Chris,"Emailed: CE data is matches, purpose: CE (+ local storage / disk cache) for VO NOvA, production, Mid-term goal: Continue with processing offsite (non-FNAL) NOvA jobs. We are in process replacing our local batch system (torque -> HTCondor). We'll need new CE (for new local HTCondor batch) and we plan to use just HTCondor-CE for this new installation. We will gradually move our worker nodes from torque batch to new HTCondor batch within next few months (~ 3-6) and we want to be able to submit NOvA jobs to both batches during this transition. Upgrade: Only when there is a security/functionality they need"
+atlas-net2.bu.edu,edu.bu.atlas-net2,2015-12-08,,2015-12-08,,,,Chris,"Its used for GK atlas work load on T2 sites. Its in production and one of the most important.
+Mid-term Goals is to have both running then decide what to do with each.
+They working on bringing up another HTConder GK, but they are a bit of a ways from that 
+Updates based on security/functionality.. "
+uscms1.fltech-grid3.fit.edu,edu.fit.fltech-grid3.uscms1,2015-12-08,,2015-12-08,,,,Chris,Left VM
+ce.grid.iu.edu,edu.iu.grid.ce,,,2015-12-08,,,,Chris,Emailed Scott
+ouhep0.nhn.ou.edu,edu.ou.nhn.ouhep0,,,2015-12-08,,,,Chris,"Left VM, CE DATA: Actually, I'm not entirely sure what the difference is between the two, 
+and where that's configured. Could you please remind me? I have no 
+opinion in this matter, and I'll gladly point both of them to the one 
+they're supposed to report to …
+
+Purpose:
+
+You mean both ouhep0 and tier2-01? tier2-01 is the gatekeeper of our 
+ATLAS Tier2 cluster (OU_OCHEP_SWT2), and ouhep0 of our Tier3 cluster 
+(OUHEP_OSG).
+
+Both are Production
+
+
+They will continue running for the medium term future, but we'll update 
+them both soon.
+
+Yes, we'll add HTCondor-CE soon after the holidays, but we don't have 
+any immediate plans to remove GRAM, unless we're told we need to.
+
+That depends on the site. OUHEP_ITB is auto-updated immediately after a 
+new OSG version comes out, but then again, it's our ITB site, so it's 
+not used for production. OUHEP_OSG is also updated somewhat frequently, 
+since it's an interactive Tier3 andnot used for critical production. 
+OU_OCHEP_SWT2 is our main Tier2 cluster, so we like to keep that as 
+stable as possible, and only update that when there are problems or 
+security issues, or if we need new features for production running. So I 
+guess the answers for three sites would be essentially A, B, and C, 
+respectively.
+"
+tier2-01.ochep.ou.edu,edu.ou.ochep.tier2-01,,,2015-12-08,,,,Chris,"Left VM, See entry above"
+grid1.oscer.ou.edu,edu.ou.oscer.grid1,2015-12-08,,2015-12-08,,,,Chris,"Left VM, That's the production gatekeeper of OU_OSCER_ATLAS, the OU campus 
+supercomputer, which is also used for ATLAS Tier2 production, on an 
+opportunistic basis. That's usually kept fairly up to date by the OSCER 
+admins.
+
+This gatekeeper will be replaced by a new physical machine soon after 
+the holidays, since the current OSCER cluster is currently being 
+replaced with a new cluster. We'll keep the hostname the same, though, 
+to avoid having to make OIM changes."
+hansen-osg.rcac.purdue.edu,edu.purdue.rcac.hansen-osg,2015-12-08,,2015-12-08,,,,Chris,Left VM
+mfosgce.hpc.smu.edu,edu.smu.hpc.mfosgce,2015-12-08,,,,,,Chris,"Appears to be matching expectations, Is Production, The new CE for new cluster. working to convert to HTCondor Goal to be done in/by jan. 
+
+Typically they update when security/functionality is needed. He said that he could do it more often if it was recommended that he do so. "
+osgserv01.slac.stanford.edu,edu.stanford.slac.osgserv01,2015-12-08,,2015-12-08,,,,Chris,Left VM
+osgserv02.slac.stanford.edu,edu.stanford.slac.osgserv02,2015-12-08,,2015-12-08,,,,Chris,Left VM
+top.ucr.edu,edu.ucr.top,2015-12-08,,2015-12-08,,,,Chris,"Emailed, What is the purpose of this host?
+
+It is the Compute Element for our site.  It also serves as a gridftp server (1 of 2).
+
+    Do you consider it to be production, test, or other?
+
+Production
+
+    What is its medium-term (6–12 month) future?
+
+Continue serving in its current capacity.  
+
+     Do you have plans to add HTCondor-CE and remove GRAM? If so, what are they? What is your timeline?
+
+I will switch to htcondor-ce from GRAM.  I have done so, but it appears to not be working.   In the process of troubleshooting.  Have left GRAM running in the meantime.
+
+     Follow up - How does your group determine when/if to do an update in the OSG stack? Please list all that apply.
+
+Both A and C, depending on the urgency of the update.  In general will wait until periods of heavy usage are over."
+hepcms-0.umd.edu,edu.umd.hepcms-0,2015-12-08,,,,,,Chris,"Infomation listed should be accurate but should have historical info nothing new
+Tier-3 computing center
+This is being turned down. 
+no plans in the next 6-12 
+moving this month to HTC
+
+Updates based onsecurity or 2 month maintenance cycle. 
+For more major releases from like 3.1-3.2 they work around users."
+gridgk01.racf.bnl.gov,gov.bnl.racf.gridgk01,2015-12-08,,,2015-12-08,2015-11-24,,Chris,Left VM
+gridgk05.racf.bnl.gov,gov.bnl.racf.gridgk05,,,2015-12-08,,,,Chris,Left VM
+gridtest02.racf.bnl.gov,gov.bnl.racf.gridtest02,,,2015-12-08,,,,Chris,Left VM
+stargrid02.rcf.bnl.gov,gov.bnl.rcf.stargrid02,,,2015-12-08,,,,Chris,"Left VM, Emailed"
+pdsfgrid.nersc.gov,gov.nersc.pdsfgrid,,,2015-12-08,,,,Chris,"Info is accurate, grid node that the atlas vo box talks to, Produciton, no changes planned, They are not moving to HTC at this time becuase of the way HTCondor internacts with thier system. feel free to email discuss with her. Upgrades only when pressured or security."
+cms-sejong.sdfarm.kr,kr.sdfarm.cms-sejong,,,2015-12-08,,,,Chris,"Emailed, CE data matches, Perpuse is a computing element for local CMS group (Korean CMS users) It is not open to public, but only open to local community, e.g. Korean CMS groups. The users log on to local machine and use the computing farm. It does not accept any grid jobs. mid-term goal: We will keep it at least by 2017. No plan to move to HTCondor at this moment. But, if there is a  unless there is a obvious reason, then we will do. Do not update unless pressured by VO/OSG"
+ce-itb.ultralight.org,org.ultralight.ce-itb,,,2015-12-08,,,,Chris,Should be Decommed
+cit-gatekeeper.ultralight.org,org.ultralight.cit-gatekeeper,2015-12-08,,2015-12-08,,,,Chris,"moving to htcondor in the next couple of weeks. production, lhcgrid uscms, they upgrade based on security 
+they update with a maintenance cycle.  one in the group tries it then the others …  "
+cit-gatekeeper2.ultralight.org,org.ultralight.cit-gatekeeper2,2015-12-08,,2015-12-08,,,,Chris,"moving to htcondor in the next couple of weeks. production, lhcgrid uscms, they upgrade based on security 
+they update with a maintenance cycle.  one in the group tries it then the others …  "
+echism.grid.iu.edu,edu.iu.grid.echism,,,2015-12-08,,,,Elizabeth,
+kodiak-ce.baylor.edu,edu.baylor.kodiak-ce,2015-12-08,,2015-12-08,,,,Elizabeth,"left vm, got a callback requested an email with documentation, receptive to transitioning, sent email"
+brux3.hep.brown.edu,edu.brown.hep.brux3,,,2015-12-08,,,,Elizabeth,Emailed
+u2-grid.ccr.buffalo.edu,edu.buffalo.ccr.u2-grid,2015-12-08,,,,,,Elizabeth,left vm
+fiupg.hep.fiu.edu,edu.fiu.hep.fiupg,2015-12-08,,,,,,Elizabeth,"this is production, they're planning to transition in a few weeks after OS upgrades and a rebuild of their GUMS server, may be asking for help"
+cms-0.mps.ohio-state.edu,edu.ohio-state.mps.cms-0,2015-12-08,,,,,,Elizabeth,busy signal
+osg.osc.edu,edu.osc.osg,2015-12-08,,,,,,Elizabeth,"talked to Troy, he had never heard of the transition or HTCondor so I sent him some backround information and installation stuff. They are running production jobs for nova. He says they're not married to GRAM and he will look over the materials after they troubleshoot a few things going on currently."
+carter-osg.rcac.purdue.edu,edu.purdue.rcac.carter-osg,2015-11-24,2015-12-08,2015-11-20,2015-12-08,2015-12-08,,Elizabeth,[from TC: note the dates - this host appears to have transitioned between 11/24 and 12/8!] Yay!
+rossmann-osg.rcac.purdue.edu,edu.purdue.rcac.rossmann-osg,,,2015-12-08,,,,Elizabeth,
+antaeus.hpcc.ttu.edu,edu.ttu.hpcc.antaeus,2015-12-08,,2015-12-08,,,,Elizabeth,
+gluskap.phys.uconn.edu,edu.uconn.phys.gluskap,2015-12-08,,,,,,Elizabeth,
+osg-gw-7.t2.ucsd.edu,edu.ucsd.t2.osg-gw-7,2015-12-08,,2015-12-08,,,,Elizabeth,
+grow-grid.its.uiowa.edu,edu.uiowa.its.grow-grid,2015-12-08,,,,,,Elizabeth,
+gc1-ce.spa.umn.edu,edu.umn.spa.gc1-ce,,,2015-12-08,,,,Elizabeth,
+cmsosgce3.fnal.gov,gov.fnal.cmsosgce3,2015-12-08,2015-12-08,,2015-12-08,2015-12-08,,Elizabeth,
+fermigridosg1.fnal.gov,gov.fnal.fermigridosg1,2015-12-08,,,,,,Elizabeth,
+fnpcosg1.fnal.gov,gov.fnal.fnpcosg1,2015-12-08,,2015-12-08,,,,Elizabeth,
+proton.fis.cinvestav.mx,mx.cinvestav.fis.proton,2015-12-08,,2015-12-08,,,,Elizabeth,
+itbv-ce-condor.mwt2.org,org.mwt2.itbv-ce-condor,,,2015-12-08,,,,Elizabeth,
+itbv-ce-pbs.mwt2.org,org.mwt2.itbv-ce-pbs,,,2015-12-08,,,,Elizabeth,
+vtbv-ce.mwt2.org,org.mwt2.vtbv-ce,,,2015-12-08,,,,Elizabeth,
+osg-ce.grid.uj.ac.za,za.ac.uj.grid.osg-ce,,,2015-12-08,,,,Elizabeth,
+tier3-atlas1.bellarmine.edu,edu.bellarmine.tier3-atlas1,,,2015-12-08,,,,Vince,Left VM
+heposg01.colorado.edu,edu.colorado.heposg01,2015-12-08,,2015-12-08,,,,Vince,Left VM
+nys1.cac.cornell.edu,edu.cornell.cac.nys1,2015-12-08,,2015-12-08,,,,Vince,Left VM
+net2.rc.fas.harvard.edu,edu.harvard.fas.rc.net2,2015-11-13,,,2015-12-08,,,Vince,Rapid Busy Signal - Need to email
+umiss001.hep.olemiss.edu,edu.olemiss.hep.umiss001,2015-12-08,,2015-12-08,,2015-12-08,,Vince,I spoke to David who reported that transitioning is definitely on the radar but not in the near future.  He is currently working on other issues at the university.  David also reported that he installs updates fairly regularly via the normal yum update mechanisms.
+conte-osg.rcac.purdue.edu,edu.purdue.rcac.conte-osg,,,2015-12-08,,,,Vince,This resource is listed as Inactive in OIM
+hadoop-osg.rcac.purdue.edu,edu.purdue.rcac.hadoop-osg,2015-12-08,,2015-12-08,,,,Vince,
+ruhex-osgce.rutgers.edu,edu.rutgers.ruhex-osgce,2015-12-08,,2015-12-08,,,,Vince,
+cms.tier3.ucdavis.edu,edu.ucdavis.tier3.cms,2015-12-08,,2015-12-08,,,,Vince,
+cms.rc.ufl.edu,edu.ufl.rc.cms,,2015-12-08,2015-12-08,2015-12-08,2015-11-24,,Vince,
+gk04.swt2.uta.edu,edu.uta.swt2.gk04,2015-12-08,,2015-12-08,,,,Vince,
+ce1.accre.vanderbilt.edu,edu.vanderbilt.accre.ce1,,2015-12-08,2015-12-08,,,,Vince,
+ce2.accre.vanderbilt.edu,edu.vanderbilt.accre.ce2,,2015-12-08,2015-12-08,,,,Vince,
+carvergrid.nersc.gov,gov.nersc.carvergrid,2015-12-08,,,,,,Vince,
+gk01.atlas-swt2.org,org.atlas-swt2.gk01,2015-12-08,,2015-12-08,,,,Vince,
+osg.rc.ufl.edu,edu.ufl.rc.osg,,2015-12-08,2015-12-08,2015-12-08,2015-12-08,,Vince,
+ce.grid.unesp.br,br.unesp.grid.ce,2015-12-08,,2015-12-08,,,,Vince ,Need to email (OCONUS)
+osg-ce.sprace.org.br,br.org.sprace.osg-ce,,2015-12-08,,2015-12-08,,,,
+ce503.cern.ch,ch.cern.ce503,,2015-12-08,,,,,,
+ce504.cern.ch,ch.cern.ce504,,2015-12-08,,,,,,
+atlas-hub.bu.edu,edu.bu.atlas-hub,,,,2015-12-08,,,,
+xeon.hep.caltech.edu,edu.caltech.hep.xeon,,2015-12-08,,2015-12-08,2015-11-24,,,
+osg-ce.clemson.edu,edu.clemson.osg-ce,,2015-12-08,,2015-12-08,2015-12-08,,,
+hepitb01.colorado.edu,edu.colorado.hepitb01,,,,2015-12-08,,,,
+hpcosgce.fiu.edu,edu.fiu.hpcosgce,,2015-12-08,,,2015-12-08,,,
+ligo-ce1.pace.gatech.edu,edu.gatech.pace.ligo-ce1,,2015-12-08,,,2015-12-08,,,
+mwt2-gk.campuscluster.illinois.edu,edu.illinois.campuscluster.mwt2-gk,,2015-12-08,,2015-12-08,2015-12-08,,,
+osg-ce.beocat.cis.ksu.edu,edu.ksu.cis.beocat.osg-ce,,2015-12-08,,2015-12-08,,,,
+luhepce.lunet.edu,edu.lunet.luhepce,,,,,2015-12-08,,,
+lutgw1.lunet.edu,edu.lunet.lutgw1,,,,2015-12-08,2015-12-08,,,
+ce01.cmsaf.mit.edu,edu.mit.cmsaf.ce01,,2015-12-08,,2015-12-08,,,,
+ce02.cmsaf.mit.edu,edu.mit.cmsaf.ce02,,2015-12-08,,2015-12-08,2015-12-08,,,
+t3serv007.mit.edu,edu.mit.t3serv007,,,,,2015-12-08,,,
+ndcms.crc.nd.edu,edu.nd.crc.ndcms,,2015-12-08,,2015-11-20,,,,
+opteron03.crc.nd.edu,edu.nd.crc.opteron03,,,,2015-12-08,,,,
+numep-grid1.research.northwestern.edu,edu.northwestern.research.numep-grid1,,2015-12-08,,2015-12-08,,,,
+osgitb1.nhn.ou.edu,edu.ou.nhn.osgitb1,,,,2015-12-08,,,,
+byggvir.princeton.edu,edu.princeton.byggvir,,,,,2015-12-08,,,
+cms-ce1-osg.rcac.purdue.edu,edu.purdue.rcac.cms-ce1-osg,,2015-12-08,,2015-12-08,2015-12-08,,,
+cms-ce2-osg.rcac.purdue.edu,edu.purdue.rcac.cms-ce2-osg,,,,2015-12-08,2015-12-08,,,
+cmstest1.rcac.purdue.edu,edu.purdue.rcac.cmstest1,,,,2015-12-08,2015-12-08,,,
+hammer-osg.rcac.purdue.edu,edu.purdue.rcac.hammer-osg,,2015-12-08,,2015-12-08,2015-12-08,,,
+bonner06.rice.edu,edu.rice.bonner06,,,,,2015-12-08,,,
+its-condor-ce.syr.edu,edu.syr.its-condor-ce,,2015-12-08,,,2015-12-08,,,
+ce01.brazos.tamu.edu,edu.tamu.brazos.ce01,,2015-12-08,,2015-12-08,2015-12-08,,,
+calclab-ce.math.tamu.edu,edu.tamu.math.calclab-ce,,,,2015-12-08,2015-12-08,,,
+cms25.physics.ucsb.edu,edu.ucsb.physics.cms25,,2015-12-08,,2015-12-08,2015-11-04,,,
+osg-gw-2.t2.ucsd.edu,edu.ucsd.t2.osg-gw-2,,2015-12-08,,,2015-12-08,,,
+osg-gw-4.t2.ucsd.edu,edu.ucsd.t2.osg-gw-4,,2015-12-08,,,,,,
+osg-gw-6.t2.ucsd.edu,edu.ucsd.t2.osg-gw-6,,2015-12-08,,2015-12-08,2015-12-08,,,
+gate02.grid.umich.edu,edu.umich.grid.gate02,,2015-12-08,,2015-12-08,2015-12-08,,,
+crane-gw1.unl.edu,edu.unl.crane-gw1,,2015-12-08,,,2015-12-08,,,
+red.unl.edu,edu.unl.red,,2015-12-08,,2015-12-08,2015-12-08,,,
+red-gw1.unl.edu,edu.unl.red-gw1,,2015-12-08,,2015-12-08,2015-12-08,,,
+red-gw2.unl.edu,edu.unl.red-gw2,,2015-12-08,,2015-12-08,2015-12-08,,,
+sandhills-ce1.unl.edu,edu.unl.sandhills-ce1,,,,,2015-12-08,,,
+tusker-gw1.unl.edu,edu.unl.tusker-gw1,,2015-12-08,,,2015-12-08,,,
+cms-grid0.hep.uprm.edu,edu.uprm.hep.cms-grid0,,2015-12-08,,2015-12-08,2015-12-08,,,
+stampede.tacc.utexas.edu,edu.utexas.tacc.stampede,,2015-12-08,,,,,,
+globus1.hyak.washington.edu,edu.washington.hyak.globus1,,2015-12-08,,,2015-12-08,,,
+itb-ce1.chtc.wisc.edu,edu.wisc.chtc.itb-ce1,,,,2015-12-08,,,,
+cmsgrid01.hep.wisc.edu,edu.wisc.hep.cmsgrid01,,2015-12-08,,2015-11-20,2015-12-08,,,
+cmsgrid02.hep.wisc.edu,edu.wisc.hep.cmsgrid02,,2015-12-08,,2015-12-08,2015-12-08,,,
+cmsgrid03.hep.wisc.edu,edu.wisc.hep.cmsgrid03,,2015-12-08,,2015-12-08,2015-12-08,,,
+osggrid01.hep.wisc.edu,edu.wisc.hep.osggrid01,,2015-12-08,,2015-12-08,2015-12-08,,,
+grid42.racf.bnl.gov,gov.bnl.racf.grid42,,,,,2015-12-08,,,
+gridgk02.racf.bnl.gov,gov.bnl.racf.gridgk02,,2015-12-08,,2015-12-08,,,,
+gridgk03.racf.bnl.gov,gov.bnl.racf.gridgk03,,,,2015-12-08,,,,
+gridgk04.racf.bnl.gov,gov.bnl.racf.gridgk04,,,,2015-12-08,,,,
+gridgk06.racf.bnl.gov,gov.bnl.racf.gridgk06,,,,2015-12-08,,,,
+gridgk07.racf.bnl.gov,gov.bnl.racf.gridgk07,,,,2015-12-08,,,,
+gridgk08.racf.bnl.gov,gov.bnl.racf.gridgk08,,,,2015-12-08,2015-12-08,,,
+gridtest01.racf.bnl.gov,gov.bnl.racf.gridtest01,,,,2015-12-08,,,,
+stargw3.starp.bnl.gov,gov.bnl.starp.stargw3,,,,,2015-12-08,,,
+cmsdev42.fnal.gov,gov.fnal.cmsdev42,,,,2015-12-08,2015-11-24,,,
+cmslpc-ce.fnal.gov,gov.fnal.cmslpc-ce,,,,,2015-11-04,,,
+cmsosgce.fnal.gov,gov.fnal.cmsosgce,,2015-12-08,,2015-12-08,2015-12-08,,,
+cmsosgce2.fnal.gov,gov.fnal.cmsosgce2,,2015-12-08,,,2015-12-08,,,
+cmsosgce4.fnal.gov,gov.fnal.cmsosgce4,,2015-12-08,,2015-12-08,2015-12-08,,,
+cmssrv272.fnal.gov,gov.fnal.cmssrv272,,,,,2015-11-04,,,
+cmssrv277.fnal.gov,gov.fnal.cmssrv277,,,,,2015-11-04,,,
+fermicloud105.fnal.gov,gov.fnal.fermicloud105,,,,2015-12-08,,,,
+fermicloud121.fnal.gov,gov.fnal.fermicloud121,,,,2015-12-08,,,,
+fermicloud148.fnal.gov,gov.fnal.fermicloud148,,,,2015-11-18,,,,
+fermicloud312.fnal.gov,gov.fnal.fermicloud312,,,,2015-11-19,,,,
+gpce01.fnal.gov,gov.fnal.gpce01,,,,,2015-12-08,,,
+gpce02.fnal.gov,gov.fnal.gpce02,,,,,2015-12-08,,,
+pc1813.nersc.gov,gov.nersc.pc1813,,,,,2015-11-04,,,
+gate03.aglt2.org,org.aglt2.gate03,,,,2015-12-08,2015-12-08,,,
+gate04.aglt2.org,org.aglt2.gate04,,,,2015-12-08,2015-12-08,,,
+iut2-gk.mwt2.org,org.mwt2.iut2-gk,,2015-12-08,,2015-12-08,2015-12-08,,,
+osg-gk.mwt2.org,org.mwt2.osg-gk,,2015-12-08,,2015-12-08,2015-12-08,,,
+uct2-gk.mwt2.org,org.mwt2.uct2-gk,,2015-12-08,,2015-12-08,2015-12-08,,,
+,,,,,,,,,
+139,139,40,47,49,58,58,,,

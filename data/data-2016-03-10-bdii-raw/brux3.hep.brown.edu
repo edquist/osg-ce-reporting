@@ -1,0 +1,281 @@
+dn: GlueSiteUniqueID=brown-cms-new,mds-vo-name=local,o=grid
+objectClass: GlueKey
+objectClass: GlueSchemaVersion
+objectClass: GlueSite
+objectClass: GlueTop
+GlueSchemaVersionMajor: 1
+GlueSiteWeb: http://brux3.hep.brown.edu/policy.html
+GlueForeignKey: GlueSiteUniqueID=brown-cms-new
+GlueSiteName: brown-cms-new
+GlueSiteLongitude: -71.3976
+GlueSiteDescription: OSG Site
+GlueSiteLocation: Providence, RI, US
+GlueSiteSponsor: cms:100
+GlueSiteEmailContact: mailto: piperov@hep.brown.edu
+GlueSiteSysAdminContact: mailto: piperov@hep.brown.edu
+GlueSiteSecurityContact: mailto: piperov@hep.brown.edu
+GlueSiteUniqueID: brown-cms-new
+GlueSchemaVersionMinor: 3
+GlueSiteUserSupportContact: mailto: piperov@hep.brown.edu
+GlueSiteLatitude: 41.8264
+
+dn: GlueClusterUniqueID=brux3.hep.brown.edu,mds-vo-name=local,o=grid
+objectClass: GlueCluster
+objectClass: GlueClusterTop
+objectClass: GlueInformationService
+objectClass: GlueKey
+objectClass: GlueSchemaVersion
+GlueSchemaVersionMajor: 1
+GlueClusterUniqueID: brux3.hep.brown.edu
+GlueClusterName: brux3.hep.brown.edu
+GlueForeignKey: GlueSiteUniqueID=brown-cms-new
+GlueForeignKey: GlueCEUniqueID=brux3.hep.brown.edu:2119/jobmanager-condor-default
+GlueClusterTmpDir: /data/se/osg
+GlueSchemaVersionMinor: 3
+GlueClusterWNTmpDir: /tmp
+GlueInformationServiceURL: ldap://is.grid.iu.edu:2170
+
+dn: GlueSubClusterUniqueID=CMS Tier3 Rocks-Cluster_CE_1-brown-cms-new,GlueClusterUniqueID=brux3.hep.brown.edu,mds-vo-name=local,o=grid
+objectClass: GlueClusterTop
+objectClass: GlueHostApplicationSoftware
+objectClass: GlueHostArchitecture
+objectClass: GlueHostBenchmark
+objectClass: GlueHostMainMemory
+objectClass: GlueHostNetworkAdapter
+objectClass: GlueHostOperatingSystem
+objectClass: GlueHostProcessor
+objectClass: GlueInformationService
+objectClass: GlueKey
+objectClass: GlueSchemaVersion
+objectClass: GlueSubCluster
+GlueSubClusterPhysicalCPUs: 16
+GlueSchemaVersionMajor: 1
+GlueSubClusterWNTmpDir: /tmp
+GlueHostNetworkAdapterOutboundIP: TRUE
+GlueSchemaVersionMinor: 3
+GlueHostMainMemoryRAMSize: 48389
+GlueHostOperatingSystemRelease: 6.7
+GlueHostProcessorModel: Intel(R) Xeon(R) CPU           E5630  @ 2.53GHz
+GlueChunkKey: GlueClusterUniqueID=brux3.hep.brown.edu
+GlueSubClusterLogicalCPUs: 16
+GlueHostNetworkAdapterInboundIP: FALSE
+GlueHostOperatingSystemName: CentOS
+GlueSubClusterTmpDir: /data/se/osg
+GlueHostBenchmarkSI00: 2000
+GlueHostProcessorVendor: GenuineIntel
+GlueSubClusterUniqueID: CMS Tier3 Rocks-Cluster_CE_1-brown-cms-new
+GlueHostArchitecturePlatformType: x86_64
+GlueHostMainMemoryVirtualSize: 48389
+GlueHostApplicationSoftwareRunTimeEnvironment: OSG_VERSION
+GlueHostApplicationSoftwareRunTimeEnvironment: OSG 3.2.27
+GlueHostProcessorOtherDescription: Cores=16
+GlueHostBenchmarkSF00: 2000
+GlueHostOperatingSystemVersion: Final
+GlueSubClusterName: CMS Tier3 Rocks-Cluster_CE_1
+GlueHostArchitectureSMPSize: 16
+GlueHostProcessorClockSpeed: 1600
+GlueInformationServiceURL: ldap://is.grid.iu.edu:2170
+
+dn: GlueLocationLocalID=TIMESTAMP,GlueSubClusterUniqueID=CMS Tier3 Rocks-Cluster_CE_1-brown-cms-new,GlueClusterUniqueID=brux3.hep.brown.edu,mds-vo-name=local,o=grid
+objectClass: GlueClusterTop
+objectClass: GlueKey
+objectClass: GlueLocation
+objectClass: GlueSchemaVersion
+GlueLocationName: TIMESTAMP
+GlueSchemaVersionMajor: 1
+GlueLocationLocalID: TIMESTAMP
+GlueSchemaVersionMinor: 3
+GlueChunkKey: GlueSubClusterUniqueID=CMS Tier3 Rocks-Cluster_CE_1-brown-cms-new
+GlueLocationPath: Thu Mar 10 18:21:28 UTC 2016
+GlueLocationVersion: 1457634088.92
+
+dn: GlueCEUniqueID=brux3.hep.brown.edu:2119/jobmanager-condor-default,mds-vo-name=local,o=grid
+objectClass: GlueCE
+objectClass: GlueCEAccessControlBase
+objectClass: GlueCEInfo
+objectClass: GlueCEPolicy
+objectClass: GlueCEState
+objectClass: GlueCETop
+objectClass: GlueInformationService
+objectClass: GlueKey
+objectClass: GlueSchemaVersion
+GlueCEInfoDataDir: /data/se/osg
+GlueCEPolicyMaxObtainableCPUTime: 1440
+GlueCEStateRunningJobs: 0
+GlueSchemaVersionMajor: 1
+GlueCEInfoTotalCPUs: 21
+GlueCEStateFreeJobSlots: 21
+GlueCEPolicyMaxWaitingJobs: 99999
+GlueCEStateWorstResponseTime: 86400
+GlueCEPolicyMaxTotalJobs: 99999
+GlueCEPolicyMaxObtainableWallClockTime: 1440
+GlueCEStateTotalJobs: 0
+GlueCEStateStatus: Production
+GlueForeignKey: GlueClusterUniqueID=brux3.hep.brown.edu
+GlueCECapability: CPUScalingReferenceSI00=2000
+GlueCECapability: glexec
+GlueCEAccessControlBaseRule: VO:cms
+GlueCEInfoLRMSType: condor
+GlueCEPolicyMaxRunningJobs: 21
+GlueCEPolicyAssignedJobSlots: 21
+GlueCEInfoApplicationDir: /sharesoft/osg/app
+GlueCEPolicyPreemption: 0
+GlueCEStateFreeCPUs: 21
+GlueCEInfoGRAMVersion: 5.0
+GlueCEImplementationName: Globus
+GlueSchemaVersionMinor: 3
+GlueCEStateEstimatedResponseTime: 60
+GlueCEHostingCluster: brux3.hep.brown.edu
+GlueCEInfoHostName: brux3.hep.brown.edu
+GlueCEInfoDefaultSE: srm.hep.brown.edu
+GlueCEImplementationVersion: 4.0.6
+GlueCEInfoLRMSVersion: 8.2.9 Aug 21 2015 $
+GlueCEPolicyMaxCPUTime: 1440
+GlueCEStateWaitingJobs: 0
+GlueCEPolicyPriority: 999999
+GlueCEUniqueID: brux3.hep.brown.edu:2119/jobmanager-condor-default
+GlueCEName: default
+GlueCEInfoGatekeeperPort: 2119
+GlueCEInfoJobManager: condor
+GlueCEPolicyMaxSlotsPerJob: 1
+GlueCEInfoContactString: brux3.hep.brown.edu/jobmanager-condor-default
+GlueCEPolicyMaxWallClockTime: 1440
+GlueInformationServiceURL: ldap://is.grid.iu.edu:2170
+
+dn: GlueVOViewLocalID=cms,GlueCEUniqueID=brux3.hep.brown.edu:2119/jobmanager-condor-default,mds-vo-name=local,o=grid
+objectClass: GlueCEAccessControlBase
+objectClass: GlueCEInfo
+objectClass: GlueCEPolicy
+objectClass: GlueCEState
+objectClass: GlueCETop
+objectClass: GlueKey
+objectClass: GlueSchemaVersion
+objectClass: GlueVOView
+GlueCEInfoDataDir: /data/se/osg
+GlueCEStateRunningJobs: 0
+GlueCEStateTotalJobs: 0
+GlueSchemaVersionMajor: 1
+GlueCEStateWaitingJobs: 0
+GlueSchemaVersionMinor: 3
+GlueVOViewLocalID: cms
+GlueCEStateFreeJobSlots: 21
+GlueCEAccessControlBaseRule: VO:cms
+GlueCEStateEstimatedResponseTime: 60
+GlueChunkKey: GlueCEUniqueID=brux3.hep.brown.edu:2119/jobmanager-condor-default
+GlueCEInfoDefaultSE: srm.hep.brown.edu
+GlueCEStateWorstResponseTime: 86400
+GlueCEInfoApplicationDir: /sharesoft/osg/app
+
+dn: GlueCESEBindSEUniqueID=brown-cms-new_classicSE,GlueCESEBindGroupCEUniqueID=brux3.hep.brown.edu:2119/jobmanager-condor-default,mds-vo-name=local,o=grid
+objectClass: GlueCESEBind
+objectClass: GlueGeneralTop
+objectClass: GlueSchemaVersion
+GlueSchemaVersionMajor: 1
+GlueCESEBindCEUniqueID: brux3.hep.brown.edu:2119/jobmanager-condor-default
+GlueSchemaVersionMinor: 3
+GlueCESEBindSEUniqueID: brown-cms-new_classicSE
+GlueCESEBindCEAccesspoint: /data/se/osg
+GlueCESEBindWeight: 0
+
+dn: GlueCESEBindGroupCEUniqueID=brux3.hep.brown.edu:2119/jobmanager-condor-default,mds-vo-name=local,o=grid
+objectClass: GlueCESEBindGroup
+objectClass: GlueGeneralTop
+objectClass: GlueSchemaVersion
+GlueSchemaVersionMinor: 3
+GlueCESEBindGroupCEUniqueID: brux3.hep.brown.edu:2119/jobmanager-condor-default
+GlueSchemaVersionMajor: 1
+GlueCESEBindGroupSEUniqueID: brown-cms-new_classicSE
+
+dn: GlueSEUniqueID=brown-cms-new_classicSE,Mds-Vo-name=local,o=grid
+objectClass: GlueInformationService
+objectClass: GlueKey
+objectClass: GlueSE
+objectClass: GlueSETop
+objectClass: GlueSchemaVersion
+GlueSEPort: 2811
+GlueSchemaVersionMajor: 1
+GlueSchemaVersionMinor: 3
+GlueSEImplementationVersion: UNKNOWN
+GlueSETotalNearlineSize: 0
+GlueSEName: brown-cms-new_classicSE
+GlueSEArchitecture: other
+GlueSESizeTotal: 0
+GlueSETotalOnlineSize: 0
+GlueSEImplementationName: classicSE
+GlueSEUsedOnlineSize: 0
+GlueForeignKey: GlueSiteUniqueID=brown-cms-new
+GlueSEUsedNearlineSize: 0
+GlueSEStatus: Production
+GlueSEUniqueID: brown-cms-new_classicSE
+GlueSESizeFree: 0
+GlueInformationServiceURL: ldap://is.grid.iu.edu:2170
+
+dn: GlueSALocalID=brown-cms-new_classicSE,GlueSEUniqueID=brown-cms-new_classicSE,Mds-Vo-name=local,o=grid
+objectClass: GlueKey
+objectClass: GlueSA
+objectClass: GlueSAAccessControlBase
+objectClass: GlueSAPolicy
+objectClass: GlueSAState
+objectClass: GlueSATop
+objectClass: GlueSchemaVersion
+GlueSATotalOnlineSize: 0
+GlueSAPolicyMaxNumFiles: 0
+GlueSAFreeNearlineSize: 0
+GlueSchemaVersionMajor: 1
+GlueSAUsedNearlineSize: 0
+GlueSAExpirationMode: neverExpire
+GlueSAAccessLatency: online
+GlueSchemaVersionMinor: 3
+GlueSAStateUsedSpace: 0
+GlueSAPolicyQuota: 0
+GlueChunkKey: GlueSEUniqueID=brown-cms-new_classicSE
+GlueSAUsedOnlineSize: 0
+GlueSAPolicyFileLifeTime: permanent
+GlueSAAccessControlBaseRule: VO:cms
+GlueSAName: brown-cms-new_classicSE
+GlueSAPath: /data/se/osg
+GlueSAType: permanent
+GlueSAStateAvailableSpace: 0
+GlueSAFreeOnlineSize: 0
+GlueSAReservedOnlineSize: 0
+GlueSARetentionPolicy: replica
+GlueSARoot: /
+GlueSAReservedNearlineSize: 0
+GlueSALocalID: brown-cms-new_classicSE
+GlueSATotalNearlineSize: 0
+GlueSACapability: file storage
+GlueSACapability: SRMTokenReservedSpace=0
+GlueSACapability: InstalledOnlineCapacity=0
+GlueSACapability: InstalledNearlineCapacity=0
+
+dn: GlueSEAccessProtocolLocalID=GFTP_rocks-ce.hep.brown.edu_2811,GlueSEUniqueID=brown-cms-new_classicSE,Mds-Vo-name=local,o=grid
+objectClass: GlueKey
+objectClass: GlueSEAccessProtocol
+objectClass: GlueSETop
+objectClass: GlueSchemaVersion
+GlueSchemaVersionMajor: 1
+GlueSEAccessProtocolType: gsiftp
+GlueSEAccessProtocolEndpoint: gsiftp://rocks-ce.hep.brown.edu:2811
+GlueSchemaVersionMinor: 3
+GlueSEAccessProtocolVersion: 1.0.0
+GlueSEAccessProtocolCapability: file transfer
+GlueSEAccessProtocolLocalID: GFTP_rocks-ce.hep.brown.edu_2811
+GlueSEAccessProtocolMaxStreams: 10
+GlueChunkKey: GlueSEUniqueID=brown-cms-new_classicSE
+GlueSEAccessProtocolPort: 2811
+GlueSEAccessProtocolSupportedSecurity: gsiftp
+
+dn: GlueLocationLocalID=OSG_GRID,GlueSubClusterUniqueID=CMS Tier3 Rocks-Cluster_CE_1-brown-cms-new,GlueClusterUniqueID=brux3.hep.brown.edu,mds-vo-name=local,o=grid
+objectClass: GlueClusterTop
+objectClass: GlueKey
+objectClass: GlueLocation
+objectClass: GlueSchemaVersion
+GlueLocationName: OSG_GRID
+GlueSchemaVersionMajor: 1
+GlueLocationLocalID: OSG_GRID
+GlueSchemaVersionMinor: 3
+GlueChunkKey: GlueSubClusterUniqueID=CMS Tier3 Rocks-Cluster_CE_1-brown-cms-new
+GlueLocationPath: /etc/osg/wn-client/
+GlueLocationVersion: 1.0
+
+

@@ -1,0 +1,22 @@
+dn: GlueSiteUniqueID=UNKNOWN,mds-vo-name=local,o=grid
+objectClass: GlueKey
+objectClass: GlueSchemaVersion
+objectClass: GlueSite
+objectClass: GlueTop
+GlueSchemaVersionMajor: 1
+GlueSiteWeb: http://example.com/site_policy
+GlueForeignKey: GlueSiteUniqueID=UNKNOWN
+GlueSiteName: UNKNOWN
+GlueSiteLongitude: 0.00
+GlueSiteDescription: OSG Site
+GlueSiteLocation: UNKNOWN city, UNKNOWN country
+GlueSiteSponsor: unknown:100
+GlueSiteEmailContact: mailto: UNKNOWN@example.com
+GlueSiteSysAdminContact: mailto: UNKNOWN@example.com
+GlueSiteSecurityContact: mailto: UNKNOWN@example.com
+GlueSiteUniqueID: UNKNOWN
+GlueSchemaVersionMinor: 3
+GlueSiteUserSupportContact: mailto: UNKNOWN@example.com
+GlueSiteLatitude: 0.00
+
+

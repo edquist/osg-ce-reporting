@@ -1,0 +1,332 @@
+dn: GlueSiteUniqueID=Rice,mds-vo-name=local,o=grid
+objectClass: GlueKey
+objectClass: GlueSchemaVersion
+objectClass: GlueSite
+objectClass: GlueTop
+GlueSchemaVersionMajor: 1
+GlueSiteWeb: UNAVAILABLE
+GlueForeignKey: GlueSiteUniqueID=Rice
+GlueSiteName: Rice
+GlueSiteLongitude: -95.409334
+GlueSiteDescription: OSG Site
+GlueSiteLocation: Houston, TX, USA
+GlueSiteSponsor: cms:50
+GlueSiteSponsor: star:50
+GlueSiteEmailContact: mailto: jrorie@rice.edu
+GlueSiteSysAdminContact: mailto: jrorie@rice.edu
+GlueSiteSecurityContact: mailto: jrorie@rice.edu
+GlueSiteUniqueID: Rice
+GlueSchemaVersionMinor: 3
+GlueSiteUserSupportContact: mailto: jrorie@rice.edu
+GlueSiteLatitude: 29.716318
+
+dn: GlueClusterUniqueID=bonner06.rice.edu,mds-vo-name=local,o=grid
+objectClass: GlueCluster
+objectClass: GlueClusterTop
+objectClass: GlueInformationService
+objectClass: GlueKey
+objectClass: GlueSchemaVersion
+GlueSchemaVersionMajor: 1
+GlueClusterUniqueID: bonner06.rice.edu
+GlueClusterName: bonner06.rice.edu
+GlueForeignKey: GlueSiteUniqueID=Rice
+GlueForeignKey: GlueCEUniqueID=bonner06.rice.edu:9619/htcondorce-condor-default
+GlueClusterTmpDir: /data/osg/
+GlueSchemaVersionMinor: 3
+GlueClusterWNTmpDir: /tmp
+GlueInformationServiceURL: ldap://is.grid.iu.edu:2170
+
+dn: GlueSubClusterUniqueID=Rice Testbed-Rice,GlueClusterUniqueID=bonner06.rice.edu,mds-vo-name=local,o=grid
+objectClass: GlueClusterTop
+objectClass: GlueHostApplicationSoftware
+objectClass: GlueHostArchitecture
+objectClass: GlueHostBenchmark
+objectClass: GlueHostMainMemory
+objectClass: GlueHostNetworkAdapter
+objectClass: GlueHostOperatingSystem
+objectClass: GlueHostProcessor
+objectClass: GlueInformationService
+objectClass: GlueKey
+objectClass: GlueSchemaVersion
+objectClass: GlueSubCluster
+GlueSubClusterPhysicalCPUs: 8
+GlueSchemaVersionMajor: 1
+GlueSubClusterWNTmpDir: /tmp
+GlueHostNetworkAdapterOutboundIP: TRUE
+GlueSchemaVersionMinor: 3
+GlueHostMainMemoryRAMSize: 66000
+GlueHostOperatingSystemRelease: 6.7
+GlueHostProcessorModel: Intel(R) Xeon(R) CPU E5-2660 0 @ 2.20GHz
+GlueChunkKey: GlueClusterUniqueID=bonner06.rice.edu
+GlueSubClusterLogicalCPUs: 16
+GlueHostNetworkAdapterInboundIP: FALSE
+GlueHostOperatingSystemName: ScientificCERNSLC
+GlueSubClusterTmpDir: /data/osg/
+GlueHostBenchmarkSI00: 2000
+GlueHostProcessorVendor: GenuineIntel
+GlueSubClusterUniqueID: Rice Testbed-Rice
+GlueHostArchitecturePlatformType: x86_64
+GlueHostMainMemoryVirtualSize: 66000
+GlueHostApplicationSoftwareRunTimeEnvironment: OSG 3.2.35
+GlueHostApplicationSoftwareRunTimeEnvironment: OSG_VERSION
+GlueHostProcessorOtherDescription: Cores=16
+GlueHostBenchmarkSF00: 2000
+GlueHostOperatingSystemVersion: Carbon
+GlueSubClusterName: Rice Testbed
+GlueHostArchitectureSMPSize: 8
+GlueHostProcessorClockSpeed: 2200
+GlueInformationServiceURL: ldap://is.grid.iu.edu:2170
+
+dn: GlueLocationLocalID=TIMESTAMP,GlueSubClusterUniqueID=Rice Testbed-Rice,GlueClusterUniqueID=bonner06.rice.edu,mds-vo-name=local,o=grid
+objectClass: GlueClusterTop
+objectClass: GlueKey
+objectClass: GlueLocation
+objectClass: GlueSchemaVersion
+GlueLocationName: TIMESTAMP
+GlueSchemaVersionMajor: 1
+GlueLocationLocalID: TIMESTAMP
+GlueSchemaVersionMinor: 3
+GlueChunkKey: GlueSubClusterUniqueID=Rice Testbed-Rice
+GlueLocationPath: Thu Mar 10 18:20:24 UTC 2016
+GlueLocationVersion: 1457634024.94
+
+dn: GlueCEUniqueID=bonner06.rice.edu:9619/htcondorce-condor-default,mds-vo-name=local,o=grid
+objectClass: GlueCE
+objectClass: GlueCEAccessControlBase
+objectClass: GlueCEInfo
+objectClass: GlueCEPolicy
+objectClass: GlueCEState
+objectClass: GlueCETop
+objectClass: GlueInformationService
+objectClass: GlueKey
+objectClass: GlueSchemaVersion
+GlueCEInfoDataDir: /data/osg/
+GlueCEPolicyMaxObtainableCPUTime: 1440
+GlueCEStateRunningJobs: 0
+GlueSchemaVersionMajor: 1
+GlueCEInfoTotalCPUs: 16
+GlueCEStateFreeJobSlots: 16
+GlueCEPolicyMaxWaitingJobs: 99999
+GlueCEStateWorstResponseTime: 86400
+GlueCEPolicyMaxTotalJobs: 99999
+GlueCEPolicyMaxObtainableWallClockTime: 1440
+GlueCEStateTotalJobs: 0
+GlueCEStateStatus: Production
+GlueForeignKey: GlueClusterUniqueID=bonner06.rice.edu
+GlueCECapability: CPUScalingReferenceSI00=2000
+GlueCEAccessControlBaseRule: VO:star
+GlueCEAccessControlBaseRule: VO:cms
+GlueCEAccessControlBaseRule: VO:fermilab
+GlueCEInfoLRMSType: condor
+GlueCEPolicyMaxRunningJobs: 16
+GlueCEPolicyAssignedJobSlots: 16
+GlueCEInfoApplicationDir: /cvmfs/oasis.opensciencegrid.org
+GlueCEPolicyPreemption: 0
+GlueCEStateFreeCPUs: 16
+GlueCEImplementationName: HTCondorCE
+GlueSchemaVersionMinor: 3
+GlueCEStateEstimatedResponseTime: 60
+GlueCEHostingCluster: bonner06.rice.edu
+GlueCEInfoHostName: bonner06.rice.edu
+GlueCEInfoDefaultSE: bonner04.rice.edu
+GlueCEImplementationVersion: 2.0.0
+GlueCEInfoLRMSVersion: 8.2.10 Oct 27 2015 $
+GlueCEPolicyMaxCPUTime: 1440
+GlueCEStateWaitingJobs: 0
+GlueCEPolicyPriority: 999999
+GlueCEUniqueID: bonner06.rice.edu:9619/htcondorce-condor-default
+GlueCEName: default
+GlueCEInfoGatekeeperPort: 9619
+GlueCEInfoJobManager: condor
+GlueCEPolicyMaxSlotsPerJob: 1
+GlueCEInfoContactString: bonner05.rice.edu/jobmanager-condor-default
+GlueCEPolicyMaxWallClockTime: 1440
+GlueInformationServiceURL: ldap://is.grid.iu.edu:2170
+
+dn: GlueVOViewLocalID=cms,GlueCEUniqueID=bonner06.rice.edu:9619/htcondorce-condor-default,mds-vo-name=local,o=grid
+objectClass: GlueCEAccessControlBase
+objectClass: GlueCEInfo
+objectClass: GlueCEPolicy
+objectClass: GlueCEState
+objectClass: GlueCETop
+objectClass: GlueKey
+objectClass: GlueSchemaVersion
+objectClass: GlueVOView
+GlueCEInfoDataDir: /data/osg/
+GlueCEStateRunningJobs: 0
+GlueCEStateTotalJobs: 0
+GlueSchemaVersionMajor: 1
+GlueCEStateWaitingJobs: 0
+GlueSchemaVersionMinor: 3
+GlueVOViewLocalID: cms
+GlueCEStateFreeJobSlots: 16
+GlueCEAccessControlBaseRule: VO:cms
+GlueCEStateEstimatedResponseTime: 60
+GlueChunkKey: GlueCEUniqueID=bonner06.rice.edu:9619/htcondorce-condor-default
+GlueCEInfoDefaultSE: bonner04.rice.edu
+GlueCEStateWorstResponseTime: 86400
+GlueCEInfoApplicationDir: /cvmfs/oasis.opensciencegrid.org
+
+dn: GlueVOViewLocalID=star,GlueCEUniqueID=bonner06.rice.edu:9619/htcondorce-condor-default,mds-vo-name=local,o=grid
+objectClass: GlueCEAccessControlBase
+objectClass: GlueCEInfo
+objectClass: GlueCEPolicy
+objectClass: GlueCEState
+objectClass: GlueCETop
+objectClass: GlueKey
+objectClass: GlueSchemaVersion
+objectClass: GlueVOView
+GlueCEInfoDataDir: /data/osg/
+GlueCEStateRunningJobs: 0
+GlueCEStateTotalJobs: 0
+GlueSchemaVersionMajor: 1
+GlueCEStateWaitingJobs: 0
+GlueSchemaVersionMinor: 3
+GlueVOViewLocalID: star
+GlueCEStateFreeJobSlots: 16
+GlueCEAccessControlBaseRule: VO:star
+GlueCEStateEstimatedResponseTime: 60
+GlueChunkKey: GlueCEUniqueID=bonner06.rice.edu:9619/htcondorce-condor-default
+GlueCEInfoDefaultSE: bonner04.rice.edu
+GlueCEStateWorstResponseTime: 86400
+GlueCEInfoApplicationDir: /cvmfs/oasis.opensciencegrid.org
+
+dn: GlueVOViewLocalID=fermilab,GlueCEUniqueID=bonner06.rice.edu:9619/htcondorce-condor-default,mds-vo-name=local,o=grid
+objectClass: GlueCEAccessControlBase
+objectClass: GlueCEInfo
+objectClass: GlueCEPolicy
+objectClass: GlueCEState
+objectClass: GlueCETop
+objectClass: GlueKey
+objectClass: GlueSchemaVersion
+objectClass: GlueVOView
+GlueCEInfoDataDir: /data/osg/
+GlueCEStateRunningJobs: 0
+GlueCEStateTotalJobs: 0
+GlueSchemaVersionMajor: 1
+GlueCEStateWaitingJobs: 0
+GlueSchemaVersionMinor: 3
+GlueVOViewLocalID: fermilab
+GlueCEStateFreeJobSlots: 16
+GlueCEAccessControlBaseRule: VO:fermilab
+GlueCEStateEstimatedResponseTime: 60
+GlueChunkKey: GlueCEUniqueID=bonner06.rice.edu:9619/htcondorce-condor-default
+GlueCEInfoDefaultSE: bonner04.rice.edu
+GlueCEStateWorstResponseTime: 86400
+GlueCEInfoApplicationDir: /cvmfs/oasis.opensciencegrid.org
+
+dn: GlueLocationLocalID=OSG_GRID,GlueSubClusterUniqueID=Rice Testbed-Rice,GlueClusterUniqueID=bonner06.rice.edu,mds-vo-name=local,o=grid
+objectClass: GlueClusterTop
+objectClass: GlueKey
+objectClass: GlueLocation
+objectClass: GlueSchemaVersion
+GlueLocationName: OSG_GRID
+GlueSchemaVersionMajor: 1
+GlueLocationLocalID: OSG_GRID
+GlueSchemaVersionMinor: 3
+GlueChunkKey: GlueSubClusterUniqueID=Rice Testbed-Rice
+GlueLocationPath: /etc/osg/wn-client/
+GlueLocationVersion: 1.0
+
+dn: GlueCESEBindSEUniqueID=Rice_classicSE,GlueCESEBindGroupCEUniqueID=bonner06.rice.edu:9619/htcondorce-condor-default,mds-vo-name=local,o=grid
+objectClass: GlueCESEBind
+objectClass: GlueGeneralTop
+objectClass: GlueSchemaVersion
+GlueSchemaVersionMajor: 1
+GlueCESEBindCEUniqueID: bonner06.rice.edu:9619/htcondorce-condor-default
+GlueSchemaVersionMinor: 3
+GlueCESEBindSEUniqueID: Rice_classicSE
+GlueCESEBindCEAccesspoint: /data/osg/
+GlueCESEBindWeight: 0
+
+dn: GlueCESEBindGroupCEUniqueID=bonner06.rice.edu:9619/htcondorce-condor-default,mds-vo-name=local,o=grid
+objectClass: GlueCESEBindGroup
+objectClass: GlueGeneralTop
+objectClass: GlueSchemaVersion
+GlueSchemaVersionMinor: 3
+GlueCESEBindGroupCEUniqueID: bonner06.rice.edu:9619/htcondorce-condor-default
+GlueSchemaVersionMajor: 1
+GlueCESEBindGroupSEUniqueID: Rice_classicSE
+
+dn: GlueSEUniqueID=Rice_classicSE,Mds-Vo-name=local,o=grid
+objectClass: GlueInformationService
+objectClass: GlueKey
+objectClass: GlueSE
+objectClass: GlueSETop
+objectClass: GlueSchemaVersion
+GlueSEPort: 2811
+GlueSchemaVersionMajor: 1
+GlueSchemaVersionMinor: 3
+GlueSEImplementationVersion: UNKNOWN
+GlueSETotalNearlineSize: 0
+GlueSEName: Rice_classicSE
+GlueSEArchitecture: other
+GlueSESizeTotal: 10992
+GlueSETotalOnlineSize: 0
+GlueSEImplementationName: classicSE
+GlueSEUsedOnlineSize: 23
+GlueForeignKey: GlueSiteUniqueID=Rice
+GlueSEUsedNearlineSize: 0
+GlueSEStatus: Production
+GlueSEUniqueID: Rice_classicSE
+GlueSESizeFree: 10969
+GlueInformationServiceURL: ldap://is.grid.iu.edu:2170
+
+dn: GlueSALocalID=Rice_classicSE,GlueSEUniqueID=Rice_classicSE,Mds-Vo-name=local,o=grid
+objectClass: GlueKey
+objectClass: GlueSA
+objectClass: GlueSAAccessControlBase
+objectClass: GlueSAPolicy
+objectClass: GlueSAState
+objectClass: GlueSATop
+objectClass: GlueSchemaVersion
+GlueSATotalOnlineSize: 10992
+GlueSAPolicyMaxNumFiles: 0
+GlueSAFreeNearlineSize: 0
+GlueSchemaVersionMajor: 1
+GlueSAUsedNearlineSize: 0
+GlueSAExpirationMode: neverExpire
+GlueSAAccessLatency: online
+GlueSchemaVersionMinor: 3
+GlueSAStateUsedSpace: 23070375
+GlueSAPolicyQuota: 0
+GlueChunkKey: GlueSEUniqueID=Rice_classicSE
+GlueSAUsedOnlineSize: 23
+GlueSAPolicyFileLifeTime: permanent
+GlueSAAccessControlBaseRule: VO:star
+GlueSAAccessControlBaseRule: VO:cms
+GlueSAAccessControlBaseRule: VO:fermilab
+GlueSAName: Rice_classicSE
+GlueSAPath: /data/osg/
+GlueSAType: permanent
+GlueSAStateAvailableSpace: 10969908871
+GlueSAFreeOnlineSize: 10969
+GlueSAReservedOnlineSize: 0
+GlueSARetentionPolicy: replica
+GlueSARoot: /
+GlueSAReservedNearlineSize: 0
+GlueSALocalID: Rice_classicSE
+GlueSATotalNearlineSize: 0
+GlueSACapability: file storage
+GlueSACapability: SRMTokenReservedSpace=0
+GlueSACapability: InstalledOnlineCapacity=0
+GlueSACapability: InstalledNearlineCapacity=0
+
+dn: GlueSEAccessProtocolLocalID=GFTP_DEFAULT_2811,GlueSEUniqueID=Rice_classicSE,Mds-Vo-name=local,o=grid
+objectClass: GlueKey
+objectClass: GlueSEAccessProtocol
+objectClass: GlueSETop
+objectClass: GlueSchemaVersion
+GlueSchemaVersionMajor: 1
+GlueSEAccessProtocolType: gsiftp
+GlueSEAccessProtocolEndpoint: gsiftp://DEFAULT:2811
+GlueSchemaVersionMinor: 3
+GlueSEAccessProtocolVersion: 1.0.0
+GlueSEAccessProtocolCapability: file transfer
+GlueSEAccessProtocolLocalID: GFTP_DEFAULT_2811
+GlueSEAccessProtocolMaxStreams: 10
+GlueChunkKey: GlueSEUniqueID=Rice_classicSE
+GlueSEAccessProtocolPort: 2811
+GlueSEAccessProtocolSupportedSecurity: gsiftp
+
+

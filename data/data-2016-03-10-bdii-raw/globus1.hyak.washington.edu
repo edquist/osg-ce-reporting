@@ -1,0 +1,1382 @@
+dn: GlueSiteUniqueID=Hyak,mds-vo-name=local,o=grid
+objectClass: GlueKey
+objectClass: GlueSchemaVersion
+objectClass: GlueSite
+objectClass: GlueTop
+GlueSchemaVersionMajor: 1
+GlueSiteWeb: https://wiki.cac.washington.edu/x/58AQAw
+GlueForeignKey: GlueSiteUniqueID=Hyak
+GlueSiteName: Hyak
+GlueSiteLongitude: -122.303546
+GlueSiteDescription: OSG Site
+GlueSiteLocation: Seattle, US
+GlueSiteSponsor: osg:100
+GlueSiteEmailContact: mailto: help@uw.edu
+GlueSiteSysAdminContact: mailto: help@uw.edu
+GlueSiteSecurityContact: mailto: help@uw.edu
+GlueSiteUniqueID: Hyak
+GlueSchemaVersionMinor: 3
+GlueSiteUserSupportContact: mailto: help@uw.edu
+GlueSiteLatitude: 47.655316
+
+dn: GlueClusterUniqueID=osg.hyak.washington.edu,mds-vo-name=local,o=grid
+objectClass: GlueCluster
+objectClass: GlueClusterTop
+objectClass: GlueInformationService
+objectClass: GlueKey
+objectClass: GlueSchemaVersion
+GlueSchemaVersionMajor: 1
+GlueClusterUniqueID: osg.hyak.washington.edu
+GlueClusterName: osg.hyak.washington.edu
+GlueForeignKey: GlueSiteUniqueID=Hyak
+GlueForeignKey: GlueCEUniqueID=osg.hyak.washington.edu:9619/htcondorce-pbs-osg
+GlueClusterTmpDir: /gscratch/osg/data
+GlueSchemaVersionMinor: 3
+GlueClusterWNTmpDir: /tmp
+GlueInformationServiceURL: ldap://is.grid.iu.edu:2170
+
+dn: GlueSubClusterUniqueID=UW Hyak E5520 96-Hyak,GlueClusterUniqueID=osg.hyak.washington.edu,mds-vo-name=local,o=grid
+objectClass: GlueClusterTop
+objectClass: GlueHostApplicationSoftware
+objectClass: GlueHostArchitecture
+objectClass: GlueHostBenchmark
+objectClass: GlueHostMainMemory
+objectClass: GlueHostNetworkAdapter
+objectClass: GlueHostOperatingSystem
+objectClass: GlueHostProcessor
+objectClass: GlueInformationService
+objectClass: GlueKey
+objectClass: GlueSchemaVersion
+objectClass: GlueSubCluster
+GlueSubClusterPhysicalCPUs: 2
+GlueSchemaVersionMajor: 1
+GlueSubClusterWNTmpDir: /tmp
+GlueHostNetworkAdapterOutboundIP: FALSE
+GlueSchemaVersionMinor: 3
+GlueHostMainMemoryRAMSize: 98304
+GlueHostOperatingSystemRelease: 6.7
+GlueHostProcessorModel: Intel(R) Xeon(R) CPU           E5520  @ 2.27GHz
+GlueChunkKey: GlueClusterUniqueID=osg.hyak.washington.edu
+GlueSubClusterLogicalCPUs: 8
+GlueHostNetworkAdapterInboundIP: FALSE
+GlueHostOperatingSystemName: RedHatEnterpriseServer
+GlueSubClusterTmpDir: /gscratch/osg/data
+GlueHostBenchmarkSI00: 2000
+GlueHostProcessorVendor: Intel
+GlueSubClusterUniqueID: UW Hyak E5520 96-Hyak
+GlueHostArchitecturePlatformType: x86_64
+GlueHostMainMemoryVirtualSize: 122880
+GlueHostApplicationSoftwareRunTimeEnvironment: OSG_VERSION
+GlueHostApplicationSoftwareRunTimeEnvironment: SAMPLE_SCRATCH
+GlueHostApplicationSoftwareRunTimeEnvironment: OSG 3.2.27
+GlueHostApplicationSoftwareRunTimeEnvironment: SAMPLE_LOCATION
+GlueHostProcessorOtherDescription: Cores=8
+GlueHostBenchmarkSF00: 2000
+GlueHostOperatingSystemVersion: Santiago
+GlueSubClusterName: UW Hyak E5520 96
+GlueHostArchitectureSMPSize: 2
+GlueHostProcessorClockSpeed: 2270
+GlueInformationServiceURL: ldap://is.grid.iu.edu:2170
+
+dn: GlueSubClusterUniqueID=UW Hyak E5520 48-Hyak,GlueClusterUniqueID=osg.hyak.washington.edu,mds-vo-name=local,o=grid
+objectClass: GlueClusterTop
+objectClass: GlueHostApplicationSoftware
+objectClass: GlueHostArchitecture
+objectClass: GlueHostBenchmark
+objectClass: GlueHostMainMemory
+objectClass: GlueHostNetworkAdapter
+objectClass: GlueHostOperatingSystem
+objectClass: GlueHostProcessor
+objectClass: GlueInformationService
+objectClass: GlueKey
+objectClass: GlueSchemaVersion
+objectClass: GlueSubCluster
+GlueSubClusterPhysicalCPUs: 22
+GlueSchemaVersionMajor: 1
+GlueSubClusterWNTmpDir: /tmp
+GlueHostNetworkAdapterOutboundIP: FALSE
+GlueSchemaVersionMinor: 3
+GlueHostMainMemoryRAMSize: 49152
+GlueHostOperatingSystemRelease: 6.7
+GlueHostProcessorModel: Intel(R) Xeon(R) CPU           E5520  @ 2.27GHz
+GlueChunkKey: GlueClusterUniqueID=osg.hyak.washington.edu
+GlueSubClusterLogicalCPUs: 88
+GlueHostNetworkAdapterInboundIP: FALSE
+GlueHostOperatingSystemName: RedHatEnterpriseServer
+GlueSubClusterTmpDir: /gscratch/osg/data
+GlueHostBenchmarkSI00: 2000
+GlueHostProcessorVendor: Intel
+GlueSubClusterUniqueID: UW Hyak E5520 48-Hyak
+GlueHostArchitecturePlatformType: x86_64
+GlueHostMainMemoryVirtualSize: 73728
+GlueHostApplicationSoftwareRunTimeEnvironment: OSG_VERSION
+GlueHostApplicationSoftwareRunTimeEnvironment: SAMPLE_SCRATCH
+GlueHostApplicationSoftwareRunTimeEnvironment: OSG 3.2.27
+GlueHostApplicationSoftwareRunTimeEnvironment: SAMPLE_LOCATION
+GlueHostProcessorOtherDescription: Cores=88
+GlueHostBenchmarkSF00: 2000
+GlueHostOperatingSystemVersion: Santiago
+GlueSubClusterName: UW Hyak E5520 48
+GlueHostArchitectureSMPSize: 2
+GlueHostProcessorClockSpeed: 2270
+GlueInformationServiceURL: ldap://is.grid.iu.edu:2170
+
+dn: GlueSubClusterUniqueID=UW Hyak E5520 24-Hyak,GlueClusterUniqueID=osg.hyak.washington.edu,mds-vo-name=local,o=grid
+objectClass: GlueClusterTop
+objectClass: GlueHostApplicationSoftware
+objectClass: GlueHostArchitecture
+objectClass: GlueHostBenchmark
+objectClass: GlueHostMainMemory
+objectClass: GlueHostNetworkAdapter
+objectClass: GlueHostOperatingSystem
+objectClass: GlueHostProcessor
+objectClass: GlueInformationService
+objectClass: GlueKey
+objectClass: GlueSchemaVersion
+objectClass: GlueSubCluster
+GlueSubClusterPhysicalCPUs: 26
+GlueSchemaVersionMajor: 1
+GlueSubClusterWNTmpDir: /tmp
+GlueHostNetworkAdapterOutboundIP: FALSE
+GlueSchemaVersionMinor: 3
+GlueHostMainMemoryRAMSize: 24576
+GlueHostOperatingSystemRelease: 6.7
+GlueHostProcessorModel: Intel(R) Xeon(R) CPU           E5520  @ 2.27GHz
+GlueChunkKey: GlueClusterUniqueID=osg.hyak.washington.edu
+GlueSubClusterLogicalCPUs: 104
+GlueHostNetworkAdapterInboundIP: FALSE
+GlueHostOperatingSystemName: RedHatEnterpriseServer
+GlueSubClusterTmpDir: /gscratch/osg/data
+GlueHostBenchmarkSI00: 2000
+GlueHostProcessorVendor: Intel
+GlueSubClusterUniqueID: UW Hyak E5520 24-Hyak
+GlueHostArchitecturePlatformType: x86_64
+GlueHostMainMemoryVirtualSize: 49152
+GlueHostApplicationSoftwareRunTimeEnvironment: OSG_VERSION
+GlueHostApplicationSoftwareRunTimeEnvironment: SAMPLE_SCRATCH
+GlueHostApplicationSoftwareRunTimeEnvironment: OSG 3.2.27
+GlueHostApplicationSoftwareRunTimeEnvironment: SAMPLE_LOCATION
+GlueHostProcessorOtherDescription: Cores=104
+GlueHostBenchmarkSF00: 2000
+GlueHostOperatingSystemVersion: Santiago
+GlueSubClusterName: UW Hyak E5520 24
+GlueHostArchitectureSMPSize: 2
+GlueHostProcessorClockSpeed: 2270
+GlueInformationServiceURL: ldap://is.grid.iu.edu:2170
+
+dn: GlueSubClusterUniqueID=UW Hyak L5520 96-Hyak,GlueClusterUniqueID=osg.hyak.washington.edu,mds-vo-name=local,o=grid
+objectClass: GlueClusterTop
+objectClass: GlueHostApplicationSoftware
+objectClass: GlueHostArchitecture
+objectClass: GlueHostBenchmark
+objectClass: GlueHostMainMemory
+objectClass: GlueHostNetworkAdapter
+objectClass: GlueHostOperatingSystem
+objectClass: GlueHostProcessor
+objectClass: GlueInformationService
+objectClass: GlueKey
+objectClass: GlueSchemaVersion
+objectClass: GlueSubCluster
+GlueSubClusterPhysicalCPUs: 12
+GlueSchemaVersionMajor: 1
+GlueSubClusterWNTmpDir: /tmp
+GlueHostNetworkAdapterOutboundIP: FALSE
+GlueSchemaVersionMinor: 3
+GlueHostMainMemoryRAMSize: 98304
+GlueHostOperatingSystemRelease: 6.7
+GlueHostProcessorModel: Intel(R) Xeon(R) CPU           L5520  @ 2.27GHz
+GlueChunkKey: GlueClusterUniqueID=osg.hyak.washington.edu
+GlueSubClusterLogicalCPUs: 48
+GlueHostNetworkAdapterInboundIP: FALSE
+GlueHostOperatingSystemName: RedHatEnterpriseServer
+GlueSubClusterTmpDir: /gscratch/osg/data
+GlueHostBenchmarkSI00: 2000
+GlueHostProcessorVendor: Intel
+GlueSubClusterUniqueID: UW Hyak L5520 96-Hyak
+GlueHostArchitecturePlatformType: x86_64
+GlueHostMainMemoryVirtualSize: 122880
+GlueHostApplicationSoftwareRunTimeEnvironment: OSG_VERSION
+GlueHostApplicationSoftwareRunTimeEnvironment: SAMPLE_SCRATCH
+GlueHostApplicationSoftwareRunTimeEnvironment: OSG 3.2.27
+GlueHostApplicationSoftwareRunTimeEnvironment: SAMPLE_LOCATION
+GlueHostProcessorOtherDescription: Cores=48
+GlueHostBenchmarkSF00: 2000
+GlueHostOperatingSystemVersion: Santiago
+GlueSubClusterName: UW Hyak L5520 96
+GlueHostArchitectureSMPSize: 2
+GlueHostProcessorClockSpeed: 2270
+GlueInformationServiceURL: ldap://is.grid.iu.edu:2170
+
+dn: GlueSubClusterUniqueID=UW Hyak L5520 48-Hyak,GlueClusterUniqueID=osg.hyak.washington.edu,mds-vo-name=local,o=grid
+objectClass: GlueClusterTop
+objectClass: GlueHostApplicationSoftware
+objectClass: GlueHostArchitecture
+objectClass: GlueHostBenchmark
+objectClass: GlueHostMainMemory
+objectClass: GlueHostNetworkAdapter
+objectClass: GlueHostOperatingSystem
+objectClass: GlueHostProcessor
+objectClass: GlueInformationService
+objectClass: GlueKey
+objectClass: GlueSchemaVersion
+objectClass: GlueSubCluster
+GlueSubClusterPhysicalCPUs: 146
+GlueSchemaVersionMajor: 1
+GlueSubClusterWNTmpDir: /tmp
+GlueHostNetworkAdapterOutboundIP: FALSE
+GlueSchemaVersionMinor: 3
+GlueHostMainMemoryRAMSize: 49152
+GlueHostOperatingSystemRelease: 6.7
+GlueHostProcessorModel: Intel(R) Xeon(R) CPU           L5520  @ 2.27GHz
+GlueChunkKey: GlueClusterUniqueID=osg.hyak.washington.edu
+GlueSubClusterLogicalCPUs: 584
+GlueHostNetworkAdapterInboundIP: FALSE
+GlueHostOperatingSystemName: RedHatEnterpriseServer
+GlueSubClusterTmpDir: /gscratch/osg/data
+GlueHostBenchmarkSI00: 2000
+GlueHostProcessorVendor: Intel
+GlueSubClusterUniqueID: UW Hyak L5520 48-Hyak
+GlueHostArchitecturePlatformType: x86_64
+GlueHostMainMemoryVirtualSize: 73728
+GlueHostApplicationSoftwareRunTimeEnvironment: OSG_VERSION
+GlueHostApplicationSoftwareRunTimeEnvironment: SAMPLE_SCRATCH
+GlueHostApplicationSoftwareRunTimeEnvironment: OSG 3.2.27
+GlueHostApplicationSoftwareRunTimeEnvironment: SAMPLE_LOCATION
+GlueHostProcessorOtherDescription: Cores=584
+GlueHostBenchmarkSF00: 2000
+GlueHostOperatingSystemVersion: Santiago
+GlueSubClusterName: UW Hyak L5520 48
+GlueHostArchitectureSMPSize: 2
+GlueHostProcessorClockSpeed: 2270
+GlueInformationServiceURL: ldap://is.grid.iu.edu:2170
+
+dn: GlueSubClusterUniqueID=UW Hyak L5520 24-Hyak,GlueClusterUniqueID=osg.hyak.washington.edu,mds-vo-name=local,o=grid
+objectClass: GlueClusterTop
+objectClass: GlueHostApplicationSoftware
+objectClass: GlueHostArchitecture
+objectClass: GlueHostBenchmark
+objectClass: GlueHostMainMemory
+objectClass: GlueHostNetworkAdapter
+objectClass: GlueHostOperatingSystem
+objectClass: GlueHostProcessor
+objectClass: GlueInformationService
+objectClass: GlueKey
+objectClass: GlueSchemaVersion
+objectClass: GlueSubCluster
+GlueSubClusterPhysicalCPUs: 400
+GlueSchemaVersionMajor: 1
+GlueSubClusterWNTmpDir: /tmp
+GlueHostNetworkAdapterOutboundIP: FALSE
+GlueSchemaVersionMinor: 3
+GlueHostMainMemoryRAMSize: 24576
+GlueHostOperatingSystemRelease: 6.7
+GlueHostProcessorModel: Intel(R) Xeon(R) CPU           L5520  @ 2.27GHz
+GlueChunkKey: GlueClusterUniqueID=osg.hyak.washington.edu
+GlueSubClusterLogicalCPUs: 1600
+GlueHostNetworkAdapterInboundIP: FALSE
+GlueHostOperatingSystemName: RedHatEnterpriseServer
+GlueSubClusterTmpDir: /gscratch/osg/data
+GlueHostBenchmarkSI00: 2000
+GlueHostProcessorVendor: Intel
+GlueSubClusterUniqueID: UW Hyak L5520 24-Hyak
+GlueHostArchitecturePlatformType: x86_64
+GlueHostMainMemoryVirtualSize: 49152
+GlueHostApplicationSoftwareRunTimeEnvironment: OSG_VERSION
+GlueHostApplicationSoftwareRunTimeEnvironment: SAMPLE_SCRATCH
+GlueHostApplicationSoftwareRunTimeEnvironment: OSG 3.2.27
+GlueHostApplicationSoftwareRunTimeEnvironment: SAMPLE_LOCATION
+GlueHostProcessorOtherDescription: Cores=1600
+GlueHostBenchmarkSF00: 2000
+GlueHostOperatingSystemVersion: Santiago
+GlueSubClusterName: UW Hyak L5520 24
+GlueHostArchitectureSMPSize: 2
+GlueHostProcessorClockSpeed: 2270
+GlueInformationServiceURL: ldap://is.grid.iu.edu:2170
+
+dn: GlueSubClusterUniqueID=UW Hyak X5650 192-Hyak,GlueClusterUniqueID=osg.hyak.washington.edu,mds-vo-name=local,o=grid
+objectClass: GlueClusterTop
+objectClass: GlueHostApplicationSoftware
+objectClass: GlueHostArchitecture
+objectClass: GlueHostBenchmark
+objectClass: GlueHostMainMemory
+objectClass: GlueHostNetworkAdapter
+objectClass: GlueHostOperatingSystem
+objectClass: GlueHostProcessor
+objectClass: GlueInformationService
+objectClass: GlueKey
+objectClass: GlueSchemaVersion
+objectClass: GlueSubCluster
+GlueSubClusterPhysicalCPUs: 4
+GlueSchemaVersionMajor: 1
+GlueSubClusterWNTmpDir: /tmp
+GlueHostNetworkAdapterOutboundIP: FALSE
+GlueSchemaVersionMinor: 3
+GlueHostMainMemoryRAMSize: 196608
+GlueHostOperatingSystemRelease: 6.7
+GlueHostProcessorModel: Intel(R) Xeon(R) CPU           X5650  @ 2.67GHz
+GlueChunkKey: GlueClusterUniqueID=osg.hyak.washington.edu
+GlueSubClusterLogicalCPUs: 24
+GlueHostNetworkAdapterInboundIP: FALSE
+GlueHostOperatingSystemName: RedHatEnterpriseServer
+GlueSubClusterTmpDir: /gscratch/osg/data
+GlueHostBenchmarkSI00: 2000
+GlueHostProcessorVendor: Intel
+GlueSubClusterUniqueID: UW Hyak X5650 192-Hyak
+GlueHostArchitecturePlatformType: x86_64
+GlueHostMainMemoryVirtualSize: 221184
+GlueHostApplicationSoftwareRunTimeEnvironment: OSG_VERSION
+GlueHostApplicationSoftwareRunTimeEnvironment: SAMPLE_SCRATCH
+GlueHostApplicationSoftwareRunTimeEnvironment: OSG 3.2.27
+GlueHostApplicationSoftwareRunTimeEnvironment: SAMPLE_LOCATION
+GlueHostProcessorOtherDescription: Cores=24
+GlueHostBenchmarkSF00: 2000
+GlueHostOperatingSystemVersion: Santiago
+GlueSubClusterName: UW Hyak X5650 192
+GlueHostArchitectureSMPSize: 2
+GlueHostProcessorClockSpeed: 2670
+GlueInformationServiceURL: ldap://is.grid.iu.edu:2170
+
+dn: GlueSubClusterUniqueID=UW Hyak X5650 96-Hyak,GlueClusterUniqueID=osg.hyak.washington.edu,mds-vo-name=local,o=grid
+objectClass: GlueClusterTop
+objectClass: GlueHostApplicationSoftware
+objectClass: GlueHostArchitecture
+objectClass: GlueHostBenchmark
+objectClass: GlueHostMainMemory
+objectClass: GlueHostNetworkAdapter
+objectClass: GlueHostOperatingSystem
+objectClass: GlueHostProcessor
+objectClass: GlueInformationService
+objectClass: GlueKey
+objectClass: GlueSchemaVersion
+objectClass: GlueSubCluster
+GlueSubClusterPhysicalCPUs: 48
+GlueSchemaVersionMajor: 1
+GlueSubClusterWNTmpDir: /tmp
+GlueHostNetworkAdapterOutboundIP: FALSE
+GlueSchemaVersionMinor: 3
+GlueHostMainMemoryRAMSize: 98304
+GlueHostOperatingSystemRelease: 6.7
+GlueHostProcessorModel: Intel(R) Xeon(R) CPU           X5650  @ 2.67GHz
+GlueChunkKey: GlueClusterUniqueID=osg.hyak.washington.edu
+GlueSubClusterLogicalCPUs: 288
+GlueHostNetworkAdapterInboundIP: FALSE
+GlueHostOperatingSystemName: RedHatEnterpriseServer
+GlueSubClusterTmpDir: /gscratch/osg/data
+GlueHostBenchmarkSI00: 2000
+GlueHostProcessorVendor: Intel
+GlueSubClusterUniqueID: UW Hyak X5650 96-Hyak
+GlueHostArchitecturePlatformType: x86_64
+GlueHostMainMemoryVirtualSize: 122880
+GlueHostApplicationSoftwareRunTimeEnvironment: OSG_VERSION
+GlueHostApplicationSoftwareRunTimeEnvironment: SAMPLE_SCRATCH
+GlueHostApplicationSoftwareRunTimeEnvironment: OSG 3.2.27
+GlueHostApplicationSoftwareRunTimeEnvironment: SAMPLE_LOCATION
+GlueHostProcessorOtherDescription: Cores=288
+GlueHostBenchmarkSF00: 2000
+GlueHostOperatingSystemVersion: Santiago
+GlueSubClusterName: UW Hyak X5650 96
+GlueHostArchitectureSMPSize: 2
+GlueHostProcessorClockSpeed: 2670
+GlueInformationServiceURL: ldap://is.grid.iu.edu:2170
+
+dn: GlueSubClusterUniqueID=UW Hyak X5650 48-Hyak,GlueClusterUniqueID=osg.hyak.washington.edu,mds-vo-name=local,o=grid
+objectClass: GlueClusterTop
+objectClass: GlueHostApplicationSoftware
+objectClass: GlueHostArchitecture
+objectClass: GlueHostBenchmark
+objectClass: GlueHostMainMemory
+objectClass: GlueHostNetworkAdapter
+objectClass: GlueHostOperatingSystem
+objectClass: GlueHostProcessor
+objectClass: GlueInformationService
+objectClass: GlueKey
+objectClass: GlueSchemaVersion
+objectClass: GlueSubCluster
+GlueSubClusterPhysicalCPUs: 80
+GlueSchemaVersionMajor: 1
+GlueSubClusterWNTmpDir: /tmp
+GlueHostNetworkAdapterOutboundIP: FALSE
+GlueSchemaVersionMinor: 3
+GlueHostMainMemoryRAMSize: 49152
+GlueHostOperatingSystemRelease: 6.7
+GlueHostProcessorModel: Intel(R) Xeon(R) CPU           X5650  @ 2.67GHz
+GlueChunkKey: GlueClusterUniqueID=osg.hyak.washington.edu
+GlueSubClusterLogicalCPUs: 480
+GlueHostNetworkAdapterInboundIP: FALSE
+GlueHostOperatingSystemName: RedHatEnterpriseServer
+GlueSubClusterTmpDir: /gscratch/osg/data
+GlueHostBenchmarkSI00: 2000
+GlueHostProcessorVendor: Intel
+GlueSubClusterUniqueID: UW Hyak X5650 48-Hyak
+GlueHostArchitecturePlatformType: x86_64
+GlueHostMainMemoryVirtualSize: 73728
+GlueHostApplicationSoftwareRunTimeEnvironment: OSG_VERSION
+GlueHostApplicationSoftwareRunTimeEnvironment: SAMPLE_SCRATCH
+GlueHostApplicationSoftwareRunTimeEnvironment: OSG 3.2.27
+GlueHostApplicationSoftwareRunTimeEnvironment: SAMPLE_LOCATION
+GlueHostProcessorOtherDescription: Cores=480
+GlueHostBenchmarkSF00: 2000
+GlueHostOperatingSystemVersion: Santiago
+GlueSubClusterName: UW Hyak X5650 48
+GlueHostArchitectureSMPSize: 2
+GlueHostProcessorClockSpeed: 2670
+GlueInformationServiceURL: ldap://is.grid.iu.edu:2170
+
+dn: GlueSubClusterUniqueID=UW Hyak X5650 24-Hyak,GlueClusterUniqueID=osg.hyak.washington.edu,mds-vo-name=local,o=grid
+objectClass: GlueClusterTop
+objectClass: GlueHostApplicationSoftware
+objectClass: GlueHostArchitecture
+objectClass: GlueHostBenchmark
+objectClass: GlueHostMainMemory
+objectClass: GlueHostNetworkAdapter
+objectClass: GlueHostOperatingSystem
+objectClass: GlueHostProcessor
+objectClass: GlueInformationService
+objectClass: GlueKey
+objectClass: GlueSchemaVersion
+objectClass: GlueSubCluster
+GlueSubClusterPhysicalCPUs: 140
+GlueSchemaVersionMajor: 1
+GlueSubClusterWNTmpDir: /tmp
+GlueHostNetworkAdapterOutboundIP: FALSE
+GlueSchemaVersionMinor: 3
+GlueHostMainMemoryRAMSize: 24576
+GlueHostOperatingSystemRelease: 6.7
+GlueHostProcessorModel: Intel(R) Xeon(R) CPU           X5650  @ 2.67GHz
+GlueChunkKey: GlueClusterUniqueID=osg.hyak.washington.edu
+GlueSubClusterLogicalCPUs: 840
+GlueHostNetworkAdapterInboundIP: FALSE
+GlueHostOperatingSystemName: RedHatEnterpriseServer
+GlueSubClusterTmpDir: /gscratch/osg/data
+GlueHostBenchmarkSI00: 2000
+GlueHostProcessorVendor: Intel
+GlueSubClusterUniqueID: UW Hyak X5650 24-Hyak
+GlueHostArchitecturePlatformType: x86_64
+GlueHostMainMemoryVirtualSize: 49152
+GlueHostApplicationSoftwareRunTimeEnvironment: OSG_VERSION
+GlueHostApplicationSoftwareRunTimeEnvironment: SAMPLE_SCRATCH
+GlueHostApplicationSoftwareRunTimeEnvironment: OSG 3.2.27
+GlueHostApplicationSoftwareRunTimeEnvironment: SAMPLE_LOCATION
+GlueHostProcessorOtherDescription: Cores=840
+GlueHostBenchmarkSF00: 2000
+GlueHostOperatingSystemVersion: Santiago
+GlueSubClusterName: UW Hyak X5650 24
+GlueHostArchitectureSMPSize: 2
+GlueHostProcessorClockSpeed: 2670
+GlueInformationServiceURL: ldap://is.grid.iu.edu:2170
+
+dn: GlueSubClusterUniqueID=UW Hyak E5-2650 64-Hyak,GlueClusterUniqueID=osg.hyak.washington.edu,mds-vo-name=local,o=grid
+objectClass: GlueClusterTop
+objectClass: GlueHostApplicationSoftware
+objectClass: GlueHostArchitecture
+objectClass: GlueHostBenchmark
+objectClass: GlueHostMainMemory
+objectClass: GlueHostNetworkAdapter
+objectClass: GlueHostOperatingSystem
+objectClass: GlueHostProcessor
+objectClass: GlueInformationService
+objectClass: GlueKey
+objectClass: GlueSchemaVersion
+objectClass: GlueSubCluster
+GlueSubClusterPhysicalCPUs: 92
+GlueSchemaVersionMajor: 1
+GlueSubClusterWNTmpDir: /tmp
+GlueHostNetworkAdapterOutboundIP: FALSE
+GlueSchemaVersionMinor: 3
+GlueHostMainMemoryRAMSize: 65536
+GlueHostOperatingSystemRelease: 6.7
+GlueHostProcessorModel: Intel(R) Xeon(R) CPU E5-2650 0 @ 2.00GHz
+GlueChunkKey: GlueClusterUniqueID=osg.hyak.washington.edu
+GlueSubClusterLogicalCPUs: 736
+GlueHostNetworkAdapterInboundIP: FALSE
+GlueHostOperatingSystemName: RedHatEnterpriseServer
+GlueSubClusterTmpDir: /gscratch/osg/data
+GlueHostBenchmarkSI00: 2000
+GlueHostProcessorVendor: Intel
+GlueSubClusterUniqueID: UW Hyak E5-2650 64-Hyak
+GlueHostArchitecturePlatformType: x86_64
+GlueHostMainMemoryVirtualSize: 90112
+GlueHostApplicationSoftwareRunTimeEnvironment: OSG_VERSION
+GlueHostApplicationSoftwareRunTimeEnvironment: SAMPLE_SCRATCH
+GlueHostApplicationSoftwareRunTimeEnvironment: OSG 3.2.27
+GlueHostApplicationSoftwareRunTimeEnvironment: SAMPLE_LOCATION
+GlueHostProcessorOtherDescription: Cores=736
+GlueHostBenchmarkSF00: 2000
+GlueHostOperatingSystemVersion: Santiago
+GlueSubClusterName: UW Hyak E5-2650 64
+GlueHostArchitectureSMPSize: 2
+GlueHostProcessorClockSpeed: 2000
+GlueInformationServiceURL: ldap://is.grid.iu.edu:2170
+
+dn: GlueSubClusterUniqueID=UW Hyak E5-2650 128-Hyak,GlueClusterUniqueID=osg.hyak.washington.edu,mds-vo-name=local,o=grid
+objectClass: GlueClusterTop
+objectClass: GlueHostApplicationSoftware
+objectClass: GlueHostArchitecture
+objectClass: GlueHostBenchmark
+objectClass: GlueHostMainMemory
+objectClass: GlueHostNetworkAdapter
+objectClass: GlueHostOperatingSystem
+objectClass: GlueHostProcessor
+objectClass: GlueInformationService
+objectClass: GlueKey
+objectClass: GlueSchemaVersion
+objectClass: GlueSubCluster
+GlueSubClusterPhysicalCPUs: 4
+GlueSchemaVersionMajor: 1
+GlueSubClusterWNTmpDir: /tmp
+GlueHostNetworkAdapterOutboundIP: FALSE
+GlueSchemaVersionMinor: 3
+GlueHostMainMemoryRAMSize: 131072
+GlueHostOperatingSystemRelease: 6.7
+GlueHostProcessorModel: Intel(R) Xeon(R) CPU E5-2650 0 @ 2.00GHz
+GlueChunkKey: GlueClusterUniqueID=osg.hyak.washington.edu
+GlueSubClusterLogicalCPUs: 32
+GlueHostNetworkAdapterInboundIP: FALSE
+GlueHostOperatingSystemName: RedHatEnterpriseServer
+GlueSubClusterTmpDir: /gscratch/osg/data
+GlueHostBenchmarkSI00: 2000
+GlueHostProcessorVendor: Intel
+GlueSubClusterUniqueID: UW Hyak E5-2650 128-Hyak
+GlueHostArchitecturePlatformType: x86_64
+GlueHostMainMemoryVirtualSize: 155648
+GlueHostApplicationSoftwareRunTimeEnvironment: OSG_VERSION
+GlueHostApplicationSoftwareRunTimeEnvironment: SAMPLE_SCRATCH
+GlueHostApplicationSoftwareRunTimeEnvironment: OSG 3.2.27
+GlueHostApplicationSoftwareRunTimeEnvironment: SAMPLE_LOCATION
+GlueHostProcessorOtherDescription: Cores=32
+GlueHostBenchmarkSF00: 2000
+GlueHostOperatingSystemVersion: Santiago
+GlueSubClusterName: UW Hyak E5-2650 128
+GlueHostArchitectureSMPSize: 2
+GlueHostProcessorClockSpeed: 2000
+GlueInformationServiceURL: ldap://is.grid.iu.edu:2170
+
+dn: GlueSubClusterUniqueID=UW Hyak E5-2650 32-Hyak,GlueClusterUniqueID=osg.hyak.washington.edu,mds-vo-name=local,o=grid
+objectClass: GlueClusterTop
+objectClass: GlueHostApplicationSoftware
+objectClass: GlueHostArchitecture
+objectClass: GlueHostBenchmark
+objectClass: GlueHostMainMemory
+objectClass: GlueHostNetworkAdapter
+objectClass: GlueHostOperatingSystem
+objectClass: GlueHostProcessor
+objectClass: GlueInformationService
+objectClass: GlueKey
+objectClass: GlueSchemaVersion
+objectClass: GlueSubCluster
+GlueSubClusterPhysicalCPUs: 18
+GlueSchemaVersionMajor: 1
+GlueSubClusterWNTmpDir: /tmp
+GlueHostNetworkAdapterOutboundIP: FALSE
+GlueSchemaVersionMinor: 3
+GlueHostMainMemoryRAMSize: 32768
+GlueHostOperatingSystemRelease: 6.7
+GlueHostProcessorModel: Intel(R) Xeon(R) CPU E5-2650 0 @ 2.00GHz
+GlueChunkKey: GlueClusterUniqueID=osg.hyak.washington.edu
+GlueSubClusterLogicalCPUs: 144
+GlueHostNetworkAdapterInboundIP: FALSE
+GlueHostOperatingSystemName: RedHatEnterpriseServer
+GlueSubClusterTmpDir: /gscratch/osg/data
+GlueHostBenchmarkSI00: 2000
+GlueHostProcessorVendor: Intel
+GlueSubClusterUniqueID: UW Hyak E5-2650 32-Hyak
+GlueHostArchitecturePlatformType: x86_64
+GlueHostMainMemoryVirtualSize: 57344
+GlueHostApplicationSoftwareRunTimeEnvironment: OSG_VERSION
+GlueHostApplicationSoftwareRunTimeEnvironment: SAMPLE_SCRATCH
+GlueHostApplicationSoftwareRunTimeEnvironment: OSG 3.2.27
+GlueHostApplicationSoftwareRunTimeEnvironment: SAMPLE_LOCATION
+GlueHostProcessorOtherDescription: Cores=144
+GlueHostBenchmarkSF00: 2000
+GlueHostOperatingSystemVersion: Santiago
+GlueSubClusterName: UW Hyak E5-2650 32
+GlueHostArchitectureSMPSize: 2
+GlueHostProcessorClockSpeed: 2000
+GlueInformationServiceURL: ldap://is.grid.iu.edu:2170
+
+dn: GlueSubClusterUniqueID=UW Hyak E7-4820 256-Hyak,GlueClusterUniqueID=osg.hyak.washington.edu,mds-vo-name=local,o=grid
+objectClass: GlueClusterTop
+objectClass: GlueHostApplicationSoftware
+objectClass: GlueHostArchitecture
+objectClass: GlueHostBenchmark
+objectClass: GlueHostMainMemory
+objectClass: GlueHostNetworkAdapter
+objectClass: GlueHostOperatingSystem
+objectClass: GlueHostProcessor
+objectClass: GlueInformationService
+objectClass: GlueKey
+objectClass: GlueSchemaVersion
+objectClass: GlueSubCluster
+GlueSubClusterPhysicalCPUs: 4
+GlueSchemaVersionMajor: 1
+GlueSubClusterWNTmpDir: /tmp
+GlueHostNetworkAdapterOutboundIP: FALSE
+GlueSchemaVersionMinor: 3
+GlueHostMainMemoryRAMSize: 262144
+GlueHostOperatingSystemRelease: 6.7
+GlueHostProcessorModel: Intel(R) Xeon(R) CPU E7- 4820  @ 2.00GHz
+GlueChunkKey: GlueClusterUniqueID=osg.hyak.washington.edu
+GlueSubClusterLogicalCPUs: 32
+GlueHostNetworkAdapterInboundIP: FALSE
+GlueHostOperatingSystemName: RedHatEnterpriseServer
+GlueSubClusterTmpDir: /gscratch/osg/data
+GlueHostBenchmarkSI00: 2000
+GlueHostProcessorVendor: Intel
+GlueSubClusterUniqueID: UW Hyak E7-4820 256-Hyak
+GlueHostArchitecturePlatformType: x86_64
+GlueHostMainMemoryVirtualSize: 286720
+GlueHostApplicationSoftwareRunTimeEnvironment: OSG_VERSION
+GlueHostApplicationSoftwareRunTimeEnvironment: SAMPLE_SCRATCH
+GlueHostApplicationSoftwareRunTimeEnvironment: OSG 3.2.27
+GlueHostApplicationSoftwareRunTimeEnvironment: SAMPLE_LOCATION
+GlueHostProcessorOtherDescription: Cores=32
+GlueHostBenchmarkSF00: 2000
+GlueHostOperatingSystemVersion: Santiago
+GlueSubClusterName: UW Hyak E7-4820 256
+GlueHostArchitectureSMPSize: 4
+GlueHostProcessorClockSpeed: 2000
+GlueInformationServiceURL: ldap://is.grid.iu.edu:2170
+
+dn: GlueSubClusterUniqueID=UW Hyak E5-2650v2 64-Hyak,GlueClusterUniqueID=osg.hyak.washington.edu,mds-vo-name=local,o=grid
+objectClass: GlueClusterTop
+objectClass: GlueHostApplicationSoftware
+objectClass: GlueHostArchitecture
+objectClass: GlueHostBenchmark
+objectClass: GlueHostMainMemory
+objectClass: GlueHostNetworkAdapter
+objectClass: GlueHostOperatingSystem
+objectClass: GlueHostProcessor
+objectClass: GlueInformationService
+objectClass: GlueKey
+objectClass: GlueSchemaVersion
+objectClass: GlueSubCluster
+GlueSubClusterPhysicalCPUs: 56
+GlueSchemaVersionMajor: 1
+GlueSubClusterWNTmpDir: /tmp
+GlueHostNetworkAdapterOutboundIP: FALSE
+GlueSchemaVersionMinor: 3
+GlueHostMainMemoryRAMSize: 65536
+GlueHostOperatingSystemRelease: 6.7
+GlueHostProcessorModel: Intel(R) Xeon(R) CPU E5-2650 v2 @ 2.60GHz
+GlueChunkKey: GlueClusterUniqueID=osg.hyak.washington.edu
+GlueSubClusterLogicalCPUs: 448
+GlueHostNetworkAdapterInboundIP: FALSE
+GlueHostOperatingSystemName: RedHatEnterpriseServer
+GlueSubClusterTmpDir: /gscratch/osg/data
+GlueHostBenchmarkSI00: 2000
+GlueHostProcessorVendor: Intel
+GlueSubClusterUniqueID: UW Hyak E5-2650v2 64-Hyak
+GlueHostArchitecturePlatformType: x86_64
+GlueHostMainMemoryVirtualSize: 90112
+GlueHostApplicationSoftwareRunTimeEnvironment: OSG_VERSION
+GlueHostApplicationSoftwareRunTimeEnvironment: SAMPLE_SCRATCH
+GlueHostApplicationSoftwareRunTimeEnvironment: OSG 3.2.27
+GlueHostApplicationSoftwareRunTimeEnvironment: SAMPLE_LOCATION
+GlueHostProcessorOtherDescription: Cores=448
+GlueHostBenchmarkSF00: 2000
+GlueHostOperatingSystemVersion: Santiago
+GlueSubClusterName: UW Hyak E5-2650v2 64
+GlueHostArchitectureSMPSize: 2
+GlueHostProcessorClockSpeed: 2600
+GlueInformationServiceURL: ldap://is.grid.iu.edu:2170
+
+dn: GlueSubClusterUniqueID=UW Hyak E5-2650v2 128-Hyak,GlueClusterUniqueID=osg.hyak.washington.edu,mds-vo-name=local,o=grid
+objectClass: GlueClusterTop
+objectClass: GlueHostApplicationSoftware
+objectClass: GlueHostArchitecture
+objectClass: GlueHostBenchmark
+objectClass: GlueHostMainMemory
+objectClass: GlueHostNetworkAdapter
+objectClass: GlueHostOperatingSystem
+objectClass: GlueHostProcessor
+objectClass: GlueInformationService
+objectClass: GlueKey
+objectClass: GlueSchemaVersion
+objectClass: GlueSubCluster
+GlueSubClusterPhysicalCPUs: 130
+GlueSchemaVersionMajor: 1
+GlueSubClusterWNTmpDir: /tmp
+GlueHostNetworkAdapterOutboundIP: FALSE
+GlueSchemaVersionMinor: 3
+GlueHostMainMemoryRAMSize: 131072
+GlueHostOperatingSystemRelease: 6.7
+GlueHostProcessorModel: Intel(R) Xeon(R) CPU E5-2650 v2 @ 2.60GHz
+GlueChunkKey: GlueClusterUniqueID=osg.hyak.washington.edu
+GlueSubClusterLogicalCPUs: 1040
+GlueHostNetworkAdapterInboundIP: FALSE
+GlueHostOperatingSystemName: RedHatEnterpriseServer
+GlueSubClusterTmpDir: /gscratch/osg/data
+GlueHostBenchmarkSI00: 2000
+GlueHostProcessorVendor: Intel
+GlueSubClusterUniqueID: UW Hyak E5-2650v2 128-Hyak
+GlueHostArchitecturePlatformType: x86_64
+GlueHostMainMemoryVirtualSize: 155648
+GlueHostApplicationSoftwareRunTimeEnvironment: OSG_VERSION
+GlueHostApplicationSoftwareRunTimeEnvironment: SAMPLE_SCRATCH
+GlueHostApplicationSoftwareRunTimeEnvironment: OSG 3.2.27
+GlueHostApplicationSoftwareRunTimeEnvironment: SAMPLE_LOCATION
+GlueHostProcessorOtherDescription: Cores=1040
+GlueHostBenchmarkSF00: 2000
+GlueHostOperatingSystemVersion: Santiago
+GlueSubClusterName: UW Hyak E5-2650v2 128
+GlueHostArchitectureSMPSize: 2
+GlueHostProcessorClockSpeed: 2600
+GlueInformationServiceURL: ldap://is.grid.iu.edu:2170
+
+dn: GlueSubClusterUniqueID=UW Hyak E5-2650v2 256-Hyak,GlueClusterUniqueID=osg.hyak.washington.edu,mds-vo-name=local,o=grid
+objectClass: GlueClusterTop
+objectClass: GlueHostApplicationSoftware
+objectClass: GlueHostArchitecture
+objectClass: GlueHostBenchmark
+objectClass: GlueHostMainMemory
+objectClass: GlueHostNetworkAdapter
+objectClass: GlueHostOperatingSystem
+objectClass: GlueHostProcessor
+objectClass: GlueInformationService
+objectClass: GlueKey
+objectClass: GlueSchemaVersion
+objectClass: GlueSubCluster
+GlueSubClusterPhysicalCPUs: 48
+GlueSchemaVersionMajor: 1
+GlueSubClusterWNTmpDir: /tmp
+GlueHostNetworkAdapterOutboundIP: FALSE
+GlueSchemaVersionMinor: 3
+GlueHostMainMemoryRAMSize: 262144
+GlueHostOperatingSystemRelease: 6.7
+GlueHostProcessorModel: Intel(R) Xeon(R) CPU E5-2650 v2 @ 2.60GHz
+GlueChunkKey: GlueClusterUniqueID=osg.hyak.washington.edu
+GlueSubClusterLogicalCPUs: 384
+GlueHostNetworkAdapterInboundIP: FALSE
+GlueHostOperatingSystemName: RedHatEnterpriseServer
+GlueSubClusterTmpDir: /gscratch/osg/data
+GlueHostBenchmarkSI00: 2000
+GlueHostProcessorVendor: Intel
+GlueSubClusterUniqueID: UW Hyak E5-2650v2 256-Hyak
+GlueHostArchitecturePlatformType: x86_64
+GlueHostMainMemoryVirtualSize: 286720
+GlueHostApplicationSoftwareRunTimeEnvironment: OSG_VERSION
+GlueHostApplicationSoftwareRunTimeEnvironment: SAMPLE_SCRATCH
+GlueHostApplicationSoftwareRunTimeEnvironment: OSG 3.2.27
+GlueHostApplicationSoftwareRunTimeEnvironment: SAMPLE_LOCATION
+GlueHostProcessorOtherDescription: Cores=384
+GlueHostBenchmarkSF00: 2000
+GlueHostOperatingSystemVersion: Santiago
+GlueSubClusterName: UW Hyak E5-2650v2 256
+GlueHostArchitectureSMPSize: 2
+GlueHostProcessorClockSpeed: 2600
+GlueInformationServiceURL: ldap://is.grid.iu.edu:2170
+
+dn: GlueSubClusterUniqueID=UW Hyak E5-2650v2 32-Hyak,GlueClusterUniqueID=osg.hyak.washington.edu,mds-vo-name=local,o=grid
+objectClass: GlueClusterTop
+objectClass: GlueHostApplicationSoftware
+objectClass: GlueHostArchitecture
+objectClass: GlueHostBenchmark
+objectClass: GlueHostMainMemory
+objectClass: GlueHostNetworkAdapter
+objectClass: GlueHostOperatingSystem
+objectClass: GlueHostProcessor
+objectClass: GlueInformationService
+objectClass: GlueKey
+objectClass: GlueSchemaVersion
+objectClass: GlueSubCluster
+GlueSubClusterPhysicalCPUs: 148
+GlueSchemaVersionMajor: 1
+GlueSubClusterWNTmpDir: /tmp
+GlueHostNetworkAdapterOutboundIP: FALSE
+GlueSchemaVersionMinor: 3
+GlueHostMainMemoryRAMSize: 32768
+GlueHostOperatingSystemRelease: 6.7
+GlueHostProcessorModel: Intel(R) Xeon(R) CPU E5-2650 v2 @ 2.60GHz
+GlueChunkKey: GlueClusterUniqueID=osg.hyak.washington.edu
+GlueSubClusterLogicalCPUs: 1184
+GlueHostNetworkAdapterInboundIP: FALSE
+GlueHostOperatingSystemName: RedHatEnterpriseServer
+GlueSubClusterTmpDir: /gscratch/osg/data
+GlueHostBenchmarkSI00: 2000
+GlueHostProcessorVendor: Intel
+GlueSubClusterUniqueID: UW Hyak E5-2650v2 32-Hyak
+GlueHostArchitecturePlatformType: x86_64
+GlueHostMainMemoryVirtualSize: 57344
+GlueHostApplicationSoftwareRunTimeEnvironment: OSG_VERSION
+GlueHostApplicationSoftwareRunTimeEnvironment: SAMPLE_SCRATCH
+GlueHostApplicationSoftwareRunTimeEnvironment: OSG 3.2.27
+GlueHostApplicationSoftwareRunTimeEnvironment: SAMPLE_LOCATION
+GlueHostProcessorOtherDescription: Cores=1184
+GlueHostBenchmarkSF00: 2000
+GlueHostOperatingSystemVersion: Santiago
+GlueSubClusterName: UW Hyak E5-2650v2 32
+GlueHostArchitectureSMPSize: 2
+GlueHostProcessorClockSpeed: 2600
+GlueInformationServiceURL: ldap://is.grid.iu.edu:2170
+
+dn: GlueLocationLocalID=TIMESTAMP,GlueSubClusterUniqueID=UW Hyak E5520 96-Hyak,GlueClusterUniqueID=osg.hyak.washington.edu,mds-vo-name=local,o=grid
+objectClass: GlueClusterTop
+objectClass: GlueKey
+objectClass: GlueLocation
+objectClass: GlueSchemaVersion
+GlueLocationName: TIMESTAMP
+GlueSchemaVersionMajor: 1
+GlueLocationLocalID: TIMESTAMP
+GlueSchemaVersionMinor: 3
+GlueChunkKey: GlueSubClusterUniqueID=UW Hyak E5520 96-Hyak
+GlueLocationPath: Thu Mar 10 18:12:32 UTC 2016
+GlueLocationVersion: 1457633552.42
+
+dn: GlueLocationLocalID=TIMESTAMP,GlueSubClusterUniqueID=UW Hyak E5520 48-Hyak,GlueClusterUniqueID=osg.hyak.washington.edu,mds-vo-name=local,o=grid
+objectClass: GlueClusterTop
+objectClass: GlueKey
+objectClass: GlueLocation
+objectClass: GlueSchemaVersion
+GlueLocationName: TIMESTAMP
+GlueSchemaVersionMajor: 1
+GlueLocationLocalID: TIMESTAMP
+GlueSchemaVersionMinor: 3
+GlueChunkKey: GlueSubClusterUniqueID=UW Hyak E5520 48-Hyak
+GlueLocationPath: Thu Mar 10 18:12:32 UTC 2016
+GlueLocationVersion: 1457633552.42
+
+dn: GlueLocationLocalID=TIMESTAMP,GlueSubClusterUniqueID=UW Hyak E5520 24-Hyak,GlueClusterUniqueID=osg.hyak.washington.edu,mds-vo-name=local,o=grid
+objectClass: GlueClusterTop
+objectClass: GlueKey
+objectClass: GlueLocation
+objectClass: GlueSchemaVersion
+GlueLocationName: TIMESTAMP
+GlueSchemaVersionMajor: 1
+GlueLocationLocalID: TIMESTAMP
+GlueSchemaVersionMinor: 3
+GlueChunkKey: GlueSubClusterUniqueID=UW Hyak E5520 24-Hyak
+GlueLocationPath: Thu Mar 10 18:12:32 UTC 2016
+GlueLocationVersion: 1457633552.42
+
+dn: GlueLocationLocalID=TIMESTAMP,GlueSubClusterUniqueID=UW Hyak L5520 96-Hyak,GlueClusterUniqueID=osg.hyak.washington.edu,mds-vo-name=local,o=grid
+objectClass: GlueClusterTop
+objectClass: GlueKey
+objectClass: GlueLocation
+objectClass: GlueSchemaVersion
+GlueLocationName: TIMESTAMP
+GlueSchemaVersionMajor: 1
+GlueLocationLocalID: TIMESTAMP
+GlueSchemaVersionMinor: 3
+GlueChunkKey: GlueSubClusterUniqueID=UW Hyak L5520 96-Hyak
+GlueLocationPath: Thu Mar 10 18:12:32 UTC 2016
+GlueLocationVersion: 1457633552.42
+
+dn: GlueLocationLocalID=TIMESTAMP,GlueSubClusterUniqueID=UW Hyak L5520 48-Hyak,GlueClusterUniqueID=osg.hyak.washington.edu,mds-vo-name=local,o=grid
+objectClass: GlueClusterTop
+objectClass: GlueKey
+objectClass: GlueLocation
+objectClass: GlueSchemaVersion
+GlueLocationName: TIMESTAMP
+GlueSchemaVersionMajor: 1
+GlueLocationLocalID: TIMESTAMP
+GlueSchemaVersionMinor: 3
+GlueChunkKey: GlueSubClusterUniqueID=UW Hyak L5520 48-Hyak
+GlueLocationPath: Thu Mar 10 18:12:32 UTC 2016
+GlueLocationVersion: 1457633552.42
+
+dn: GlueLocationLocalID=TIMESTAMP,GlueSubClusterUniqueID=UW Hyak L5520 24-Hyak,GlueClusterUniqueID=osg.hyak.washington.edu,mds-vo-name=local,o=grid
+objectClass: GlueClusterTop
+objectClass: GlueKey
+objectClass: GlueLocation
+objectClass: GlueSchemaVersion
+GlueLocationName: TIMESTAMP
+GlueSchemaVersionMajor: 1
+GlueLocationLocalID: TIMESTAMP
+GlueSchemaVersionMinor: 3
+GlueChunkKey: GlueSubClusterUniqueID=UW Hyak L5520 24-Hyak
+GlueLocationPath: Thu Mar 10 18:12:32 UTC 2016
+GlueLocationVersion: 1457633552.42
+
+dn: GlueLocationLocalID=TIMESTAMP,GlueSubClusterUniqueID=UW Hyak X5650 192-Hyak,GlueClusterUniqueID=osg.hyak.washington.edu,mds-vo-name=local,o=grid
+objectClass: GlueClusterTop
+objectClass: GlueKey
+objectClass: GlueLocation
+objectClass: GlueSchemaVersion
+GlueLocationName: TIMESTAMP
+GlueSchemaVersionMajor: 1
+GlueLocationLocalID: TIMESTAMP
+GlueSchemaVersionMinor: 3
+GlueChunkKey: GlueSubClusterUniqueID=UW Hyak X5650 192-Hyak
+GlueLocationPath: Thu Mar 10 18:12:32 UTC 2016
+GlueLocationVersion: 1457633552.42
+
+dn: GlueLocationLocalID=TIMESTAMP,GlueSubClusterUniqueID=UW Hyak X5650 96-Hyak,GlueClusterUniqueID=osg.hyak.washington.edu,mds-vo-name=local,o=grid
+objectClass: GlueClusterTop
+objectClass: GlueKey
+objectClass: GlueLocation
+objectClass: GlueSchemaVersion
+GlueLocationName: TIMESTAMP
+GlueSchemaVersionMajor: 1
+GlueLocationLocalID: TIMESTAMP
+GlueSchemaVersionMinor: 3
+GlueChunkKey: GlueSubClusterUniqueID=UW Hyak X5650 96-Hyak
+GlueLocationPath: Thu Mar 10 18:12:32 UTC 2016
+GlueLocationVersion: 1457633552.42
+
+dn: GlueLocationLocalID=TIMESTAMP,GlueSubClusterUniqueID=UW Hyak X5650 48-Hyak,GlueClusterUniqueID=osg.hyak.washington.edu,mds-vo-name=local,o=grid
+objectClass: GlueClusterTop
+objectClass: GlueKey
+objectClass: GlueLocation
+objectClass: GlueSchemaVersion
+GlueLocationName: TIMESTAMP
+GlueSchemaVersionMajor: 1
+GlueLocationLocalID: TIMESTAMP
+GlueSchemaVersionMinor: 3
+GlueChunkKey: GlueSubClusterUniqueID=UW Hyak X5650 48-Hyak
+GlueLocationPath: Thu Mar 10 18:12:32 UTC 2016
+GlueLocationVersion: 1457633552.42
+
+dn: GlueLocationLocalID=TIMESTAMP,GlueSubClusterUniqueID=UW Hyak X5650 24-Hyak,GlueClusterUniqueID=osg.hyak.washington.edu,mds-vo-name=local,o=grid
+objectClass: GlueClusterTop
+objectClass: GlueKey
+objectClass: GlueLocation
+objectClass: GlueSchemaVersion
+GlueLocationName: TIMESTAMP
+GlueSchemaVersionMajor: 1
+GlueLocationLocalID: TIMESTAMP
+GlueSchemaVersionMinor: 3
+GlueChunkKey: GlueSubClusterUniqueID=UW Hyak X5650 24-Hyak
+GlueLocationPath: Thu Mar 10 18:12:32 UTC 2016
+GlueLocationVersion: 1457633552.42
+
+dn: GlueLocationLocalID=TIMESTAMP,GlueSubClusterUniqueID=UW Hyak E5-2650 64-Hyak,GlueClusterUniqueID=osg.hyak.washington.edu,mds-vo-name=local,o=grid
+objectClass: GlueClusterTop
+objectClass: GlueKey
+objectClass: GlueLocation
+objectClass: GlueSchemaVersion
+GlueLocationName: TIMESTAMP
+GlueSchemaVersionMajor: 1
+GlueLocationLocalID: TIMESTAMP
+GlueSchemaVersionMinor: 3
+GlueChunkKey: GlueSubClusterUniqueID=UW Hyak E5-2650 64-Hyak
+GlueLocationPath: Thu Mar 10 18:12:32 UTC 2016
+GlueLocationVersion: 1457633552.42
+
+dn: GlueLocationLocalID=TIMESTAMP,GlueSubClusterUniqueID=UW Hyak E5-2650 128-Hyak,GlueClusterUniqueID=osg.hyak.washington.edu,mds-vo-name=local,o=grid
+objectClass: GlueClusterTop
+objectClass: GlueKey
+objectClass: GlueLocation
+objectClass: GlueSchemaVersion
+GlueLocationName: TIMESTAMP
+GlueSchemaVersionMajor: 1
+GlueLocationLocalID: TIMESTAMP
+GlueSchemaVersionMinor: 3
+GlueChunkKey: GlueSubClusterUniqueID=UW Hyak E5-2650 128-Hyak
+GlueLocationPath: Thu Mar 10 18:12:32 UTC 2016
+GlueLocationVersion: 1457633552.42
+
+dn: GlueLocationLocalID=TIMESTAMP,GlueSubClusterUniqueID=UW Hyak E5-2650 32-Hyak,GlueClusterUniqueID=osg.hyak.washington.edu,mds-vo-name=local,o=grid
+objectClass: GlueClusterTop
+objectClass: GlueKey
+objectClass: GlueLocation
+objectClass: GlueSchemaVersion
+GlueLocationName: TIMESTAMP
+GlueSchemaVersionMajor: 1
+GlueLocationLocalID: TIMESTAMP
+GlueSchemaVersionMinor: 3
+GlueChunkKey: GlueSubClusterUniqueID=UW Hyak E5-2650 32-Hyak
+GlueLocationPath: Thu Mar 10 18:12:32 UTC 2016
+GlueLocationVersion: 1457633552.42
+
+dn: GlueLocationLocalID=TIMESTAMP,GlueSubClusterUniqueID=UW Hyak E7-4820 256-Hyak,GlueClusterUniqueID=osg.hyak.washington.edu,mds-vo-name=local,o=grid
+objectClass: GlueClusterTop
+objectClass: GlueKey
+objectClass: GlueLocation
+objectClass: GlueSchemaVersion
+GlueLocationName: TIMESTAMP
+GlueSchemaVersionMajor: 1
+GlueLocationLocalID: TIMESTAMP
+GlueSchemaVersionMinor: 3
+GlueChunkKey: GlueSubClusterUniqueID=UW Hyak E7-4820 256-Hyak
+GlueLocationPath: Thu Mar 10 18:12:32 UTC 2016
+GlueLocationVersion: 1457633552.42
+
+dn: GlueLocationLocalID=TIMESTAMP,GlueSubClusterUniqueID=UW Hyak E5-2650v2 64-Hyak,GlueClusterUniqueID=osg.hyak.washington.edu,mds-vo-name=local,o=grid
+objectClass: GlueClusterTop
+objectClass: GlueKey
+objectClass: GlueLocation
+objectClass: GlueSchemaVersion
+GlueLocationName: TIMESTAMP
+GlueSchemaVersionMajor: 1
+GlueLocationLocalID: TIMESTAMP
+GlueSchemaVersionMinor: 3
+GlueChunkKey: GlueSubClusterUniqueID=UW Hyak E5-2650v2 64-Hyak
+GlueLocationPath: Thu Mar 10 18:12:32 UTC 2016
+GlueLocationVersion: 1457633552.42
+
+dn: GlueLocationLocalID=TIMESTAMP,GlueSubClusterUniqueID=UW Hyak E5-2650v2 128-Hyak,GlueClusterUniqueID=osg.hyak.washington.edu,mds-vo-name=local,o=grid
+objectClass: GlueClusterTop
+objectClass: GlueKey
+objectClass: GlueLocation
+objectClass: GlueSchemaVersion
+GlueLocationName: TIMESTAMP
+GlueSchemaVersionMajor: 1
+GlueLocationLocalID: TIMESTAMP
+GlueSchemaVersionMinor: 3
+GlueChunkKey: GlueSubClusterUniqueID=UW Hyak E5-2650v2 128-Hyak
+GlueLocationPath: Thu Mar 10 18:12:32 UTC 2016
+GlueLocationVersion: 1457633552.42
+
+dn: GlueLocationLocalID=TIMESTAMP,GlueSubClusterUniqueID=UW Hyak E5-2650v2 256-Hyak,GlueClusterUniqueID=osg.hyak.washington.edu,mds-vo-name=local,o=grid
+objectClass: GlueClusterTop
+objectClass: GlueKey
+objectClass: GlueLocation
+objectClass: GlueSchemaVersion
+GlueLocationName: TIMESTAMP
+GlueSchemaVersionMajor: 1
+GlueLocationLocalID: TIMESTAMP
+GlueSchemaVersionMinor: 3
+GlueChunkKey: GlueSubClusterUniqueID=UW Hyak E5-2650v2 256-Hyak
+GlueLocationPath: Thu Mar 10 18:12:32 UTC 2016
+GlueLocationVersion: 1457633552.42
+
+dn: GlueLocationLocalID=TIMESTAMP,GlueSubClusterUniqueID=UW Hyak E5-2650v2 32-Hyak,GlueClusterUniqueID=osg.hyak.washington.edu,mds-vo-name=local,o=grid
+objectClass: GlueClusterTop
+objectClass: GlueKey
+objectClass: GlueLocation
+objectClass: GlueSchemaVersion
+GlueLocationName: TIMESTAMP
+GlueSchemaVersionMajor: 1
+GlueLocationLocalID: TIMESTAMP
+GlueSchemaVersionMinor: 3
+GlueChunkKey: GlueSubClusterUniqueID=UW Hyak E5-2650v2 32-Hyak
+GlueLocationPath: Thu Mar 10 18:12:32 UTC 2016
+GlueLocationVersion: 1457633552.42
+
+dn: GlueCESEBindSEUniqueID=Hyak_classicSE,GlueCESEBindGroupCEUniqueID=osg.hyak.washington.edu:9619/htcondorce-pbs-osg,mds-vo-name=local,o=grid
+objectClass: GlueCESEBind
+objectClass: GlueGeneralTop
+objectClass: GlueSchemaVersion
+GlueSchemaVersionMajor: 1
+GlueCESEBindCEUniqueID: osg.hyak.washington.edu:9619/htcondorce-pbs-osg
+GlueSchemaVersionMinor: 3
+GlueCESEBindSEUniqueID: Hyak_classicSE
+GlueCESEBindCEAccesspoint: /gscratch/osg/data
+GlueCESEBindWeight: 0
+
+dn: GlueCESEBindGroupCEUniqueID=osg.hyak.washington.edu:9619/htcondorce-pbs-osg,mds-vo-name=local,o=grid
+objectClass: GlueCESEBindGroup
+objectClass: GlueGeneralTop
+objectClass: GlueSchemaVersion
+GlueSchemaVersionMinor: 3
+GlueCESEBindGroupCEUniqueID: osg.hyak.washington.edu:9619/htcondorce-pbs-osg
+GlueSchemaVersionMajor: 1
+GlueCESEBindGroupSEUniqueID: Hyak_classicSE
+
+dn: GlueSEUniqueID=Hyak_classicSE,Mds-Vo-name=local,o=grid
+objectClass: GlueInformationService
+objectClass: GlueKey
+objectClass: GlueSE
+objectClass: GlueSETop
+objectClass: GlueSchemaVersion
+GlueSEPort: 2811
+GlueSchemaVersionMajor: 1
+GlueSchemaVersionMinor: 3
+GlueSEImplementationVersion: UNKNOWN
+GlueSETotalNearlineSize: 0
+GlueSEName: Hyak_classicSE
+GlueSEArchitecture: other
+GlueSESizeTotal: 129473
+GlueSETotalOnlineSize: 0
+GlueSEImplementationName: classicSE
+GlueSEUsedOnlineSize: 107952
+GlueForeignKey: GlueSiteUniqueID=Hyak
+GlueSEUsedNearlineSize: 0
+GlueSEStatus: Production
+GlueSEUniqueID: Hyak_classicSE
+GlueSESizeFree: 21521
+GlueInformationServiceURL: ldap://is.grid.iu.edu:2170
+
+dn: GlueSALocalID=Hyak_classicSE,GlueSEUniqueID=Hyak_classicSE,Mds-Vo-name=local,o=grid
+objectClass: GlueKey
+objectClass: GlueSA
+objectClass: GlueSAAccessControlBase
+objectClass: GlueSAPolicy
+objectClass: GlueSAState
+objectClass: GlueSATop
+objectClass: GlueSchemaVersion
+GlueSATotalOnlineSize: 129473
+GlueSAPolicyMaxNumFiles: 0
+GlueSAFreeNearlineSize: 0
+GlueSchemaVersionMajor: 1
+GlueSAUsedNearlineSize: 0
+GlueSAExpirationMode: neverExpire
+GlueSAAccessLatency: online
+GlueSchemaVersionMinor: 3
+GlueSAStateUsedSpace: 107952239280
+GlueSAPolicyQuota: 0
+GlueChunkKey: GlueSEUniqueID=Hyak_classicSE
+GlueSAUsedOnlineSize: 107952
+GlueSAPolicyFileLifeTime: permanent
+GlueSAAccessControlBaseRule: VO:mis
+GlueSAAccessControlBaseRule: VO:glow
+GlueSAAccessControlBaseRule: VO:fermilab
+GlueSAAccessControlBaseRule: VO:osg
+GlueSAName: Hyak_classicSE
+GlueSAPath: /gscratch/osg/data
+GlueSAType: permanent
+GlueSAStateAvailableSpace: 21521093361
+GlueSAFreeOnlineSize: 21521
+GlueSAReservedOnlineSize: 0
+GlueSARetentionPolicy: replica
+GlueSARoot: /
+GlueSAReservedNearlineSize: 0
+GlueSALocalID: Hyak_classicSE
+GlueSATotalNearlineSize: 0
+GlueSACapability: file storage
+GlueSACapability: SRMTokenReservedSpace=0
+GlueSACapability: InstalledOnlineCapacity=0
+GlueSACapability: InstalledNearlineCapacity=0
+
+dn: GlueSEAccessProtocolLocalID=GFTP_DEFAULT_2811,GlueSEUniqueID=Hyak_classicSE,Mds-Vo-name=local,o=grid
+objectClass: GlueKey
+objectClass: GlueSEAccessProtocol
+objectClass: GlueSETop
+objectClass: GlueSchemaVersion
+GlueSchemaVersionMajor: 1
+GlueSEAccessProtocolType: gsiftp
+GlueSEAccessProtocolEndpoint: gsiftp://DEFAULT:2811
+GlueSchemaVersionMinor: 3
+GlueSEAccessProtocolVersion: 1.0.0
+GlueSEAccessProtocolCapability: file transfer
+GlueSEAccessProtocolLocalID: GFTP_DEFAULT_2811
+GlueSEAccessProtocolMaxStreams: 10
+GlueChunkKey: GlueSEUniqueID=Hyak_classicSE
+GlueSEAccessProtocolPort: 2811
+GlueSEAccessProtocolSupportedSecurity: gsiftp
+
+dn: GlueLocationLocalID=OSG_GRID,GlueSubClusterUniqueID=UW Hyak E5520 96-Hyak,GlueClusterUniqueID=osg.hyak.washington.edu,mds-vo-name=local,o=grid
+objectClass: GlueClusterTop
+objectClass: GlueKey
+objectClass: GlueLocation
+objectClass: GlueSchemaVersion
+GlueLocationName: OSG_GRID
+GlueSchemaVersionMajor: 1
+GlueLocationLocalID: OSG_GRID
+GlueSchemaVersionMinor: 3
+GlueChunkKey: GlueSubClusterUniqueID=UW Hyak E5520 96-Hyak
+GlueLocationPath: /etc/osg/wn-client/
+GlueLocationVersion: 1.0
+
+dn: GlueLocationLocalID=OSG_GRID,GlueSubClusterUniqueID=UW Hyak E5520 48-Hyak,GlueClusterUniqueID=osg.hyak.washington.edu,mds-vo-name=local,o=grid
+objectClass: GlueClusterTop
+objectClass: GlueKey
+objectClass: GlueLocation
+objectClass: GlueSchemaVersion
+GlueLocationName: OSG_GRID
+GlueSchemaVersionMajor: 1
+GlueLocationLocalID: OSG_GRID
+GlueSchemaVersionMinor: 3
+GlueChunkKey: GlueSubClusterUniqueID=UW Hyak E5520 48-Hyak
+GlueLocationPath: /etc/osg/wn-client/
+GlueLocationVersion: 1.0
+
+dn: GlueLocationLocalID=OSG_GRID,GlueSubClusterUniqueID=UW Hyak E5520 24-Hyak,GlueClusterUniqueID=osg.hyak.washington.edu,mds-vo-name=local,o=grid
+objectClass: GlueClusterTop
+objectClass: GlueKey
+objectClass: GlueLocation
+objectClass: GlueSchemaVersion
+GlueLocationName: OSG_GRID
+GlueSchemaVersionMajor: 1
+GlueLocationLocalID: OSG_GRID
+GlueSchemaVersionMinor: 3
+GlueChunkKey: GlueSubClusterUniqueID=UW Hyak E5520 24-Hyak
+GlueLocationPath: /etc/osg/wn-client/
+GlueLocationVersion: 1.0
+
+dn: GlueLocationLocalID=OSG_GRID,GlueSubClusterUniqueID=UW Hyak L5520 96-Hyak,GlueClusterUniqueID=osg.hyak.washington.edu,mds-vo-name=local,o=grid
+objectClass: GlueClusterTop
+objectClass: GlueKey
+objectClass: GlueLocation
+objectClass: GlueSchemaVersion
+GlueLocationName: OSG_GRID
+GlueSchemaVersionMajor: 1
+GlueLocationLocalID: OSG_GRID
+GlueSchemaVersionMinor: 3
+GlueChunkKey: GlueSubClusterUniqueID=UW Hyak L5520 96-Hyak
+GlueLocationPath: /etc/osg/wn-client/
+GlueLocationVersion: 1.0
+
+dn: GlueLocationLocalID=OSG_GRID,GlueSubClusterUniqueID=UW Hyak L5520 48-Hyak,GlueClusterUniqueID=osg.hyak.washington.edu,mds-vo-name=local,o=grid
+objectClass: GlueClusterTop
+objectClass: GlueKey
+objectClass: GlueLocation
+objectClass: GlueSchemaVersion
+GlueLocationName: OSG_GRID
+GlueSchemaVersionMajor: 1
+GlueLocationLocalID: OSG_GRID
+GlueSchemaVersionMinor: 3
+GlueChunkKey: GlueSubClusterUniqueID=UW Hyak L5520 48-Hyak
+GlueLocationPath: /etc/osg/wn-client/
+GlueLocationVersion: 1.0
+
+dn: GlueLocationLocalID=OSG_GRID,GlueSubClusterUniqueID=UW Hyak L5520 24-Hyak,GlueClusterUniqueID=osg.hyak.washington.edu,mds-vo-name=local,o=grid
+objectClass: GlueClusterTop
+objectClass: GlueKey
+objectClass: GlueLocation
+objectClass: GlueSchemaVersion
+GlueLocationName: OSG_GRID
+GlueSchemaVersionMajor: 1
+GlueLocationLocalID: OSG_GRID
+GlueSchemaVersionMinor: 3
+GlueChunkKey: GlueSubClusterUniqueID=UW Hyak L5520 24-Hyak
+GlueLocationPath: /etc/osg/wn-client/
+GlueLocationVersion: 1.0
+
+dn: GlueLocationLocalID=OSG_GRID,GlueSubClusterUniqueID=UW Hyak X5650 192-Hyak,GlueClusterUniqueID=osg.hyak.washington.edu,mds-vo-name=local,o=grid
+objectClass: GlueClusterTop
+objectClass: GlueKey
+objectClass: GlueLocation
+objectClass: GlueSchemaVersion
+GlueLocationName: OSG_GRID
+GlueSchemaVersionMajor: 1
+GlueLocationLocalID: OSG_GRID
+GlueSchemaVersionMinor: 3
+GlueChunkKey: GlueSubClusterUniqueID=UW Hyak X5650 192-Hyak
+GlueLocationPath: /etc/osg/wn-client/
+GlueLocationVersion: 1.0
+
+dn: GlueLocationLocalID=OSG_GRID,GlueSubClusterUniqueID=UW Hyak X5650 96-Hyak,GlueClusterUniqueID=osg.hyak.washington.edu,mds-vo-name=local,o=grid
+objectClass: GlueClusterTop
+objectClass: GlueKey
+objectClass: GlueLocation
+objectClass: GlueSchemaVersion
+GlueLocationName: OSG_GRID
+GlueSchemaVersionMajor: 1
+GlueLocationLocalID: OSG_GRID
+GlueSchemaVersionMinor: 3
+GlueChunkKey: GlueSubClusterUniqueID=UW Hyak X5650 96-Hyak
+GlueLocationPath: /etc/osg/wn-client/
+GlueLocationVersion: 1.0
+
+dn: GlueLocationLocalID=OSG_GRID,GlueSubClusterUniqueID=UW Hyak X5650 48-Hyak,GlueClusterUniqueID=osg.hyak.washington.edu,mds-vo-name=local,o=grid
+objectClass: GlueClusterTop
+objectClass: GlueKey
+objectClass: GlueLocation
+objectClass: GlueSchemaVersion
+GlueLocationName: OSG_GRID
+GlueSchemaVersionMajor: 1
+GlueLocationLocalID: OSG_GRID
+GlueSchemaVersionMinor: 3
+GlueChunkKey: GlueSubClusterUniqueID=UW Hyak X5650 48-Hyak
+GlueLocationPath: /etc/osg/wn-client/
+GlueLocationVersion: 1.0
+
+dn: GlueLocationLocalID=OSG_GRID,GlueSubClusterUniqueID=UW Hyak X5650 24-Hyak,GlueClusterUniqueID=osg.hyak.washington.edu,mds-vo-name=local,o=grid
+objectClass: GlueClusterTop
+objectClass: GlueKey
+objectClass: GlueLocation
+objectClass: GlueSchemaVersion
+GlueLocationName: OSG_GRID
+GlueSchemaVersionMajor: 1
+GlueLocationLocalID: OSG_GRID
+GlueSchemaVersionMinor: 3
+GlueChunkKey: GlueSubClusterUniqueID=UW Hyak X5650 24-Hyak
+GlueLocationPath: /etc/osg/wn-client/
+GlueLocationVersion: 1.0
+
+dn: GlueLocationLocalID=OSG_GRID,GlueSubClusterUniqueID=UW Hyak E5-2650 64-Hyak,GlueClusterUniqueID=osg.hyak.washington.edu,mds-vo-name=local,o=grid
+objectClass: GlueClusterTop
+objectClass: GlueKey
+objectClass: GlueLocation
+objectClass: GlueSchemaVersion
+GlueLocationName: OSG_GRID
+GlueSchemaVersionMajor: 1
+GlueLocationLocalID: OSG_GRID
+GlueSchemaVersionMinor: 3
+GlueChunkKey: GlueSubClusterUniqueID=UW Hyak E5-2650 64-Hyak
+GlueLocationPath: /etc/osg/wn-client/
+GlueLocationVersion: 1.0
+
+dn: GlueLocationLocalID=OSG_GRID,GlueSubClusterUniqueID=UW Hyak E5-2650 128-Hyak,GlueClusterUniqueID=osg.hyak.washington.edu,mds-vo-name=local,o=grid
+objectClass: GlueClusterTop
+objectClass: GlueKey
+objectClass: GlueLocation
+objectClass: GlueSchemaVersion
+GlueLocationName: OSG_GRID
+GlueSchemaVersionMajor: 1
+GlueLocationLocalID: OSG_GRID
+GlueSchemaVersionMinor: 3
+GlueChunkKey: GlueSubClusterUniqueID=UW Hyak E5-2650 128-Hyak
+GlueLocationPath: /etc/osg/wn-client/
+GlueLocationVersion: 1.0
+
+dn: GlueLocationLocalID=OSG_GRID,GlueSubClusterUniqueID=UW Hyak E5-2650 32-Hyak,GlueClusterUniqueID=osg.hyak.washington.edu,mds-vo-name=local,o=grid
+objectClass: GlueClusterTop
+objectClass: GlueKey
+objectClass: GlueLocation
+objectClass: GlueSchemaVersion
+GlueLocationName: OSG_GRID
+GlueSchemaVersionMajor: 1
+GlueLocationLocalID: OSG_GRID
+GlueSchemaVersionMinor: 3
+GlueChunkKey: GlueSubClusterUniqueID=UW Hyak E5-2650 32-Hyak
+GlueLocationPath: /etc/osg/wn-client/
+GlueLocationVersion: 1.0
+
+dn: GlueLocationLocalID=OSG_GRID,GlueSubClusterUniqueID=UW Hyak E7-4820 256-Hyak,GlueClusterUniqueID=osg.hyak.washington.edu,mds-vo-name=local,o=grid
+objectClass: GlueClusterTop
+objectClass: GlueKey
+objectClass: GlueLocation
+objectClass: GlueSchemaVersion
+GlueLocationName: OSG_GRID
+GlueSchemaVersionMajor: 1
+GlueLocationLocalID: OSG_GRID
+GlueSchemaVersionMinor: 3
+GlueChunkKey: GlueSubClusterUniqueID=UW Hyak E7-4820 256-Hyak
+GlueLocationPath: /etc/osg/wn-client/
+GlueLocationVersion: 1.0
+
+dn: GlueLocationLocalID=OSG_GRID,GlueSubClusterUniqueID=UW Hyak E5-2650v2 64-Hyak,GlueClusterUniqueID=osg.hyak.washington.edu,mds-vo-name=local,o=grid
+objectClass: GlueClusterTop
+objectClass: GlueKey
+objectClass: GlueLocation
+objectClass: GlueSchemaVersion
+GlueLocationName: OSG_GRID
+GlueSchemaVersionMajor: 1
+GlueLocationLocalID: OSG_GRID
+GlueSchemaVersionMinor: 3
+GlueChunkKey: GlueSubClusterUniqueID=UW Hyak E5-2650v2 64-Hyak
+GlueLocationPath: /etc/osg/wn-client/
+GlueLocationVersion: 1.0
+
+dn: GlueLocationLocalID=OSG_GRID,GlueSubClusterUniqueID=UW Hyak E5-2650v2 128-Hyak,GlueClusterUniqueID=osg.hyak.washington.edu,mds-vo-name=local,o=grid
+objectClass: GlueClusterTop
+objectClass: GlueKey
+objectClass: GlueLocation
+objectClass: GlueSchemaVersion
+GlueLocationName: OSG_GRID
+GlueSchemaVersionMajor: 1
+GlueLocationLocalID: OSG_GRID
+GlueSchemaVersionMinor: 3
+GlueChunkKey: GlueSubClusterUniqueID=UW Hyak E5-2650v2 128-Hyak
+GlueLocationPath: /etc/osg/wn-client/
+GlueLocationVersion: 1.0
+
+dn: GlueLocationLocalID=OSG_GRID,GlueSubClusterUniqueID=UW Hyak E5-2650v2 256-Hyak,GlueClusterUniqueID=osg.hyak.washington.edu,mds-vo-name=local,o=grid
+objectClass: GlueClusterTop
+objectClass: GlueKey
+objectClass: GlueLocation
+objectClass: GlueSchemaVersion
+GlueLocationName: OSG_GRID
+GlueSchemaVersionMajor: 1
+GlueLocationLocalID: OSG_GRID
+GlueSchemaVersionMinor: 3
+GlueChunkKey: GlueSubClusterUniqueID=UW Hyak E5-2650v2 256-Hyak
+GlueLocationPath: /etc/osg/wn-client/
+GlueLocationVersion: 1.0
+
+dn: GlueLocationLocalID=OSG_GRID,GlueSubClusterUniqueID=UW Hyak E5-2650v2 32-Hyak,GlueClusterUniqueID=osg.hyak.washington.edu,mds-vo-name=local,o=grid
+objectClass: GlueClusterTop
+objectClass: GlueKey
+objectClass: GlueLocation
+objectClass: GlueSchemaVersion
+GlueLocationName: OSG_GRID
+GlueSchemaVersionMajor: 1
+GlueLocationLocalID: OSG_GRID
+GlueSchemaVersionMinor: 3
+GlueChunkKey: GlueSubClusterUniqueID=UW Hyak E5-2650v2 32-Hyak
+GlueLocationPath: /etc/osg/wn-client/
+GlueLocationVersion: 1.0
+
+
