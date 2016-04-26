@@ -1,53 +1,53 @@
 How Tim does an update:
 
-1. Open “OSG CE Tracking” document in Google Drive
+1. Open "OSG CE Tracking" document in Google Drive
 
-2. Select “File > Download as > Comma-separated values (.csv, current sheet)”
+2. Select "File > Download as > Comma-separated values (.csv, current sheet)"
 
    The CSV file is saved to the local download directory
 
-3. Rename download to “google-drive-YYYY-MM-DD-original.csv”
+3. Rename download to "google-drive-YYYY-MM-DD-original.csv"
 
    (And move to a better directory, if desired)
 
 4. Run merge-ce-data on the original and one or more input files
    * Check output carefully for problems, sensible counts, etc.
 
-5. Rename output file to “google-drive-YYYY-MM-DD-updated-X-INPUTS.csv”
+5. Rename output file to "google-drive-YYYY-MM-DD-updated-X-INPUTS.csv"
    * X is a serial letter to separate and sequence multiple update runs
    * INPUTS is some indication of which type(s) of inputs were used
 
 6. Check over a diff of the original Google Drive CSV file and updated file
 
-7. In the Google document, duplicate the “Consolidated Production” tab
+7. In the Google document, duplicate the "Consolidated Production" tab
 
 8. Import the updated file:
-   a. Select “File > Import...”
-   b. Select the “Upload” tab
-   c. Click the “Select a file from your computer” button
+   a. Select "File > Import..."
+   b. Select the "Upload" tab
+   c. Click the "Select a file from your computer" button
    d. Select the updated CSV file
-   e. Set the “Import action” to “Insert new sheet(s)”
-   f. Set the “Separator character” to “Comma”
-   g. Click the “Import” button
+   e. Set the "Import action" to "Insert new sheet(s)"
+   f. Set the "Separator character" to "Comma"
+   g. Click the "Import" button
    h. In the new sheet, select all cells (command-A on a Mac)
-   i. Right-click on a hostname and select “Unlink”
+   i. Right-click on a hostname and select "Unlink"
 
 9. Check over the newly imported data again
 
 10. On the main sheet, add extra rows to accommodate any new rows
     To preserve existing formatting, I select the last hostname row(s) in the
-    main sheet, then select “Insert > Row(s) below”
+    main sheet, then select "Insert > Row(s) below"
 
 11. In the new sheet, select all of (and only) the content cells
     Currently, the content goes through column J and down to the summary row
 
 12. Copy the cells
 
-13. In the main sheet, click on cell A1 (“Hostname”)
+13. In the main sheet, click on cell A1 ("Hostname")
 
-14. Select “Edit > Paste special > Paste values only”
+14. Select "Edit > Paste special > Paste values only"
 
 15. Copy the summary formulae
     a. In the new sheet, copy only the summary cells
     b. In the main sheet, click on the first column of the summary line
-    c. Select “Edit > Paste special > Paste formula only”
+    c. Select "Edit > Paste special > Paste formula only"
